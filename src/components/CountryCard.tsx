@@ -1,5 +1,6 @@
 import { Country } from "@/data/countries";
-import { Utensils, Film, Music, Sparkles, Theater, Heart } from "lucide-react";
+import { outfits } from "@/data/outfits";
+import { Utensils, Film, Music, Sparkles, Theater, Heart, Shirt } from "lucide-react";
 
 const sections = [
   { key: "traditions" as const, label: "Tradycje", icon: Sparkles },
@@ -10,11 +11,11 @@ const sections = [
 ];
 
 export function CountryCard({ country }: { country: Country }) {
+  const outfit = outfits[country.name];
+
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-700">
       <div className="text-center mb-10">
-        <div className="text-8xl md:text-9xl mb-4 drop-shadow-2xl">{country.flag}</div>
-        <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-2">Dziś jedziecie do</p>
         <h2 className="text-5xl md:text-7xl font-display font-bold text-gold mb-3">{country.name}</h2>
         <p className="text-muted-foreground italic">{country.region}</p>
       </div>
@@ -26,6 +27,25 @@ export function CountryCard({ country }: { country: Country }) {
         </div>
         <p className="text-lg text-foreground/90 leading-relaxed">{country.dateIdea}</p>
       </div>
+
+      {outfit && (
+        <div className="bg-card-gradient border border-border rounded-2xl p-6 mb-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Shirt className="w-4 h-4 text-primary" />
+            <h4 className="font-display text-xl uppercase tracking-wider">Ubiór na wieczór</h4>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Ona</p>
+              <p className="text-foreground/85 leading-relaxed">{outfit.woman}</p>
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">On</p>
+              <p className="text-foreground/85 leading-relaxed">{outfit.man}</p>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="grid md:grid-cols-2 gap-4">
         {sections.map(({ key, label, icon: Icon }) => (
