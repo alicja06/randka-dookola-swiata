@@ -75,6 +75,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Randka dookoła świata" },
       { name: "description", content: "Wylosuj kraj i zaplanujcie wieczorną randkę inspirowaną jego kulturą." },
       { property: "og:type", content: "website" },
+      { property: "og:title", content: "Randka dookoła świata" },
+      { name: "twitter:title", content: "Randka dookoła świata" },
+      { property: "og:description", content: "Wylosuj kraj i zaplanujcie wieczorną randkę inspirowaną jego kulturą." },
+      { name: "twitter:description", content: "Wylosuj kraj i zaplanujcie wieczorną randkę inspirowaną jego kulturą." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/af1ea1c8-146a-45f4-bf8b-9bd7968f6dab" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/af1ea1c8-146a-45f4-bf8b-9bd7968f6dab" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
