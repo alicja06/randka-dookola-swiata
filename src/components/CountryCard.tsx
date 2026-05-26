@@ -77,15 +77,15 @@ export function CountryCard({ country }: { country: Country }) {
       </div>
 
       {countryEntertainment && (
-        <div className="bg-card-gradient border border-border rounded-3xl p-6 md:p-8 mb-4 shadow-glow">
-          <div className="flex items-center gap-3 mb-4">
-            <Gamepad2 className="w-5 h-5 text-accent" />
-            <h3 className="font-display text-2xl uppercase tracking-wider">Rozrywka</h3>
+        <div className="bg-card-gradient border border-border rounded-2xl p-6 mb-4 hover:border-primary/40 transition-colors">
+          <div className="flex items-center gap-2 mb-4">
+            <Gamepad2 className="w-4 h-4 text-primary" />
+            <h4 className="font-display text-xl uppercase tracking-wider">Rozrywka</h4>
           </div>
           <ul className="space-y-2">
             {countryEntertainment.map((e, i) => (
-              <li key={i} className="text-foreground/90 flex gap-2 leading-relaxed text-lg">
-                <span className="text-primary mt-2 text-xs">◆</span>
+              <li key={i} className="text-foreground/85 flex gap-2 leading-relaxed">
+                <span className="text-primary mt-1.5 text-xs">◆</span>
                 <span>{e}</span>
               </li>
             ))}
