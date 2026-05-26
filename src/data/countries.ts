@@ -15,7 +15,7 @@ export const countries: Country[] = [
     name: "Włochy", flag: "🇮🇹", region: "Europa Południowa",
     traditions: ["Niedzielny obiad z całą rodziną", "Aperitivo o zachodzie słońca", "Passeggiata wieczorny spacer"],
     stereotypes: ["Mówią rękami", "Pizza i pasta to świętość", "Mamma zawsze ma rację"],
-    food: ["Domowa carbonara (bez śmietany!)", "Tiramisu", "Bruschetta z pomidorami i bazylią"],
+    food: ["Domowa carbonara (bez śmietany!)", "Tiramisu", "Bruschetta z pomidorami i bazylią", "Risotto alla milanese z szafranem"],
     movies: ["La Dolce Vita", "Cinema Paradiso", "Życie jest piękne"],
     music: ["Lucio Battisti", "Måneskin", "Andrea Bocelli – Con te partirò"],
     dateIdea: "Ugotujcie razem makaron od zera, zapalcie świece i pijcie Chianti przy włoskich klasykach."
@@ -24,7 +24,7 @@ export const countries: Country[] = [
     name: "Francja", flag: "🇫🇷", region: "Europa Zachodnia",
     traditions: ["Wieczorne picie wina z serami", "Apéro z przyjaciółmi", "Pocałunek w oba policzki"],
     stereotypes: ["Bagietka pod pachą", "Romantycy z natury", "Niechętnie mówią po angielsku"],
-    food: ["Croissanty z masłem", "Quiche Lorraine", "Crème brûlée"],
+    food: ["Croissanty z masłem", "Quiche Lorraine", "Crème brûlée", "Boeuf bourguignon"],
     movies: ["Amélie", "Niedotykalni", "Pachnidło"],
     music: ["Édith Piaf – La Vie en Rose", "Stromae", "Daft Punk"],
     dateIdea: "Piknik z bagietką, serami i winem. W tle Piaf, na deser crème brûlée przy świetle świec."
@@ -33,7 +33,7 @@ export const countries: Country[] = [
     name: "Japonia", flag: "🇯🇵", region: "Azja Wschodnia",
     traditions: ["Hanami – oglądanie kwitnących wiśni", "Ceremonia parzenia herbaty", "Kłanianie się na powitanie"],
     stereotypes: ["Bardzo grzeczni i punktualni", "Pracoholicy", "Uwielbiają technologię i anime"],
-    food: ["Sushi i sashimi", "Ramen", "Mochi"],
+    food: ["Sushi i sashimi", "Ramen", "Mochi", "Tempura warzywna"],
     movies: ["Spirited Away", "Twoje imię", "Siedmiu samurajów"],
     music: ["Joe Hisaishi", "Babymetal", "Ryuichi Sakamoto"],
     dateIdea: "Wieczór sushi własnej roboty, sake i seans Studia Ghibli pod kocem."
@@ -42,7 +42,7 @@ export const countries: Country[] = [
     name: "Hiszpania", flag: "🇪🇸", region: "Europa Południowa",
     traditions: ["Sjesta po obiedzie", "Późna kolacja po 22:00", "Flamenco i feria"],
     stereotypes: ["Gorącokrwiści", "Wszyscy tańczą flamenco", "Życie to fiesta"],
-    food: ["Paella Valenciana", "Tapas", "Churros z czekoladą"],
+    food: ["Paella Valenciana", "Tapas", "Churros z czekoladą", "Tortilla española"],
     movies: ["Volver", "Labirynt fauna", "Mów do niej"],
     music: ["Rosalía", "Manu Chao", "Paco de Lucía"],
     dateIdea: "Wieczór tapas: kilka małych dań, sangria i nauka podstaw flamenco w salonie."
@@ -51,7 +51,7 @@ export const countries: Country[] = [
     name: "Meksyk", flag: "🇲🇽", region: "Ameryka Północna",
     traditions: ["Día de los Muertos", "Mariachi pod oknem", "Piñata na każde urodziny"],
     stereotypes: ["Sombrero i poncho", "Ostre jedzenie do wszystkiego", "Telenowele na potęgę"],
-    food: ["Tacos al pastor", "Guacamole", "Mole poblano"],
+    food: ["Tacos al pastor", "Guacamole", "Mole poblano", "Enchiladas verdes"],
     movies: ["Roma", "Coco", "Labirynt fauna"],
     music: ["Café Tacvba", "Selena", "Natalia Lafourcade"],
     dateIdea: "Taco night z domowym guacamole, margarity i seans 'Coco' z chusteczkami w pogotowiu."
@@ -60,7 +60,7 @@ export const countries: Country[] = [
     name: "Indie", flag: "🇮🇳", region: "Azja Południowa",
     traditions: ["Holi – festiwal kolorów", "Diwali – święto świateł", "Namaste na powitanie"],
     stereotypes: ["Bollywood i taniec na każdym kroku", "Ostre curry", "Krowy na ulicach"],
-    food: ["Butter chicken", "Biryani", "Samosy z chutneyem"],
+    food: ["Butter chicken", "Biryani", "Samosy z chutneyem", "Palak paneer z ryżem basmati"],
     movies: ["3 Idiots", "Lagaan", "Dilwale Dulhania Le Jayenge"],
     music: ["A.R. Rahman", "Arijit Singh", "Ravi Shankar"],
     dateIdea: "Curry z naanem, chai masala i taneczna scena z Bollywood – spróbujcie powtórzyć choreografię."
@@ -69,7 +69,7 @@ export const countries: Country[] = [
     name: "Brazylia", flag: "🇧🇷", region: "Ameryka Południowa",
     traditions: ["Karnawał w Rio", "Churrasco w weekend", "Plażowa siatkówka i futebol"],
     stereotypes: ["Wszyscy tańczą samba", "Życie to plaża", "Piłka nożna to religia"],
-    food: ["Feijoada", "Pão de queijo", "Brigadeiro"],
+    food: ["Feijoada", "Pão de queijo", "Brigadeiro", "Moqueca – gulasz rybny z mlekiem kokosowym"],
     movies: ["Miasto Boga", "Central do Brasil", "Tropa de Elite"],
     music: ["Tom Jobim – Garota de Ipanema", "Anitta", "Gilberto Gil"],
     dateIdea: "Caipirinhy, grill na balkonie i lekcja samby na YouTube – śmiechu gwarantowanego."
@@ -78,7 +78,7 @@ export const countries: Country[] = [
     name: "Korea Południowa", flag: "🇰🇷", region: "Azja Wschodnia",
     traditions: ["Chuseok – święto dziękczynienia", "Wspólne BBQ przy stole", "Skinpride i K-beauty"],
     stereotypes: ["K-pop opanował świat", "Maraton K-dram do rana", "Wszyscy wyglądają na 20 lat"],
-    food: ["Korean BBQ", "Bibimbap", "Tteokbokki"],
+    food: ["Korean BBQ", "Bibimbap", "Tteokbokki", "Kimchi jjigae"],
     movies: ["Parasite", "Old Boy", "Train to Busan"],
     music: ["BTS", "BLACKPINK", "IU"],
     dateIdea: "Domowe Korean BBQ, soju i maraton K-dramy lub seans 'Parasite'."
@@ -87,7 +87,7 @@ export const countries: Country[] = [
     name: "Tajlandia", flag: "🇹🇭", region: "Azja Południowo-Wschodnia",
     traditions: ["Songkran – wodny nowy rok", "Wai – ukłon ze złożonymi dłońmi", "Loy Krathong – puszczanie lampionów"],
     stereotypes: ["Kraj uśmiechu", "Street food wszędzie", "Tajskie masaże"],
-    food: ["Pad Thai", "Tom yum", "Mango sticky rice"],
+    food: ["Pad Thai", "Tom yum", "Mango sticky rice", "Zielone curry z kurczakiem"],
     movies: ["Plemię", "Ong-Bak", "Bad Genius"],
     music: ["Bird Thongchai", "Phum Viphurit", "Tilly Birds"],
     dateIdea: "Domowy pad thai, zimne piwo Singha i wzajemny masaż z olejkiem kokosowym."
@@ -96,7 +96,7 @@ export const countries: Country[] = [
     name: "Grecja", flag: "🇬🇷", region: "Europa Południowa",
     traditions: ["Talerz tłuczony na szczęście", "Wieczorne tawerny do nocy", "Wielkanoc prawosławna z jagnięciną"],
     stereotypes: ["Wszyscy mają na imię Nikos lub Maria", "Tańczą sirtaki przy każdej okazji", "Sjesta to święta sprawa"],
-    food: ["Moussaka", "Gyros z tzatziki", "Baklava"],
+    food: ["Moussaka", "Gyros z tzatziki", "Baklava", "Sałatka grecka z fetą"],
     movies: ["Grek Zorba", "Moje wielkie greckie wesele", "Niebieska sukienka"],
     music: ["Mikis Theodorakis", "Nana Mouskouri", "Despina Vandi"],
     dateIdea: "Mezze, retsina i sirtaki w salonie – z obowiązkowym 'Opa!' na koniec."
@@ -105,7 +105,7 @@ export const countries: Country[] = [
     name: "USA", flag: "🇺🇸", region: "Ameryka Północna",
     traditions: ["Thanksgiving z indykiem", "Super Bowl Sunday", "4 lipca z fajerwerkami"],
     stereotypes: ["Wszystko jest XXL", "Burger i Cola do wszystkiego", "Small talk to sport narodowy"],
-    food: ["Cheeseburger z frytkami", "Mac and cheese", "Brownie z lodami"],
+    food: ["Cheeseburger z frytkami", "Mac and cheese", "Brownie z lodami", "BBQ ribs z sosem barbecue"],
     movies: ["Pulp Fiction", "Forrest Gump", "Powrót do przyszłości"],
     music: ["Bruce Springsteen", "Beyoncé", "Johnny Cash"],
     dateIdea: "Burger night, popcorn i klasyk amerykańskiego kina – Tarantino albo coś z lat 80."
@@ -114,7 +114,7 @@ export const countries: Country[] = [
     name: "Wielka Brytania", flag: "🇬🇧", region: "Europa Zachodnia",
     traditions: ["Herbata o 17:00", "Sunday roast z rodziną", "Kolejka jako sport narodowy"],
     stereotypes: ["Zawsze rozmawiają o pogodzie", "Suchy humor i sarkazm", "Pub to drugi dom"],
-    food: ["Fish and chips", "Sunday roast", "Sticky toffee pudding"],
+    food: ["Fish and chips", "Sunday roast", "Sticky toffee pudding", "Shepherd's pie"],
     movies: ["Notting Hill", "Trainspotting", "Cztery wesela i pogrzeb"],
     music: ["The Beatles", "Adele", "Arctic Monkeys"],
     dateIdea: "Fish and chips, ciemne piwo i seans brytyjskiej komedii romantycznej z herbatą na deser."
@@ -123,7 +123,7 @@ export const countries: Country[] = [
     name: "Niemcy", flag: "🇩🇪", region: "Europa Środkowa",
     traditions: ["Oktoberfest", "Jarmarki bożonarodzeniowe", "Niedziela to dzień ciszy"],
     stereotypes: ["Punktualność to świętość", "Porządek musi być", "Piwo i kiełbasa"],
-    food: ["Currywurst", "Sznycel wiedeński", "Bretzle z masłem"],
+    food: ["Currywurst", "Sznycel wiedeński", "Bretzle z masłem", "Sauerbraten z czerwoną kapustą"],
     movies: ["Życie na podsłuchu", "Good Bye, Lenin!", "Biegnij Lola, biegnij"],
     music: ["Rammstein", "Kraftwerk", "Nena – 99 Luftballons"],
     dateIdea: "Kiełbaski, precle i ciemne piwo. W tle Kraftwerk, później intensywne kino niemieckie."
@@ -132,7 +132,7 @@ export const countries: Country[] = [
     name: "Polska", flag: "🇵🇱", region: "Europa Środkowa",
     traditions: ["Wigilia z 12 potrawami", "Śmigus-dyngus", "Imieniny ważniejsze od urodzin"],
     stereotypes: ["Wódka i ogórek kiszony", "Narzekanie to sport narodowy", "Babcia karmi do utraty tchu"],
-    food: ["Pierogi ruskie", "Żurek w chlebie", "Sernik babci"],
+    food: ["Pierogi ruskie", "Żurek w chlebie", "Sernik babci", "Bigos staropolski"],
     movies: ["Dekalog", "Cold War", "Bogowie"],
     music: ["Czesław Niemen", "Dawid Podsiadło", "Chopin – Nokturny"],
     dateIdea: "Lepcie pierogi razem od zera, wódka na lód i seans 'Cold War' albo 'Dekalog'."
@@ -141,7 +141,7 @@ export const countries: Country[] = [
     name: "Chiny", flag: "🇨🇳", region: "Azja Wschodnia",
     traditions: ["Chiński Nowy Rok z tańcem smoka", "Festiwal Środka Jesieni", "Czerwone koperty na szczęście"],
     stereotypes: ["Wszystko produkują", "Ryż do każdego dania", "Kung-fu w genach"],
-    food: ["Dim sum", "Kaczka po pekińsku", "Mapo tofu"],
+    food: ["Dim sum", "Kaczka po pekińsku", "Mapo tofu", "Wołowina po syczuańsku"],
     movies: ["Przyczajony tygrys, ukryty smok", "In the Mood for Love", "Bohater"],
     music: ["Faye Wong", "Jay Chou", "Lang Lang"],
     dateIdea: "Domowe dim sum, zielona herbata i klimatyczny seans 'In the Mood for Love'."
@@ -150,7 +150,7 @@ export const countries: Country[] = [
     name: "Argentyna", flag: "🇦🇷", region: "Ameryka Południowa",
     traditions: ["Asado w niedzielę", "Mate z bombillą podawane w kółko", "Tango w milongach do rana"],
     stereotypes: ["Wszyscy tańczą tango", "Mięso na śniadanie, obiad i kolację", "Messi to bóg"],
-    food: ["Asado – grill mistrzowski", "Empanadas", "Dulce de leche"],
+    food: ["Asado – grill mistrzowski", "Empanadas", "Dulce de leche", "Chimichurri do steku"],
     movies: ["Tajemnica jej oczu", "Dziewięć królowych", "Wild Tales"],
     music: ["Carlos Gardel", "Gustavo Cerati", "Mercedes Sosa"],
     dateIdea: "Stek na patelni, malbec i lekcja tanga – nawet jeden krok robi różnicę."
@@ -159,7 +159,7 @@ export const countries: Country[] = [
     name: "Maroko", flag: "🇲🇦", region: "Afryka Północna",
     traditions: ["Ceremonia parzenia herbaty miętowej", "Hammam – łaźnia parowa", "Targi w medynie"],
     stereotypes: ["Wszędzie się targują", "Dywany na każdej ścianie", "Wielbłąd jako taksówka"],
-    food: ["Tajine z jagnięciną i suszonymi śliwkami", "Kuskus piątkowy", "Pastilla"],
+    food: ["Tajine z jagnięciną i suszonymi śliwkami", "Kuskus piątkowy", "Pastilla", "Harira – pikantna zupa"],
     movies: ["Casablanca", "Babel", "Karmazynowe niebo"],
     music: ["Nass El Ghiwane", "Hindi Zahra", "Saad Lamjarred"],
     dateIdea: "Tajine pod kocem, mocna mięta z herbatą i seans 'Casablanki'. Bonus: masaż olejkiem arganowym."
@@ -168,7 +168,7 @@ export const countries: Country[] = [
     name: "Egipt", flag: "🇪🇬", region: "Afryka Północna",
     traditions: ["Ramadan i iftar po zachodzie słońca", "Sziszowanie w kawiarniach", "Targowanie się o wszystko"],
     stereotypes: ["Piramidy i mumie wszędzie", "Wielbłądy zamiast aut", "Tańczą jak Kleopatra"],
-    food: ["Koshari", "Ful medames", "Baklava"],
+    food: ["Koshari", "Ful medames", "Baklava", "Mahshi – nadziewane warzywa"],
     movies: ["Dworzec centralny", "Yacoubian Building", "Mumia"],
     music: ["Umm Kulthum", "Amr Diab", "Mohamed Mounir"],
     dateIdea: "Koshari, mocna kawa po arabsku i dokument o piramidach – później wspólna nauka tańca brzucha."
@@ -177,7 +177,7 @@ export const countries: Country[] = [
     name: "RPA", flag: "🇿🇦", region: "Afryka",
     traditions: ["Braai – grill jako narodowy rytuał", "Ubuntu – 'jestem, bo my jesteśmy'", "11 oficjalnych języków"],
     stereotypes: ["Safari na każdym kroku", "Wszyscy umieją grillować", "Wuwuzela jako narodowy instrument"],
-    food: ["Braai z boerewors", "Bobotie", "Biltong"],
+    food: ["Braai z boerewors", "Bobotie", "Biltong", "Malva pudding"],
     movies: ["Invictus", "Tsotsi", "Dystrykt 9"],
     music: ["Miriam Makeba", "Ladysmith Black Mambazo", "Die Antwoord"],
     dateIdea: "Grill na balkonie, południowoafrykańskie wino Pinotage i seans 'Invictusa' z Mandelą w tle."
@@ -186,7 +186,7 @@ export const countries: Country[] = [
     name: "Australia", flag: "🇦🇺", region: "Oceania",
     traditions: ["Australia Day z BBQ", "Surfing o świcie", "Vegemite na śniadanie"],
     stereotypes: ["Wszystko chce ich zabić", "Kangury skaczą po ulicach", "Mate to każdy"],
-    food: ["Meat pie", "Lamington", "Pavlova"],
+    food: ["Meat pie", "Lamington", "Pavlova", "Vegemite na toście z masłem"],
     movies: ["Mad Max", "Crocodile Dundee", "Australia"],
     music: ["AC/DC", "Tame Impala", "INXS"],
     dateIdea: "Grill z dużą ilością mięsa, zimne piwo i maraton 'Mad Maxa'. G'day mate!"
@@ -195,7 +195,7 @@ export const countries: Country[] = [
     name: "Rosja", flag: "🇷🇺", region: "Europa Wschodnia",
     traditions: ["Banja – ruska sauna z brzozą", "Maslenica – tydzień blinów", "Toasty z wódką"],
     stereotypes: ["Wódka leje się strumieniami", "Niedźwiedzie na ulicach", "Wszyscy ponuro patrzą"],
-    food: ["Pielmieni", "Borszcz ze śmietaną", "Bliny z kawiorem"],
+    food: ["Pielmieni", "Borszcz ze śmietaną", "Bliny z kawiorem", "Sałatka Olivier"],
     movies: ["Stalker", "Lewiatan", "Ironia losu"],
     music: ["Czajkowski", "Wiktor Coj – Kino", "Pussy Riot"],
     dateIdea: "Pielmieni, lodowata wódka i mroczne kino Tarkowskiego pod ciężkim kocem."
@@ -204,7 +204,7 @@ export const countries: Country[] = [
     name: "Turcja", flag: "🇹🇷", region: "Eurazja",
     traditions: ["Mocna kawa turecka i wróżenie z fusów", "Hammam", "Bazar i targowanie"],
     stereotypes: ["Wszędzie kebab", "Wąsy = honor", "Czaj non stop"],
-    food: ["Kebab adana", "Baklava z pistacjami", "Menemen"],
+    food: ["Kebab adana", "Baklava z pistacjami", "Menemen", "Lahmacun – turecka pizza"],
     movies: ["Zimowy sen", "Trzy małpy", "Once Upon a Time in Anatolia"],
     music: ["Tarkan", "Sezen Aksu", "Barış Manço"],
     dateIdea: "Mezze, raki z lodem i wieczorne wróżenie sobie z fusów kawy. Romantyczne i tajemnicze."
@@ -213,7 +213,7 @@ export const countries: Country[] = [
     name: "Wietnam", flag: "🇻🇳", region: "Azja Południowo-Wschodnia",
     traditions: ["Tết – księżycowy Nowy Rok", "Picie kawy z mlekiem skondensowanym", "Kapelusze stożkowe"],
     stereotypes: ["Skutery wszędzie", "Pho na śniadanie", "Wszystko z ryżu"],
-    food: ["Pho bo", "Bánh mì", "Sajgonki świeże"],
+    food: ["Pho bo", "Bánh mì", "Sajgonki świeże", "Bun cha – grillowana wieprzowina z makaronem"],
     movies: ["Zapach zielonej papai", "Cyklo", "Czas apokalipsy"],
     music: ["Trinh Cong Son", "Sơn Tùng M-TP", "Hoang Thuy Linh"],
     dateIdea: "Domowe pho, świeże sajgonki i kawa wietnamska z mlekiem skondensowanym na deser."
@@ -222,7 +222,7 @@ export const countries: Country[] = [
     name: "Indonezja", flag: "🇮🇩", region: "Azja Południowo-Wschodnia",
     traditions: ["Nyepi – dzień ciszy na Bali", "Wayang – teatr cieni", "Gotong royong – pomoc sąsiedzka"],
     stereotypes: ["17 tysięcy wysp i każda inna", "Wszędzie pachnie kadzidłem", "Surferzy na Bali"],
-    food: ["Nasi goreng", "Satay z sosem orzechowym", "Rendang"],
+    food: ["Nasi goreng", "Satay z sosem orzechowym", "Rendang", "Gado-gado z sosem orzechowym"],
     movies: ["The Raid", "Marlina – morderczyni w czterech aktach", "Eat Pray Love"],
     music: ["Anggun", "Rich Brian", "Tulus"],
     dateIdea: "Nasi goreng z jajkiem sadzonym, świeczki kokosowe i seans 'Eat Pray Love'."
@@ -231,7 +231,7 @@ export const countries: Country[] = [
     name: "Kuba", flag: "🇨🇺", region: "Karaiby",
     traditions: ["Salsa w klubach do rana", "Cygara skręcane ręcznie", "Stare amerykańskie auta"],
     stereotypes: ["Wszyscy tańczą salsę", "Mojito i Hawana", "Cygaro w zębach"],
-    food: ["Ropa vieja", "Moros y cristianos", "Tostones"],
+    food: ["Ropa vieja", "Moros y cristianos", "Tostones", "Lechón asado – pieczona wieprzowina"],
     movies: ["Truskawki i czekolada", "Buena Vista Social Club", "Powrót do Itaki"],
     music: ["Buena Vista Social Club", "Celia Cruz", "Compay Segundo"],
     dateIdea: "Mojito, czarne fasole z ryżem i lekcja salsy z Buena Vista Social Club w tle."
@@ -240,7 +240,7 @@ export const countries: Country[] = [
     name: "Holandia", flag: "🇳🇱", region: "Europa Zachodnia",
     traditions: ["King's Day na pomarańczowo", "Sinterklaas 5 grudnia", "Rower jako podstawowy transport"],
     stereotypes: ["Wszyscy jeżdżą na rowerach", "Tulipany i wiatraki", "Bezpośredni do bólu"],
-    food: ["Stroopwafel", "Bitterballen", "Haring – śledź na surowo"],
+    food: ["Stroopwafel", "Bitterballen", "Haring – śledź na surowo", "Erwtensoep – gęsty groch"],
     movies: ["Wskaż mi drogę do domu", "Czarna księga", "Antonia"],
     music: ["Tiësto", "Anouk", "Caro Emerald"],
     dateIdea: "Sery holenderskie, gouda i edam, do tego ciemne piwo i seans 'Czarnej księgi'."
@@ -249,7 +249,7 @@ export const countries: Country[] = [
     name: "Szwecja", flag: "🇸🇪", region: "Skandynawia",
     traditions: ["Midsommar – noc świętojańska", "Fika – przerwa na kawę i ciasto", "Lucia 13 grudnia"],
     stereotypes: ["Wszyscy są blondynami", "IKEA i klocki", "Zimne i powściągliwe"],
-    food: ["Köttbullar – klopsiki", "Gravlax", "Cynamonki kanelbullar"],
+    food: ["Köttbullar – klopsiki", "Gravlax", "Cynamonki kanelbullar", "Toast Skagen z krewetkami"],
     movies: ["Pozwól mi wejść", "Fanny i Aleksander", "Sami swoi"],
     music: ["ABBA", "Avicii", "First Aid Kit"],
     dateIdea: "Klopsiki z brusznicami, świece (hygge w szwedzkim wydaniu) i seans Bergmana albo… ABBA disco."
@@ -258,7 +258,7 @@ export const countries: Country[] = [
     name: "Norwegia", flag: "🇳🇴", region: "Skandynawia",
     traditions: ["Russefeiring – świętowanie maturzystów", "Hytte – domek w górach", "17 maja narodowy dzień"],
     stereotypes: ["Trolle w lasach", "Ciągle są na nartach", "Wszystko kosztuje fortunę"],
-    food: ["Łosoś wędzony", "Brunost – brązowy ser", "Fårikål"],
+    food: ["Łosoś wędzony", "Brunost – brązowy ser", "Fårikål", "Kjøttkaker – norweskie kotleciki"],
     movies: ["Bestia", "Łowca trolli", "Najgorszy człowiek na świecie"],
     music: ["A-ha – Take On Me", "Aurora", "Sigrid"],
     dateIdea: "Wieczór z łososiem, świecami i seansem 'Najgorszego człowieka na świecie'. Hyggelig!"
@@ -267,7 +267,7 @@ export const countries: Country[] = [
     name: "Irlandia", flag: "🇮🇪", region: "Europa Zachodnia",
     traditions: ["Dzień Świętego Patryka na zielono", "Sesje muzyczne w pubach", "Storytelling przy ognisku"],
     stereotypes: ["Wszyscy rude i piegowate", "Guinness na śniadanie", "Leprechauny w lasach"],
-    food: ["Irish stew", "Soda bread", "Shepherd's pie"],
+    food: ["Irish stew", "Soda bread", "Shepherd's pie", "Boxty – ziemniaczane placki"],
     movies: ["The Banshees of Inisherin", "Dublińczycy", "Once"],
     music: ["U2", "Sinéad O'Connor", "The Cranberries"],
     dateIdea: "Irish stew, Guinness i seans 'The Banshees of Inisherin' z melancholijną irlandzką folkiem w tle."
@@ -276,7 +276,7 @@ export const countries: Country[] = [
     name: "Portugalia", flag: "🇵🇹", region: "Europa Południowa",
     traditions: ["Fado – melancholijne pieśni", "Festas dos Santos Populares", "Azulejos – niebieskie kafle"],
     stereotypes: ["Smutni i melancholijni", "Tylko sardynki i porto", "Saudade – tęsknota za wszystkim"],
-    food: ["Bacalhau – dorsz na 365 sposobów", "Pastéis de nata", "Caldo verde"],
+    food: ["Bacalhau – dorsz na 365 sposobów", "Pastéis de nata", "Caldo verde", "Francesinha – kanapka po porto"],
     movies: ["Lisbon Story", "Tabu", "Letters from Fontainhas"],
     music: ["Amália Rodrigues", "Madredeus", "Mariza"],
     dateIdea: "Pastéis de nata, kieliszek porto i fado w tle – melancholia w najlepszym wydaniu."
@@ -285,7 +285,7 @@ export const countries: Country[] = [
     name: "Szwajcaria", flag: "🇨🇭", region: "Europa Środkowa",
     traditions: ["Fondue w zimowe wieczory", "Jodłowanie w Alpach", "Punktualność jak w zegarku"],
     stereotypes: ["Czekolada, zegarki i banki", "Wszyscy bogaci", "Krowy z dzwonkami"],
-    food: ["Fondue serowe", "Raclette", "Czekolada Lindt"],
+    food: ["Fondue serowe", "Raclette", "Czekolada Lindt", "Rösti z jajkiem sadzonym"],
     movies: ["Heidi", "Dark Eye", "Sister"],
     music: ["DJ Bobo", "Stephan Eicher", "Sophie Hunger"],
     dateIdea: "Fondue serowe, białe wino i seans w klimatach alpejskich. Czekolada na deser obowiązkowa."
@@ -294,7 +294,7 @@ export const countries: Country[] = [
     name: "Austria", flag: "🇦🇹", region: "Europa Środkowa",
     traditions: ["Bal Wiedeński", "Kawiarnie kawowe z marmurem", "Sylwester z Radetzky Marsch"],
     stereotypes: ["Walc na każdym kroku", "Mozart i Sissi", "Sznycel i strudel"],
-    food: ["Wiener Schnitzel", "Sachertorte", "Tafelspitz"],
+    food: ["Wiener Schnitzel", "Sachertorte", "Tafelspitz", "Apfelstrudel z wanilią"],
     movies: ["Dziewczyna z perłą", "Amour", "Trzeci człowiek"],
     music: ["Mozart", "Falco – Rock Me Amadeus", "Conchita Wurst"],
     dateIdea: "Sznycel, kawa po wiedeńsku z bitą śmietaną i lekcja walca w salonie."
@@ -303,7 +303,7 @@ export const countries: Country[] = [
     name: "Belgia", flag: "🇧🇪", region: "Europa Zachodnia",
     traditions: ["Festiwale piwa", "Karnawał w Binche", "Frytki z majonezem"],
     stereotypes: ["Tylko czekolada, piwo i frytki", "Spór Flandria-Walonia", "Manneken Pis"],
-    food: ["Mule z frytkami", "Gofry brukselskie", "Czekoladki Godiva"],
+    food: ["Mule z frytkami", "Gofry brukselskie", "Czekoladki Godiva", "Carbonnade flamande"],
     movies: ["Brugia, fuck you", "Dziecko", "Toto bohater"],
     music: ["Jacques Brel", "Stromae", "Angèle"],
     dateIdea: "Frytki z różnymi sosami, mocne belgijskie piwo i seans 'Brugia, fuck you' z Colinem Farrellem."
@@ -312,7 +312,7 @@ export const countries: Country[] = [
     name: "Czechy", flag: "🇨🇿", region: "Europa Środkowa",
     traditions: ["Piwiarnie i piwo na obiad", "Velikonoce z pomlázką", "Bramboráky na targach"],
     stereotypes: ["Piwo zamiast wody", "Suchy humor jak Szwejk", "Kluski do wszystkiego"],
-    food: ["Svíčková z knedlikami", "Goulash", "Trdelnik"],
+    food: ["Svíčková z knedlikami", "Goulash", "Trdelnik", "Vepřo-knedlo-zelo"],
     movies: ["Pociągi pod specjalnym nadzorem", "Lekcje Faraona", "Kolja"],
     music: ["Karel Gott", "Dvořák", "Iva Bittová"],
     dateIdea: "Knedliki ze svíčkową, ciemne piwo Kozel i seans 'Lekcji Faraona' albo czeskiej Nowej Fali."
@@ -321,7 +321,7 @@ export const countries: Country[] = [
     name: "Węgry", flag: "🇭🇺", region: "Europa Środkowa",
     traditions: ["Sylwester z pörkölt", "Tańce ludowe csárdás", "Łaźnie termalne w Budapeszcie"],
     stereotypes: ["Wszystko z papryką", "Niemożliwy język", "Tokaj do każdej okazji"],
-    food: ["Gulyás", "Lángos z czosnkiem i serem", "Tokaji Aszú"],
+    food: ["Gulyás", "Lángos z czosnkiem i serem", "Tokaji Aszú", "Halászlé – zupa rybna z papryką"],
     movies: ["Syn Szawła", "O ciele i duszy", "Mefisto"],
     music: ["Liszt", "Omega", "Bea Palya"],
     dateIdea: "Pikantny gulasz, wino Tokaj i seans intensywnego węgierskiego kina."
@@ -330,7 +330,7 @@ export const countries: Country[] = [
     name: "Izrael", flag: "🇮🇱", region: "Bliski Wschód",
     traditions: ["Szabat od piątku wieczorem", "Pesach z macą", "Brunch na piasku w Tel Awiwie"],
     stereotypes: ["Wszyscy są bezpośredni", "Hummus to święta sprawa", "Pustynia i hi-tech jednocześnie"],
-    food: ["Hummus z falafelem", "Szakszuka", "Sabich"],
+    food: ["Hummus z falafelem", "Szakszuka", "Sabich", "Falafel z amba i tahiną"],
     movies: ["Walc z Baszirem", "Footnote", "Synonimy"],
     music: ["Idan Raichel", "Asaf Avidan", "Ofra Haza"],
     dateIdea: "Szakszuka na śniadanio-kolację, dobry hummus z pitą i seans 'Walca z Baszirem'."
@@ -339,7 +339,7 @@ export const countries: Country[] = [
     name: "Iran", flag: "🇮🇷", region: "Bliski Wschód",
     traditions: ["Nowruz – perski Nowy Rok", "Poezja Hafeza recytowana na pamięć", "Czaj z kostką cukru w zębach"],
     stereotypes: ["Wszyscy mówią poezją", "Dywany perskie wszędzie", "Taarof – nadmierna grzeczność"],
-    food: ["Chelo kabab", "Ghormeh sabzi", "Fesenjan – kurczak w sosie z orzechów i granatu"],
+    food: ["Chelo kabab", "Ghormeh sabzi", "Fesenjan – kurczak w sosie z orzechów i granatu", "Tahdig – chrupiący ryż ze złotą skórką"],
     movies: ["Rozstanie", "Smak czereśni", "Klient"],
     music: ["Googoosh", "Mohsen Namjoo", "Hossein Alizadeh"],
     dateIdea: "Aromatyczny chelo kabab z szafranem, granat na deser i seans 'Rozstania' Asghara Farhadiego."
@@ -348,7 +348,7 @@ export const countries: Country[] = [
     name: "Kanada", flag: "🇨🇦", region: "Ameryka Północna",
     traditions: ["Hokej jako religia narodowa", "Thanksgiving w październiku", "Liść klonu na wszystkim"],
     stereotypes: ["Wszyscy mówią 'sorry'", "Syrop klonowy do wszystkiego", "Niedźwiedzie i łosie wszędzie"],
-    food: ["Poutine", "Tourtière", "Naleśniki z syropem klonowym"],
+    food: ["Poutine", "Tourtière", "Naleśniki z syropem klonowym", "Butter tarts"],
     movies: ["Incendies", "Sami swoi", "Krwawiące serce"],
     music: ["Leonard Cohen", "Joni Mitchell", "Drake"],
     dateIdea: "Poutine z domowymi frytkami, naleśniki z syropem klonowym i Leonard Cohen w tle."
@@ -357,7 +357,7 @@ export const countries: Country[] = [
     name: "Nowa Zelandia", flag: "🇳🇿", region: "Oceania",
     traditions: ["Haka – wojenny taniec Maorysów", "Hāngī – jedzenie pieczone w ziemi", "Bushwalking w weekendy"],
     stereotypes: ["Więcej owiec niż ludzi", "Władca Pierścieni wszędzie", "Wszyscy są wyluzowani"],
-    food: ["Pavlova", "Hāngī", "Hokey pokey ice cream"],
+    food: ["Pavlova", "Hāngī", "Hokey pokey ice cream", "Whitebait fritters"],
     movies: ["Władca Pierścieni", "Fortepian", "Polowanie na dzikie pieprze"],
     music: ["Lorde", "Crowded House", "Kimbra"],
     dateIdea: "Maraton 'Władcy Pierścieni' (wersja rozszerzona!), pieczeń jagnięca i Pinot Noir z Marlborough."
@@ -366,7 +366,7 @@ export const countries: Country[] = [
     name: "Etiopia", flag: "🇪🇹", region: "Afryka Wschodnia",
     traditions: ["Ceremonia parzenia kawy z kadzidłem", "Etiopski Nowy Rok we wrześniu", "Wspólne jedzenie z jednej tacy"],
     stereotypes: ["Kolebka kawy", "Wszyscy są maratończykami", "Najstarszy alfabet Afryki"],
-    food: ["Injera z wat", "Doro wat – kurczak po etiopsku", "Kitfo"],
+    food: ["Injera z wat", "Doro wat – kurczak po etiopsku", "Kitfo", "Shiro – purée z ciecierzycy"],
     movies: ["Difret", "Lamb", "Adwa"],
     music: ["Mulatu Astatke", "Aster Aweke", "Mahmoud Ahmed"],
     dateIdea: "Etiopska kawa parzona ceremonialnie, injera z curry i jazz Mulatu Astatke w tle."
@@ -375,7 +375,7 @@ export const countries: Country[] = [
     name: "Nigeria", flag: "🇳🇬", region: "Afryka Zachodnia",
     traditions: ["Nollywood – kino na potęgę", "Wesela z setkami gości", "Aso ebi – pasujące stroje"],
     stereotypes: ["Wszyscy tańczą afrobeats", "Jollof rice to święta sprawa", "Spór z Ghaną kto ma lepszy jollof"],
-    food: ["Jollof rice", "Suya – pikantne szaszłyki", "Egusi soup"],
+    food: ["Jollof rice", "Suya – pikantne szaszłyki", "Egusi soup", "Puff puff – słodkie kulki"],
     movies: ["Lionheart", "King of Boys", "The Wedding Party"],
     music: ["Burna Boy", "Fela Kuti", "Wizkid"],
     dateIdea: "Pikantny jollof rice, suya na grillu i afrobeats playlist do tańca w salonie."
@@ -384,7 +384,7 @@ export const countries: Country[] = [
     name: "Kenia", flag: "🇰🇪", region: "Afryka Wschodnia",
     traditions: ["Safari w Masai Mara", "Skoki Masajów", "Harambee – wspólnota"],
     stereotypes: ["Tylko safari i lwy", "Wszyscy biegają maratony", "Akuna matata na każdą okazję"],
-    food: ["Ugali z sukuma wiki", "Nyama choma", "Mandazi"],
+    food: ["Ugali z sukuma wiki", "Nyama choma", "Mandazi", "Pilau – aromatyczny ryż"],
     movies: ["Pożegnanie z Afryką", "Nairobi Half Life", "Rafiki"],
     music: ["Sauti Sol", "Eric Wainaina", "Suzanna Owiyo"],
     dateIdea: "Grillowane mięso (nyama choma), zimne piwo Tusker i dokument o Serengeti."
@@ -393,7 +393,7 @@ export const countries: Country[] = [
     name: "Peru", flag: "🇵🇪", region: "Ameryka Południowa",
     traditions: ["Inti Raymi – święto słońca", "Pisco sour jako narodowy koktajl", "Andyjskie festiwale w kolorach"],
     stereotypes: ["Lamy na każdym zdjęciu", "Wszyscy noszą poncho", "Machu Picchu to obowiązek"],
-    food: ["Ceviche", "Lomo saltado", "Aji de gallina"],
+    food: ["Ceviche", "Lomo saltado", "Aji de gallina", "Causa rellena"],
     movies: ["Mleko smutku", "Mżawka", "Madeinusa"],
     music: ["Susana Baca", "Eva Ayllón", "Gian Marco"],
     dateIdea: "Ceviche z limonką i kolendrą, pisco sour i dokument o Machu Picchu."
@@ -402,7 +402,7 @@ export const countries: Country[] = [
     name: "Kolumbia", flag: "🇨🇴", region: "Ameryka Południowa",
     traditions: ["Karnawał w Barranquilla", "Kawa o każdej porze", "Cumbia i salsa wszędzie"],
     stereotypes: ["Wszyscy znają Pabla Escobara", "Najlepsza kawa na świecie", "Shakira to ikona narodowa"],
-    food: ["Bandeja paisa", "Arepy", "Ajiaco"],
+    food: ["Bandeja paisa", "Arepy", "Ajiaco", "Sancocho – sycąca zupa"],
     movies: ["Embrace of the Serpent", "Maria, pełna łaski", "Monos"],
     music: ["Shakira", "Juanes", "Carlos Vives"],
     dateIdea: "Arepy z różnym nadzieniem, kolumbijska kawa i playlist Shakiry – tańce gwarantowane."
@@ -411,7 +411,7 @@ export const countries: Country[] = [
     name: "Chile", flag: "🇨🇱", region: "Ameryka Południowa",
     traditions: ["Asado niedzielne", "Cueca – taniec narodowy", "Empanadas na każde święto"],
     stereotypes: ["Tylko Andy i pustynia", "Wszystkie wina są chilijskie", "Najdłuższy kraj na świecie"],
-    food: ["Empanadas de pino", "Pastel de choclo", "Completo – hot dog po chilijsku"],
+    food: ["Empanadas de pino", "Pastel de choclo", "Completo – hot dog po chilijsku", "Pebre – chilijska salsa do chleba"],
     movies: ["No", "Klub", "Una mujer fantástica"],
     music: ["Violeta Parra", "Inti-Illimani", "Mon Laferte"],
     dateIdea: "Empanadas z piekarnika, chilijskie Carménère i muzyka Violety Parra przy świecach."
@@ -420,7 +420,7 @@ export const countries: Country[] = [
     name: "Filipiny", flag: "🇵🇭", region: "Azja Południowo-Wschodnia",
     traditions: ["Karaoke jako sport narodowy", "Boże Narodzenie od września", "Fiesta w każdej wiosce"],
     stereotypes: ["Wszyscy świetnie śpiewają", "Adobo to święta sprawa", "Jeepneys jako dzieła sztuki"],
-    food: ["Adobo", "Sinigang", "Halo-halo"],
+    food: ["Adobo", "Sinigang", "Halo-halo", "Lechon kawali"],
     movies: ["Norte – the End of History", "Heneral Luna", "On the Job"],
     music: ["Lea Salonga", "IV of Spades", "Ben&Ben"],
     dateIdea: "Domowe adobo z ryżem, mango na deser i wieczór karaoke w salonie. Bez wymówek."
@@ -429,7 +429,7 @@ export const countries: Country[] = [
     name: "Pakistan", flag: "🇵🇰", region: "Azja Południowa",
     traditions: ["Mehndi – malowanie henną przed weselem", "Iftar w Ramadan", "Truck art – kolorowe ciężarówki"],
     stereotypes: ["Krykiet to religia", "Wszystko ostre", "Trzy dni weselne minimum"],
-    food: ["Biryani", "Nihari", "Chicken karahi"],
+    food: ["Biryani", "Nihari", "Chicken karahi", "Haleem – gęsta potrawka mięsna"],
     movies: ["Khuda Kay Liye", "Bol", "Joyland"],
     music: ["Nusrat Fateh Ali Khan", "Atif Aslam", "Coke Studio Pakistan"],
     dateIdea: "Aromatyczne biryani, mocna herbata chai i seans Coke Studio – qawwali porywa serca."
@@ -438,7 +438,7 @@ export const countries: Country[] = [
     name: "Ukraina", flag: "🇺🇦", region: "Europa Wschodnia",
     traditions: ["Pisanki na Wielkanoc", "Wianki na Iwana Kupałę", "Wesela na 3 dni"],
     stereotypes: ["Wszyscy uwielbiają sało (słoninę)", "Kobiety są piękne", "Borszcz lepszy niż rosyjski"],
-    food: ["Barszcz ukraiński", "Wareniki", "Sało z czarnym chlebem"],
+    food: ["Barszcz ukraiński", "Wareniki", "Sało z czarnym chlebem", "Holubci – gołąbki"],
     movies: ["Plemię", "Donbas", "Atlantida"],
     music: ["Okean Elzy", "Jamala", "DakhaBrakha"],
     dateIdea: "Wareniki lepione razem od zera, czerwony barszcz na obiad i koncerty DakhaBrakha na YouTube."
@@ -447,7 +447,7 @@ export const countries: Country[] = [
     name: "Islandia", flag: "🇮🇸", region: "Europa Północna",
     traditions: ["Þorrablót – uczta zimowa", "Hot poty w gorących źródłach", "Wiara w elfy i trolle"],
     stereotypes: ["Wszyscy są spokrewnieni", "Każdy pisze książkę", "Gejzery zamiast łazienek"],
-    food: ["Skyr", "Pylsur – hot dog islandzki", "Plokkfiskur"],
+    food: ["Skyr", "Pylsur – hot dog islandzki", "Plokkfiskur", "Kjötsúpa – islandzka zupa jagnięca"],
     movies: ["101 Reykjavik", "Rams", "Woman at War"],
     music: ["Björk", "Sigur Rós", "Of Monsters and Men"],
     dateIdea: "Świeża ryba, gorąca kąpiel ze świecami (imitacja blue lagoon) i Sigur Rós w tle. Czysta magia."
