@@ -1,6 +1,7 @@
 import { Country } from "@/data/countries";
 import { outfits } from "@/data/outfits";
-import { Utensils, Film, Music, Sparkles, Theater, Heart, Shirt } from "lucide-react";
+import { drinks } from "@/data/drinks";
+import { Utensils, Film, Music, Sparkles, Theater, Heart, Shirt, Wine } from "lucide-react";
 
 const sections = [
   { key: "traditions" as const, label: "Tradycje", icon: Sparkles },
@@ -12,6 +13,7 @@ const sections = [
 
 export function CountryCard({ country }: { country: Country }) {
   const outfit = outfits[country.name];
+  const countryDrinks = drinks[country.name];
 
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-700">
@@ -47,7 +49,25 @@ export function CountryCard({ country }: { country: Country }) {
         </div>
       )}
 
+      {countryDrinks && (
+        <div className="bg-card-gradient border border-border rounded-2xl p-6 mb-4 hover:border-primary/40 transition-colors">
+          <div className="flex items-center gap-2 mb-4">
+            <Wine className="w-4 h-4 text-primary" />
+            <h4 className="font-display text-xl uppercase tracking-wider">Napoje</h4>
+          </div>
+          <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
+            {countryDrinks.map((d, i) => (
+              <li key={i} className="text-foreground/85 flex gap-2 leading-relaxed">
+                <span className="text-primary mt-1.5 text-xs">◆</span>
+                <span>{d}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       <div className="grid md:grid-cols-2 gap-4">
+
         {sections.map(({ key, label, icon: Icon }) => (
           <div key={key} className="bg-card-gradient border border-border rounded-2xl p-6 hover:border-primary/40 transition-colors">
             <div className="flex items-center gap-2 mb-4">
