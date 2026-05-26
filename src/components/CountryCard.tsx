@@ -1,6 +1,7 @@
 import { Country } from "@/data/countries";
 import { outfits } from "@/data/outfits";
-import { Utensils, Film, Music, Sparkles, Theater, Heart, Shirt } from "lucide-react";
+import { drinks } from "@/data/drinks";
+import { Utensils, Film, Music, Sparkles, Theater, Heart, Shirt, Wine } from "lucide-react";
 
 const sections = [
   { key: "traditions" as const, label: "Tradycje", icon: Sparkles },
@@ -12,6 +13,7 @@ const sections = [
 
 export function CountryCard({ country }: { country: Country }) {
   const outfit = outfits[country.name];
+  const countryDrinks = drinks[country.name];
 
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-700">
