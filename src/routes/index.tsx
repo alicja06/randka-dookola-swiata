@@ -44,10 +44,7 @@ function Index() {
             Jeden kraj.<br />
             <span className="text-gold italic">Jedna randka.</span>
           </h1>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Wylosuj jeden z 50 krajów i zamień wieczór w podróż. Dostajesz tradycje,
-            stereotypy, jedzenie, filmy, muzykę i gotowy pomysł na wspólny dzień.
-          </p>
+
         </header>
 
         <div className="flex justify-center mb-16">
@@ -67,11 +64,8 @@ function Index() {
           </div>
         )}
 
-        {!country && (
-          <div className="text-center text-muted-foreground/60 italic">
-            <p>Naciśnij przycisk powyżej, żeby zacząć przygodę ✨</p>
-          </div>
-        )}
+
+
 
         <footer className="text-center mt-20 text-xs text-muted-foreground/60 uppercase tracking-widest">
           50 krajów · nieskończona liczba wieczorów
