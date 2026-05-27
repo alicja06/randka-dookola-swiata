@@ -44,7 +44,7 @@ export const entertainment: Record<string, string[]> = {
   "Peru": ["Sapo (gra w celność)", "Dokument o Machu Picchu i Inkach", "Lekcja tańca marinera"],
   "Kolumbia": ["Tejo (z monetami zamiast prochu)", "Maraton 'Narcos' lub 'Wąska linia'", "Lekcja salsy kolumbijskiej (Cali style)"],
   "Chile": ["Cueca w salonie z chusteczkami", "Maraton dokumentów o Atakamie", "Quiz: rozpoznaj chilijskie wino w ciemno"],
-  "Filipiny": ["Karaoke jako sport narodowy – obowiązkowe", "Sungka (filipiński mancala)", "Maraton filmów Brillante Mendozy"],
+  "Filipiny": ["Karaoke jako sport narodowy – obowiązkowe", "Mecz koszykówki na TV lub gra 1v1", "Oglądanie walki bokserskiej z komentarzem na żywo"],
   "Pakistan": ["Carrom (gra zręcznościowa)", "Maraton Coke Studio Pakistan", "Henna i opowieści o Mughalach"],
   "Ukraina": ["Durak (gra karciana)", "Koncerty DakhaBrakha i Onuki na YouTube", "Malowanie pisanek metodą woskową"],
   "Islandia": ["Maraton 'Trapped' lub 'Katla'", "Wieczór z muzyką Sigur Rós i świecami", "Quiz: prawdziwe nazwisko islandzkie czy wymyślone?"],
