@@ -29,14 +29,29 @@ export function CountryCard({ country }: { country: Country }) {
             <Shirt className="w-4 h-4 text-primary" />
             <h4 className="font-display text-xl uppercase tracking-wider">Ubiór na wieczór</h4>
           </div>
-          <div className="grid md:grid-cols-2 gap-4">
+          <p className="text-xs text-muted-foreground mb-4 italic">Wybierz opcję, do której masz ubrania w szafie.</p>
+          <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Ona</p>
-              <p className="text-foreground/85 leading-relaxed">{outfit.woman}</p>
+              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Ona</p>
+              <ul className="space-y-2">
+                {outfit.woman.map((o, i) => (
+                  <li key={i} className="text-foreground/85 flex gap-2 leading-relaxed">
+                    <span className="text-primary mt-1.5 text-xs">◆</span>
+                    <span>{o}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
             <div>
-              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">On</p>
-              <p className="text-foreground/85 leading-relaxed">{outfit.man}</p>
+              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">On</p>
+              <ul className="space-y-2">
+                {outfit.man.map((o, i) => (
+                  <li key={i} className="text-foreground/85 flex gap-2 leading-relaxed">
+                    <span className="text-primary mt-1.5 text-xs">◆</span>
+                    <span>{o}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
