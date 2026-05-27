@@ -1,52 +1,690 @@
-// Outfit suggestions per country. Keys must match Country.name.
-export const outfits: Record<string, { woman: string; man: string }> = {
-  "Włochy": { woman: "Czerwona sukienka midi, złote kolczyki, szpilki", man: "Lniana koszula, granatowe spodnie, mokasyny bez skarpetek" },
-  "Francja": { woman: "Mała czarna, beret, czerwona szminka", man: "Pasiasta koszulka, ciemne jeansy, marynarka, szalik" },
-  "Japonia": { woman: "Minimalistyczna sukienka w czerni lub yukata", man: "Czarny golf, proste spodnie, sneakersy w stylu Muji" },
-  "Hiszpania": { woman: "Sukienka z falbanami w czerwieni, kolczyki kreole", man: "Biała koszula rozpięta, ciemne spodnie, skórzany pasek" },
-  "Meksyk": { woman: "Haftowana bluzka, kolorowa spódnica, duże kolczyki", man: "Lniana koszula guayabera, jeansy, kapelusz" },
-  "Indie": { woman: "Kolorowa tunika lub sari, bransoletki, biżuteria na czoło", man: "Kurta z lnu, ciemne spodnie, sandały" },
-  "Brazylia": { woman: "Letnia sukienka w soczystych kolorach, sandały", man: "Lniana koszula w jasnym kolorze, krótkie spodenki lub chinosy" },
-  "Korea Południowa": { woman: "Wielowarstwowy, minimalistyczny look – biała bluzka, plisowana spódnica", man: "Oversize'owa marynarka, biały t-shirt, czarne spodnie, sneakersy" },
-  "Tajlandia": { woman: "Jedwabna sukienka w żywych kolorach, kwiat we włosach", man: "Luźna lniana koszula, beżowe spodnie, sandały" },
-  "Grecja": { woman: "Biała zwiewna sukienka, złote sandały, błękitne dodatki", man: "Biała koszula lniana, beżowe spodnie, espadryle" },
-  "USA": { woman: "Jeansy, biały t-shirt, skórzana kurtka, kowbojki", man: "Jeans, T-shirt, flanelowa koszula, sneakersy lub kowbojki" },
-  "Wielka Brytania": { woman: "Trencz, kraciasta spódnica, kozaki", man: "Trencz, sweter, ciemne jeansy, oksfordki" },
-  "Niemcy": { woman: "Sukienka dirndl lub minimalistyczny look w czerni", man: "Koszula w kratę, ciemne jeansy, skórzane buty (lub bawarskie lederhosen)" },
-  "Polska": { woman: "Sukienka w kwiaty lub elegancka czerń, korale", man: "Biała koszula, spodnie w kant, marynarka" },
-  "Chiny": { woman: "Sukienka qipao lub jedwabna bluzka w czerwieni", man: "Czarna koszula z mandarynkowym kołnierzem, proste spodnie" },
-  "Argentyna": { woman: "Czerwona sukienka do tanga, szpilki, kok", man: "Czarna koszula, czarne spodnie, marynarka, skórzane buty" },
-  "Maroko": { woman: "Kaftan z haftem, sandały, biżuteria z berberskimi motywami", man: "Lniana koszula, chinosy w piasku, mokasyny" },
-  "Egipt": { woman: "Lniana sukienka kolumnowa, złote kolczyki, eyeliner à la Kleopatra", man: "Biała lniana koszula, beżowe spodnie, sandały" },
-  "RPA": { woman: "Sukienka z motywem afrykańskim, kolorowe korale", man: "Lniana koszula, chinosy, mokasyny" },
-  "Australia": { woman: "Sundress, klapki, naturalny makijaż", man: "T-shirt, krótkie spodenki, klapki – luz i plaża" },
-  "Rosja": { woman: "Sukienka z koronką, ciężki płaszcz, futrzana czapka", man: "Czarny golf, ciemne spodnie, długi płaszcz" },
-  "Turcja": { woman: "Sukienka z bogatymi wzorami, złota biżuteria, eyeliner", man: "Ciemna koszula, marynarka, eleganckie spodnie" },
-  "Wietnam": { woman: "Áo dài lub jedwabna sukienka, słomkowy kapelusz", man: "Lniana koszula, beżowe spodnie, sandały" },
-  "Indonezja": { woman: "Sukienka z batikowym wzorem, kwiat we włosach", man: "Koszula batikowa, lniane spodnie, klapki" },
-  "Kuba": { woman: "Czerwona sukienka do salsy, szpilki, kolczyki kreole", man: "Biała lniana koszula, lniane spodnie, kapelusz panama" },
-  "Holandia": { woman: "Pomarańczowy akcent, jeansy, sweter, trampki", man: "Sweter, jeansy, sneakersy, pomarańczowy szalik" },
-  "Szwecja": { woman: "Biała bluzka, jeansy, beżowy płaszcz – minimalizm", man: "Beżowy sweter, ciemne jeansy, biała koszula, sneakersy" },
-  "Norwegia": { woman: "Wełniany sweter z norweskim wzorem, jeansy, kozaki", man: "Sweter z norweskim wzorem, ciemne jeansy, trapery" },
-  "Irlandia": { woman: "Zielony sweter, kraciasta spódnica, kozaki", man: "Wełniany sweter rybacki, ciemne jeansy, skórzane buty" },
-  "Portugalia": { woman: "Czarna sukienka inspirowana fado, czerwona szminka, chusta", man: "Czarna koszula, ciemne spodnie, kamizelka" },
-  "Szwajcaria": { woman: "Beżowy sweter z golfem, wełniana spódnica, kozaki", man: "Wełniana marynarka, koszula, ciemne spodnie" },
-  "Austria": { woman: "Sukienka inspirowana wiedeńskim balem lub dirndl", man: "Garnitur w klasyczne wcięcie, biała koszula, muszka" },
-  "Belgia": { woman: "Trencz, koszula, ciemne spodnie, kozaki", man: "Marynarka, koszula, jeansy – elegancki casual" },
-  "Czechy": { woman: "Bluzka z koronką, spódnica midi, kozaki", man: "Wełniany sweter, ciemne spodnie, skórzane buty" },
-  "Węgry": { woman: "Haftowana biała bluzka, czerwona spódnica, kozaki", man: "Biała koszula z haftem, ciemne spodnie, kamizelka" },
-  "Izrael": { woman: "Biała lniana sukienka, sandały, naturalny look", man: "Biała lniana koszula, chinosy, sandały" },
-  "Iran": { woman: "Długa sukienka z perskim wzorem, chusta na włosy", man: "Lniana koszula, marynarka, ciemne spodnie" },
-  "Kanada": { woman: "Flanelowa koszula, jeansy, trapery, kraciany szal", man: "Flanelowa koszula, jeansy, trapery, czapka beanie" },
-  "Nowa Zelandia": { woman: "Wełniany sweter, jeansy, trapery – outdoorowy chic", man: "Wełniana koszula, ciemne jeansy, trapery" },
-  "Etiopia": { woman: "Biała sukienka habesha kemis z kolorowym haftem", man: "Lniana koszula, beżowe spodnie, sandały" },
-  "Nigeria": { woman: "Kolorowy strój ankara, gele na głowę", man: "Agbada lub kolorowa koszula z ankary, ciemne spodnie" },
-  "Kenia": { woman: "Sukienka z kitenge w żywych kolorach, korale Masajów", man: "Lniana koszula, beżowe spodnie, skórzane sandały" },
-  "Peru": { woman: "Spódnica z andyjskim wzorem, sweter z alpaki", man: "Sweter z alpaki, ciemne spodnie, czapka chullo" },
-  "Kolumbia": { woman: "Kolorowa sukienka, kwiat we włosach, kolczyki", man: "Biała lniana koszula, jeansy, kapelusz vueltiao" },
-  "Chile": { woman: "Sukienka w kolorach ziemi, poncho na chłodne wieczory", man: "Sweter, ciemne jeansy, skórzane buty" },
-  "Filipiny": { woman: "Sukienka z bufkami inspirowana Maria Clara", man: "Koszula barong tagalog, ciemne spodnie" },
-  "Pakistan": { woman: "Shalwar kameez w głębokich kolorach, dupatta", man: "Kurta z lnu, spodnie shalwar, kamizelka" },
-  "Ukraina": { woman: "Wyszywanka, czerwona spódnica, korale, wianek", man: "Biała koszula wyszywanka, ciemne spodnie, pas" },
-  "Islandia": { woman: "Wełniany sweter lopapeysa, jeansy, kozaki", man: "Sweter lopapeysa, ciemne jeansy, trapery" },
+// Outfit suggestions per country. Multiple options per gender so there's always
+// something do wyboru, gdy czegoś nie ma w szafie.
+export const outfits: Record<string, { woman: string[]; man: string[] }> = {
+  "Włochy": {
+    woman: [
+      "Czerwona sukienka midi, złote kolczyki, szpilki",
+      "Białe lniane spodnie, jedwabna bluzka, sandały na korku",
+      "Czarna dopasowana spódnica, top w paski, baleriny",
+      "Kwiecista sukienka maxi, słomkowy kapelusz, espadryle",
+    ],
+    man: [
+      "Lniana koszula, granatowe spodnie, mokasyny bez skarpetek",
+      "Biały T-shirt, marynarka, jasne chinosy, sneakersy",
+      "Pasiasta koszulka polo, beżowe spodnie, loafersy",
+      "Granatowy sweter narzucony na ramiona, biała koszula, jeansy",
+    ],
+  },
+  "Francja": {
+    woman: [
+      "Mała czarna, beret, czerwona szminka",
+      "Pasiasta bluzka, jeansy mom-fit, baleriny, czerwona szminka",
+      "Trencz, kaszmirowy sweter, ołówkowa spódnica, kozaki",
+      "Jedwabna bluzka, czarne spodnie cygaretki, mokasyny",
+    ],
+    man: [
+      "Pasiasta koszulka, ciemne jeansy, marynarka, szalik",
+      "Biała koszula, granatowy sweter, beżowe spodnie, brogsy",
+      "Czarny golf, marynarka, jeansy, sneakersy",
+      "Trencz, koszula oxford, ciemne chinosy, mokasyny",
+    ],
+  },
+  "Japonia": {
+    woman: [
+      "Minimalistyczna sukienka w czerni lub yukata",
+      "Biała koszula oversize, czarne szerokie spodnie, sneakersy",
+      "Plisowana spódnica midi, prosty top, mokasyny",
+      "Beżowy trencz, czarny golf, proste jeansy, czarne buty",
+    ],
+    man: [
+      "Czarny golf, proste spodnie, sneakersy w stylu Muji",
+      "Biała koszula oversize, czarne szerokie spodnie, sandały",
+      "Szara bluza, czarne chinosy, białe sneakersy",
+      "Lniana koszula, beżowe spodnie, sandały",
+    ],
+  },
+  "Hiszpania": {
+    woman: [
+      "Sukienka z falbanami w czerwieni, kolczyki kreole",
+      "Czarna sukienka midi, czerwone szpilki, duże kolce w uszach",
+      "Biała bluzka z falbaną, dżinsy, sandały na koturnie",
+      "Kwiecista spódnica maxi, top na ramiączkach, espadryle",
+    ],
+    man: [
+      "Biała koszula rozpięta, ciemne spodnie, skórzany pasek",
+      "Czarny T-shirt, jeansy, skórzane buty, marynarka",
+      "Lniana koszula w kolorze terakoty, beżowe spodnie, sandały",
+      "Polo, chinosy, mokasyny",
+    ],
+  },
+  "Meksyk": {
+    woman: [
+      "Haftowana bluzka, kolorowa spódnica, duże kolczyki",
+      "Biała sukienka z haftem, sandały, kwiat we włosach",
+      "Kolorowe poncho, jeansy, kozaki",
+      "Czerwona sukienka, złota biżuteria, sandały",
+    ],
+    man: [
+      "Lniana koszula guayabera, jeansy, kapelusz",
+      "Biała koszula, ciemne spodnie, skórzany pasek z klamrą",
+      "Polo w żywym kolorze, chinosy, mokasyny",
+      "Czarna koszula, jeansy, kowbojki",
+    ],
+  },
+  "Indie": {
+    woman: [
+      "Kolorowa tunika lub sari, bransoletki, biżuteria na czoło",
+      "Długa kwiecista sukienka, złote kolczyki, sandały",
+      "Czerwona bluzka z haftem, czarne spodnie, sandały",
+      "Jedwabna spódnica maxi, top, dużo bransoletek",
+    ],
+    man: [
+      "Kurta z lnu, ciemne spodnie, sandały",
+      "Biała lniana koszula, beżowe spodnie, mokasyny",
+      "Kolorowa koszula z haftem, jeansy, sandały",
+      "Granatowy sweter narzucony na koszulę, chinosy, loafersy",
+    ],
+  },
+  "Brazylia": {
+    woman: [
+      "Letnia sukienka w soczystych kolorach, sandały",
+      "Kwiecista sukienka maxi, klapki, kwiat we włosach",
+      "Top crop, jeansy, kolorowe sandały",
+      "Żółta lub zielona sukienka, złote kolczyki",
+    ],
+    man: [
+      "Lniana koszula w jasnym kolorze, krótkie spodenki lub chinosy",
+      "Biały T-shirt, jeansy, sneakersy",
+      "Kolorowa koszula w printy, beżowe spodnie, sandały",
+      "Polo, krótkie spodenki, klapki",
+    ],
+  },
+  "Korea Południowa": {
+    woman: [
+      "Wielowarstwowy, minimalistyczny look – biała bluzka, plisowana spódnica",
+      "Oversize'owy sweter, mini spódniczka, białe sneakersy",
+      "Pastelowa sukienka, kokardka we włosach, baleriny",
+      "Czarny garnitur oversize, biały T-shirt, sneakersy",
+    ],
+    man: [
+      "Oversize'owa marynarka, biały t-shirt, czarne spodnie, sneakersy",
+      "Beżowy sweter, biała koszula, jeansy, białe sneakersy",
+      "Czarna bluza oversize, czarne spodnie, sneakersy",
+      "Pastelowa koszula, chinosy, mokasyny",
+    ],
+  },
+  "Tajlandia": {
+    woman: [
+      "Jedwabna sukienka w żywych kolorach, kwiat we włosach",
+      "Lekka kwiecista sukienka, sandały, słomkowy kapelusz",
+      "Biała sukienka maxi, złote kolczyki, klapki",
+      "Top z jedwabiu, lniane spodnie, sandały",
+    ],
+    man: [
+      "Luźna lniana koszula, beżowe spodnie, sandały",
+      "Kolorowa koszula, krótkie spodenki, klapki",
+      "Biały T-shirt, lniane spodnie, sandały",
+      "Polo, chinosy, mokasyny",
+    ],
+  },
+  "Grecja": {
+    woman: [
+      "Biała zwiewna sukienka, złote sandały, błękitne dodatki",
+      "Niebieska sukienka midi, słomkowy kapelusz, sandały",
+      "Biały top, lniane spodnie, espadryle",
+      "Sukienka maxi z odkrytymi ramionami, złota biżuteria",
+    ],
+    man: [
+      "Biała koszula lniana, beżowe spodnie, espadryle",
+      "Biały T-shirt, lniane spodnie, sandały",
+      "Błękitna koszula, białe szorty, mokasyny",
+      "Polo w bieli, beżowe chinosy, sandały",
+    ],
+  },
+  "USA": {
+    woman: [
+      "Jeansy, biały t-shirt, skórzana kurtka, kowbojki",
+      "Mała czarna, szpilki, czerwona szminka",
+      "Kraciasta koszula, jeansy, trampki Converse",
+      "Sukienka midi w kropki, baleriny, kardigan",
+    ],
+    man: [
+      "Jeans, T-shirt, flanelowa koszula, sneakersy lub kowbojki",
+      "Biała koszula, jeansy, brogsy",
+      "Bluza college, jeansy, sneakersy",
+      "Czarny T-shirt, skórzana kurtka, jeansy, glany",
+    ],
+  },
+  "Wielka Brytania": {
+    woman: [
+      "Trencz, kraciasta spódnica, kozaki",
+      "Tweedowa marynarka, jeansy, kalosze Hunter",
+      "Mała czarna, perły, szpilki",
+      "Sweter z grubego kaszmiru, plisowana spódnica, kozaki",
+    ],
+    man: [
+      "Trencz, sweter, ciemne jeansy, oksfordki",
+      "Tweedowa marynarka, koszula, chinosy, brogsy",
+      "Sweter z dekoltem V, koszula, jeansy, sneakersy",
+      "Granatowy garnitur, biała koszula, krawat",
+    ],
+  },
+  "Niemcy": {
+    woman: [
+      "Sukienka dirndl lub minimalistyczny look w czerni",
+      "Czarna marynarka, biała koszula, ciemne jeansy, brogsy",
+      "Beżowy trencz, golf, proste spodnie, kozaki",
+      "Sportowa sukienka, sneakersy, plecak",
+    ],
+    man: [
+      "Koszula w kratę, ciemne jeansy, skórzane buty (lub bawarskie lederhosen)",
+      "Czarny T-shirt, jeansy, sneakersy",
+      "Granatowa marynarka, biała koszula, chinosy, brogsy",
+      "Sweter, koszula, ciemne spodnie, skórzane buty",
+    ],
+  },
+  "Polska": {
+    woman: [
+      "Sukienka w kwiaty lub elegancka czerń, korale",
+      "Biała bluzka z koronką, czerwona spódnica, kozaki",
+      "Granatowa sukienka midi, perły, szpilki",
+      "Sweter z motywami folkowymi, jeansy, trapery",
+    ],
+    man: [
+      "Biała koszula, spodnie w kant, marynarka",
+      "Granatowy sweter, koszula, ciemne jeansy, brogsy",
+      "Czarna marynarka, biała koszula, krawat, eleganckie spodnie",
+      "Lniana koszula, beżowe chinosy, mokasyny",
+    ],
+  },
+  "Chiny": {
+    woman: [
+      "Sukienka qipao lub jedwabna bluzka w czerwieni",
+      "Czerwona sukienka midi, złote kolczyki, szpilki",
+      "Jedwabna bluzka, czarne spodnie, baleriny",
+      "Czarna sukienka z czerwonymi akcentami, kok",
+    ],
+    man: [
+      "Czarna koszula z mandarynkowym kołnierzem, proste spodnie",
+      "Granatowy sweter, biała koszula, ciemne spodnie, mokasyny",
+      "Czerwona koszula, czarne spodnie, eleganckie buty",
+      "Lniana tunika, ciemne spodnie, sandały",
+    ],
+  },
+  "Argentyna": {
+    woman: [
+      "Czerwona sukienka do tanga, szpilki, kok",
+      "Czarna dopasowana sukienka z rozcięciem, szpilki",
+      "Biała bluzka, czarna spódnica ołówkowa, szpilki",
+      "Sukienka midi w kolorze burgund, czerwona szminka",
+    ],
+    man: [
+      "Czarna koszula, czarne spodnie, marynarka, skórzane buty",
+      "Biała koszula, czarna kamizelka, ciemne spodnie",
+      "Granatowy garnitur, biała koszula, krawat",
+      "Czarny golf, marynarka, ciemne jeansy, brogsy",
+    ],
+  },
+  "Maroko": {
+    woman: [
+      "Kaftan z haftem, sandały, biżuteria z berberskimi motywami",
+      "Długa kwiecista sukienka, złota biżuteria, sandały",
+      "Lniane szerokie spodnie, kolorowy top, sandały",
+      "Biała tunika z haftem, jeansy, sandały",
+    ],
+    man: [
+      "Lniana koszula, chinosy w piasku, mokasyny",
+      "Biała tunika, beżowe spodnie, sandały",
+      "Granatowy sweter, biała koszula, chinosy, mokasyny",
+      "Lekki kaftan, lniane spodnie, sandały",
+    ],
+  },
+  "Egipt": {
+    woman: [
+      "Lniana sukienka kolumnowa, złote kolczyki, eyeliner à la Kleopatra",
+      "Biała sukienka maxi, złota biżuteria, sandały",
+      "Czarna sukienka, mocny eyeliner, złote bransolety",
+      "Lniane spodnie, top, złote kolczyki, sandały",
+    ],
+    man: [
+      "Biała lniana koszula, beżowe spodnie, sandały",
+      "Lniana tunika, ciemne spodnie, sandały",
+      "Polo w bieli, beżowe chinosy, mokasyny",
+      "Lniana koszula z krótkim rękawem, szorty, sandały",
+    ],
+  },
+  "RPA": {
+    woman: [
+      "Sukienka z motywem afrykańskim, kolorowe korale",
+      "Kolorowa tunika, jeansy, sandały, etniczna biżuteria",
+      "Biała sukienka, kolorowy szal, sandały",
+      "Spódnica maxi w printy, top, sandały",
+    ],
+    man: [
+      "Lniana koszula, chinosy, mokasyny",
+      "Kolorowa koszula w printy, jeansy, sandały",
+      "Biały T-shirt, beżowe szorty, sneakersy",
+      "Granatowa koszula, jeansy, brogsy",
+    ],
+  },
+  "Australia": {
+    woman: [
+      "Sundress, klapki, naturalny makijaż",
+      "Biały top, jeansowe szorty, klapki, kapelusz",
+      "Kwiecista sukienka maxi, sandały, słomkowy kapelusz",
+      "Top crop, lniane spodnie, klapki",
+    ],
+    man: [
+      "T-shirt, krótkie spodenki, klapki – luz i plaża",
+      "Lniana koszula, szorty, klapki, czapka z daszkiem",
+      "Polo, jeansy, sneakersy",
+      "Biały T-shirt, beżowe chinosy, klapki",
+    ],
+  },
+  "Rosja": {
+    woman: [
+      "Sukienka z koronką, ciężki płaszcz, futrzana czapka",
+      "Czerwona sukienka midi, czarne kozaki, futrzana czapka",
+      "Długi płaszcz, golf, wełniana spódnica, kozaki",
+      "Czarna sukienka, perły, futrzana stola, szpilki",
+    ],
+    man: [
+      "Czarny golf, ciemne spodnie, długi płaszcz",
+      "Wełniany sweter, koszula, ciemne jeansy, trapery",
+      "Granatowy garnitur, biała koszula, krawat",
+      "Skórzana kurtka, czarny T-shirt, ciemne jeansy, glany",
+    ],
+  },
+  "Turcja": {
+    woman: [
+      "Sukienka z bogatymi wzorami, złota biżuteria, eyeliner",
+      "Czarna sukienka, mocny eyeliner, złote kolczyki",
+      "Kolorowy kaftan, lniane spodnie, sandały",
+      "Czerwona bluzka, czarna spódnica, złota biżuteria",
+    ],
+    man: [
+      "Ciemna koszula, marynarka, eleganckie spodnie",
+      "Biała koszula, granatowy sweter, jeansy, mokasyny",
+      "Czarny T-shirt, marynarka, ciemne spodnie, brogsy",
+      "Lniana koszula, beżowe chinosy, mokasyny",
+    ],
+  },
+  "Wietnam": {
+    woman: [
+      "Áo dài lub jedwabna sukienka, słomkowy kapelusz",
+      "Lekka biała sukienka, sandały, słomkowy kapelusz",
+      "Kolorowa bluzka jedwabna, lniane spodnie, sandały",
+      "Top z jedwabiu, długa spódnica, sandały",
+    ],
+    man: [
+      "Lniana koszula, beżowe spodnie, sandały",
+      "Biały T-shirt, lniane spodnie, klapki",
+      "Polo, chinosy, mokasyny",
+      "Lniana tunika, ciemne spodnie, sandały",
+    ],
+  },
+  "Indonezja": {
+    woman: [
+      "Sukienka z batikowym wzorem, kwiat we włosach",
+      "Kolorowa sarong sukienka, klapki, kwiat we włosach",
+      "Lniana sukienka, sandały, naturalna biżuteria",
+      "Top z batiku, lniane spodnie, sandały",
+    ],
+    man: [
+      "Koszula batikowa, lniane spodnie, klapki",
+      "Biały T-shirt, beżowe szorty, klapki",
+      "Lniana koszula, chinosy, sandały",
+      "Polo, jeansy, sneakersy",
+    ],
+  },
+  "Kuba": {
+    woman: [
+      "Czerwona sukienka do salsy, szpilki, kolczyki kreole",
+      "Kwiecista sukienka, sandały, kwiat we włosach",
+      "Biała sukienka midi, kolorowe sandały, czerwona szminka",
+      "Żółta spódnica, biała bluzka, sandały",
+    ],
+    man: [
+      "Biała lniana koszula, lniane spodnie, kapelusz panama",
+      "Kolorowa koszula guayabera, jeansy, mokasyny",
+      "Polo, beżowe chinosy, mokasyny",
+      "Biały T-shirt, lniane spodnie, sandały",
+    ],
+  },
+  "Holandia": {
+    woman: [
+      "Pomarańczowy akcent, jeansy, sweter, trampki",
+      "Biała koszula, jeansy mom-fit, trampki, kolorowy szal",
+      "Sukienka midi, kozaki, beżowy płaszcz",
+      "Sportowy look – bluza, jeansy, sneakersy",
+    ],
+    man: [
+      "Sweter, jeansy, sneakersy, pomarańczowy szalik",
+      "Biały T-shirt, jeansy, sneakersy",
+      "Bluza, jeansy, sneakersy, czapka beanie",
+      "Koszula, beżowe chinosy, mokasyny",
+    ],
+  },
+  "Szwecja": {
+    woman: [
+      "Biała bluzka, jeansy, beżowy płaszcz – minimalizm",
+      "Beżowy sweter, czarne spodnie, białe sneakersy",
+      "Szary płaszcz, golf, jeansy, kozaki",
+      "Sukienka midi w stonowanym kolorze, biała koszula, brogsy",
+    ],
+    man: [
+      "Beżowy sweter, ciemne jeansy, biała koszula, sneakersy",
+      "Biały T-shirt, czarne spodnie, sneakersy",
+      "Szary płaszcz, golf, jeansy, brogsy",
+      "Marynarka, biała koszula, chinosy, mokasyny",
+    ],
+  },
+  "Norwegia": {
+    woman: [
+      "Wełniany sweter z norweskim wzorem, jeansy, kozaki",
+      "Gruby beżowy sweter, leginsy, śniegowce",
+      "Wełniana sukienka, rajstopy, trapery",
+      "Flanelowa koszula, jeansy, trapery, czapka beanie",
+    ],
+    man: [
+      "Sweter z norweskim wzorem, ciemne jeansy, trapery",
+      "Flanelowa koszula, jeansy, trapery, czapka beanie",
+      "Gruby sweter, dżinsy, śniegowce",
+      "Wełniana koszula, ciemne spodnie, trapery",
+    ],
+  },
+  "Irlandia": {
+    woman: [
+      "Zielony sweter, kraciasta spódnica, kozaki",
+      "Gruby wełniany sweter, jeansy, trapery",
+      "Trencz, golf, jeansy, brogsy",
+      "Sukienka w kratę, kozaki, beret",
+    ],
+    man: [
+      "Wełniany sweter rybacki, ciemne jeansy, skórzane buty",
+      "Tweedowa marynarka, koszula, jeansy, brogsy",
+      "Granatowy sweter, biała koszula, chinosy, mokasyny",
+      "Flanelowa koszula, jeansy, trapery",
+    ],
+  },
+  "Portugalia": {
+    woman: [
+      "Czarna sukienka inspirowana fado, czerwona szminka, chusta",
+      "Biała bluzka, czarna spódnica midi, sandały",
+      "Granatowa sukienka w paski (w stylu marynarskim), espadryle",
+      "Kwiecista sukienka, sandały, słomkowy kapelusz",
+    ],
+    man: [
+      "Czarna koszula, ciemne spodnie, kamizelka",
+      "Biała koszula, beżowe chinosy, mokasyny",
+      "Granatowy sweter w paski, jeansy, espadryle",
+      "Polo, lniane spodnie, sandały",
+    ],
+  },
+  "Szwajcaria": {
+    woman: [
+      "Beżowy sweter z golfem, wełniana spódnica, kozaki",
+      "Granatowy płaszcz, biała koszula, jeansy, brogsy",
+      "Wełniana sukienka, rajstopy, kozaki",
+      "Sportowy puchowy płaszcz, jeansy, śniegowce",
+    ],
+    man: [
+      "Wełniana marynarka, koszula, ciemne spodnie",
+      "Granatowy sweter, biała koszula, jeansy, brogsy",
+      "Gruby sweter, dżinsy, trapery",
+      "Garnitur w odcieniu antracytu, biała koszula, krawat",
+    ],
+  },
+  "Austria": {
+    woman: [
+      "Sukienka inspirowana wiedeńskim balem lub dirndl",
+      "Elegancka długa suknia, włosy upięte, perły",
+      "Mała czarna, szpilki, długie rękawiczki",
+      "Wełniana sukienka, kozaki, beret",
+    ],
+    man: [
+      "Garnitur w klasyczne wcięcie, biała koszula, muszka",
+      "Granatowy garnitur, biała koszula, krawat, brogsy",
+      "Wełniana marynarka, koszula, ciemne spodnie, mokasyny",
+      "Sweter z dekoltem V, koszula, ciemne jeansy, brogsy",
+    ],
+  },
+  "Belgia": {
+    woman: [
+      "Trencz, koszula, ciemne spodnie, kozaki",
+      "Granatowy płaszcz, biała koszula, jeansy, brogsy",
+      "Sukienka midi w stonowanym kolorze, kozaki",
+      "Beżowy sweter, plisowana spódnica, kozaki",
+    ],
+    man: [
+      "Marynarka, koszula, jeansy – elegancki casual",
+      "Trencz, golf, ciemne spodnie, brogsy",
+      "Sweter, biała koszula, chinosy, mokasyny",
+      "Granatowy garnitur, biała koszula, krawat",
+    ],
+  },
+  "Czechy": {
+    woman: [
+      "Bluzka z koronką, spódnica midi, kozaki",
+      "Sukienka folkowa z haftem, kozaki, korale",
+      "Granatowa sukienka midi, perły, szpilki",
+      "Sweter, jeansy, trapery, beret",
+    ],
+    man: [
+      "Wełniany sweter, ciemne spodnie, skórzane buty",
+      "Biała koszula, kamizelka, ciemne spodnie",
+      "Granatowa marynarka, biała koszula, jeansy, brogsy",
+      "Flanelowa koszula, jeansy, trapery",
+    ],
+  },
+  "Węgry": {
+    woman: [
+      "Haftowana biała bluzka, czerwona spódnica, kozaki",
+      "Czerwona sukienka z haftem, czarne kozaki, korale",
+      "Granatowa sukienka midi, czerwone dodatki, szpilki",
+      "Wełniana sukienka, kozaki, futrzana czapka",
+    ],
+    man: [
+      "Biała koszula z haftem, ciemne spodnie, kamizelka",
+      "Granatowy garnitur, biała koszula, krawat",
+      "Sweter, biała koszula, ciemne jeansy, brogsy",
+      "Czarna marynarka, biała koszula, ciemne spodnie",
+    ],
+  },
+  "Izrael": {
+    woman: [
+      "Biała lniana sukienka, sandały, naturalny look",
+      "Lekka sukienka maxi, klapki, słomkowy kapelusz",
+      "Biały top, lniane spodnie, sandały",
+      "Kwiecista sukienka, sandały, naturalna biżuteria",
+    ],
+    man: [
+      "Biała lniana koszula, chinosy, sandały",
+      "Biały T-shirt, lniane spodnie, sandały",
+      "Polo, beżowe szorty, klapki",
+      "Lniana koszula, jeansy, mokasyny",
+    ],
+  },
+  "Iran": {
+    woman: [
+      "Długa sukienka z perskim wzorem, chusta na włosy",
+      "Lniana tunika z haftem, szerokie spodnie, chusta",
+      "Długa kwiecista sukienka, sandały, chusta",
+      "Czarna sukienka maxi, złota biżuteria, chusta",
+    ],
+    man: [
+      "Lniana koszula, marynarka, ciemne spodnie",
+      "Biała koszula, beżowe chinosy, mokasyny",
+      "Granatowa koszula, ciemne spodnie, brogsy",
+      "Sweter z dekoltem V, koszula, ciemne spodnie",
+    ],
+  },
+  "Kanada": {
+    woman: [
+      "Flanelowa koszula, jeansy, trapery, kraciany szal",
+      "Wełniany sweter, leginsy, śniegowce",
+      "Puchowa kurtka, jeansy, trapery, czapka beanie",
+      "Sweter z dużym kołnierzem, jeansy, kozaki",
+    ],
+    man: [
+      "Flanelowa koszula, jeansy, trapery, czapka beanie",
+      "Puchowa kurtka, jeansy, śniegowce",
+      "Wełniany sweter, ciemne jeansy, trapery",
+      "Sweter z norweskim wzorem, dżinsy, trapery",
+    ],
+  },
+  "Nowa Zelandia": {
+    woman: [
+      "Wełniany sweter, jeansy, trapery – outdoorowy chic",
+      "Flanelowa koszula, jeansy, trapery",
+      "Sundress, sneakersy, kapelusz",
+      "Sweter, leginsy, śniegowce",
+    ],
+    man: [
+      "Wełniana koszula, ciemne jeansy, trapery",
+      "Flanelowa koszula, jeansy, trapery, czapka beanie",
+      "Polo, krótkie spodenki, sneakersy",
+      "Sweter, dżinsy, trapery",
+    ],
+  },
+  "Etiopia": {
+    woman: [
+      "Biała sukienka habesha kemis z kolorowym haftem",
+      "Lekka biała tunika z haftem, sandały, korale",
+      "Kolorowa spódnica maxi, biały top, sandały",
+      "Biała sukienka maxi, złota biżuteria, sandały",
+    ],
+    man: [
+      "Lniana koszula, beżowe spodnie, sandały",
+      "Biała tunika z haftem, lniane spodnie, sandały",
+      "Polo, chinosy, mokasyny",
+      "Biały T-shirt, lniane spodnie, sandały",
+    ],
+  },
+  "Nigeria": {
+    woman: [
+      "Kolorowy strój ankara, gele na głowę",
+      "Sukienka w kolorowe printy, złota biżuteria, sandały",
+      "Kolorowa spódnica maxi, biały top, korale",
+      "Żółta sukienka, gele, sandały",
+    ],
+    man: [
+      "Agbada lub kolorowa koszula z ankary, ciemne spodnie",
+      "Biała koszula, beżowe chinosy, mokasyny",
+      "Kolorowa koszula w printy, jeansy, sandały",
+      "Polo, ciemne spodnie, brogsy",
+    ],
+  },
+  "Kenia": {
+    woman: [
+      "Sukienka z kitenge w żywych kolorach, korale Masajów",
+      "Kolorowa spódnica maxi, biały top, sandały",
+      "Lniana sukienka, korale, sandały",
+      "Czerwona sukienka, korale Masajów, sandały",
+    ],
+    man: [
+      "Lniana koszula, beżowe spodnie, skórzane sandały",
+      "Polo, chinosy, mokasyny",
+      "Kolorowa koszula, jeansy, sandały",
+      "Biały T-shirt, beżowe szorty, sandały",
+    ],
+  },
+  "Peru": {
+    woman: [
+      "Spódnica z andyjskim wzorem, sweter z alpaki",
+      "Kolorowe poncho, jeansy, kozaki, czapka chullo",
+      "Sweter z alpaki, leginsy, trapery",
+      "Wełniana sukienka, kozaki, kolorowy szal",
+    ],
+    man: [
+      "Sweter z alpaki, ciemne spodnie, czapka chullo",
+      "Poncho, jeansy, trapery, czapka chullo",
+      "Wełniana koszula, ciemne jeansy, trapery",
+      "Sweter, dżinsy, mokasyny",
+    ],
+  },
+  "Kolumbia": {
+    woman: [
+      "Kolorowa sukienka, kwiat we włosach, kolczyki",
+      "Czerwona sukienka do salsy, szpilki, duże kolczyki",
+      "Kwiecista spódnica maxi, top, sandały",
+      "Biała sukienka, kolorowe sandały, kwiat we włosach",
+    ],
+    man: [
+      "Biała lniana koszula, jeansy, kapelusz vueltiao",
+      "Kolorowa koszula, beżowe chinosy, mokasyny",
+      "Polo, jeansy, sneakersy",
+      "Biały T-shirt, lniane spodnie, sandały",
+    ],
+  },
+  "Chile": {
+    woman: [
+      "Sukienka w kolorach ziemi, poncho na chłodne wieczory",
+      "Wełniany sweter, jeansy, kozaki, poncho",
+      "Lniana sukienka, sandały, naturalna biżuteria",
+      "Beżowy sweter, dżinsy, trapery",
+    ],
+    man: [
+      "Sweter, ciemne jeansy, skórzane buty",
+      "Wełniana koszula, jeansy, trapery",
+      "Polo, chinosy, mokasyny",
+      "Granatowy sweter, biała koszula, jeansy, brogsy",
+    ],
+  },
+  "Filipiny": {
+    woman: [
+      "Sukienka z bufkami inspirowana Maria Clara",
+      "Biała koronkowa sukienka, sandały, kwiat we włosach",
+      "Kolorowa sukienka maxi, klapki, słomkowy kapelusz",
+      "Top z haftem, lniane spodnie, sandały",
+    ],
+    man: [
+      "Koszula barong tagalog, ciemne spodnie",
+      "Biała koszula, beżowe chinosy, mokasyny",
+      "Polo, jeansy, sneakersy",
+      "Lniana koszula, krótkie spodenki, klapki",
+    ],
+  },
+  "Pakistan": {
+    woman: [
+      "Shalwar kameez w głębokich kolorach, dupatta",
+      "Długa tunika z haftem, szerokie spodnie, sandały",
+      "Kolorowa sukienka maxi, dupatta, złota biżuteria",
+      "Czarna tunika z haftem, dupatta, sandały",
+    ],
+    man: [
+      "Kurta z lnu, spodnie shalwar, kamizelka",
+      "Biała kurta, ciemne spodnie, mokasyny",
+      "Lniana koszula, beżowe chinosy, sandały",
+      "Granatowy sweter, biała koszula, ciemne spodnie",
+    ],
+  },
+  "Ukraina": {
+    woman: [
+      "Wyszywanka, czerwona spódnica, korale, wianek",
+      "Biała bluzka z haftem, jeansy, kozaki",
+      "Sukienka folkowa, kozaki, wianek",
+      "Granatowa sukienka, korale, szpilki",
+    ],
+    man: [
+      "Biała koszula wyszywanka, ciemne spodnie, pas",
+      "Lniana koszula z haftem, jeansy, brogsy",
+      "Granatowy sweter, biała koszula, chinosy, mokasyny",
+      "Marynarka, biała koszula, ciemne spodnie",
+    ],
+  },
+  "Islandia": {
+    woman: [
+      "Wełniany sweter lopapeysa, jeansy, kozaki",
+      "Gruby sweter, leginsy, śniegowce",
+      "Wełniana sukienka, rajstopy, trapery",
+      "Puchowa kurtka, jeansy, trapery, czapka beanie",
+    ],
+    man: [
+      "Sweter lopapeysa, ciemne jeansy, trapery",
+      "Flanelowa koszula, jeansy, trapery, czapka beanie",
+      "Puchowa kurtka, dżinsy, śniegowce",
+      "Wełniana koszula, ciemne spodnie, trapery",
+    ],
+  },
 };
