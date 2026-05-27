@@ -418,12 +418,12 @@ export const countries: Country[] = [
   },
   {
     name: "Filipiny", flag: "🇵🇭", region: "Azja Południowo-Wschodnia",
-    traditions: ["Karaoke jako sport narodowy", "Boże Narodzenie od września", "Fiesta w każdej wiosce"],
-    stereotypes: ["Wszyscy świetnie śpiewają", "Adobo to święta sprawa", "Jeepneys jako dzieła sztuki"],
-    food: ["Adobo", "Sinigang", "Halo-halo", "Lechon kawali"],
+    traditions: ["Karaoke jako sport narodowy", "Boże Narodzenie od września", "Fiesta w każdej wiosce", "Sabong – kontrowersyjne walki kogutów organizowane w wielu miejscach"],
+    stereotypes: ["Wszyscy świetnie śpiewają", "Koszykówka to sport numer jeden – grają i kibicują wszędzie", "Boks to duma narodowa (Manny Pacquiao!)", "Jeepneys jako dzieła sztuki"],
+    food: ["Adobo", "Sinigang", "Halo-halo z ube (fioletowym jamem)", "Lechon kawali"],
     movies: ["Norte – the End of History", "Heneral Luna", "On the Job"],
     music: ["Lea Salonga", "IV of Spades", "Ben&Ben"],
-    dateIdea: "Domowe adobo z ryżem, mango na deser i wieczór karaoke w salonie. Bez wymówek."
+    dateIdea: "Domowe adobo z ryżem, deser z ube na słodko i wieczór karaoke w salonie. Bez wymówek."
   },
   {
     name: "Pakistan", flag: "🇵🇰", region: "Azja Południowa",
