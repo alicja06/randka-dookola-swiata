@@ -701,4 +701,270 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Czapka beanie w kolorach rasta, luźny T-shirt, joggery, sneakersy",
     ],
   },
+  "Malezja": {
+    woman: [
+      "Baju kurung w kwiatowe wzory, hidżab w pasującym kolorze",
+      "Lekka sukienka maxi w batikowe wzory, sandały",
+      "Lniana tunika, szerokie spodnie, sandały",
+      "Jedwabna bluzka, plisowana spódnica midi, baleriny",
+    ],
+    man: [
+      "Batikowa koszula z krótkim rękawem, ciemne spodnie",
+      "Lniana koszula, beżowe chinosy, mokasyny",
+      "Biały T-shirt, lekkie spodnie cargo, sneakersy",
+      "Polo, jeansy, sandały skórzane",
+    ],
+  },
+  "Singapur": {
+    woman: [
+      "Elegancka koszulowa sukienka, sandały na obcasie",
+      "Cheongsam-inspired top, czarne spodnie, szpilki",
+      "Lekka bluzka, ołówkowa spódnica, mokasyny (klimat biurowy)",
+      "Sukienka mini w pastelach, sandały na platformie",
+    ],
+    man: [
+      "Biała koszula, granatowe chinosy, brogsy",
+      "Lekka marynarka, T-shirt, jeansy, sneakersy",
+      "Polo, beżowe spodnie, mokasyny",
+      "Krótki rękaw w drobny wzór, jeansy, sandały skórzane",
+    ],
+  },
+  "Nepal": {
+    woman: [
+      "Kurta z lekkich tkanin, szerokie spodnie, sandały",
+      "Sari w pastelowych kolorach z prostymi sandałami",
+      "Lekka tunika, jeansy, trapery turystyczne",
+      "Sweter wełniany ręcznie robiony, jeansy, kozaki",
+    ],
+    man: [
+      "Daura suruwal (tradycyjny strój) – wersja codzienna",
+      "Lniana koszula, beżowe spodnie, sandały",
+      "Wełniany sweter himalajski, jeansy, trapery",
+      "T-shirt z motywem Everestu, spodnie trekkingowe, buty trekkingowe",
+    ],
+  },
+  "Mongolia": {
+    woman: [
+      "Deel (mongolski płaszcz) w jaskrawym kolorze, pas, kozaki",
+      "Wełniany sweter, dżinsy, kozaki za kolano",
+      "Długa wełniana spódnica, sweter, trapery",
+      "Puchowa kurtka, ciepłe legginsy, futrzana czapka",
+    ],
+    man: [
+      "Deel męski, pas, wysokie skórzane buty",
+      "Wełniany sweter, ciemne dżinsy, trapery",
+      "Skórzana kurtka, jeansy, kozaki",
+      "Puchowa kurtka, ciepłe spodnie, futrzana czapka",
+    ],
+  },
+  "Sri Lanka": {
+    woman: [
+      "Sari cejlońskie z bluzką dopasowaną kolorystycznie, sandały",
+      "Lekka bawełniana sukienka maxi, klapki",
+      "Lniana tunika, szerokie spodnie, sandały",
+      "Kwiecista bluzka, długa spódnica, sandały plażowe",
+    ],
+    man: [
+      "Sarong z koszulą, sandały",
+      "Lniana koszula, lekkie spodnie, sandały",
+      "T-shirt z motywem słonia, krótkie spodenki, klapki",
+      "Polo, chinosy, mokasyny",
+    ],
+  },
+  "Kazachstan": {
+    woman: [
+      "Sukienka z elementami tradycyjnych wzorów, kozaki",
+      "Wełniany sweter, dżinsy, kozaki",
+      "Długa spódnica, golf, kozaki za kolano",
+      "Puchowa kurtka, ciepłe legginsy, futrzana czapka",
+    ],
+    man: [
+      "Chapan (tradycyjny płaszcz) na specjalne okazje",
+      "Wełniany sweter, dżinsy, trapery",
+      "Skórzana kurtka, jeansy, kozaki",
+      "Puchowa kurtka, ciepłe spodnie, futrzana czapka uszanka",
+    ],
+  },
+  "Uzbekistan": {
+    woman: [
+      "Khan-atlas (jedwabna sukienka w pasiaste tęczowe wzory)",
+      "Lekka tunika z haftami, szerokie spodnie, baleriny",
+      "Długa kolorowa sukienka, chusta na głowę, sandały",
+      "Bluzka z elementami suzani, jeansy, mokasyny",
+    ],
+    man: [
+      "Chapan (haftowany płaszcz), tradycyjna czapka tubeteika",
+      "Lniana koszula, beżowe spodnie, sandały",
+      "Polo, chinosy, mokasyny",
+      "Koszula z haftami, jeansy, skórzane buty",
+    ],
+  },
+  "Tanzania": {
+    woman: [
+      "Kanga lub kitenge owinięte jako sukienka, sandały",
+      "Kolorowa sukienka maxi w afrykańskie wzory, klapki",
+      "Lekka tunika, szerokie spodnie, sandały",
+      "Bluzka z elementami kente, jeansy, sneakersy",
+    ],
+    man: [
+      "Koszula w afrykańskie wzory, beżowe spodnie, sandały",
+      "Kanzu (biała długa koszula) na specjalne okazje",
+      "T-shirt safari, spodnie cargo, trapery",
+      "Polo, chinosy, mokasyny",
+    ],
+  },
+  "Ghana": {
+    woman: [
+      "Sukienka z kente w żółto-czarno-zielone wzory",
+      "Kolorowa tunika, szerokie spodnie, sandały",
+      "Bluzka w afrykańskie nadruki, ołówkowa spódnica, szpilki",
+      "Długa sukienka z elementami Adinkra, klapki",
+    ],
+    man: [
+      "Koszula w kente lub Adinkra, ciemne spodnie",
+      "Biała lniana koszula, beżowe spodnie, mokasyny",
+      "Polo, chinosy, sandały skórzane",
+      "T-shirt z motywem Ghany, jeansy, sneakersy",
+    ],
+  },
+  "Senegal": {
+    woman: [
+      "Boubou w jaskrawych kolorach, turban dopasowany kolorem",
+      "Sukienka z wax printu, sandały na koturnie",
+      "Długa kolorowa spódnica, dopasowany top, klapki",
+      "Bluzka z afrykańskich tkanin, jeansy, baleriny",
+    ],
+    man: [
+      "Boubou męski w eleganckim kolorze, sandały skórzane",
+      "Lniana koszula, beżowe spodnie, mokasyny",
+      "Polo w afrykańskich kolorach, chinosy, sneakersy",
+      "T-shirt, lekkie spodnie cargo, sandały",
+    ],
+  },
+  "Algieria": {
+    woman: [
+      "Kaftan algierski z haftami, baleriny",
+      "Lekka tunika, szerokie spodnie, sandały",
+      "Długa sukienka maxi w przygaszonych kolorach, hidżab opcjonalnie",
+      "Bluzka z haftem, dżinsy, mokasyny",
+    ],
+    man: [
+      "Gandura (tradycyjna szata), sandały",
+      "Lniana koszula, beżowe spodnie, mokasyny",
+      "Polo, jeansy, sneakersy",
+      "Marynarka, biała koszula, chinosy, brogsy",
+    ],
+  },
+  "Tunezja": {
+    woman: [
+      "Jebba tunezyjska w bieli i niebieskim",
+      "Lekka maxi sukienka w odcieniach Sidi Bou Said (biel + indygo)",
+      "Lniana tunika, szerokie spodnie, sandały",
+      "Bluzka z haftem, dżinsy, baleriny",
+    ],
+    man: [
+      "Jebba męska (długa lniana szata), sandały",
+      "Biała lniana koszula, beżowe spodnie, mokasyny",
+      "Polo, jeansy, sneakersy",
+      "Lekka marynarka, T-shirt, chinosy, brogsy",
+    ],
+  },
+  "Boliwia": {
+    woman: [
+      "Pollera (boliwijska szeroka spódnica), bluzka, melonik",
+      "Wełniany sweter alpakowy, jeansy, trapery",
+      "Długa spódnica, ponczo z alpaki, kozaki",
+      "Sukienka midi, sweter z alpaki, trapery",
+    ],
+    man: [
+      "Ponczo z alpaki, czapka chullo, jeansy, trapery",
+      "Wełniany sweter, dżinsy, trapery turystyczne",
+      "Lniana koszula, beżowe spodnie, sandały",
+      "T-shirt z motywem lamy, jeansy, sneakersy",
+    ],
+  },
+  "Urugwaj": {
+    woman: [
+      "Lekka sukienka midi, sandały, mate w torbie",
+      "Casualowy lniany komplet, espadryle",
+      "Jeansy z wysokim stanem, biała koszula, mokasyny",
+      "Długa spódnica, dopasowany top, sandały na obcasie",
+    ],
+    man: [
+      "Bombachas (szerokie spodnie gaucho), biała koszula, kapelusz",
+      "Polo, jeansy, mokasyny",
+      "Lniana koszula, beżowe chinosy, espadryle",
+      "T-shirt, lekka marynarka, jeansy, sneakersy",
+    ],
+  },
+  "Ekwador": {
+    woman: [
+      "Tradycyjna bluzka z haftami otavalo, długa czarna spódnica",
+      "Sweter z alpaki, jeansy, trapery",
+      "Lniana tunika, szerokie spodnie, sandały",
+      "Kwiecista sukienka, sandały, kapelusz panamski",
+    ],
+    man: [
+      "Biała koszula, kapelusz panamski, ciemne spodnie, mokasyny",
+      "Ponczo z alpaki, jeansy, trapery",
+      "Lniana koszula, beżowe chinosy, sandały",
+      "Polo, jeansy, sneakersy",
+    ],
+  },
+  "Jordania": {
+    woman: [
+      "Długa abaya w eleganckim kolorze, hidżab dopasowany",
+      "Lekka maxi sukienka z długim rękawem, sandały",
+      "Lniana tunika, szerokie spodnie, mokasyny",
+      "Kaftan z haftami, baleriny",
+    ],
+    man: [
+      "Thobe (długa biała szata), keffiyeh czerwono-białe",
+      "Lniana koszula, beżowe spodnie, mokasyny",
+      "Polo, chinosy, sandały skórzane",
+      "Biała koszula, ciemne spodnie, brogsy",
+    ],
+  },
+  "Liban": {
+    woman: [
+      "Elegancka mini sukienka, szpilki, biżuteria złota (Bejrut chic)",
+      "Lniana sukienka maxi, sandały na koturnie",
+      "Bluzka jedwabna, ołówkowa spódnica, szpilki",
+      "Jeansy z wysokim stanem, dopasowany top, sandały na obcasie",
+    ],
+    man: [
+      "Lniana koszula rozpięta, białe spodnie, mokasyny",
+      "Marynarka, biała koszula, jeansy, brogsy",
+      "Polo, chinosy, sneakersy premium",
+      "Lekka koszula z krótkim rękawem, szorty, sandały skórzane",
+    ],
+  },
+  "Fidżi": {
+    woman: [
+      "Bula dress – sukienka w kwiatowe tropikalne wzory",
+      "Pareo (sarong) jako sukienka, klapki",
+      "Bikini pod tunikę z kwiatów, klapki plażowe",
+      "Sulu (spódnica owinięta), bluzka, sandały",
+    ],
+    man: [
+      "Bula shirt – koszula w tropikalne wzory, sulu (sarong)",
+      "T-shirt, krótkie spodenki, klapki",
+      "Lniana koszula, lekkie spodnie, sandały",
+      "Sulu vakataga (męski sarong) z koszulą, sandały",
+    ],
+  },
+  "Samoa": {
+    woman: [
+      "Puletasi (tradycyjny dwuczęściowy strój) w kwiatowe wzory",
+      "Lavalava (sarong) jako sukienka, kwiat we włosach",
+      "Sukienka maxi w hibiskusy, klapki",
+      "Top, lavalava na biodrach, sandały plażowe",
+    ],
+    man: [
+      "Ie faitaga (formalny sarong męski) z białą koszulą",
+      "Koszula w kwiatowe wzory, lavalava (sarong), sandały",
+      "T-shirt z motywem polinezyjskim, krótkie spodenki, klapki",
+      "Lniana koszula, lavalava, sandały skórzane",
+    ],
+  },
 };
