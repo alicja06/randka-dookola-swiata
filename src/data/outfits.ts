@@ -687,4 +687,18 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Wełniana koszula, ciemne spodnie, trapery",
     ],
   },
+  "Jamajka": {
+    woman: [
+      "Szydełkowy top, jeansowe szorty, klapki",
+      "Luźna sukienka maxi w tropikalne wzory, sandały",
+      "Top w kolorach zielony-żółty-czerwony, lniane spodnie, japonki",
+      "Bikini pod siatkową narzutką, jeansowe szorty, plażowe espadryle",
+    ],
+    man: [
+      "Luźna koszula w palmy, jeansowe szorty, klapki",
+      "T-shirt z Bobem Marleyem, lniane spodnie, sneakersy",
+      "Rozpięta hawajka, biały podkoszulek, szorty, klapki",
+      "Czapka beanie w kolorach rasta, luźny T-shirt, joggery, sneakersy",
+    ],
+  },
 };

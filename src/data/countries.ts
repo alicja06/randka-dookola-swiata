@@ -451,5 +451,14 @@ export const countries: Country[] = [
     movies: ["101 Reykjavik", "Rams", "Woman at War"],
     music: ["Björk", "Sigur Rós", "Of Monsters and Men"],
     dateIdea: "Świeża ryba, gorąca kąpiel ze świecami (imitacja blue lagoon) i Sigur Rós w tle. Czysta magia."
+  },
+  {
+    name: "Jamajka", flag: "🇯🇲", region: "Karaiby",
+    traditions: ["Kultura soundsystemów na ulicach", "Silne znaczenie muzyki i społeczności", "Rastafarianizm i filozofia 'one love'"],
+    stereotypes: ["Wszystko jest 'no problem, mon'", "Najszybsi sprinterzy świata (Usain Bolt)", "Dredy i kolory rasta wszędzie"],
+    food: ["Jerk chicken z grilla", "Ackee and saltfish", "Rice and peas", "Jamaican patty z wołowiną"],
+    movies: ["Cool Runnings", "The Harder They Come", "Marley (dokument)"],
+    music: ["Bob Marley", "Sean Paul", "Reggae i dancehall klasyki"],
+    dateIdea: "Jerk chicken z grilla, rum z colą i sorrel drink, a w tle Bob Marley i sesja dancehallu w salonie."
   }
 ];

@@ -48,4 +48,5 @@ export const drinks: Record<string, string[]> = {
   "Pakistan": ["Doodh patti chai", "Lassi (słone lub słodkie)", "Rooh Afza z mlekiem", "Sok z trzciny cukrowej"],
   "Ukraina": ["Horilka z pieprzem", "Uzwar (kompot z suszonych owoców)", "Medovukha", "Lwowskie piwo"],
   "Islandia": ["Brennivín ('czarna śmierć')", "Einstök białe ale", "Skyr smoothie", "Gorące kakao po długim spacerze"],
+  "Jamajka": ["Rum jamajski (Appleton)", "Sorrel drink (z hibiskusa)", "Coconut water prosto z orzecha", "Red Stripe beer"],
 };
