@@ -44,7 +44,7 @@ export const drinks: Record<string, string[]> = {
   "Peru": ["Pisco sour", "Chicha morada", "Cusqueña", "Inca Kola"],
   "Kolumbia": ["Aguardiente", "Tinto (kawa po kolumbijsku)", "Aguapanela z limonką", "Refajo"],
   "Chile": ["Carménère", "Pisco sour po chilijsku", "Terremoto (białe wino + lody)", "Mote con huesillos"],
-  "Filipiny": ["San Miguel", "Lambanog", "Calamansi juice", "Halo-halo (deserowy napój)"],
+  "Filipiny": ["San Miguel", "Lambanog", "Calamansi juice", "Ube latte"],
   "Pakistan": ["Doodh patti chai", "Lassi (słone lub słodkie)", "Rooh Afza z mlekiem", "Sok z trzciny cukrowej"],
   "Ukraina": ["Horilka z pieprzem", "Uzwar (kompot z suszonych owoców)", "Medovukha", "Lwowskie piwo"],
   "Islandia": ["Brennivín ('czarna śmierć')", "Einstök białe ale", "Skyr smoothie", "Gorące kakao po długim spacerze"],
