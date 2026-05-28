@@ -460,5 +460,176 @@ export const countries: Country[] = [
     movies: ["Cool Runnings", "The Harder They Come", "Marley (dokument)"],
     music: ["Bob Marley", "Sean Paul", "Reggae i dancehall klasyki"],
     dateIdea: "Jerk chicken z grilla, rum z colą i sorrel drink, a w tle Bob Marley i sesja dancehallu w salonie."
+  },
+  {
+    name: "Malezja", flag: "🇲🇾", region: "Azja Południowo-Wschodnia",
+    traditions: ["Hari Raya po Ramadanie", "Mamak – nocne knajpki otwarte do rana", "Mieszanka kultur malajskiej, chińskiej i indyjskiej"],
+    stereotypes: ["Wszyscy kochają durian", "Trzy języki w jednym zdaniu", "Petronas Towers na każdym zdjęciu"],
+    food: ["Nasi lemak", "Laksa", "Roti canai z dhal", "Char kway teow"],
+    movies: ["Sepet", "The Journey", "Bunohan"],
+    music: ["Yuna", "Siti Nurhaliza", "Search"],
+    dateIdea: "Nasi lemak z sambalem, mrożona teh tarik i seans 'Sepet' z malezyjskim klimatem mamak."
+  },
+  {
+    name: "Singapur", flag: "🇸🇬", region: "Azja Południowo-Wschodnia",
+    traditions: ["Hawker centres – kulinarne dziedzictwo UNESCO", "Chingay Parade", "Wieloetniczność jako fundament państwa"],
+    stereotypes: ["Wszędzie czysto i zakazów bez liku", "Kara za gumę do żucia", "Najdroższe miasto świata"],
+    food: ["Chili crab", "Hainanese chicken rice", "Laksa singapurska", "Kaya toast ze śniadaniowym jajkiem"],
+    movies: ["Ilo Ilo", "Crazy Rich Asians", "Apprentice"],
+    music: ["Stefanie Sun", "JJ Lin", "The Sam Willows"],
+    dateIdea: "Wieczór w stylu hawker center: kilka małych dań, chili crab i Singapore Sling przy świetle latarni."
+  },
+  {
+    name: "Nepal", flag: "🇳🇵", region: "Azja Południowa",
+    traditions: ["Namaste z dłońmi przy sercu", "Festiwal Dashain", "Pielgrzymki do Lumbini i Pashupatinath"],
+    stereotypes: ["Wszyscy są szerpami", "Himalaje to codzienność", "Joga i medytacja od urodzenia"],
+    food: ["Dal bhat", "Momo ze sosem achar", "Sel roti", "Thukpa – himalajska zupa"],
+    movies: ["Kabaddi", "Highway", "White Sun"],
+    music: ["1974 AD", "Bartika Eam Rai", "Sajjan Raj Vaidya"],
+    dateIdea: "Lepcie momo razem od zera, do tego masala chai i dokument o Himalajach na koniec."
+  },
+  {
+    name: "Mongolia", flag: "🇲🇳", region: "Azja Środkowa",
+    traditions: ["Naadam – festiwal trzech męskich sportów", "Życie w jurtach (gerach)", "Pasterstwo nomadyczne"],
+    stereotypes: ["Wszyscy są spadkobiercami Czyngis-chana", "Konie wszędzie", "Picie kumysu z miski"],
+    food: ["Buuz – pierożki na parze", "Khorkhog – mięso pieczone na rozgrzanych kamieniach", "Tsuivan – smażony makaron z baraniną", "Aaruul – suszony twaróg"],
+    movies: ["Opowieść o płaczącym wielbłądzie", "Mongol", "The Eagle Huntress"],
+    music: ["The Hu", "Khusugtun", "Tradycyjny śpiew gardłowy khoomei"],
+    dateIdea: "Buuz na parze, mocna czarna herbata z mlekiem i seans 'The Eagle Huntress' z The Hu w tle."
+  },
+  {
+    name: "Sri Lanka", flag: "🇱🇰", region: "Azja Południowa",
+    traditions: ["Festiwal Esala Perahera ze słoniami", "Ceremonia parzenia cejlońskiej herbaty", "Kiwanie głową na 'tak'"],
+    stereotypes: ["Wszędzie cynamon i herbata", "Buddyjskie świątynie na każdym wzgórzu", "Krykiet to drugie życie"],
+    food: ["Rice and curry z sambolem", "Hoppers (appa)", "Kottu roti", "Lamprais"],
+    movies: ["The Forsaken Land", "Funny Boy", "With You, Without You"],
+    music: ["Bathiya and Santhush", "Yohani – Manike Mage Hithe", "Iraj"],
+    dateIdea: "Pikantne rice and curry, mrożona herbata cejlońska z imbirem i dokument o pociągu przez plantacje."
+  },
+  {
+    name: "Kazachstan", flag: "🇰🇿", region: "Azja Środkowa",
+    traditions: ["Nauryz – wiosenny Nowy Rok", "Kokpar – jeździecki sport z kozłem", "Eagle hunting – polowanie z orłem"],
+    stereotypes: ["Wszyscy myślą o Boracie", "Step i konie po horyzont", "Wódka i konina do każdej okazji"],
+    food: ["Beshbarmak", "Kazy (konina)", "Plov", "Baursaki – smażone pączki"],
+    movies: ["Tulpan", "Mongol", "Kelin"],
+    music: ["Dimash Kudaibergen", "Ninety One", "Tradycyjna dombra"],
+    dateIdea: "Beshbarmak na dużym talerzu, czarna herbata z mlekiem i koncert Dimasha na YouTube."
+  },
+  {
+    name: "Uzbekistan", flag: "🇺🇿", region: "Azja Środkowa",
+    traditions: ["Czajchana – herbaciarnia jako centrum życia", "Wesela z setkami gości", "Jedwabny Szlak i bazary w Samarkandzie"],
+    stereotypes: ["Plov na każdą okazję", "Niebieskie kopuły wszędzie", "Targowanie się to sztuka"],
+    food: ["Plov uzbecki", "Manty – duże pierogi z baraniną", "Shashlik", "Samsa z piekarnika tandoor"],
+    movies: ["Tashkent – City of Bread", "The Sun Also Rises Over Tashkent", "Parizod"],
+    music: ["Yulduz Usmonova", "Sevara Nazarkhan", "Tradycyjna muzyka shashmaqam"],
+    dateIdea: "Plov z baraniną i marchewką w jednym kazanie, zielona herbata i wieczór z opowieściami z Jedwabnego Szlaku."
+  },
+  {
+    name: "Tanzania", flag: "🇹🇿", region: "Afryka Wschodnia",
+    traditions: ["Safari w Serengeti i wspinaczka na Kilimandżaro", "Ujamaa – filozofia wspólnoty", "Suahili jako język jednoczący"],
+    stereotypes: ["Hakuna matata na wszystko", "Wszyscy mieszkają obok lwów", "Zanzibar to raj na ziemi"],
+    food: ["Ugali z nyama choma", "Pilau zanzibarskie z przyprawami", "Mishkaki – szaszłyki", "Mandazi"],
+    movies: ["Maangamizi", "T-Junction", "Bongoland"],
+    music: ["Diamond Platnumz", "Ali Kiba", "Bongo Flava"],
+    dateIdea: "Pilau z aromatycznymi przyprawami zanzibarskimi, świeży sok z marakui i dokument o Serengeti."
+  },
+  {
+    name: "Ghana", flag: "🇬🇭", region: "Afryka Zachodnia",
+    traditions: ["Tkactwo Kente – kolorowe wzory ze znaczeniem", "Festiwal Homowo", "Spór z Nigerią o najlepszy jollof"],
+    stereotypes: ["Najlepszy jollof na świecie (sorry Nigeria)", "Wszyscy tańczą azonto", "Kakao i złoto w każdej kopalni"],
+    food: ["Jollof rice po ghańsku", "Fufu z zupą egusi", "Banku z tilapią", "Waakye – ryż z fasolą"],
+    movies: ["The Burial of Kojo", "Children of the Mountain", "Azali"],
+    music: ["Sarkodie", "Stonebwoy", "Daddy Lumba"],
+    dateIdea: "Jollof rice po ghańsku z grillowanym kurczakiem i lekcja azonto z YouTube."
+  },
+  {
+    name: "Senegal", flag: "🇸🇳", region: "Afryka Zachodnia",
+    traditions: ["Teranga – senegalska gościnność", "Sabar – bębny i taniec", "Wspólne jedzenie z jednej miski"],
+    stereotypes: ["Wszyscy są wysocy i eleganccy", "Zapaśnicy laamb to bohaterowie", "Boubou w każdym kolorze"],
+    food: ["Thieboudienne – ryż z rybą", "Yassa poulet", "Mafé – gulasz z masłem orzechowym", "Pastels – smażone pierożki"],
+    movies: ["Atlantique", "Touki Bouki", "La Noire de…"],
+    music: ["Youssou N'Dour", "Baaba Maal", "Ismael Lô"],
+    dateIdea: "Thieboudienne z jednej miski, mocna mięta z herbatą ataya i koncerty Youssou N'Doura w tle."
+  },
+  {
+    name: "Algieria", flag: "🇩🇿", region: "Afryka Północna",
+    traditions: ["Raï – muzyka i bunt", "Kuskus piątkowy z rodziną", "Mocna kawa po algiersku"],
+    stereotypes: ["Wszędzie Sahara", "Piłka nożna to religia", "Pustynia i kasba w jednym"],
+    food: ["Couscous z baraniną i siedmioma warzywami", "Chorba frik – zupa z baraniną", "Mechoui – pieczona jagnięcina", "Makroud – ciastka z daktylami"],
+    movies: ["Bitwa o Algier", "Hors la loi", "Papicha"],
+    music: ["Cheb Khaled", "Rachid Taha", "Souad Massi"],
+    dateIdea: "Pachnący kuskus z baraniną, mięta z herbatą i koncerty Cheba Khaleda – obowiązkowa 'Aïcha'."
+  },
+  {
+    name: "Tunezja", flag: "🇹🇳", region: "Afryka Północna",
+    traditions: ["Hammam jako rytuał piękności", "Ceremonia herbaty miętowej z orzeszkami", "Niebiesko-białe domy Sidi Bou Said"],
+    stereotypes: ["Wszędzie harissa do wszystkiego", "Plaża i medyna w jednym", "Skręcanie się nad targiem"],
+    food: ["Brik z jajkiem i tuńczykiem", "Couscous tuniski z harissą", "Lablabi – zupa z ciecierzycy", "Makroudh – ciasteczka z daktylami"],
+    movies: ["The Man Who Sold His Skin", "Beauty and the Dogs", "A Son"],
+    music: ["Emel Mathlouthi", "Latifa Arfaoui", "Saber Rebaï"],
+    dateIdea: "Pikantne brik z jajkiem, mięta z herbatą z orzeszkami pinii i spacer po Sidi Bou Said na zdjęciach."
+  },
+  {
+    name: "Boliwia", flag: "🇧🇴", region: "Ameryka Południowa",
+    traditions: ["Karnawał w Oruro z diabolada", "Cholitas wrestling – panie w spódnicach na ringu", "Cocoa leaves przeciw chorobie wysokościowej"],
+    stereotypes: ["Najwyższe miasto świata (La Paz)", "Cholity w melonikach", "Salar de Uyuni jak lustro"],
+    food: ["Salteñas", "Pique macho", "Silpancho", "Anticuchos – szaszłyki z serca wołowego"],
+    movies: ["Zama", "También la lluvia", "La nación clandestina"],
+    music: ["Los Kjarkas", "Bonny Lovy", "Tradycyjna muzyka andyjska na zampoñas"],
+    dateIdea: "Salteñas na rozgrzewkę, gorąca czekolada po andyjsku i dokument o Salar de Uyuni."
+  },
+  {
+    name: "Urugwaj", flag: "🇺🇾", region: "Ameryka Południowa",
+    traditions: ["Mate non stop, wszędzie i z każdym", "Asado niedzielne", "Candombe – afro-urugwajskie bębny"],
+    stereotypes: ["Termos pod pachą do mate", "Wszyscy kochają piłkę (mistrzostwa 1930 i 1950)", "Najbardziej liberalny kraj regionu"],
+    food: ["Chivito – kanapka z wszystkim", "Asado uruguayo", "Dulce de leche w każdej formie", "Milanesa napolitana"],
+    movies: ["Whisky", "El baño del Papa", "Una noche sin luna"],
+    music: ["Jorge Drexler", "Rubén Rada", "No Te Va Gustar"],
+    dateIdea: "Chivito z dużą ilością frytek, butelka Tannat i mate na deser pod gwiazdami."
+  },
+  {
+    name: "Ekwador", flag: "🇪🇨", region: "Ameryka Południowa",
+    traditions: ["Fiesta del Sol – Inti Raymi w Andach", "Cuy (świnka morska) na specjalne okazje", "Mitad del Mundo – stanie na równiku"],
+    stereotypes: ["Wszyscy mają kapelusz panamski (który pochodzi z Ekwadoru!)", "Banany na każdym kroku", "Galapagos i żółwie"],
+    food: ["Ceviche ekwadorskie z kukurydzą", "Llapingachos – placki ziemniaczane", "Encebollado – zupa rybna", "Locro de papa"],
+    movies: ["Ratas, Ratones, Rateros", "Pescador", "A tus espaldas"],
+    music: ["Juan Fernando Velasco", "Nicola Cruz", "Pasillo ecuatoriano"],
+    dateIdea: "Ceviche z popcornem (po ekwadorsku!), świeży sok z naranjilla i dokument o Galapagos."
+  },
+  {
+    name: "Jordania", flag: "🇯🇴", region: "Bliski Wschód",
+    traditions: ["Gościnność beduińska z herbatą", "Mansaf – narodowe danie podawane na specjalnych okazjach", "Hospitalité w namiotach Wadi Rum"],
+    stereotypes: ["Petra na każdym zdjęciu", "Wszyscy są krewnymi króla", "Hummus lepszy niż w Izraelu (i odwrotnie)"],
+    food: ["Mansaf – baranina z jameedem i ryżem", "Maqluba – odwrócony garnek", "Falafel z hummusem", "Knafeh z serem i syropem"],
+    movies: ["Theeb", "Captain Abu Raed", "When Monaliza Smiled"],
+    music: ["Macadi Nahhas", "Omar Al-Abdallat", "Tradycyjna muzyka beduińska"],
+    dateIdea: "Mansaf z jameedem na dużym talerzu, mocna mięta z herbatą i seans 'Theeb' z pustynnym klimatem."
+  },
+  {
+    name: "Liban", flag: "🇱🇧", region: "Bliski Wschód",
+    traditions: ["Mezze – dziesiątki małych dań na środku stołu", "Życie nocne Bejrutu jak nigdzie", "Zaproszenia na kawę co pięć minut"],
+    stereotypes: ["Wszyscy mają trzy paszporty", "Najlepszy hummus i tabbouleh (sorry reszto Bliskiego Wschodu)", "Cedr na fladze i wszędzie"],
+    food: ["Tabbouleh", "Hummus z mięsem mielonym", "Manakish z za'atarem", "Kibbeh – kotleciki z burgulu"],
+    movies: ["Kafarnaum", "Caramel", "Insyallah a Boy"],
+    music: ["Fairuz", "Mashrou' Leila", "Marcel Khalife"],
+    dateIdea: "Mezze z dziesięcioma talerzykami, arak z lodem i Fairuz w poranne nuty – jak prawdziwi Bejruci."
+  },
+  {
+    name: "Fidżi", flag: "🇫🇯", region: "Oceania",
+    traditions: ["Ceremonia kava – picie z kokosa w kółku", "Meke – tradycyjny taniec i pieśni", "Bula! – pozdrowienie i sposób życia"],
+    stereotypes: ["Wszyscy uśmiechają się non stop", "Rajskie plaże i palmy", "Rugby to religia"],
+    food: ["Kokoda – fidżijskie ceviche w mleku kokosowym", "Lovo – jedzenie pieczone w ziemi", "Rourou – liście taro z mlekiem kokosowym", "Palusami"],
+    movies: ["The Land Has Eyes", "Vai", "Cast Away (kręcony tutaj)"],
+    music: ["Black Rose", "Laisa Vulakoro", "Tradycyjne pieśni meke"],
+    dateIdea: "Kokoda w mleku kokosowym, świeży sok z marakui i wieczór z muzyką wyspiarską przy świecach."
+  },
+  {
+    name: "Samoa", flag: "🇼🇸", region: "Oceania",
+    traditions: ["Fa'a Samoa – samoańska droga życia", "Tatau – tradycyjny tatuaż ręczny", "Sunday to'ona'i – niedzielna rodzinna uczta"],
+    stereotypes: ["Wszyscy grają w rugby (i są w nim świetni)", "Tatuaże od stóp do głów", "Najwięksi i najsilniejsi"],
+    food: ["Palusami – liście taro z mlekiem kokosowym", "Oka – samoańskie ceviche", "Sapasui – samoański chow mein", "Panipopo – bułeczki w sosie kokosowym"],
+    movies: ["The Orator (O Le Tulafale)", "Three Wise Cousins", "Moana (inspirowana Polinezją)"],
+    music: ["Jerome Grey", "Tenelle", "Tradycyjne pieśni siva"],
+    dateIdea: "Palusami z mlekiem kokosowym, świeży ananas i wieczór z polinezyjskimi pieśniami przy świecach."
   }
 ];
