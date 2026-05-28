@@ -48,4 +48,5 @@ export const entertainment: Record<string, string[]> = {
   "Pakistan": ["Carrom (gra zręcznościowa)", "Maraton Coke Studio Pakistan", "Henna i opowieści o Mughalach"],
   "Ukraina": ["Durak (gra karciana)", "Koncerty DakhaBrakha i Onuki na YouTube", "Malowanie pisanek metodą woskową"],
   "Islandia": ["Maraton 'Trapped' lub 'Katla'", "Wieczór z muzyką Sigur Rós i świecami", "Quiz: prawdziwe nazwisko islandzkie czy wymyślone?"],
+  "Jamajka": ["Domino jamajskie z głośnym uderzaniem o stół", "Lekcja podstaw dancehall move'ów", "Quiz: rozpoznaj utwór Boba Marleya po pierwszych nutach"],
 };
