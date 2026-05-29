@@ -967,4 +967,32 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Lniana koszula, lavalava, sandały skórzane",
     ],
   },
+  "Kostaryka": {
+    woman: [
+      "Lekka sukienka maxi w tropikalne kwiaty, klapki",
+      "Top na ramiączkach, krótkie spodenki, sandały, słomkowy kapelusz",
+      "Strój kąpielowy pod luźną sukienką, japonki",
+      "Lniana sukienka koszulowa, espadryle, plecak",
+    ],
+    man: [
+      "Koszula w palmy, jasne spodenki, klapki",
+      "Biały T-shirt, beżowe szorty, sandały trekkingowe",
+      "Lniana koszula rozpięta, szorty kąpielowe, panama",
+      "Polo, jeansowe szorty, sneakersy płócienne",
+    ],
+  },
+  "Watykan": {
+    woman: [
+      "Skromna sukienka midi z rękawkiem, zakryte ramiona, balerinki",
+      "Czarna spódnica do kolan, biała bluzka, chusta na głowę",
+      "Granatowy żakiet, plisowana spódnica, mokasyny",
+      "Długie spodnie, koszula z długim rękawem, elegancki szal",
+    ],
+    man: [
+      "Ciemny garnitur, biała koszula, krawat, eleganckie półbuty",
+      "Granatowa marynarka, szare spodnie, koszula, mokasyny",
+      "Czarna koszula z koloratką (jeśli ksiądz) lub biała koszula i spodnie chinos",
+      "Sweter w serek na koszuli, eleganckie spodnie, brogsy",
+    ],
+  },
 };

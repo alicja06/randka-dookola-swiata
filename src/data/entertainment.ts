@@ -68,4 +68,6 @@ export const entertainment: Record<string, string[]> = {
   "Liban": ["Tawla (libańska wersja backgammona)", "Maraton 'Kafarnaum' Nadine Labaki", "Sesja Fairuz z porannym kawałkiem"],
   "Fidżi": ["Ceremonia kava w kółku z klaśnięciami", "Lekcja tańca meke", "Quiz: rozpoznaj wyspę z 333 fidżyjskich"],
   "Samoa": ["Lape – samoańska gra w kamyki", "Lekcja siva (tradycyjny taniec)", "Quiz: prawdziwe tradycyjne tatau czy nowoczesny tatuaż?"],
+  "Kostaryka": ["Quiz: rozpoznaj zwierzę dżungli po odgłosie", "Lekcja podstaw surfingu na desce do prasowania", "Maraton dokumentów o parkach narodowych Kostaryki"],
+  "Watykan": ["Quiz: rozpoznaj papieża po zdjęciu", "Wirtualny spacer po Muzeach Watykańskich", "Maraton 'Młodego papieża' Sorrentino"],
 };

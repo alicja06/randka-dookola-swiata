@@ -68,4 +68,6 @@ export const drinks: Record<string, string[]> = {
   "Liban": ["Arak z wodą i lodem", "Almaza beer", "Jallab (z daktyli i melasy)", "Wino z doliny Bekaa"],
   "Fidżi": ["Kava – uspokajający napój z korzenia", "Fiji Bitter beer", "Świeży sok z marakui", "Mleko kokosowe prosto z orzecha"],
   "Samoa": ["'Ava (samoańska kava)", "Vailima beer", "Koko Samoa (gorąca czekolada z kakao)", "Mleko kokosowe z młodego orzecha"],
+  "Kostaryka": ["Imperial beer", "Guaro Cacique (trzcinowy alkohol)", "Agua de sapo (limonka, imbir, trzcina)", "Café chorreado z filtra płóciennego"],
+  "Watykan": ["Mszalne wino z Castel Gandolfo", "Espresso z włoskiej kawiarni", "Limoncello z Lacjum", "Aranciata San Pellegrino"],
 };
