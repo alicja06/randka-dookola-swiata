@@ -631,5 +631,23 @@ export const countries: Country[] = [
     movies: ["The Orator (O Le Tulafale)", "Three Wise Cousins", "Moana (inspirowana Polinezją)"],
     music: ["Jerome Grey", "Tenelle", "Tradycyjne pieśni siva"],
     dateIdea: "Palusami z mlekiem kokosowym, świeży ananas i wieczór z polinezyjskimi pieśniami przy świecach."
+  },
+  {
+    name: "Kostaryka", flag: "🇨🇷", region: "Ameryka Środkowa",
+    traditions: ["Pura vida – filozofia życia bez stresu", "Niedzielne casado z rodziną", "Festyny z marimba i tańcami"],
+    stereotypes: ["Zawsze uśmiechnięci i wyluzowani", "Surfują od rana do nocy", "Wszędzie leniwce i tukany"],
+    food: ["Gallo pinto (ryż z czarną fasolą) na śniadanie", "Casado – obiadowy talerz z ryżem, fasolą i bananem", "Ceviche z ryby i limonki", "Chifrijo – fasola, ryż i skwarki"],
+    movies: ["Agua fría de mar", "Princesas Rojas", "After Words (kręcony w Kostaryce)"],
+    music: ["Editus", "Debi Nova", "Tradycyjne calypso z Limón"],
+    dateIdea: "Gallo pinto na kolację, świeży sok z marakui i wieczór z dźwiękami dżungli oraz playlistą calypso."
+  },
+  {
+    name: "Watykan", flag: "🇻🇦", region: "Europa Południowa",
+    traditions: ["Niedzielne Anioł Pański na placu św. Piotra", "Msze papieskie i audiencje generalne", "Konklawe i biały dym z komina"],
+    stereotypes: ["Wszędzie księża i zakonnice", "Najmniejsze państwo świata", "Gwardia Szwajcarska w kolorowych mundurach"],
+    food: ["Kremówka papieska (ulubiona Jana Pawła II)", "Pasta cacio e pepe z Rzymu", "Saltimbocca alla romana", "Maritozzi z bitą śmietaną"],
+    movies: ["Habemus Papam", "Dwóch papieży", "Anioły i demony"],
+    music: ["Chór Kaplicy Sykstyńskiej", "Gregoriańskie chorały", "Allegri – Miserere"],
+    dateIdea: "Kremówki à la Wadowice, włoska kawa i wieczór z gregoriańskimi chorałami oraz albumem o Kaplicy Sykstyńskiej."
   }
 ];
