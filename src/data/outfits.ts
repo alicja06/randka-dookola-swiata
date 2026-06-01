@@ -995,4 +995,74 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Sweter w serek na koszuli, eleganckie spodnie, brogsy",
     ],
   },
+  "USA – Nowy Jork": {
+    woman: [
+      "Czarny golf, czarne jeansy, długi wełniany płaszcz, kozaki na obcasie",
+      "Sportowa bluza oversize, legginsy, sneakersy, kawa w ręce",
+      "Mała czarna, szpilki, mały klatch – wieczór na Manhattanie",
+      "Trencz, jeansy mom, biały t-shirt, torebka crossbody",
+    ],
+    man: [
+      "Czarny płaszcz wełniany, czarny golf, ciemne jeansy, derby",
+      "Hoodie, jeansy, sneakersy Nike, czapka Yankees",
+      "Granatowy garnitur, biała koszula bez krawata – Wall Street casual",
+      "Skórzana kurtka, t-shirt, jeansy, glany – East Village vibe",
+    ],
+  },
+  "USA – Południe (Deep South)": {
+    woman: [
+      "Sukienka w kwiaty, kowbojki, słomkowy kapelusz",
+      "Biała sukienka maxi z koronką, sandały – plantation chic",
+      "Jeansowe szorty, kraciasta koszula wiązana w pasie, kowbojki",
+      "Sukienka koktajlowa w pastelach, perły, eleganckie szpilki – Derby Day",
+    ],
+    man: [
+      "Kraciasta koszula, jeansy, kowbojki, kapelusz stetson",
+      "Lniany jasny garnitur, biała koszula, krawat – southern gentleman",
+      "Koszulka polo, krótkie spodenki khaki, mokasyny bez skarpetek",
+      "Dżinsowa kurtka, t-shirt, jeansy, buty robocze",
+    ],
+  },
+  "USA – Środkowy Zachód": {
+    woman: [
+      "Bluza college, jeansy, sneakersy, kucyk",
+      "Flanelowa koszula, jeansy boyfriend, traperki – jesienny look",
+      "Sweter z norweskim wzorem, leginsy, śniegowce",
+      "Koszulka drużyny Packers/Bears, jeansy, czapka z daszkiem",
+    ],
+    man: [
+      "Bluza z kapturem drużyny NFL, jeansy, sneakersy",
+      "Flanelowa koszula, t-shirt, jeansy, traperki",
+      "Kurtka puchowa Carhartt, jeansy, czapka beanie",
+      "Polo, chinosy, mokasyny – casual Friday w biurze",
+    ],
+  },
+  "USA – Teksas": {
+    woman: [
+      "Sukienka boho z frędzlami, kowbojki, kapelusz",
+      "Dżinsowe szorty, biała koszula wiązana, kowbojki, pasek z dużą klamrą",
+      "Sukienka prairie midi, kowbojki, turkusowa biżuteria",
+      "Skórzane spodnie, koszula w kratę, kowbojki na obcasie",
+    ],
+    man: [
+      "Koszula western z perłowymi guzikami, jeansy, kowbojki, kapelusz stetson",
+      "Biały t-shirt, jeansy Wrangler, pasek z dużą klamrą, kowbojki",
+      "Kurtka jeansowa, kraciasta koszula, jeansy, buty robocze",
+      "Garnitur western (bolo tie zamiast krawata), kowbojki",
+    ],
+  },
+  "USA – Kalifornia": {
+    woman: [
+      "Sukienka maxi w kwiaty, sandały, słomkowy kapelusz – Coachella vibe",
+      "Biały top na ramiączkach, jeansowe szorty, trampki Vans",
+      "Strój kąpielowy + kimono narzutka, japonki, okulary oversize",
+      "Sportowy zestaw athleisure, legginsy, sneakersy, mata do jogi",
+    ],
+    man: [
+      "Koszulka surferska, szorty kąpielowe, klapki",
+      "Biały t-shirt, jeansy, sneakersy Vans, czapka snapback",
+      "Lniana koszula rozpięta, szorty, espadryle – Santa Monica chic",
+      "Hoodie tech-bro, jeansy slim, sneakersy Allbirds",
+    ],
+  },
 };
