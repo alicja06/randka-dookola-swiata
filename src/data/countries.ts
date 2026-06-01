@@ -651,7 +651,7 @@ export const countries: Country[] = [
     dateIdea: "Pizza slice na stojąco, spacer po Brooklyn Bridge i jazz w małym klubie w Greenwich Village."
   },
   {
-    name: "USA – Południe (Deep South)", flag: "🤠", region: "Ameryka Północna",
+    name: "USA – Luizjana", flag: "🤠", region: "Ameryka Północna",
     traditions: ["Niedzielny lunch po kościele", "Mardi Gras w Nowym Orleanie", "Front porch i sweet tea"],
     stereotypes: ["'Y'all' co drugie zdanie", "Wszystko smażone i z masłem", "Gościnność i 'bless your heart'"],
     food: ["Smażony kurczak z biscuits", "Gumbo i jambalaya", "Shrimp and grits", "Pecan pie"],

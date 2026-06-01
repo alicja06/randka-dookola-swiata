@@ -995,7 +995,7 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Skórzana kurtka, t-shirt, jeansy, glany – East Village vibe",
     ],
   },
-  "USA – Południe (Deep South)": {
+  "USA – Luizjana": {
     woman: [
       "Sukienka w kwiaty, kowbojki, słomkowy kapelusz",
       "Biała sukienka maxi z koronką, sandały – plantation chic",
