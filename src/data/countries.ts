@@ -102,15 +102,6 @@ export const countries: Country[] = [
     dateIdea: "Mezze, retsina i sirtaki w salonie – z obowiązkowym 'Opa!' na koniec."
   },
   {
-    name: "USA", flag: "🇺🇸", region: "Ameryka Północna",
-    traditions: ["Thanksgiving z indykiem", "Super Bowl Sunday", "4 lipca z fajerwerkami"],
-    stereotypes: ["Wszystko jest XXL", "Burger i Cola do wszystkiego", "Small talk to sport narodowy"],
-    food: ["Cheeseburger z frytkami", "Mac and cheese", "Brownie z lodami", "BBQ ribs z sosem barbecue"],
-    movies: ["Pulp Fiction", "Forrest Gump", "Powrót do przyszłości"],
-    music: ["Bruce Springsteen", "Beyoncé", "Johnny Cash"],
-    dateIdea: "Burger night, popcorn i klasyk amerykańskiego kina – Tarantino albo coś z lat 80."
-  },
-  {
     name: "Wielka Brytania", flag: "🇬🇧", region: "Europa Zachodnia",
     traditions: ["Herbata o 17:00", "Sunday roast z rodziną", "Kolejka jako sport narodowy"],
     stereotypes: ["Zawsze rozmawiają o pogodzie", "Suchy humor i sarkazm", "Pub to drugi dom"],

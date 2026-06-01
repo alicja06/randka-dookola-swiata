@@ -141,20 +141,6 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Polo w bieli, beżowe chinosy, sandały",
     ],
   },
-  "USA": {
-    woman: [
-      "Jeansy, biały t-shirt, skórzana kurtka, kowbojki",
-      "Mała czarna, szpilki, czerwona szminka",
-      "Kraciasta koszula, jeansy, trampki Converse",
-      "Sukienka midi w kropki, baleriny, kardigan",
-    ],
-    man: [
-      "Jeans, T-shirt, flanelowa koszula, sneakersy lub kowbojki",
-      "Biała koszula, jeansy, brogsy",
-      "Bluza college, jeansy, sneakersy",
-      "Czarny T-shirt, skórzana kurtka, jeansy, glany",
-    ],
-  },
   "Wielka Brytania": {
     woman: [
       "Trencz, kraciasta spódnica, kozaki",
