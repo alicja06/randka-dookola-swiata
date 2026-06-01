@@ -70,4 +70,9 @@ export const entertainment: Record<string, string[]> = {
   "Samoa": ["Lape – samoańska gra w kamyki", "Lekcja siva (tradycyjny taniec)", "Quiz: prawdziwe tradycyjne tatau czy nowoczesny tatuaż?"],
   "Kostaryka": ["Quiz: rozpoznaj zwierzę dżungli po odgłosie", "Lekcja podstaw surfingu na desce do prasowania", "Maraton dokumentów o parkach narodowych Kostaryki"],
   "Watykan": ["Quiz: rozpoznaj papieża po zdjęciu", "Wirtualny spacer po Muzeach Watykańskich", "Maraton 'Młodego papieża' Sorrentino"],
+  "USA – Nowy Jork": ["Maraton 'Seinfeld' lub 'Sex and the City'", "Quiz: rozpoznaj dzielnicę po zdjęciu skyline'u", "Karaoke z Jay-Z i Alicią Keys 'Empire State of Mind'"],
+  "USA – Południe (Deep South)": ["Lekcja line dance w salonie", "Maraton 'Prawdziwych detektywów' (sezon 1, Luizjana)", "Konkurs: kto zrobi lepsze sweet tea"],
+  "USA – Środkowy Zachód": ["Mecz futbolu amerykańskiego w TV z chipsami", "Maraton 'Stranger Things' (Indiana wita)", "Cornhole na dywanie (z woreczkami ryżu)"],
+  "USA – Teksas": ["Lekcja two-step country dance", "Maraton 'Friday Night Lights' lub 'Yellowstone'", "Quiz: rozpoznaj rodzaj BBQ po sosie"],
+  "USA – Kalifornia": ["Joga we dwoje z YouTube", "Maraton 'La La Land' z popcornem", "Quiz: rozpoznaj plażę kalifornijską ze zdjęcia"],
 };
