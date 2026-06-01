@@ -9,7 +9,7 @@ export const entertainment: Record<string, string[]> = {
   "Korea Południowa": ["Maraton K-dramy z napisami", "Gra Yutnori lub Hwatu", "Karaoke K-pop (noraebang w domu)"],
   "Tajlandia": ["Wzajemny masaż stóp z olejkiem", "Składanie origami z liści bananowca", "Muay Thai stretching razem"],
   "Grecja": ["Talerze z papieru do rozbicia z okrzykiem 'Opa!'", "Sirtaki w salonie", "Quiz z mitologii greckiej"],
-  "USA": ["Beer pong (lub z wodą)", "Maraton sitcomów ('Friends', 'The Office')", "Karaoke Springsteen i Whitney Houston"],
+  
   "Wielka Brytania": ["Cluedo lub Monopoly", "Pub quiz dla dwojga", "Maraton Mr. Bean lub Monty Python"],
   "Niemcy": ["Settlers of Catan", "Quiz: piwo z którego landu?", "Maraton 'Dark' na Netflix"],
   "Polska": ["Gra w tysiąca lub makao", "Kalambury z polskimi przysłowiami", "Karaoke z Maryli Rodowicz i Dawida Podsiadło"],
