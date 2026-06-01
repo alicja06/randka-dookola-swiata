@@ -70,4 +70,9 @@ export const drinks: Record<string, string[]> = {
   "Samoa": ["'Ava (samoańska kava)", "Vailima beer", "Koko Samoa (gorąca czekolada z kakao)", "Mleko kokosowe z młodego orzecha"],
   "Kostaryka": ["Imperial beer", "Guaro Cacique (trzcinowy alkohol)", "Agua de sapo (limonka, imbir, trzcina)", "Café chorreado z filtra płóciennego"],
   "Watykan": ["Mszalne wino z Castel Gandolfo", "Espresso z włoskiej kawiarni", "Limoncello z Lacjum", "Aranciata San Pellegrino"],
+  "USA – Nowy Jork": ["Manhattan (koktajl)", "Cosmopolitan", "Egg cream (mleko, syrop i woda gazowana)", "Brooklyn Lager"],
+  "USA – Południe (Deep South)": ["Mint julep", "Sweet tea z cytryną", "Sazerac z Nowego Orleanu", "Bourbon z Kentucky"],
+  "USA – Środkowy Zachód": ["Old Fashioned po wisconsińsku (z brandy)", "Bloody Mary z całą przekąską w szklance", "Pabst Blue Ribbon", "Root beer float"],
+  "USA – Teksas": ["Margarita frozen", "Shiner Bock", "Whiskey sour z teksańskim bourbonem", "Lone Star beer"],
+  "USA – Kalifornia": ["Wino z Napa Valley (Cabernet)", "Kombucha z imbirem", "IPA z West Coast", "Green juice ze szpinakiem i jabłkiem"],
 };
