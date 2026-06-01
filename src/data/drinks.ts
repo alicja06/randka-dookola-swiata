@@ -9,7 +9,7 @@ export const drinks: Record<string, string[]> = {
   "Korea Południowa": ["Soju", "Makgeolli", "Somaek (soju + piwo)", "Yuja-cha"],
   "Tajlandia": ["Piwo Singha lub Chang", "Thai iced tea", "Mai tai", "Sangsom z colą"],
   "Grecja": ["Ouzo z lodem", "Retsina", "Mythos", "Metaxa"],
-  "USA": ["Bourbon old fashioned", "IPA z lokalnego browaru", "Whiskey sour", "Root beer float"],
+  
   "Wielka Brytania": ["Gin & tonic", "Ciemne ale", "Pimm's Cup", "Earl Grey z mlekiem"],
   "Niemcy": ["Pszeniczne Weizen", "Riesling", "Jägermeister z lodu", "Apfelschorle"],
   "Polska": ["Zimna wódka czysta", "Nalewka wiśniowa", "Grzaniec na czerwonym winie", "Piwo z sokiem malinowym"],
