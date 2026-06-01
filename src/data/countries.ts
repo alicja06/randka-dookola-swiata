@@ -649,5 +649,50 @@ export const countries: Country[] = [
     movies: ["Habemus Papam", "Dwóch papieży", "Anioły i demony"],
     music: ["Chór Kaplicy Sykstyńskiej", "Gregoriańskie chorały", "Allegri – Miserere"],
     dateIdea: "Kremówki à la Wadowice, włoska kawa i wieczór z gregoriańskimi chorałami oraz albumem o Kaplicy Sykstyńskiej."
+  },
+  {
+    name: "USA – Nowy Jork", flag: "🗽", region: "Ameryka Północna",
+    traditions: ["Parada na Thanksgiving Macy's", "Sylwester na Times Square", "Brunch w niedzielę na Brooklynie"],
+    stereotypes: ["Zawsze w pośpiechu i z kawą na wynos", "Każdy jest 'busy'", "Pizza na stojąco i bajgiel na śniadanie"],
+    food: ["New York pizza slice", "Bagel z cream cheese i łososiem", "Pastrami on rye u Katz's", "Cheesecake z Junior's"],
+    movies: ["Annie Hall", "Manhattan", "Taksówkarz"],
+    music: ["Jay-Z – Empire State of Mind", "Frank Sinatra – New York, New York", "The Strokes"],
+    dateIdea: "Pizza slice na stojąco, spacer po Brooklyn Bridge i jazz w małym klubie w Greenwich Village."
+  },
+  {
+    name: "USA – Południe (Deep South)", flag: "🤠", region: "Ameryka Północna",
+    traditions: ["Niedzielny lunch po kościele", "Mardi Gras w Nowym Orleanie", "Front porch i sweet tea"],
+    stereotypes: ["'Y'all' co drugie zdanie", "Wszystko smażone i z masłem", "Gościnność i 'bless your heart'"],
+    food: ["Smażony kurczak z biscuits", "Gumbo i jambalaya", "Shrimp and grits", "Pecan pie"],
+    movies: ["Przeminęło z wiatrem", "Forrest Gump", "Służące"],
+    music: ["Elvis Presley", "Johnny Cash", "Louis Armstrong i jazz z Nowego Orleanu"],
+    dateIdea: "Smażony kurczak, słodka herbata na ganku i wieczór z bluesem oraz Elvisem w tle."
+  },
+  {
+    name: "USA – Środkowy Zachód", flag: "🌽", region: "Ameryka Północna",
+    traditions: ["Tailgating przed meczem futbolu amerykańskiego", "State Fair z deep-fried wszystkim", "4 lipca z grillem na podwórku"],
+    stereotypes: ["Mili do bólu (Midwest nice)", "Wszystko jest 'pop', nie 'soda'", "Kukurydza, kukurydza i jeszcze raz kukurydza"],
+    food: ["Chicago deep-dish pizza", "Hot dish z Minnesoty", "Cheese curds z Wisconsin", "Kanapka z wołowiną (Italian beef)"],
+    movies: ["Fargo", "Ferris Bueller's Day Off", "Field of Dreams"],
+    music: ["Bob Dylan", "Prince", "John Mellencamp"],
+    dateIdea: "Deep-dish pizza, lodowe piwo i mecz futbolu w TV z głośnym dopingiem dla lokalnej drużyny."
+  },
+  {
+    name: "USA – Teksas", flag: "🤠", region: "Ameryka Północna",
+    traditions: ["Rodeo i State Fair of Texas", "Friday Night Lights – futbol w liceum to religia", "Honky-tonk i taniec country"],
+    stereotypes: ["Wszystko jest większe w Teksasie", "Kowbojki, kapelusz i pickup truck", "BBQ to nie jedzenie, to styl życia"],
+    food: ["Brisket z dymem hickory", "Tex-Mex fajitas", "Chili con carne (bez fasoli!)", "Kolacha (czeskie ciastka z Teksasu)"],
+    movies: ["Olbrzym", "No Country for Old Men", "Dallas Buyers Club"],
+    music: ["Willie Nelson", "George Strait", "ZZ Top"],
+    dateIdea: "Brisket prosto z wędzarni, zimne piwo Lone Star i wieczór z country line dance w salonie."
+  },
+  {
+    name: "USA – Kalifornia", flag: "🏄", region: "Ameryka Północna",
+    traditions: ["Surf rano przed pracą", "Wine tasting w Napa Valley", "Hiking i yoga o wschodzie słońca"],
+    stereotypes: ["Wszyscy są na diecie i robią jogę", "Avocado toast i kombucha do wszystkiego", "Korki na autostradzie 405"],
+    food: ["California burrito (z frytkami w środku)", "Avocado toast", "Fish tacos z Baja", "In-N-Out Double-Double"],
+    movies: ["La La Land", "Pulp Fiction", "The Big Lebowski"],
+    music: ["The Beach Boys", "Dr. Dre", "Red Hot Chili Peppers"],
+    dateIdea: "Fish tacos na plaży, sok ze świeżych warzyw i zachód słońca nad oceanem z indie playlistą."
   }
 ];
