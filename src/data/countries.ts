@@ -687,7 +687,7 @@ export const countries: Country[] = [
     dateIdea: "Cuban sandwich w Little Havana, mojito na dachu w South Beach i taniec do salsy nad oceanem."
   },
   {
-    name: "USA – Hawaje", flag: "🌺", region: "Ameryka Północna",
+    name: "USA – Hawaje", flag: "🌺", region: "Oceania",
     traditions: ["Luau z pieczonym wieprzem", "Taniec hula", "Powitanie 'Aloha' i girlanda lei na szyi"],
     stereotypes: ["Koszula w kwiaty na każdą okazję", "Wszyscy surfują", "Spokój i 'island time'"],
     food: ["Poke bowl z tuńczykiem", "Kalua pork z imu", "Loco moco", "Spam musubi"],
