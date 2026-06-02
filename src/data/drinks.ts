@@ -72,7 +72,13 @@ export const drinks: Record<string, string[]> = {
   "Watykan": ["Mszalne wino z Castel Gandolfo", "Espresso z włoskiej kawiarni", "Limoncello z Lacjum", "Aranciata San Pellegrino"],
   "USA – Nowy Jork": ["Manhattan (koktajl)", "Cosmopolitan", "Egg cream (mleko, syrop i woda gazowana)", "Brooklyn Lager"],
   "USA – Luizjana": ["Mint julep", "Sweet tea z cytryną", "Sazerac z Nowego Orleanu", "Bourbon z Kentucky"],
-  "USA – Środkowy Zachód": ["Old Fashioned po wisconsińsku (z brandy)", "Bloody Mary z całą przekąską w szklance", "Pabst Blue Ribbon", "Root beer float"],
   "USA – Teksas": ["Margarita frozen", "Shiner Bock", "Whiskey sour z teksańskim bourbonem", "Lone Star beer"],
   "USA – Kalifornia": ["Wino z Napa Valley (Cabernet)", "Kombucha z imbirem", "IPA z West Coast", "Green juice ze szpinakiem i jabłkiem"],
+  "USA – Floryda": ["Mojito w stylu Miami", "Cuba libre", "Sok z pomarańczy z Florydy", "Key lime martini"],
+  "USA – Hawaje": ["Mai tai", "Piña colada", "Świeży sok z ananasa", "Kona coffee z mlekiem kokosowym"],
+  "USA – Tennessee": ["Jack Daniel's z lodem", "Mint julep", "Sweet tea bourbon", "Moonshine z słoika"],
+  "USA – Nevada": ["Klasyczny martini z Vegas", "Whiskey sour", "Las Vegas Lemon Drop", "Bloody Mary na kaca"],
+  "USA – Arizona": ["Prickly pear margarita", "Tequila sunrise", "Mezcal z solą", "Arnold Palmer (mrożona herbata + lemoniada)"],
+  "USA – Alaska": ["Alaskan Amber ale", "Duck Fart shot (Kahlúa, Baileys, whiskey)", "Hot toddy z whisky", "Glacier Vodka z lodem z lodowca"],
+
 };
