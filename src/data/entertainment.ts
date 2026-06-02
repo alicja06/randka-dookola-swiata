@@ -72,7 +72,13 @@ export const entertainment: Record<string, string[]> = {
   "Watykan": ["Quiz: rozpoznaj papieża po zdjęciu", "Wirtualny spacer po Muzeach Watykańskich", "Maraton 'Młodego papieża' Sorrentino"],
   "USA – Nowy Jork": ["Maraton 'Seinfeld' lub 'Sex and the City'", "Quiz: rozpoznaj dzielnicę po zdjęciu skyline'u", "Karaoke z Jay-Z i Alicią Keys 'Empire State of Mind'"],
   "USA – Luizjana": ["Lekcja line dance w salonie", "Maraton 'Prawdziwych detektywów' (sezon 1, Luizjana)", "Konkurs: kto zrobi lepsze sweet tea"],
-  "USA – Środkowy Zachód": ["Mecz futbolu amerykańskiego w TV z chipsami", "Maraton 'Stranger Things' (Indiana wita)", "Cornhole na dywanie (z woreczkami ryżu)"],
   "USA – Teksas": ["Lekcja two-step country dance", "Maraton 'Friday Night Lights' lub 'Yellowstone'", "Quiz: rozpoznaj rodzaj BBQ po sosie"],
   "USA – Kalifornia": ["Joga we dwoje z YouTube", "Maraton 'La La Land' z popcornem", "Quiz: rozpoznaj plażę kalifornijską ze zdjęcia"],
+  "USA – Floryda": ["Maraton 'Miami Vice' lub 'Dexter'", "Lekcja salsy z YouTube", "Quiz: rozpoznaj absurdalny nagłówek 'Florida Man'"],
+  "USA – Hawaje": ["Nauka tańca hula z YouTube", "Maraton 'Lilo i Stitch' oraz '50 pierwszych randek'", "Konkurs układania girlandy lei z papieru"],
+  "USA – Tennessee": ["Maraton 'Walk the Line' o Johnnym Cashu", "Karaoke z Dolly Parton i Elvisem", "Degustacja w ciemno: Jack Daniel's kontra inne whiskey"],
+  "USA – Nevada": ["Domowe kasyno: blackjack i poker o czekoladki", "Maraton 'Hangover' lub 'Ocean's Eleven'", "Quiz: rozpoznaj hotel z Las Vegas Strip"],
+  "USA – Arizona": ["Maraton 'Thelma i Louise' z mapą trasy", "Wirtualny spacer po Wielkim Kanionie w Google Earth", "Wieczór akustyczny ze Stevie Nicks i Linkin Park"],
+  "USA – Alaska": ["Maraton 'Into the Wild' pod kocem", "Oglądanie zorzy polarnej z live streamu", "Quiz: rozpoznaj zwierzę Alaski po sylwetce"],
+
 };

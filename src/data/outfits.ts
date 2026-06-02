@@ -1009,20 +1009,6 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Dżinsowa kurtka, t-shirt, jeansy, buty robocze",
     ],
   },
-  "USA – Środkowy Zachód": {
-    woman: [
-      "Bluza college, jeansy, sneakersy, kucyk",
-      "Flanelowa koszula, jeansy boyfriend, traperki – jesienny look",
-      "Sweter z norweskim wzorem, leginsy, śniegowce",
-      "Koszulka drużyny Packers/Bears, jeansy, czapka z daszkiem",
-    ],
-    man: [
-      "Bluza z kapturem drużyny NFL, jeansy, sneakersy",
-      "Flanelowa koszula, t-shirt, jeansy, traperki",
-      "Kurtka puchowa Carhartt, jeansy, czapka beanie",
-      "Polo, chinosy, mokasyny – casual Friday w biurze",
-    ],
-  },
   "USA – Teksas": {
     woman: [
       "Sukienka boho z frędzlami, kowbojki, kapelusz",
@@ -1051,4 +1037,89 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Hoodie tech-bro, jeansy slim, sneakersy Allbirds",
     ],
   },
+  "USA – Floryda": {
+    woman: [
+      "Kolorowa sukienka mini, sandałki, duże okulary – Miami beach vibe",
+      "Bikini, przezroczysta narzutka, klapki, słomkowy kapelusz",
+      "Neonowy crop top, białe szorty, sneakersy – South Beach noc",
+      "Lekka sukienka maxi w palmy, espadryle na koturnie",
+    ],
+    man: [
+      "Koszula w palmy rozpięta, lniane spodnie, mokasyny bez skarpetek",
+      "Białe lniane szorty, jasna koszula, klapki Havaianas",
+      "Biały lniany garnitur, t-shirt pod marynarką – Miami nights",
+      "Szorty kąpielowe, koszulka bez rękawów, czapka z daszkiem",
+    ],
+  },
+  "USA – Hawaje": {
+    woman: [
+      "Sukienka mini w hibiskusy, girlanda lei, kwiat we włosach",
+      "Bikini, parasol z liści, sarong wokół bioder",
+      "Biała sukienka maxi w kwiaty, sandały, kapelusz panama",
+      "Top na szyję w stylu hawajskim, długa spódnica, japonki",
+    ],
+    man: [
+      "Klasyczna 'aloha shirt' w kwiaty, beżowe szorty, japonki",
+      "Lniana koszula rozpięta, szorty kąpielowe, sandały",
+      "Koszulka bez rękawów, board shorts, deska pod pachą",
+      "Biały lniany komplet, koszula w palmy, klapki",
+    ],
+  },
+  "USA – Tennessee": {
+    woman: [
+      "Sukienka prairie z koronką, kowbojki, kapelusz – Nashville chic",
+      "Dżinsowe szorty, kraciasta koszula wiązana, kowbojki",
+      "Sukienka koktajlowa, perły, fascynator – Derby vibe",
+      "Skórzana ramoneska, sukienka mini, kowbojki na obcasie",
+    ],
+    man: [
+      "Kraciasta koszula, jeansy Wrangler, kowbojki, kapelusz stetson",
+      "Koszulka country band, dżinsy, traperki",
+      "Granatowy garnitur, koszula w paski, bolo tie",
+      "Skórzana kurtka, t-shirt z Johnnym Cashem, jeansy, buty robocze",
+    ],
+  },
+  "USA – Nevada": {
+    woman: [
+      "Cekinowa sukienka mini, szpilki, klatch – wieczór w kasynie",
+      "Czarna sukienka koktajlowa, biżuteria z kryształkami, szpilki",
+      "Boho zestaw na Burning Man: frędzle, goggles, kowbojki",
+      "Bikini z cekinów, krótkie szorty, sneakersy – pool party w Vegas",
+    ],
+    man: [
+      "Czarny garnitur, biała koszula, krawat – Sinatra w Vegas",
+      "Welurowa marynarka, czarne spodnie, lakierki – pokerzysta",
+      "Hawajska koszula, krótkie spodenki, klapki – Hangover style",
+      "Czarny t-shirt, skórzana kurtka, jeansy – Burning Man rebel",
+    ],
+  },
+  "USA – Arizona": {
+    woman: [
+      "Sukienka boho midi z frędzlami, sandały gladiatorki, turkusowa biżuteria",
+      "Białe spodnie szerokie, top w stylu navajo, kapelusz, kowbojki",
+      "Dżinsowe szorty, top na ramiączkach, kapelusz, okulary aviator",
+      "Sukienka prairie w pastelowych pustynnych kolorach, sandały",
+    ],
+    man: [
+      "Lniana koszula, krótkie spodenki khaki, trekkingowe sandały",
+      "Western koszula, dżinsy, kowbojki, kapelusz przeciwsłoneczny",
+      "T-shirt z kaktusem, jeansy, glany, czapka z daszkiem",
+      "Lniany garnitur w piaskowym kolorze, koszula bez krawata, mokasyny",
+    ],
+  },
+  "USA – Alaska": {
+    woman: [
+      "Puchowa kurtka parka z futerkiem, śniegowce, czapka z pomponem",
+      "Sweter z norweskim wzorem, dżinsy ocieplane, traperki",
+      "Polar, leginsy termiczne, kurtka outdoor, czapka beanie",
+      "Wełniana sukienka, rajstopy ocieplane, kozaki za kolano, szal",
+    ],
+    man: [
+      "Kurtka Carhartt, flanelowa koszula, dżinsy, buty robocze",
+      "Puchowa parka, czapka z nausznikami, ciepłe rękawice, śniegowce",
+      "Sweter z reniferem, polar, spodnie outdoor, traperki",
+      "Wełniana kurtka drwala, t-shirt, dżinsy, ciężkie buty",
+    ],
+  },
 };
+

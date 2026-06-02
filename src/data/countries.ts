@@ -660,15 +660,6 @@ export const countries: Country[] = [
     dateIdea: "Smażony kurczak, słodka herbata na ganku i wieczór z bluesem oraz Elvisem w tle."
   },
   {
-    name: "USA – Środkowy Zachód", flag: "🌽", region: "Ameryka Północna",
-    traditions: ["Tailgating przed meczem futbolu amerykańskiego", "State Fair z deep-fried wszystkim", "4 lipca z grillem na podwórku"],
-    stereotypes: ["Mili do bólu (Midwest nice)", "Wszystko jest 'pop', nie 'soda'", "Kukurydza, kukurydza i jeszcze raz kukurydza"],
-    food: ["Chicago deep-dish pizza", "Hot dish z Minnesoty", "Cheese curds z Wisconsin", "Kanapka z wołowiną (Italian beef)"],
-    movies: ["Fargo", "Ferris Bueller's Day Off", "Field of Dreams"],
-    music: ["Bob Dylan", "Prince", "John Mellencamp"],
-    dateIdea: "Deep-dish pizza, lodowe piwo i mecz futbolu w TV z głośnym dopingiem dla lokalnej drużyny."
-  },
-  {
     name: "USA – Teksas", flag: "🤠", region: "Ameryka Północna",
     traditions: ["Rodeo i State Fair of Texas", "Friday Night Lights – futbol w liceum to religia", "Honky-tonk i taniec country"],
     stereotypes: ["Wszystko jest większe w Teksasie", "Kowbojki, kapelusz i pickup truck", "BBQ to nie jedzenie, to styl życia"],
@@ -685,5 +676,60 @@ export const countries: Country[] = [
     movies: ["La La Land", "Pulp Fiction", "The Big Lebowski"],
     music: ["The Beach Boys", "Dr. Dre", "Red Hot Chili Peppers"],
     dateIdea: "Fish tacos na plaży, sok ze świeżych warzyw i zachód słońca nad oceanem z indie playlistą."
+  },
+  {
+    name: "USA – Floryda", flag: "🌴", region: "Ameryka Północna",
+    traditions: ["Spring break w Miami", "Wieczorne spacery po Ocean Drive", "Wyprawy łodzią na Florida Keys"],
+    stereotypes: ["'Florida Man' i absurdalne newsy", "Emeryci na golfcartach", "Aligator w każdym jeziorku"],
+    food: ["Cuban sandwich", "Key lime pie", "Stone crab claws", "Ceviche w stylu Miami"],
+    movies: ["Miami Vice", "Moonlight", "Florida Project"],
+    music: ["Pitbull", "Gloria Estefan", "Tom Petty"],
+    dateIdea: "Cuban sandwich w Little Havana, mojito na dachu w South Beach i taniec do salsy nad oceanem."
+  },
+  {
+    name: "USA – Hawaje", flag: "🌺", region: "Ameryka Północna",
+    traditions: ["Luau z pieczonym wieprzem", "Taniec hula", "Powitanie 'Aloha' i girlanda lei na szyi"],
+    stereotypes: ["Koszula w kwiaty na każdą okazję", "Wszyscy surfują", "Spokój i 'island time'"],
+    food: ["Poke bowl z tuńczykiem", "Kalua pork z imu", "Loco moco", "Spam musubi"],
+    movies: ["50 pierwszych randek", "Spadkobiercy", "Lilo i Stitch"],
+    music: ["Israel Kamakawiwoʻole – Somewhere Over the Rainbow", "Ukulele covers", "Hawaiian slack-key guitar"],
+    dateIdea: "Poke bowl na plaży Waikiki, ukulele w tle i zachód słońca z koktajlem mai tai."
+  },
+  {
+    name: "USA – Tennessee", flag: "🎸", region: "Ameryka Północna",
+    traditions: ["Grand Ole Opry w Nashville", "Whiskey tasting w Lynchburgu", "Pielgrzymka do Graceland"],
+    stereotypes: ["Country music w każdym barze", "Wszyscy grają na gitarze", "Bourbon, biscuits i biblia"],
+    food: ["Nashville hot chicken", "Memphis BBQ ribs", "Biscuits and gravy", "Banana pudding"],
+    movies: ["Walk the Line", "Coal Miner's Daughter", "Hustle & Flow"],
+    music: ["Dolly Parton", "Johnny Cash", "Elvis Presley"],
+    dateIdea: "Hot chicken w Nashville, szklaneczka Jack Daniel's i wieczór z koncertem country na żywo."
+  },
+  {
+    name: "USA – Nevada", flag: "🎰", region: "Ameryka Północna",
+    traditions: ["Wieczór w kasynie na Strip", "Śluby w Las Vegas w 15 minut", "Festiwal Burning Man na pustyni"],
+    stereotypes: ["Wszystko świeci 24/7", "'What happens in Vegas...'", "Elvis udziela ślubów"],
+    food: ["Bufet w kasynie", "Shrimp cocktail za grosze", "Steak na grubo", "Late-night diner pancakes"],
+    movies: ["Hangover", "Casino", "Ocean's Eleven"],
+    music: ["Frank Sinatra w Sands", "The Killers", "Elvis w Vegas"],
+    dateIdea: "Steak i czerwone wino, partia blackjacka i spacer po neonowym Strip do białego rana."
+  },
+  {
+    name: "USA – Arizona", flag: "🌵", region: "Ameryka Północna",
+    traditions: ["Wschód słońca nad Wielkim Kanionem", "Sedona vortex i duchowe retreaty", "Spring training baseballu"],
+    stereotypes: ["Suchy upał ('but it's a dry heat')", "Kaktusy saguaro wszędzie", "Emeryci uciekający przed zimą"],
+    food: ["Sonoran hot dog", "Chimichanga (wynaleziona w Tucson)", "Navajo frybread", "Prickly pear margarita"],
+    movies: ["Raising Arizona", "Psychoza", "Thelma i Louise"],
+    music: ["Stevie Nicks", "Linkin Park (Chester Bennington z Phoenix)", "Alice Cooper"],
+    dateIdea: "Chimichanga i margarita z opuncji, jeep przez pustynię i zachód słońca nad czerwonymi skałami Sedony."
+  },
+  {
+    name: "USA – Alaska", flag: "🐻", region: "Ameryka Północna",
+    traditions: ["Iditarod – wyścig psich zaprzęgów", "Łowienie łososia w sezonie", "Polowanie na zorzę polarną"],
+    stereotypes: ["Niedźwiedzie na podwórku", "Łoś blokujący drogę", "Mężczyzn więcej niż kobiet"],
+    food: ["Świeży łosoś z grilla", "King crab legs", "Reindeer sausage", "Akutaq (eskimoskie lody)"],
+    movies: ["Into the Wild", "Biały Kieł", "Grizzly Man"],
+    music: ["Jewel", "Portugal. The Man", "Hobo Jim"],
+    dateIdea: "Pieczony łosoś, gorąca herbata w termosie i wieczór pod kocem z patrzeniem w zorzę polarną."
   }
 ];
+
