@@ -717,7 +717,7 @@ export const countries: Country[] = [
     name: "USA – Arizona", flag: "🌵", region: "Ameryka Północna",
     traditions: ["Wschód słońca nad Wielkim Kanionem", "Sedona vortex i duchowe retreaty", "Spring training baseballu"],
     stereotypes: ["Suchy upał ('but it's a dry heat')", "Kaktusy saguaro wszędzie", "Emeryci uciekający przed zimą"],
-    food: ["Sonoran hot dog", "Chimichanga (wynaleziona w Tucson)", "Navajo frybread", "Prickly pear margarita"],
+    food: ["Sonoran hot dog", "Chimichanga (wynaleziona w Tucson)", "Navajo frybread", "Tamales"],
     movies: ["Raising Arizona", "Psychoza", "Thelma i Louise"],
     music: ["Stevie Nicks", "Linkin Park (Chester Bennington z Phoenix)", "Alice Cooper"],
     dateIdea: "Chimichanga i margarita z opuncji, jeep przez pustynię i zachód słońca nad czerwonymi skałami Sedony."
