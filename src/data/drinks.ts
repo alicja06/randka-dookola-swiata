@@ -71,7 +71,7 @@ export const drinks: Record<string, string[]> = {
   "Kostaryka": ["Imperial beer", "Guaro Cacique (trzcinowy alkohol)", "Agua de sapo (limonka, imbir, trzcina)", "Café chorreado z filtra płóciennego"],
   "Watykan": ["Mszalne wino z Castel Gandolfo", "Espresso z włoskiej kawiarni", "Limoncello z Lacjum", "Aranciata San Pellegrino"],
   "USA – Nowy Jork": ["Manhattan (koktajl)", "Cosmopolitan", "Egg cream (mleko, syrop i woda gazowana)", "Brooklyn Lager"],
-  "USA – Luizjana": ["Mint julep", "Sweet tea z cytryną", "Sazerac z Nowego Orleanu", "Bourbon z Kentucky"],
+  "USA – Luizjana": ["Mint julep", "Sweet tea z cytryną", "Sazerac i hurricane z Nowego Orleanu", "Bourbon z Kentucky"],
   "USA – Teksas": ["Margarita frozen", "Shiner Bock", "Whiskey sour z teksańskim bourbonem", "Lone Star beer"],
   "USA – Kalifornia": ["Wino z Napa Valley (Cabernet)", "Kombucha z imbirem", "IPA z West Coast", "Green juice ze szpinakiem i jabłkiem"],
   "USA – Floryda": ["Mojito w stylu Miami", "Cuba libre", "Sok z pomarańczy z Florydy", "Key lime martini"],
