@@ -40,11 +40,13 @@ function Index() {
       <div className="max-w-4xl mx-auto px-5 py-12 md:py-20">
         <header className="text-center mb-12">
           <p className="text-xs md:text-sm uppercase tracking-[0.4em] text-primary/80 mb-4">Randka Dookoła Świata</p>
-          <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-5">
-            Jeden kraj.<br />
-            <span className="text-gold italic">Jedna randka.</span>
+          <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-5 pb-1">
+            Jeden kraj<br />
+            <span className="text-gold italic">Jedna randka</span>
           </h1>
-
+          <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
+            Wylosuj jeden spośród wielu krajów na całym świecie i wybierz się na niezapomnianą randkę inspirowaną kulturą danego kraju!
+          </p>
         </header>
 
         <div className="flex justify-center mb-16">
