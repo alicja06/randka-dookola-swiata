@@ -19,7 +19,7 @@ export function CountryCard({ country }: { country: Country }) {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-700">
       <div className="text-center mb-10">
-        <h2 className="text-5xl md:text-7xl font-display font-bold text-gold mb-3">{country.name}</h2>
+        <h2 className="text-5xl md:text-7xl font-display font-bold text-gold mb-5 leading-tight pb-1">{country.name}</h2>
         <p className="text-muted-foreground italic">{country.region}</p>
       </div>
 
