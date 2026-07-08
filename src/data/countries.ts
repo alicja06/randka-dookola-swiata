@@ -620,7 +620,7 @@ export const countries: Country[] = [
     desserts: ["Makroudh – ciasteczka z daktylami", "Baklava tunisienne", "Assida – pudding z semoliną", "Bambalouni – tunezyjskie pączki"],
     movies: ["The Man Who Sold His Skin", "Beauty and the Dogs", "A Son"],
     music: ["Emel Mathlouthi", "Latifa Arfaoui", "Saber Rebaï"],
-    dateIidea: "Pikantne brik z jajkiem, mięta z herbatą z orzeszkami pinii i spacer po Sidi Bou Said na zdjęciach."
+    dateIdea: "Pikantne brik z jajkiem, mięta z herbatą z orzeszkami pinii i spacer po Sidi Bou Said na zdjęciach."
   },
   {
     name: "Boliwia", flag: "🇧🇴", region: "Ameryka Południowa",
