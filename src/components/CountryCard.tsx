@@ -2,7 +2,7 @@ import { Country } from "@/data/countries";
 import { outfits } from "@/data/outfits";
 import { drinks } from "@/data/drinks";
 import { entertainment } from "@/data/entertainment";
-import { Utensils, Film, Music, Sparkles, Theater, Shirt, Wine, Gamepad2 } from "lucide-react";
+import { Utensils, Film, Music, Sparkles, Theater, Shirt, Wine, Gamepad2, IceCream } from "lucide-react";
 
 const sections = [
   { key: "traditions" as const, label: "Tradycje", icon: Sparkles },
