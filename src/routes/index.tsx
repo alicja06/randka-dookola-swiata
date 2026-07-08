@@ -70,7 +70,7 @@ function Index() {
 
 
         <footer className="text-center mt-20 text-xs text-muted-foreground/60 uppercase tracking-widest">
-          50 krajów · nieskończona liczba wieczorów
+          Nieskończona liczba wieczorów
         </footer>
       </div>
     </main>
