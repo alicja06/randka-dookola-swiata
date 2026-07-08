@@ -2,7 +2,7 @@ import { Country } from "@/data/countries";
 import { outfits } from "@/data/outfits";
 import { drinks } from "@/data/drinks";
 import { entertainment } from "@/data/entertainment";
-import { Utensils, Film, Music, Sparkles, Theater, Shirt, Wine, Gamepad2 } from "lucide-react";
+import { Utensils, Film, Music, Sparkles, Theater, Shirt, Wine, Gamepad2, IceCream } from "lucide-react";
 
 const sections = [
   { key: "traditions" as const, label: "Tradycje", icon: Sparkles },
@@ -57,7 +57,7 @@ export function CountryCard({ country }: { country: Country }) {
         </div>
       )}
 
-      <div className="grid md:grid-cols-2 gap-4 mb-4">
+      <div className="grid md:grid-cols-3 gap-4 mb-4">
         <div className="bg-card-gradient border border-border rounded-2xl p-6 hover:border-primary/40 transition-colors">
           <div className="flex items-center gap-2 mb-4">
             <Utensils className="w-4 h-4 text-primary" />
@@ -65,6 +65,21 @@ export function CountryCard({ country }: { country: Country }) {
           </div>
           <ul className="space-y-2">
             {country.food.map((item, i) => (
+              <li key={i} className="text-foreground/85 flex gap-2 leading-relaxed">
+                <span className="text-primary mt-1.5 text-xs">◆</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="bg-card-gradient border border-border rounded-2xl p-6 hover:border-primary/40 transition-colors">
+          <div className="flex items-center gap-2 mb-4">
+            <IceCream className="w-4 h-4 text-primary" />
+            <h4 className="font-display text-xl uppercase tracking-wider">Desery</h4>
+          </div>
+          <ul className="space-y-2">
+            {country.desserts.map((item, i) => (
               <li key={i} className="text-foreground/85 flex gap-2 leading-relaxed">
                 <span className="text-primary mt-1.5 text-xs">◆</span>
                 <span>{item}</span>
