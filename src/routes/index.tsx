@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { countries, type Country } from "@/data/countries";
 import { CountryCard } from "@/components/CountryCard";
-import { Dices, RotateCw } from "lucide-react";
+import { Dices, RotateCw, Download } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -18,6 +18,8 @@ function Index() {
   const [country, setCountry] = useState<Country | null>(null);
   const [rolling, setRolling] = useState(false);
   const [tick, setTick] = useState(0);
+  const [saving, setSaving] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
 
   const draw = () => {
     setRolling(true);
@@ -33,6 +35,29 @@ function Index() {
         setRolling(false);
       }
     }, 70);
+  };
+
+  const saveAsJpg = async () => {
+    if (!cardRef.current || !country) return;
+    setSaving(true);
+    try {
+      const { toJpeg } = await import("html-to-image");
+      const bg = getComputedStyle(document.body).backgroundColor || "#1a0f0a";
+      const dataUrl = await toJpeg(cardRef.current, {
+        quality: 0.95,
+        pixelRatio: 2,
+        backgroundColor: bg,
+        cacheBust: true,
+      });
+      const link = document.createElement("a");
+      link.download = `randka-${country.name.replace(/\s+/g, "-").toLowerCase()}.jpg`;
+      link.href = dataUrl;
+      link.click();
+    } catch (e) {
+      console.error("Nie udało się zapisać obrazu", e);
+    } finally {
+      setSaving(false);
+    }
   };
 
   return (
@@ -61,8 +86,21 @@ function Index() {
         </div>
 
         {country && (
-          <div key={rolling ? tick : "final"}>
+          <div ref={cardRef} key={rolling ? tick : "final"} className="bg-hero p-4 md:p-6 rounded-3xl">
             <CountryCard country={country} />
+          </div>
+        )}
+
+        {country && !rolling && (
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={saveAsJpg}
+              disabled={saving}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-colors font-display text-base disabled:opacity-60"
+            >
+              <Download className={`w-4 h-4 ${saving ? "animate-pulse" : ""}`} />
+              {saving ? "Zapisywanie..." : "Zapisz jako JPG"}
+            </button>
           </div>
         )}
 
