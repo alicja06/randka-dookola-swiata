@@ -86,8 +86,21 @@ function Index() {
         </div>
 
         {country && (
-          <div key={rolling ? tick : "final"}>
+          <div ref={cardRef} key={rolling ? tick : "final"} className="bg-hero p-4 md:p-6 rounded-3xl">
             <CountryCard country={country} />
+          </div>
+        )}
+
+        {country && !rolling && (
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={saveAsJpg}
+              disabled={saving}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-colors font-display text-base disabled:opacity-60"
+            >
+              <Download className={`w-4 h-4 ${saving ? "animate-pulse" : ""}`} />
+              {saving ? "Zapisywanie..." : "Zapisz jako JPG"}
+            </button>
           </div>
         )}
 
