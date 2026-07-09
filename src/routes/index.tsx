@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { countries, type Country } from "@/data/countries";
 import { CountryCard } from "@/components/CountryCard";
-import { Dices, RotateCw } from "lucide-react";
+import { Dices, RotateCw, Download } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Index,
