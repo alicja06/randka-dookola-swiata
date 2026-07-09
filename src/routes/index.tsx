@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { countries, type Country } from "@/data/countries";
 import { CountryCard } from "@/components/CountryCard";
 import { Dices, RotateCw, Download } from "lucide-react";
