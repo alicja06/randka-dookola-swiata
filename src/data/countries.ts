@@ -821,5 +821,156 @@ export const countries: Country[] = [
     movies: ["West Side Story", "El Cantante", "Fast & Furious 5 (kręcony w San Juan)"],
     music: ["Bad Bunny", "Daddy Yankee", "Marc Anthony"],
     dateIdea: "Mofongo z krewetkami, piña colada w Old San Juan i taniec salsy pod palmami przy dźwiękach reggaetonu."
+  },
+  {
+    name: "Dania", flag: "🇩🇰", region: "Europa Północna",
+    traditions: ["Hygge – wieczory przy świecach i kocach", "Fredagsbar – piątkowe piwo z kolegami", "Julefrokost – długie świąteczne obiady"],
+    stereotypes: ["Najszczęśliwszy naród świata", "Wszyscy jeżdżą rowerem, nawet w deszczu", "Zakochani w minimalizmie i designie"],
+    food: ["Smørrebrød – kanapki na razowym chlebie", "Frikadeller – kotleciki wieprzowe", "Stegt flæsk – smażony boczek z ziemniakami", "Śledź marynowany na wiele sposobów"],
+    desserts: ["Wienerbrød – duński pączek", "Rødgrød med fløde – kisiel z owoców z kremem", "Æbleskiver – kuliste pączki jabłkowe", "Kanelsnegle – ślimaki cynamonowe"],
+    movies: ["Uczta Babette", "Polowanie", "Druk"],
+    music: ["Lukas Graham", "MØ", "Aqua – Barbie Girl"],
+    dateIdea: "Wieczór hygge: świece, gruby koc, smørrebrød i skandynawski kryminał w tle."
+  },
+  {
+    name: "Finlandia", flag: "🇫🇮", region: "Europa Północna",
+    traditions: ["Sauna kilka razy w tygodniu", "Kąpiel w jeziorze po saunie (nawet zimą)", "Zbieranie jagód i grzybów w lesie"],
+    stereotypes: ["Milczący i introwertyczni", "Uzależnieni od kawy (piją najwięcej na świecie)", "Kochają heavy metal i tango"],
+    food: ["Karjalanpiirakka – karelskie pierożki z ryżem", "Lohikeitto – kremowa zupa z łososia", "Poronkäristys – duszony renifer", "Ruisleipä – ciemny chleb żytni"],
+    desserts: ["Korvapuusti – bułeczki cynamonowe", "Runebergintorttu – babeczki migdałowe", "Mustikkapiirakka – tarta z jagodami", "Salmiakki – słona lukrecja"],
+    movies: ["Człowiek bez przeszłości", "Chłopiec i pelikan", "Nietypowa opowieść wigilijna"],
+    music: ["Nightwish", "HIM", "Sanni"],
+    dateIdea: "Domowa sauna (lub gorący prysznic), zupa z łososia, jagodowa tarta i wieczór w ciszy patrząc w świece."
+  },
+  {
+    name: "Chorwacja", flag: "🇭🇷", region: "Europa Południowa",
+    traditions: ["Fjaka – sztuka błogiego nicnierobienia nad morzem", "Klapa – wielogłosowe śpiewy a cappella", "Kawa po dwie godziny na starówce"],
+    stereotypes: ["Wszyscy mają łódkę lub kuzyna z łódką", "Kochają Hajduk lub Dinamo bardziej niż życie", "Każda wyspa ma swoją najlepszą oliwę"],
+    food: ["Peka – mięso i warzywa duszone pod żeliwnym kloszem", "Črni rižot – czarne risotto z kalmarem", "Ćevapi z ajvarem i cebulą", "Pašticada – wołowina duszona w winie"],
+    desserts: ["Rožata – dubrownicki krem karmelowy", "Fritule – małe pączki z rumem", "Kremšnita ze Samoboru", "Paprenjaci – ciasteczka z pieprzem i miodem"],
+    movies: ["Kto tam śpiewa?", "Ničiji sin", "Gra o tron (kręcona w Dubrowniku)"],
+    music: ["Oliver Dragojević", "2CELLOS", "Severina"],
+    dateIdea: "Owoce morza z grilla, chłodne Pošip, świece i wieczorne zdjęcia Dubrownika na projektorze."
+  },
+  {
+    name: "Rumunia", flag: "🇷🇴", region: "Europa Wschodnia",
+    traditions: ["Mărțișor – biało-czerwone amulety 1 marca", "Kolędowanie z maskami zwierząt", "Długie stoły z rodziną w niedzielę"],
+    stereotypes: ["Kraj Drakuli i mrocznych zamków", "Wszyscy mają babcię na wsi z kurami", "Cygańska muzyka na każdym weselu"],
+    food: ["Sarmale – gołąbki w liściach kapusty kiszonej", "Mămăligă z brânzą i śmietaną", "Mici – grillowane paluszki mięsne", "Ciorbă de burtă – zupa flaczkowa"],
+    desserts: ["Papanași – smażone twarożniki z konfiturą", "Cozonac – strucla z orzechami", "Salam de biscuiți – 'salami' z ciastek", "Amandine – czekoladowe ciastka z rumem"],
+    movies: ["4 miesiące, 3 tygodnie i 2 dni", "Śmierć pana Lazarescu", "Aferim!"],
+    music: ["Inna", "Alexandra Stan", "Maria Tănase"],
+    dateIdea: "Gołąbki z mămăligą, kieliszek țuiki i seans o Draculi z zamkiem Bran w tle na projektorze."
+  },
+  {
+    name: "Serbia", flag: "🇷🇸", region: "Europa Południowa",
+    traditions: ["Slava – rodzinne święto patrona domu", "Kafana – wieczór z muzyką na żywo i rakiją", "Pieczenie prosiaka na weselu"],
+    stereotypes: ["Rakija leczy wszystko", "Wszyscy śpiewają turbo-folk", "Kawa po turecku pije się godzinami"],
+    food: ["Ćevapi z lepinją i kajmakiem", "Pljeskavica – wielki kotlet z grilla", "Karađorđeva šnicla nadziewana kajmakiem", "Sarma – gołąbki w kapuście kiszonej"],
+    desserts: ["Vasina torta – orzechowo-czekoladowa", "Krempita – ciasto z kremem waniliowym", "Tulumbe w syropie", "Palačinke z Eurokremem"],
+    movies: ["Underground", "Rany", "Czarny kot, biały kot"],
+    music: ["Ceca", "Bajaga i Instruktori", "Riblja Čorba"],
+    dateIdea: "Ćevapi z kajmakiem, kieliszek rakii i wieczór turbo-folk karaoke z Ceca w domowej kafanie."
+  },
+  {
+    name: "Tajwan", flag: "🇹🇼", region: "Azja Wschodnia",
+    traditions: ["Nocne targi z jedzeniem do rana", "Festiwal latarni w Pingxi", "Ceremonia herbaty gongfu z górskimi oolongami"],
+    stereotypes: ["Bubble tea na każdym rogu", "Najuprzejmiejsi ludzie w Azji", "Kraj gadżetów i półprzewodników"],
+    food: ["Beef noodle soup – narodowa zupa", "Xiaolongbao z Din Tai Fung", "Lu rou fan – ryż z duszoną wieprzowiną", "Oyster omelet z nocnego targu"],
+    desserts: ["Bubble tea z tapioką", "Pineapple cake – tajwańska ikona", "Mango shaved ice", "Douhua – jedwabisty tofu z syropem"],
+    movies: ["Miłosny nastrój (Wong Kar-wai)", "Yi Yi", "Przyczajony tygrys, ukryty smok"],
+    music: ["Jay Chou", "Jolin Tsai", "Mayday"],
+    dateIdea: "Domowe bao, domowe bubble tea z tapioką i seans Wong Kar-waia przy neonowej lampce."
+  },
+  {
+    name: "Kambodża", flag: "🇰🇭", region: "Azja Południowo-Wschodnia",
+    traditions: ["Nowy Rok Chol Chnam Thmey z polewaniem wodą", "Tańce apsara w strojach ze złotem", "Modlitwa mnichów o wschodzie słońca w Angkor Wat"],
+    stereotypes: ["Cały kraj to Angkor Wat", "Ludzie zawsze się uśmiechają", "Tuk-tuk zamiast taksówki"],
+    food: ["Fish amok – ryba w curry kokosowym w liściu bananowca", "Lok lak – wołowina z pieprzem Kampot", "Nom banh chok – zielony makaron ryżowy", "Bai sach chrouk – grillowana wieprzowina z ryżem"],
+    desserts: ["Num ansom chek – bananowe placki ryżowe w liściach", "Sangkhya lapov – dyniowa panna cotta", "Cha houy teuk – galaretka z syropem palmowym", "Lód z pastą fasolową"],
+    movies: ["Pola śmierci", "Pierwsi zabili mojego ojca", "Zaginiony obraz"],
+    music: ["Sinn Sisamouth", "Ros Serey Sothea", "VannDa"],
+    dateIdea: "Fish amok w liściu bananowca, świece, projektor z filmem o Angkor Wat i cicha muzyka khmerska w tle."
+  },
+  {
+    name: "Bangladesz", flag: "🇧🇩", region: "Azja Południowa",
+    traditions: ["Pohela Boishakh – noworoczne parady w czerwono-białych sari", "Adda – długie posiadówki przy herbacie i rozmowach", "Wesela na trzy dni z henną i tańcem"],
+    stereotypes: ["Kraj deszczu monsunowego i rzek", "Wszyscy kochają krykiet", "Herbata i ryż do każdego posiłku"],
+    food: ["Kacchi biryani – jagnięcina z ryżem basmati", "Ilish maach bhaja – smażona ryba hilsa", "Panta bhat – ryż moczony na noc z chilli", "Bhuna khichuri z jagnięciną na deszczowe wieczory"],
+    desserts: ["Roshogolla – kulki z twarogu w syropie", "Mishti doi – karmelowy jogurt z gliny", "Chomchom z Tangail", "Pitha – ryżowe placuszki z jaggery"],
+    movies: ["Matir Moina", "Aynabaji", "Pole owadów"],
+    music: ["Runa Laila", "James (Nagar Baul)", "Coke Studio Bangla"],
+    dateIdea: "Biryani z jagnięciną, mishti doi na deser i wieczór z Coke Studio Bangla oraz henną na dłoniach."
+  },
+  {
+    name: "ZEA (Dubaj)", flag: "🇦🇪", region: "Bliski Wschód",
+    traditions: ["Majlis – wieczorne spotkania z kawą kardamonową i daktylami", "Sokolnictwo w pustynnych obozach", "Wyścigi wielbłądów o poranku"],
+    stereotypes: ["Wszystko musi być najwyższe, najdroższe i pozłacane", "Brunch w piątek z szampanem to obowiązek", "Supersamochody stoją porzucone na lotnisku"],
+    food: ["Machboos – ryż z jagnięciną i przyprawami", "Shawarma z kurczaka z toum", "Hummus z ciepłą pitą", "Mixed grill z jagnięciny i kurczaka"],
+    desserts: ["Luqaimat – smażone kulki z syropem daktylowym", "Umm Ali – arabska wersja pudding chleba", "Knafeh z serem i pistacjami", "Świeże daktyle Medjool z kawą"],
+    movies: ["Mission: Impossible – Ghost Protocol", "Star Trek Beyond", "Diuna (kręcona na pustyni Abu Zabi)"],
+    music: ["Hussain Al Jassmi", "Balqees", "Amr Diab"],
+    dateIdea: "Domowy majlis: dywan, poduszki, arabska kawa z kardamonem, daktyle, hummus i widok na Burdż Chalifa z YouTube 4K."
+  },
+  {
+    name: "Gruzja", flag: "🇬🇪", region: "Kaukaz",
+    traditions: ["Supra – wielogodzinna uczta z tamadą wznoszącym toasty", "Winiarstwo w glinianych qvevri od 8 tys. lat", "Śpiew wielogłosowy uznany przez UNESCO"],
+    stereotypes: ["Każdy Gruzin ma swoje wino i winnicę", "Gościnność do przesady – wychodzisz z 3 kilo jedzenia", "Wszyscy tańczą lezginkę na weselach"],
+    food: ["Chaczapuri adżarskie z jajkiem i masłem", "Chinkali – soczyste pierogi z wołowiną", "Mtsvadi – szaszłyk z jagnięciny", "Lobio – fasola w glinianym garnku"],
+    desserts: ["Czurczchela – orzechy w soku winogronowym", "Pelamushi – kisiel z moszczu winnego", "Nazuki – słodki chleb z rodzynkami", "Gozinaki – orzechy w miodzie na Nowy Rok"],
+    movies: ["Podróż w Gruzję", "Mandaryny", "Tańczyliśmy"],
+    music: ["Katie Melua", "Nino Katamadze", "Chór Rustavi"],
+    dateIdea: "Domowa supra: chaczapuri adżarskie, chinkali, karafka gruzińskiego Saperavi i wznoszenie toastów przez cały wieczór."
+  },
+  {
+    name: "Zimbabwe", flag: "🇿🇼", region: "Afryka",
+    traditions: ["Muzyka mbira na ceremoniach duchowych", "Rzeźbienie w kamieniu shona", "Opowieści przy ognisku pod gwiazdami"],
+    stereotypes: ["Wodospady Wiktorii i safari na każdym kroku", "Wszyscy są mistrzami krykieta", "Kraj słoni i baobabów"],
+    food: ["Sadza – kukurydziana papka do wszystkiego", "Nyama choma – grillowane mięso", "Muriwo unedovi – gulasz z liści z orzeszkami", "Kapenta – małe smażone rybki"],
+    desserts: ["Chimodho – słodki chleb kukurydziany", "Mapopo candy – karmelki z papai", "Maputi – prażona kukurydza na słodko", "Owoce baobabu z jogurtem"],
+    movies: ["Neria", "Yellow Card", "Cry the Beloved Country"],
+    music: ["Oliver Mtukudzi", "Thomas Mapfumo", "Winky D"],
+    dateIdea: "Grillowane mięso, sadza, wieczór afrykańskich rytmów mbira i dokument o Wodospadach Wiktorii na projektorze."
+  },
+  {
+    name: "Madagaskar", flag: "🇲🇬", region: "Afryka",
+    traditions: ["Famadihana – odwracanie kości przodków co kilka lat", "Hira gasy – wioskowe koncerty z tańcem i opowieścią", "Niedzielny obiad z całą rodziną i wanilią w każdym daniu"],
+    stereotypes: ["Kraj lemurów i baobabów", "Wanilia w każdym daniu", "Rajska wyspa na końcu świata"],
+    food: ["Romazava – narodowy gulasz mięsno-warzywny", "Ravitoto – tłuczone liście manioku z wieprzowiną", "Ryż z każdym posiłkiem (trzy razy dziennie)", "Akoho sy voanio – kurczak w mleku kokosowym"],
+    desserts: ["Mofo gasy – ryżowe pączki na śniadanie", "Koba – banano-orzechowa rolada w liściu", "Lody waniliowe z prawdziwej wanilii Bourbon", "Bonbon coco – karmelki kokosowe"],
+    movies: ["Madagaskar (Dreamworks)", "L'Île rouge", "Ady Gasy"],
+    music: ["Jaojoby", "Salala", "Rajery"],
+    dateIdea: "Kurczak w mleku kokosowym z ryżem, lody waniliowe, świece i dokument o lemurach BBC na projektorze."
+  },
+  {
+    name: "Dominikana", flag: "🇩🇴", region: "Ameryka Północna",
+    traditions: ["Merengue i bachata na ulicach każdego wieczoru", "Domino z sąsiadami na werandzie", "Karnawał w Vega z diabelskimi maskami"],
+    stereotypes: ["Wszyscy tańczą bachatę od 3 roku życia", "Baseball to religia", "Rum, plaża i palmy 365 dni w roku"],
+    food: ["La bandera – ryż, fasola, mięso i platan", "Mangú – purée z platana z cebulą", "Sancocho – gęsty gulasz z siedmiu mięs", "Pescado con coco z Samany"],
+    desserts: ["Habichuelas con dulce – słodka fasola z mlekiem", "Dulce de leche cortada", "Majarete – kremowy pudding kukurydziany", "Tres leches dominicano"],
+    movies: ["Sanky Panky", "Perico Ripiao", "Nueba Yol"],
+    music: ["Juan Luis Guerra", "Romeo Santos", "Aventura"],
+    dateIdea: "Lekcja bachaty w salonie, mangú z jajkiem, mojito z rumem Brugal i seans teledysków Romeo Santosa."
+  },
+  {
+    name: "Gwatemala", flag: "🇬🇹", region: "Ameryka Północna",
+    traditions: ["Semana Santa z kolorowymi dywanami z trocin", "Wielkie latawce Barriletes Gigantes na Wszystkich Świętych", "Tkactwo Majów w Chichicastenango"],
+    stereotypes: ["Kraina wulkanów, kawy i Majów", "Każde miasto ma swój targ z tekstyliami", "Wszyscy piją kawę uprawianą u siebie na tarasie"],
+    food: ["Pepián – gęsty gulasz z pieczonymi przyprawami", "Kak'ik – indycza zupa Majów Q'eqchi'", "Chiles rellenos w cieście jajecznym", "Tamales colorados w liściu bananowca"],
+    desserts: ["Rellenitos de plátano z fasolą i czekoladą", "Buñuelos z syropem cynamonowym", "Mole de plátano z sezamem", "Canillitas de leche – karmelki z mleka"],
+    movies: ["Ixcanul", "La Llorona", "Nasze matki"],
+    music: ["Ricardo Arjona", "Gaby Moreno", "Marimba Chapinlandia"],
+    dateIdea: "Pepián z ryżem, świeżo parzona kawa z Antigui, świece i wieczór z Gaby Moreno w tle."
+  },
+  {
+    name: "Papua-Nowa Gwinea", flag: "🇵🇬", region: "Oceania",
+    traditions: ["Sing-sing – plemienne spotkania w malowanych twarzach i piórach", "Mumu – pieczenie w ziemi z rozgrzanymi kamieniami", "Wymiana muszli kula na Wyspach Trobrianda"],
+    stereotypes: ["Ponad 800 języków w jednym kraju", "Rajskie ptaki na każdej fladze i flagach klanów", "Kraj z najbardziej różnorodną kulturą świata"],
+    food: ["Mumu – wieprzowina z bataty pieczone w ziemi", "Kokoda – surowa ryba w mleku kokosowym z limonką", "Sago z bananem", "Kaukau (słodki ziemniak) na wiele sposobów"],
+    desserts: ["Dia – pieczony banan w mleku kokosowym", "Pawpaw (papaja) ze świeżą limonką", "Sago pudding z syropem palmowym", "Świeży ananas prosto z krzaka"],
+    movies: ["Mr. Pip", "First Contact", "Walking Under Water"],
+    music: ["George Telek", "O-Shen", "Sanguma"],
+    dateIdea: "Kokoda z surowej ryby w mleku kokosowym, świeży ananas, świece i dokument BBC o rajskich ptakach na projektorze."
   }
 ];
+
