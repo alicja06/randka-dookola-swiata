@@ -80,5 +80,6 @@ export const drinks: Record<string, string[]> = {
   "USA – Nevada": ["Klasyczny martini z Vegas", "Whiskey sour", "Las Vegas Lemon Drop", "Bloody Mary na kaca"],
   "USA – Arizona": ["Prickly pear margarita", "Tequila sunrise", "Mezcal z solą", "Arnold Palmer (mrożona herbata + lemoniada)"],
   "USA – Alaska": ["Alaskan Amber ale", "Duck Fart shot (Kahlúa, Baileys, whiskey)", "Hot toddy z whisky", "Glacier Vodka z lodem z lodowca"],
+  "Portoryko": ["Piña colada (wynaleziona w San Juan)", "Medalla Light beer", "Ron Barrilito z lodem", "Coquito – kokosowy eggnog z rumem"],
 
 };

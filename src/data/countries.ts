@@ -811,5 +811,15 @@ export const countries: Country[] = [
     movies: ["Into the Wild", "Biały Kieł", "Grizzly Man"],
     music: ["Jewel", "Portugal. The Man", "Hobo Jim"],
     dateIdea: "Pieczony łosoś, gorąca herbata w termosie i wieczór pod kocem z patrzeniem w zorzę polarną."
+  },
+  {
+    name: "Portoryko", flag: "🇵🇷", region: "Ameryka Północna",
+    traditions: ["Parady i festiwale salsy w San Juan", "Nochebuena z lechonem i całą rodziną", "Domino na werandzie do późnej nocy"],
+    stereotypes: ["Wszyscy tańczą salsę i reggaeton", "Głośna, roześmiana rodzina do 30 osób", "Bad Bunny leci z każdego samochodu"],
+    food: ["Mofongo z czosnkiem i chicharrónem", "Lechón asado – pieczony prosiak", "Arroz con gandules z pigeon peas", "Alcapurrias – smażone paszteciki z bananów"],
+    desserts: ["Tembleque – kokosowy budyń z cynamonem", "Flan de queso", "Piña colada cake", "Besitos de coco – kokosowe całuski"],
+    movies: ["West Side Story", "El Cantante", "Fast & Furious 5 (kręcony w San Juan)"],
+    music: ["Bad Bunny", "Daddy Yankee", "Marc Anthony"],
+    dateIdea: "Mofongo z krewetkami, piña colada w Old San Juan i taniec salsy pod palmami przy dźwiękach reggaetonu."
   }
 ];

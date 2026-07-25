@@ -1121,5 +1121,19 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Wełniana kurtka drwala, t-shirt, dżinsy, ciężkie buty",
     ],
   },
+  "Portoryko": {
+    woman: [
+      "Kolorowa sukienka salsera z falbanami, sandały na obcasie, duże kolczyki",
+      "Białe spodnie, top z odkrytymi ramionami, klapki, kwiat we włosach",
+      "Krótka sukienka w tropikalne wzory, sandały gladiatorki, bransoletki",
+      "Dżinsowe szorty, koszulka bez rękawów, sneakersy, czapka z daszkiem",
+    ],
+    man: [
+      "Guayabera (lniana koszula), lniane spodnie, mokasyny",
+      "Biała koszula rozpięta, jeansy, sneakersy, łańcuszek",
+      "Kolorowa koszula tropikalna, krótkie spodenki, klapki",
+      "T-shirt oversize, joggery, sneakersy, czapka snapback w stylu reggaeton",
+    ],
+  },
 };
 
