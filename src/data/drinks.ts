@@ -97,5 +97,23 @@ export const drinks: Record<string, string[]> = {
   "Dominikana": ["Rum Brugal Añejo", "Mamajuana – rum z ziołami i miodem", "Presidente beer", "Morir Soñando – sok pomarańczowy z mlekiem"],
   "Gwatemala": ["Gallo cerveza", "Rum Zacapa 23 z lodem", "Świeża kawa z Antigui", "Rosa de Jamaica – napar z hibiskusa"],
   "Papua-Nowa Gwinea": ["SP Lager (South Pacific)", "Świeże mleko kokosowe prosto z orzecha", "Sok z marakui", "Kava – ceremonialny napar z korzenia"],
+
+  "Bułgaria": ["Rakija śliwkowa lub winogronowa", "Wino Mavrud z Plovdiv", "Zagorka beer", "Boza – fermentowany napój ze zbóż"],
+  "Słowenia": ["Cviček – lekkie czerwone wino z Doliny Krki", "Radler z cytryną", "Union pivo", "Borovničke – nalewka z jagód"],
+  "Słowacja": ["Slivovica z tatrzańskich sadów", "Kofola (lokalna cola)", "Zlatý Bažant", "Tatratea – ziołowa nalewka"],
+  "Litwa": ["Midus – litewski miód pitny", "Švyturys Ekstra", "Krupnikas – nalewka miodowo-ziołowa", "Gira – kwas chlebowy"],
+  "Łotwa": ["Rīgas Melnais Balzams z porzeczkowym sokiem", "Aldaris Luksusa beer", "Kvass łotewski", "Cydr z Kurlandii"],
+  "Estonia": ["Vana Tallinn z lodem lub w kawie", "A. Le Coq beer", "Kali (estoński kwas)", "Kääriku – rzemieślniczy cydr"],
+  "Albania": ["Rakia z winogron", "Korça beer", "Kokë e verdhë – żółte wino stołowe", "Boza po albańsku"],
+  "Bośnia i Hercegowina": ["Rakija šljivovica", "Sarajewska kawa z dżezvą", "Sarajevsko pivo", "Bosanski čaj z górskich ziół"],
+  "Malta": ["Kinnie – gorzki napój z pomarańczy i ziół", "Cisk lager", "Wino Marsovin", "Bajtra – likier z opuncji"],
+  "Cypr": ["Commandaria – najstarsze wino świata", "Zivania – cypryjska wódka gronowa", "Keo beer", "Frappé z lodem"],
+  "Luksemburg": ["Riesling znad Mozeli", "Crémant de Luxembourg", "Bofferding pils", "Quetsch – śliwkowa eau de vie"],
+  "Hongkong": ["Milk tea po hongkońsku (silk stocking)", "Tsingtao beer", "Yuenyeung – kawa z herbatą i mlekiem", "Lemon tea gorąca lub mrożona"],
+  "Laos": ["Beerlao – najlepsze piwo Azji Płd.-Wsch.", "Lao-Lao (ryżowa wódka)", "Nam saa (zielona herbata)", "Świeży sok z tamaryndowca"],
+  "Arabia Saudyjska": ["Gahwa – arabska kawa z kardamonem", "Sok z granatu", "Laban (słony jogurtowy napój)", "Saudi Champagne (jabłkowe z gazowaną)"],
+  "Wenezuela": ["Ron Santa Teresa 1796", "Papelón con limón – trzcina z limonką", "Chicha andina", "Polar beer"],
+  "Haiti": ["Barbancourt Rum 5 gwiazdek", "Kremas – kokosowo-rumowa kremówka", "Prestige beer", "Sok z sur sopu (guanabana)"],
+  "Barbados": ["Mount Gay Rum – najstarszy rum świata", "Rum punch z gałką muszkatołową", "Banks beer", "Falernum – syrop z limonki i imbiru"],
 };
 

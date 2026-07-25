@@ -1345,6 +1345,244 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Kwiecista koszula, jeansy, sneakersy płócienne",
     ],
   },
+  "Bułgaria": {
+    woman: [
+      "Biała bluzka z ludowym haftem, czerwona spódnica, martenica na nadgarstku",
+      "Czarna sukienka midi, złote kolczyki, botki",
+      "Lniana sukienka w kwiaty, sandały na płaskim",
+      "Dżinsowa spódnica, biały top, adidasy",
+    ],
+    man: [
+      "Biała lniana koszula, ciemne spodnie, mokasyny",
+      "Czarny sweter, jeansy, botki",
+      "Koszula w kratę, chinosy, sneakersy",
+      "T-shirt, marynarka, jeansy, tenisówki",
+    ],
+  },
+  "Słowenia": {
+    woman: [
+      "Zielona sukienka midi (kolor alpejskich łąk), sandały korkowe",
+      "Wełniany sweter, dżinsy, kozaki",
+      "Kwiecista bluzka, spódnica plisowana, baleriny",
+      "Lniany kombinezon, adidasy, mały plecak",
+    ],
+    man: [
+      "Kraciasta koszula flanelowa, jeansy, buty trekkingowe",
+      "Sweter wełniany, chinosy, mokasyny",
+      "Biała koszula, marynarka, jeansy, sneakersy",
+      "T-shirt, softshellowa kurtka, spodnie techniczne, buty w góry",
+    ],
+  },
+  "Słowacja": {
+    woman: [
+      "Biała bluzka z folkowym haftem, czerwona spódnica, botki",
+      "Wełniany sweter, jeansy, buty za kostkę",
+      "Sukienka w kwiaty, kardigan, baleriny",
+      "Czarne legginsy, długi sweter, kozaki",
+    ],
+    man: [
+      "Wełniany sweter w warkocze, jeansy, mokasyny",
+      "Koszula flanelowa, chinosy, buty trekkingowe",
+      "Ciemna koszula, jeansy, marynarka, botki",
+      "Bluza z kapturem, jeansy, sneakersy",
+    ],
+  },
+  "Litwa": {
+    woman: [
+      "Lniana sukienka w kolorze piaskowym, bursztynowy naszyjnik",
+      "Biała bluzka, spódnica maxi, sandały",
+      "Wełniany sweter, jeansy, kozaki",
+      "Sukienka midi z długim rękawem, botki, długi płaszcz",
+    ],
+    man: [
+      "Biała lniana koszula, jasne spodnie, mokasyny",
+      "Sweter z golfem, jeansy, botki",
+      "Koszula w drobne prążki, chinosy, sneakersy",
+      "T-shirt, koszula narzucona, jeansy, tenisówki",
+    ],
+  },
+  "Łotwa": {
+    woman: [
+      "Biała lniana sukienka, wieniec z polnych kwiatów we włosach",
+      "Wełniany kardigan, dżinsy, kozaki",
+      "Bluzka z ludowym motywem, spódnica, botki",
+      "Sukienka midi, długi szal, płaskie buty",
+    ],
+    man: [
+      "Lniana koszula w kolorze naturalnym, jasne spodnie, mokasyny",
+      "Sweter wełniany, jeansy, botki",
+      "T-shirt, bluza, chinosy, sneakersy",
+      "Koszula flanelowa, jeansy, buty za kostkę",
+    ],
+  },
+  "Estonia": {
+    woman: [
+      "Minimalistyczna czarna sukienka, srebrne kolczyki, botki",
+      "Wełniany sweter, jeansy, martensy",
+      "Biała bluzka, spódnica plisowana, baleriny",
+      "Duży sweter oversize, legginsy, kozaki",
+    ],
+    man: [
+      "Czarny golf, jeansy, sneakersy",
+      "Ciemna koszula, wełniany sweter, chinosy, botki",
+      "Bluza techniczna, jeansy, buty trekkingowe",
+      "Biały T-shirt, marynarka, jeansy, martensy",
+    ],
+  },
+  "Albania": {
+    woman: [
+      "Czerwona sukienka mini, czarne szpilki, ciemna kredka na oczach",
+      "Biała bluzka, dżinsy z wysokim stanem, sandały na obcasie",
+      "Czarna sukienka koktajlowa, złote kolczyki, szpilki",
+      "Kwiecista bluzka, dżinsy, botki",
+    ],
+    man: [
+      "Czarna koszula, ciemne jeansy, mokasyny",
+      "Biały T-shirt, marynarka, jeansy, sneakersy",
+      "Koszula w drobne prążki, chinosy, mokasyny",
+      "Polo, jeansy, białe tenisówki",
+    ],
+  },
+  "Bośnia i Hercegowina": {
+    woman: [
+      "Sukienka midi w ciepłych ziemistych kolorach, chusta na ramionach",
+      "Bluzka z haftem, jeansy, kozaki",
+      "Długa spódnica, biały top, baleriny",
+      "Czarna sukienka, srebrne kolczyki, botki",
+    ],
+    man: [
+      "Biała koszula, kamizelka, ciemne spodnie, mokasyny",
+      "Sweter wełniany, jeansy, botki",
+      "Koszula w kratę, chinosy, sneakersy",
+      "T-shirt, marynarka, jeansy, tenisówki",
+    ],
+  },
+  "Malta": {
+    woman: [
+      "Biała lniana sukienka, złote sandały, słomkowy kapelusz",
+      "Sukienka midi w kolorze morskiej wody, sandały korkowe",
+      "Kwiecista sukienka, espadryle, okulary przeciwsłoneczne",
+      "Krótkie szorty, biała bluzka, sandały",
+    ],
+    man: [
+      "Lniana koszula, jasne szorty, mokasyny bez skarpetek",
+      "Biały T-shirt, jasne spodnie, sneakersy",
+      "Koszula w drobne paski, chinosy, sandały skórzane",
+      "Polo, szorty, espadryle",
+    ],
+  },
+  "Cypr": {
+    woman: [
+      "Grecko-cypryjska sukienka maxi w bieli, sandały gladiatorki",
+      "Turkusowa bluzka, biała spódnica, sandały złote",
+      "Kwiecista sukienka, słomkowy kapelusz, klapki",
+      "Krótka sukienka, baleriny, kolczyki koła",
+    ],
+    man: [
+      "Biała lniana koszula, beżowe spodnie, mokasyny",
+      "Polo turkusowe, szorty, espadryle",
+      "T-shirt, jasne chinosy, sandały skórzane",
+      "Lniany komplet w kolorze piaskowym, klapki",
+    ],
+  },
+  "Luksemburg": {
+    woman: [
+      "Elegancka sukienka midi w granacie, szpilki, perły",
+      "Biała bluzka, spódnica ołówkowa, czółenka",
+      "Płaszcz camel, jeansy, botki na obcasie",
+      "Kaszmirowy sweter, spódnica plisowana, kozaki",
+    ],
+    man: [
+      "Marynarka, biała koszula, ciemne spodnie, oksfordy",
+      "Sweter w serek, koszula, chinosy, mokasyny",
+      "Kaszmirowy płaszcz, jeansy, botki",
+      "Elegancki golf, marynarka, spodnie garniturowe",
+    ],
+  },
+  "Hongkong": {
+    woman: [
+      "Cheongsam (qipao) w nowoczesnym printie, szpilki",
+      "Czarna sukienka mini, wysoki koczek, kolczyki geometryczne",
+      "Biała bluzka, spódnica ołówkowa, czółenka",
+      "Oversize marynarka, mini spódnica, martensy",
+    ],
+    man: [
+      "Czarna koszula, wąskie spodnie, oksfordy",
+      "Marynarka bez koszuli, T-shirt, jeansy slim, sneakersy",
+      "Biała koszula, spodnie chino, mokasyny",
+      "Streetwearowa bluza, cargo, high-topy",
+    ],
+  },
+  "Laos": {
+    woman: [
+      "Sinh – tradycyjna długa spódnica, biała bluzka, sandały",
+      "Lniana sukienka w naturalnym kolorze, płaskie sandały",
+      "Kwiecista bluzka, jasne spodnie, klapki",
+      "Sukienka midi z bawełny, słomkowy kapelusz",
+    ],
+    man: [
+      "Lniana koszula, jasne spodnie, sandały",
+      "T-shirt bawełniany, szorty, klapki",
+      "Koszula w naturalnym kolorze, chinosy, mokasyny",
+      "Bawełniana koszula z krótkim rękawem, szorty, sneakersy",
+    ],
+  },
+  "Arabia Saudyjska": {
+    woman: [
+      "Elegancka długa suknia (kaftan) w bogatym kolorze, kolczyki i bransolety",
+      "Długa czarna sukienka z haftem, szal na ramiona, sandały na obcasie",
+      "Jedwabna tunika, szerokie spodnie, szpilki",
+      "Sukienka maxi z długim rękawem, złote akcesoria, chusta",
+    ],
+    man: [
+      "Biała koszula z długim rękawem, ciemne spodnie, mokasyny",
+      "Lniana tunika, jasne spodnie, sandały skórzane",
+      "Elegancki komplet: koszula, marynarka, spodnie, oksfordy",
+      "Polo, chinosy, mokasyny",
+    ],
+  },
+  "Wenezuela": {
+    woman: [
+      "Kolorowa sukienka z falbanami, szpilki, duże kolczyki",
+      "Czerwona sukienka mini, złote sandały, wysoki koczek",
+      "Biała bluzka, spódnica midi w kwiaty, sandały",
+      "Krótka sukienka koktajlowa, szpilki, długie włosy w lokach",
+    ],
+    man: [
+      "Guayabera – lniana wyszywana koszula, jasne spodnie, mokasyny",
+      "Biała koszula, ciemne dżinsy, sneakersy",
+      "T-shirt, marynarka, chinosy, tenisówki",
+      "Kolorowa koszula, jeansy, mokasyny",
+    ],
+  },
+  "Haiti": {
+    woman: [
+      "Kolorowa sukienka w karaibskim printie, chusta w turban, obręcze",
+      "Biała bluzka, kwiecista spódnica midi, sandały",
+      "Sukienka maxi w kwiaty, klapki, kolczyki koła",
+      "Krótka sukienka w mocnym kolorze, złote sandały",
+    ],
+    man: [
+      "Lniana koszula w kremie, ciemne spodnie, mokasyny",
+      "Kolorowa koszula tropikalna, jasne spodnie, klapki",
+      "T-shirt, jeansy, sneakersy, panama na głowie",
+      "Biała koszula, szorty, sandały skórzane",
+    ],
+  },
+  "Barbados": {
+    woman: [
+      "Sukienka mini w tropikalnym printie, sandały na koturnie",
+      "Bikini pod przewiewną narzutką maxi, klapki, kapelusz",
+      "Biała sukienka midi, słomkowe sandały, duże kolczyki",
+      "Kolorowy komplet: top i spódnica, klapki, okulary Rihanny",
+    ],
+    man: [
+      "Kolorowa koszula w kwiaty, białe szorty, klapki",
+      "T-shirt, jasne spodnie lniane, mokasyny",
+      "Polo, szorty, sandały skórzane",
+      "Biały T-shirt, jeansy, sneakersy, panama",
+    ],
+  },
 };
 
 
