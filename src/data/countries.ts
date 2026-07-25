@@ -971,6 +971,176 @@ export const countries: Country[] = [
     movies: ["Mr. Pip", "First Contact", "Walking Under Water"],
     music: ["George Telek", "O-Shen", "Sanguma"],
     dateIdea: "Kokoda z surowej ryby w mleku kokosowym, świeży ananas, świece i dokument BBC o rajskich ptakach na projektorze."
+  },
+  {
+    name: "Bułgaria", flag: "🇧🇬", region: "Europa Południowa",
+    traditions: ["Martenica – czerwono-białe wisiorki 1 marca", "Kukeri – tańce w kudłatych maskach odganiające złe duchy", "Nestinarstwo – taniec po żarze"],
+    stereotypes: ["Kiwają głową na 'nie', kręcą na 'tak'", "Jogurt to lokalna duma", "Róże z Doliny Róż w każdym kosmetyku"],
+    food: ["Shopska salata z bryndzą", "Banica z ciasta filo i sera", "Kavarma – duszone mięso z warzywami", "Tarator – zimna zupa ogórkowa z jogurtem"],
+    desserts: ["Baklava po bułgarsku", "Garash – tort orzechowo-czekoladowy", "Tikvenik – strudel z dyni", "Lokum różane"],
+    movies: ["Świat jest wielki i zbawienie czai się za rogiem", "Zift", "Glory"],
+    music: ["Le Mystère des Voix Bulgares", "Azis", "Lili Ivanova"],
+    dateIdea: "Shopska salata, kieliszek rakiji, playlista chóru bułgarskich głosów i wieczór z Zift na ekranie."
+  },
+  {
+    name: "Słowenia", flag: "🇸🇮", region: "Europa Środkowa",
+    traditions: ["Kurentovanje – karnawał w kudłatych kostiumach", "Kolędowanie przy jeziorze Bled", "Kres – ogniska na przesilenie letnie"],
+    stereotypes: ["Każdy Słoweniec ma pszczoły albo dziadka pszczelarza", "Kraj wielkości dłoni, ale z Alpami i morzem", "Wszyscy jeżdżą na nartach"],
+    food: ["Kranjska klobasa (kiełbasa z Krainy)", "Jota – zupa z kiszonej kapusty i fasoli", "Štruklji z twarogiem", "Idrijski žlikrofi – pierożki ze Słowenii"],
+    desserts: ["Kremna rezina z Bledu – kremówka", "Prekmurska gibanica – warstwowe ciasto", "Potica orzechowa", "Miód z lipy słoweńskiej z pieczywem"],
+    movies: ["Kruh in mleko", "Slovenka", "Kajmak in marmelada"],
+    music: ["Laibach", "Perpetuum Jazzile", "Siddharta"],
+    dateIdea: "Kremówka z Bledu, herbata z lipowym miodem i wieczór z industrialnym Laibach w tle."
+  },
+  {
+    name: "Słowacja", flag: "🇸🇰", region: "Europa Środkowa",
+    traditions: ["Fujara – pasterski flet z Poľany", "Wielkanocne oblewanie wodą i smagane witkami", "Vatra – ogniska w Tatrach"],
+    stereotypes: ["Bryndza w każdym daniu", "Wszyscy chodzą po Tatrach", "Hokej to religia"],
+    food: ["Bryndzové halušky ze skwarkami", "Kapustnica – kiszona kapusta z kiełbasą", "Segedínsky guláš", "Pirohy z bryndzą"],
+    desserts: ["Šúľance z makiem", "Trdelník z cukrem i orzechami", "Medovník – miodownik", "Parené buchty z powidłami"],
+    movies: ["Obchod na korze", "Slnko v sieti", "Ja, Olga Hepnarová"],
+    music: ["Elán", "Richard Müller", "IMT Smile"],
+    dateIdea: "Halušky z bryndzą, kieliszek slivovicy, kominek i Elán w tle."
+  },
+  {
+    name: "Litwa", flag: "🇱🇹", region: "Europa Północna",
+    traditions: ["Užgavėnės – karnawał z maskami i paleniem kukły zimy", "Joninės – noc świętojańska nad jeziorem", "Bursztynowe amulety od morza"],
+    stereotypes: ["Koszykówka to druga religia", "Wszyscy zbierają grzyby jesienią", "Cicho, ale ciepło do środka"],
+    food: ["Cepelinai – kartoflane 'zeppeliny' z mięsem", "Šaltibarščiai – zimny różowy barszcz", "Kugelis – zapiekanka ziemniaczana", "Kibinai – pierogi karaimskie"],
+    desserts: ["Šakotis – ciasto 'drzewo'", "Spurgos – litewskie pączki", "Tinginys – 'leniwe' ciastko z herbatnikami", "Miód z lipowego lasu na chlebie żytnim"],
+    movies: ["Nikt nie chciał umierać", "Sangailė", "Nova Lituania"],
+    music: ["Marijonas Mikutavičius", "The Roop", "Alina Orlova"],
+    dateIdea: "Šaltibarščiai z jajkiem, cepelinai, mecz Žalgirisa na ekranie i szakotis do kawy."
+  },
+  {
+    name: "Łotwa", flag: "🇱🇻", region: "Europa Północna",
+    traditions: ["Līgo – noc świętojańska z wieńcami z dębu", "Festiwal pieśni i tańca co 5 lat", "Bursztyn zbierany na plaży w Jurmale"],
+    stereotypes: ["Milczący, ale świetnie śpiewają w chórze", "Sauna to obowiązek", "Wszyscy znają Ryski Balsam"],
+    food: ["Pelēkie zirņi ar speķi – szare groszki ze słoniną", "Sklandrausis – tarta z marchwi i ziemniaka", "Wędzona bałtycka ryba", "Skābu kāpostu zupa"],
+    desserts: ["Rupjmaizes kārtojums – deser z ciemnego chleba i śmietany", "Piparkūkas – piernikowe ciasteczka", "Alexander torte z malinami", "Sklandrausis na słodko"],
+    movies: ["Melānijas hronika", "Bille", "Homo Novus"],
+    music: ["Prāta Vētra (Brainstorm)", "Instrumenti", "Carnival Youth"],
+    dateIdea: "Ciemny chleb ze śledziem, kieliszek Riga Black Balsam z porzeczkowym sokiem i Brainstorm w słuchawkach."
+  },
+  {
+    name: "Estonia", flag: "🇪🇪", region: "Europa Północna",
+    traditions: ["Jaanipäev – noc świętojańska przy ogniskach nad morzem", "Święto Pieśni w Tallinnie co 5 lat", "Sauna dymna z chłostą brzozowymi witkami"],
+    stereotypes: ["Cyfrowy naród – wszystko przez e-ID", "Milczą jeszcze bardziej niż Finowie", "Wszyscy znają się z Skype'a"],
+    food: ["Mulgipuder – puree ziemniaczano-kaszane z boczkiem", "Verivorst – kaszanka z brusznicami", "Śledź w śmietanie z ziemniakami w mundurkach", "Rosolje – sałatka z buraków i śledzia"],
+    desserts: ["Kama – deser z prażonej mąki z jogurtem i jagodami", "Kringel – słodka pleciona bułka", "Marcepany z Tallinna", "Sernik z ricottą i borówkami"],
+    movies: ["Mandariinid (Mandarynki)", "Sügisball", "Vehkleja (Szermierz)"],
+    music: ["Arvo Pärt", "Kerli", "Tommy Cash"],
+    dateIdea: "Kama z jogurtem i leśnymi jagodami, świece, medytacyjny Arvo Pärt i Mandarynki na ekranie."
+  },
+  {
+    name: "Albania", flag: "🇦🇱", region: "Europa Południowa",
+    traditions: ["Xhiro – wieczorny spacer po głównej ulicy", "Besa – kodeks honorowego słowa", "Isopolifonia – wielogłosowy śpiew z południa"],
+    stereotypes: ["Kiwają głową na 'nie', kręcą na 'tak' – jak Bułgarzy", "Kawa espresso wypijana kilka razy dziennie", "Mercedesy na każdej ulicy"],
+    food: ["Tavë kosi – jagnięcina zapiekana z jogurtem", "Byrek z serem lub szpinakiem", "Fërgesë – papryka z serem i pomidorami", "Qofte të fërguara – smażone kotleciki"],
+    desserts: ["Trilece – biszkopt w trzech mlekach", "Bakllava po albańsku", "Revani – ciasto z syropem", "Sheqerpare z syropem cytrynowym"],
+    movies: ["Slogans", "Bota", "Sworn Virgin"],
+    music: ["Inva Mula", "Elvana Gjata", "Dua Lipa (korzenie albańskie)"],
+    dateIdea: "Byrek z serem, kieliszek rakii z winogron, xhiro po mieszkaniu i Dua Lipa na głośniku."
+  },
+  {
+    name: "Bośnia i Hercegowina", flag: "🇧🇦", region: "Europa Południowa",
+    traditions: ["Sevdah – melancholijne pieśni miłosne", "Skoki z mostu w Mostarze", "Kawa z dżezvą podawana z rachatłukum"],
+    stereotypes: ["Wszyscy palą, wszyscy piją kawę cały dzień", "Trzy narodowości, jedno serce", "Ćevapi to danie narodowe"],
+    food: ["Ćevapi z lepinją i cebulą", "Burek z mięsem w spirali", "Begova čorba – zupa z kurczaka i bamii", "Sarma z kiszonej kapusty"],
+    desserts: ["Tufahije – jabłko nadziewane orzechami", "Hurmašice w syropie", "Baklava sarajewska", "Kadaif z orzechami"],
+    movies: ["Ničija zemlja (Ziemia niczyja)", "Grbavica", "Quo Vadis, Aida?"],
+    music: ["Dino Merlin", "Goran Bregović", "Amira Medunjanin"],
+    dateIdea: "Ćevapi z lepinją, mała filiżanka kawy z dżezvą i wieczór sevdah z Amirą Medunjanin."
+  },
+  {
+    name: "Malta", flag: "🇲🇹", region: "Europa Południowa",
+    traditions: ["Festas parafialne z fajerwerkami całe lato", "Karnawał w Valletcie", "Regaty łodzi luzzu w porcie"],
+    stereotypes: ["Wszyscy mówią po angielsku i po maltańsku w jednym zdaniu", "Mikroskopijne uliczki, wielkie samochody", "Kościół na każdym rogu"],
+    food: ["Pastizzi z ricottą lub groszkiem", "Fenkata – królik duszony w winie", "Aljotta – zupa rybna z czosnkiem", "Bragioli – zawijaski wołowe"],
+    desserts: ["Kannoli tal-irkotta", "Imqaret – daktylowe pierożki", "Helwa tat-Tork – chałwa maltańska", "Figolla wielkanocna z marcepanem"],
+    movies: ["Simshar", "Luzzu", "Ir-Raġel tal-Ġebel"],
+    music: ["Ira Losco", "Destiny", "Ludwig Galea"],
+    dateIdea: "Pastizzi z ricottą, kieliszek Marsovin, spacer po Vallettcie w Google Street View i Ira Losco w tle."
+  },
+  {
+    name: "Cypr", flag: "🇨🇾", region: "Europa Południowa",
+    traditions: ["Kavafiotyka i mezedes na długi wieczór", "Święto Kataklysmos – lanie się wodą", "Robienie halloumi ręcznie"],
+    stereotypes: ["Halloumi do wszystkiego", "Wszyscy mają wujka w Londynie", "Kawa cypryjska trzy razy dziennie"],
+    food: ["Souvlaki z pity z tzatziki", "Grillowane halloumi z arbuzem", "Kleftiko – jagnięcina pieczona w glinie", "Stifado – gulasz z cebulką"],
+    desserts: ["Loukoumades w syropie miodowym", "Baklava cypryjska", "Mahalepi z wodą różaną", "Glyko tou koutaliou (owoce w syropie)"],
+    movies: ["The Story of the Green Line", "Kalabush", "Committee"],
+    music: ["Anna Vissi", "Michalis Hatzigiannis", "Eleni Foureira"],
+    dateIdea: "Grillowane halloumi z arbuzem, kieliszek Commandarii i Eleni Foureira 'Fuego' na powtórce."
+  },
+  {
+    name: "Luksemburg", flag: "🇱🇺", region: "Europa Zachodnia",
+    traditions: ["Éimaischen – targ ceramiki w poniedziałek wielkanocny", "Schueberfouer – największy jarmark", "Święto Narodowe z fajerwerkami nad Alzette"],
+    stereotypes: ["Każdy mówi w trzech językach naraz", "Wszyscy pracują w banku lub UE", "Najbogatszy kraj świata na kanapkę"],
+    food: ["Judd mat Gaardebounen – wędzona karkówka z bobem", "Bouneschlupp – zupa z zielonej fasolki", "Gromperekichelcher – placki ziemniaczane", "Kachkéis – topiony ser na chlebie"],
+    desserts: ["Quetschentaart – tarta ze śliwkami", "Bamkuch – ciasto 'drzewo' po luksembursku", "Verwuerelter – kręcone pączki cukrowe", "Éimaischen – ceramiczne ptaszki z piernika"],
+    movies: ["Superjhemp Retörns", "Mumu", "Little Secret"],
+    music: ["Serge Tonnar", "Edsun", "Claudine Muno"],
+    dateIdea: "Judd mat Gaardebounen, kieliszek Rieslinga z Mozeli i wieczór z Sergem Tonnarem przy świecach."
+  },
+  {
+    name: "Hongkong", flag: "🇭🇰", region: "Azja Wschodnia",
+    traditions: ["Dim sum w niedzielne poranki", "Wyścigi smoczych łodzi", "Świąteczne latarnie w Mid-Autumn Festival"],
+    stereotypes: ["Wszyscy jedzą pałeczkami w metrze", "Wieżowce widziane z każdego okna", "Kolejki po bubble tea"],
+    food: ["Dim sum – har gow, siu mai, char siu bao", "Wonton mein – zupa z pierożkami krewetkowymi", "Char siu z ryżem", "Clay pot rice z kiełbasą"],
+    desserts: ["Egg tart (dan tat) z ciasta francuskiego", "Mango pomelo sago", "Pineapple bun (bo lo bao)", "Tong sui – słodka zupa z sezamem"],
+    movies: ["Spragnieni miłości (In the Mood for Love)", "Infernal Affairs", "Chungking Express"],
+    music: ["Faye Wong", "Leslie Cheung", "Beyond"],
+    dateIdea: "Dim sum na parę, milk tea po hongkońsku i 'Spragnieni miłości' Wong Kar-waia na ekranie."
+  },
+  {
+    name: "Laos", flag: "🇱🇦", region: "Azja Południowo-Wschodnia",
+    traditions: ["Tak Bat – jałmużna dla mnichów o świcie", "Baci – ceremonia wiązania białych sznurków na nadgarstku", "Boun Bang Fai – festiwal rakiet o deszcz"],
+    stereotypes: ["Najbardziej wyluzowany kraj Azji", "Kleisty ryż do wszystkiego", "Wszyscy jeżdżą tuk-tukiem"],
+    food: ["Laap – siekana sałatka mięsna z ziołami", "Kleisty ryż w bambusowym koszyku", "Or lam – gulasz z Luang Prabang", "Tam mak hoong – papaya salad po laotańsku"],
+    desserts: ["Nam van – kokosowy deser z tapioką", "Khao niaow ma muang – kleisty ryż z mango", "Sangkhaya – kokosowy krem w dyni", "Khao lam – ryż z kokosem pieczony w bambusie"],
+    movies: ["The Rocket", "Chanthaly", "Dearest Sister"],
+    music: ["Alexandra Bounxouei", "Cells", "L.O.G."],
+    dateIdea: "Kleisty ryż z mango, laap z ziołami, Beerlao na lodzie i 'The Rocket' na ekranie."
+  },
+  {
+    name: "Arabia Saudyjska", flag: "🇸🇦", region: "Bliski Wschód",
+    traditions: ["Majlis – długie posiedzenia z kawą i daktylami", "Ardah – taniec z mieczami", "Ramadan z iftarem po zachodzie słońca"],
+    stereotypes: ["Wszyscy piją kawę z kardamonem cały dzień", "Pustynia i wieżowce jednocześnie", "Sokoły warte fortunę"],
+    food: ["Kabsa – ryż z jagnięciną i przyprawami", "Mandi – mięso pieczone w ziemi z ryżem", "Mutabbaq – nadziewany naleśnik", "Jareesh – pszenica z jogurtem"],
+    desserts: ["Daktyle Ajwa z Medyny", "Kunafa z serem i syropem", "Ma'amoul z daktylami", "Luqaimat – smażone kulki w syropie daktylowym"],
+    movies: ["Wadjda", "Barakah Meets Barakah", "The Perfect Candidate"],
+    music: ["Mohammed Abdu", "Talal Maddah", "Rotana"],
+    dateIdea: "Kabsa z jagnięciną, daktyle Ajwa, gahwa z kardamonem w małych filiżankach i 'Wadjda' na ekranie."
+  },
+  {
+    name: "Wenezuela", flag: "🇻🇪", region: "Ameryka Południowa",
+    traditions: ["Joropo – narodowy taniec z harfą i maracasami", "Diablos Danzantes de Yare – tańczący diabli w maskach", "Hallacas na Boże Narodzenie zawijane całą rodziną"],
+    stereotypes: ["Kraj Miss Universe", "Wszyscy grają w bejsbol", "Arepa na śniadanie, obiad i kolację"],
+    food: ["Arepas z reina pepiada (kurczak z awokado)", "Pabellón criollo – ryż, fasola, mięso i banany", "Cachapa – naleśnik z kukurydzy z serem", "Empanadas smażone z serem lub mięsem"],
+    desserts: ["Quesillo – wenezuelski flan", "Bienmesabe – ciasto kokosowe", "Dulce de leche z serem białym", "Golfeados – bułeczki z panelą i serem"],
+    movies: ["Secuestro Express", "Pelo malo", "Desde allá"],
+    music: ["Simón Díaz", "Franco de Vita", "Oscarcito"],
+    dateIdea: "Arepas z reina pepiada, sok papelón con limón i wieczór joropo z Simónem Díazem."
+  },
+  {
+    name: "Haiti", flag: "🇭🇹", region: "Karaiby",
+    traditions: ["Rara – uliczne procesje muzyczne w Wielkim Poście", "Kompa – narodowy rytm do tańca w parach", "Vodou z bębnami i śpiewem"],
+    stereotypes: ["Wszyscy tańczą kompa na wszystkim", "Sos ti-malice do każdego mięsa", "Kraj kolorowych tap-tap busów"],
+    food: ["Griot – smażona wieprzowina z pikliz", "Riz ak pwa – ryż z czarną fasolą", "Poul nan sòs – kurczak w kreolskim sosie", "Lambi – konch w sosie kreolskim"],
+    desserts: ["Pain patate – ciasto z batatów", "Douces makos – karmelowe warstwy", "Blan manje z mlekiem kokosowym", "Kremas – kokosowo-rumowa 'kremówka do picia'"],
+    movies: ["Moloch Tropical", "Ayiti Mon Amour", "I Am Not Your Negro"],
+    music: ["Wyclef Jean", "Boukman Eksperyans", "Emeline Michel"],
+    dateIdea: "Griot z pikliz, kieliszek Barbancourt z lodem i wieczór z kompa Emeline Michel."
+  },
+  {
+    name: "Barbados", flag: "🇧🇧", region: "Karaiby",
+    traditions: ["Crop Over – karnawał na koniec zbioru trzciny", "Rum shop – lokalna knajpa i klub w jednym", "Wyścigi konne w Garrison Savannah"],
+    stereotypes: ["Ojczyzna Rihanny i rumu", "Wszyscy mówią w bajańskim (Bajan)", "Latający ryby na każdym talerzu"],
+    food: ["Cou-cou z latającą rybą (danie narodowe)", "Macaroni pie", "Pudding and souse – wieprzowina z ziemniakiem", "Fish cakes z sosem pepper"],
+    desserts: ["Coconut turnovers", "Sweet bread z kokosem i wiśniami", "Great cake – rumowy tort świąteczny", "Cassava pone"],
+    movies: ["A Hand Full of Dirt", "Chrissy", "Payday"],
+    music: ["Rihanna", "The Mighty Gabby", "Rupee"],
+    dateIdea: "Cou-cou z latającą rybą, rum punch Mount Gay i playlista Rihanny od 'Pon de Replay' do 'Lift Me Up'."
   }
 ];
 
