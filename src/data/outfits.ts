@@ -1135,5 +1135,216 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "T-shirt oversize, joggery, sneakersy, czapka snapback w stylu reggaeton",
     ],
   },
+  "Dania": {
+    woman: [
+      "Czarny golf, prosta spódnica midi, kozaki, minimalistyczna biżuteria",
+      "Beżowy sweter oversize, jeansy proste, białe sneakersy",
+      "Wełniana sukienka, gruby szal, brązowe botki",
+      "Trencz, biały T-shirt, mom jeans, mokasyny",
+    ],
+    man: [
+      "Ciemny sweter, jeansy proste, białe sneakersy",
+      "Wełniany płaszcz, biała koszula, ciemne chinosy, brogsy",
+      "Czarny golf pod marynarką, jeansy, botki",
+      "Beżowy sweter, koszula oxford, spodnie w kant, mokasyny",
+    ],
+  },
+  "Finlandia": {
+    woman: [
+      "Gruby wełniany sweter z reniferem, jeansy, futrzane kozaki",
+      "Ciepła flanelowa koszula, legginsy, śniegowce",
+      "Prosta czarna sukienka, gruby kardigan, wełniane rajstopy",
+      "Białe polo termiczne, dżinsy, sneakersy trekkingowe",
+    ],
+    man: [
+      "Wełniany sweter z norweskim wzorem, jeansy, brązowe buty trekkingowe",
+      "Flanelowa koszula w kratę, dżinsy, wysokie skarpety, botki",
+      "Puchowa kamizelka na sweter, chinosy, botki zimowe",
+      "Czapka z pomponem, ciepła bluza, jeansy proste, sneakersy",
+    ],
+  },
+  "Chorwacja": {
+    woman: [
+      "Biała lniana sukienka maxi, sandały skórzane, słomkowy kapelusz",
+      "Niebieska sukienka mini, złote kolczyki, espadryle",
+      "Krótkie białe spodnie, top w paski, sandały na korku",
+      "Kwiecista sukienka do kolan, sandałki, torba plażowa",
+    ],
+    man: [
+      "Lniana koszula rozpięta, białe spodnie, mokasyny bez skarpetek",
+      "Granatowa polo, beżowe szorty, sneakersy",
+      "Biały T-shirt, lniane spodnie, klapki skórzane",
+      "Koszula w paski, chinosy podwinięte, loafersy",
+    ],
+  },
+  "Rumunia": {
+    woman: [
+      "Haftowana biała bluzka ie, spódnica trapezowa, wianek",
+      "Ciemna sukienka koronkowa, aksamitna narzutka, botki",
+      "Czerwona sukienka do kolan, czarne rajstopy, botki",
+      "Sweter oversize, jeansy, kozaki i szal",
+    ],
+    man: [
+      "Biała lniana koszula z haftem, ciemne spodnie, brązowe buty",
+      "Czarny sweter, ciemne jeansy, botki",
+      "Ciemna koszula, marynarka, chinosy, mokasyny",
+      "Wełniany sweter w warkocze, jeansy, buty trekkingowe",
+    ],
+  },
+  "Serbia": {
+    woman: [
+      "Ciemna sukienka koktajlowa, szpilki, duże złote kolczyki",
+      "Skórzana kurtka, top, jeansy skinny, botki",
+      "Sukienka z falbanką, sandały na obcasie, mocny make-up",
+      "Sweter dopasowany, spódnica midi, kozaki za kolano",
+    ],
+    man: [
+      "Czarna koszula rozpięta, ciemne jeansy, buty skórzane",
+      "Marynarka, biała koszula, jeansy, brogsy",
+      "Sweter z dekoltem V, chinosy, mokasyny",
+      "Bluza z logo klubu, jeansy, sneakersy",
+    ],
+  },
+  "Tajwan": {
+    woman: [
+      "Sukienka qipao inspirowana chińską modą, szpilki",
+      "Białe sneakersy, luźna sukienka mini, torebka crossbody",
+      "Bluzka z falbankami, plisowana spódnica, mokasyny",
+      "T-shirt oversize, spodnie szerokie, białe sneakersy, okulary",
+    ],
+    man: [
+      "Czarna koszula, jeansy proste, białe sneakersy",
+      "Techniczna kurtka, T-shirt, joggery, sneakersy",
+      "Biały T-shirt oversize, luźne spodnie, sneakersy, czapka",
+      "Sweter z dekoltem, koszula pod spód, chinosy, loafersy",
+    ],
+  },
+  "Kambodża": {
+    woman: [
+      "Sampot – długa jedwabna spódnica owinięta w pasie, dopasowany top",
+      "Lekka lniana sukienka maxi, sandały, słomkowy kapelusz",
+      "Kwiecista koszula, białe spodnie, klapki skórzane",
+      "Bawełniana sukienka mini, sandałki płaskie, chusta na ramionach",
+    ],
+    man: [
+      "Lniana koszula z krótkim rękawem, jasne spodnie, sandały",
+      "Biały T-shirt, spodnie khaki, klapki",
+      "Jedwabna koszula w krótki rękaw, chinosy, mokasyny",
+      "Bawełniana koszula rozpięta na T-shircie, szorty, sneakersy",
+    ],
+  },
+  "Bangladesz": {
+    woman: [
+      "Sari z jedwabiu w żywych kolorach, złote bransoletki, henna",
+      "Salwar kameez z haftem, chusta dupatta",
+      "Anarkali – długa suknia z rozkloszowaniem, kolczyki jhumka",
+      "Bluzka z haftem, spodnie palazzo, sandałki",
+    ],
+    man: [
+      "Panjabi (długa koszula) i pyjama, sandały",
+      "Kurta z lnu, ciemne spodnie proste, mokasyny",
+      "Biała koszula, kamizelka, chinosy, brązowe buty",
+      "Sherwani na uroczystszy wieczór, ciemne spodnie",
+    ],
+  },
+  "ZEA (Dubaj)": {
+    woman: [
+      "Długa elegancka suknia (kaftan) z haftem, sandały na obcasie",
+      "Sukienka maxi z jedwabiu, złota biżuteria, klutch",
+      "Białe spodnie palazzo, jedwabny top, sandałki",
+      "Cekinowa sukienka na wieczór, szpilki, mocna biżuteria",
+    ],
+    man: [
+      "Biała lniana koszula, ciemne chinosy, brązowe loafersy",
+      "Kandura (biała dishdasha) na klimatyczny wieczór, sandały skórzane",
+      "Elegancka marynarka, biała koszula, ciemne spodnie, oksfordy",
+      "Polo, jasne chinosy, mokasyny, drogi zegarek",
+    ],
+  },
+  "Gruzja": {
+    woman: [
+      "Ciemna sukienka do kolan, wełniany szal, kozaki",
+      "Biała koronkowa bluzka, długa spódnica, botki",
+      "Sweter dopasowany, spódnica midi, kozaki za kolano",
+      "Aksamitna sukienka bordowa, kolczyki, szpilki",
+    ],
+    man: [
+      "Biała koszula, kamizelka, ciemne spodnie, buty skórzane",
+      "Wełniany sweter, jeansy, botki",
+      "Ciemna koszula, marynarka, spodnie proste, mokasyny",
+      "Golf, marynarka tweedowa, chinosy, brogsy",
+    ],
+  },
+  "Zimbabwe": {
+    woman: [
+      "Sukienka z tkaniny kitenge w żywych wzorach, sandały płaskie",
+      "Biała bluzka, długa spódnica w afrykański print, korale",
+      "Kombinezon w geometryczne wzory, płaskie sandały, chusta na głowie",
+      "Kwiecista sukienka maxi, espadryle, drewniane bransoletki",
+    ],
+    man: [
+      "Koszula dashiki, spodnie lniane, sandały",
+      "Biały T-shirt, spodnie khaki safari, buty trekkingowe",
+      "Koszula w afrykański wzór, jeansy, mokasyny",
+      "Polo, szorty cargo, sneakersy, kapelusz safari",
+    ],
+  },
+  "Madagaskar": {
+    woman: [
+      "Lamba – tradycyjna kolorowa chusta narzucona na sukienkę",
+      "Lekka sukienka maxi w kwiaty, sandały, kapelusz słomkowy",
+      "Białe spodnie, luźna bluzka, sandały skórzane",
+      "Sukienka mini z bawełny, klapki, torba wiklinowa",
+    ],
+    man: [
+      "Biała lniana koszula, jasne spodnie, sandały",
+      "Kolorowa koszula tropikalna, szorty, klapki",
+      "Polo, chinosy podwinięte, mokasyny",
+      "T-shirt, lekkie spodnie khaki, sneakersy płócienne",
+    ],
+  },
+  "Dominikana": {
+    woman: [
+      "Sukienka salsera z falbanami, sandały na obcasie, kwiat we włosach",
+      "Kolorowa sukienka mini, klapki, duże kolczyki koła",
+      "Białe spodnie, top z falbaną, sandałki, bransoletki",
+      "Bikini z narzutką plażową, kapelusz, klapki",
+    ],
+    man: [
+      "Guayabera, białe spodnie, mokasyny",
+      "Kolorowa koszula rozpięta, jeansy, sneakersy",
+      "Biały T-shirt, szorty, klapki, łańcuszek",
+      "Polo, chinosy, mokasyny, czapka baseballowa",
+    ],
+  },
+  "Gwatemala": {
+    woman: [
+      "Huipil – haftowana bluzka Majów, długa spódnica w pasy, sandały skórzane",
+      "Kwiecista sukienka maxi, sandałki, chusta z wełny",
+      "Biała bluzka z haftem, jeansy, botki, srebrne kolczyki",
+      "Kolorowa poncho-narzutka, jeansy proste, kozaki",
+    ],
+    man: [
+      "Lniana koszula w geometryczne wzory Majów, spodnie khaki, sandały",
+      "Wełniany sweter w warkocze, jeansy, brązowe botki",
+      "Biały T-shirt, koszula w kratę narzucona, jeansy, sneakersy",
+      "Kapelusz słomkowy, koszula lniana, chinosy, mokasyny",
+    ],
+  },
+  "Papua-Nowa Gwinea": {
+    woman: [
+      "Meri blouse w żywych kolorach, długa spódnica, sandały",
+      "Kwiecista sukienka maxi, kwiat we włosach, klapki",
+      "Bluzka bez rękawów z tropikalnym printem, spódnica midi, sandały",
+      "Bawełniana sukienka mini, korale z muszli, klapki",
+    ],
+    man: [
+      "Koszula w tropikalny print, białe spodnie, klapki",
+      "T-shirt, szorty, sandały skórzane, korale z muszli",
+      "Lniana koszula rozpięta, jasne spodnie, mokasyny",
+      "Kwiecista koszula, jeansy, sneakersy płócienne",
+    ],
+  },
 };
+
 

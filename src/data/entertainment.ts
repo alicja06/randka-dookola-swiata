@@ -82,4 +82,20 @@ export const entertainment: Record<string, string[]> = {
   "USA – Alaska": ["Maraton 'Into the Wild' pod kocem", "Oglądanie zorzy polarnej z live streamu", "Quiz: rozpoznaj zwierzę Alaski po sylwetce"],
   "Portoryko": ["Lekcja salsy i reggaetonu z YouTube", "Domino po portorykańsku – turniej we dwoje", "Maraton teledysków Bad Bunny'ego i Daddy Yankee"],
 
+  "Dania": ["Wieczór hygge: świece, koc, gorący kakao", "LEGO we dwoje – budowanie na czas", "Maraton 'Borgen' lub 'Rita' na Netflix"],
+  "Finlandia": ["Domowa 'sauna' na balkonie lub w łazience", "Quiz: rozpoznaj fińskie słowo (dłuższe niż 20 liter)", "Maraton Muminków z gorącą herbatą"],
+  "Chorwacja": ["Pikado (rzutki) w salonie", "Quiz: rozpoznaj chorwacką wyspę ze zdjęcia", "Maraton 'Gry o tron' – sceny z Dubrownika"],
+  "Rumunia": ["Maraton filmów o Draculi", "Quiz: prawda czy mit o Rumunii", "Nauka podstaw tańca hora z YouTube"],
+  "Serbia": ["Karaoke turbo-folk z Ceca", "Gra w Tablić lub Preferans", "Maraton filmów Kusturicy z rakiją"],
+  "Tajwan": ["Domowe robienie bubble tea z tapioką", "Turniej w Mahjong online", "Maraton filmów Ang Lee lub anime studia Le Petit"],
+  "Kambodża": ["Nauka podstaw tańca apsara z YouTube", "Wirtualny spacer po Angkor Wat w Google Earth", "Quiz: rozpoznaj świątynię khmerską"],
+  "Bangladesz": ["Nauka choreografii do piosenki z Coke Studio Bangla", "Henna na dłoni partnerki", "Quiz: rozpoznaj przyprawę bengalską po zapachu"],
+  "ZEA (Dubaj)": ["Wirtualny lot na szczyt Burdż Chalifa (VR/YouTube 360)", "Quiz: rozpoznaj słynny wieżowiec Dubaju", "Symulator wyścigów po pustyni na konsoli"],
+  "Gruzja": ["Turniej toastów – kto wymyśli lepszy jako tamada", "Nauka lezginki z YouTube", "Degustacja gruzińskiego wina w ciemno"],
+  "Zimbabwe": ["Gra w Mancalę (Tsoro)", "Dokument o Wodospadach Wiktorii i safari BBC", "Quiz: rozpoznaj zwierzę afrykańskie po sylwetce"],
+  "Madagaskar": ["Maraton 'Madagaskar' 1, 2 i 3 z popcornem", "Dokument BBC o lemurach", "Quiz: rozpoznaj gatunek lemura"],
+  "Dominikana": ["Lekcja bachaty i merengue z YouTube", "Turniej domino we dwoje", "Karaoke z Romeo Santos i Juanem Luisem Guerrą"],
+  "Gwatemala": ["Robienie mini-latawca z papieru (Barrilete)", "Wirtualny spacer po ruinach Tikal w Google Earth", "Degustacja kawy z Antigui w ciemno"],
+  "Papua-Nowa Gwinea": ["Malowanie sobie nawzajem twarzy w plemiennym stylu", "Dokument BBC 'Planet Earth' o rajskich ptakach", "Quiz: rozpoznaj plemienną maskę z Oceanii"],
 };
+

@@ -82,4 +82,20 @@ export const drinks: Record<string, string[]> = {
   "USA – Alaska": ["Alaskan Amber ale", "Duck Fart shot (Kahlúa, Baileys, whiskey)", "Hot toddy z whisky", "Glacier Vodka z lodem z lodowca"],
   "Portoryko": ["Piña colada (wynaleziona w San Juan)", "Medalla Light beer", "Ron Barrilito z lodem", "Coquito – kokosowy eggnog z rumem"],
 
+  "Dania": ["Carlsberg", "Akvavit z lodu", "Gløgg – grzane wino z migdałami", "Elderflower cordial (hyldeblomstsaft)"],
+  "Finlandia": ["Koskenkorva na lodzie", "Long drink (lonkero) grejpfrutowy", "Glögi z rodzynkami i migdałami", "Kawa filtrowana po fińsku"],
+  "Chorwacja": ["Pošip – białe wino z Korčuli", "Rakija šljivovica", "Ožujsko pivo", "Bevanda – wino z wodą gazowaną"],
+  "Rumunia": ["Țuică ze śliwek", "Wino Fetească Neagră", "Ursus beer", "Socată – lemoniada z kwiatu bzu"],
+  "Serbia": ["Rakija šljivovica domowej roboty", "Jelen pivo", "Wino Prokupac", "Kawa po turecku w małej filiżance"],
+  "Tajwan": ["Bubble tea z tapioką", "Herbata oolong Alishan", "Taiwan Beer", "Kaoliang (mocna wódka)"],
+  "Kambodża": ["Angkor beer", "Sok z trzciny cukrowej z limonką", "Sombai – nalewka na ryżu z owocami", "Świeży sok z kokosa"],
+  "Bangladesz": ["Masala cha w małej szklance", "Borhani – pikantny napój jogurtowy", "Sok z trzciny cukrowej", "Lassi z mango"],
+  "ZEA (Dubaj)": ["Arabska kawa z kardamonem (gahwa)", "Jallab – syrop z daktyli i różanej wody", "Świeży sok z granatu", "Karak chai z mlekiem skondensowanym"],
+  "Gruzja": ["Saperavi – ciemne wino z qvevri", "Rkatsiteli – białe wino bursztynowe", "Chacha – gruziński bimber winogronowy", "Borjomi – mineralna z Kaukazu"],
+  "Zimbabwe": ["Zambezi lager", "Amarula z lodem", "Chibuku – tradycyjne piwo sorgo", "Mazoe Orange Crush"],
+  "Madagaskar": ["Rhum arrangé z wanilią i owocami", "THB (Three Horses Beer)", "Ranovola – wypalana woda ryżowa", "Świeży sok z liczi"],
+  "Dominikana": ["Rum Brugal Añejo", "Mamajuana – rum z ziołami i miodem", "Presidente beer", "Morir Soñando – sok pomarańczowy z mlekiem"],
+  "Gwatemala": ["Gallo cerveza", "Rum Zacapa 23 z lodem", "Świeża kawa z Antigui", "Rosa de Jamaica – napar z hibiskusa"],
+  "Papua-Nowa Gwinea": ["SP Lager (South Pacific)", "Świeże mleko kokosowe prosto z orzecha", "Sok z marakui", "Kava – ceremonialny napar z korzenia"],
 };
+
