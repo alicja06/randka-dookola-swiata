@@ -80,5 +80,6 @@ export const entertainment: Record<string, string[]> = {
   "USA – Nevada": ["Domowe kasyno: blackjack i poker o czekoladki", "Maraton 'Hangover' lub 'Ocean's Eleven'", "Quiz: rozpoznaj hotel z Las Vegas Strip"],
   "USA – Arizona": ["Maraton 'Thelma i Louise' z mapą trasy", "Wirtualny spacer po Wielkim Kanionie w Google Earth", "Wieczór akustyczny ze Stevie Nicks i Linkin Park"],
   "USA – Alaska": ["Maraton 'Into the Wild' pod kocem", "Oglądanie zorzy polarnej z live streamu", "Quiz: rozpoznaj zwierzę Alaski po sylwetce"],
+  "Portoryko": ["Lekcja salsy i reggaetonu z YouTube", "Domino po portorykańsku – turniej we dwoje", "Maraton teledysków Bad Bunny'ego i Daddy Yankee"],
 
 };
