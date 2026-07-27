@@ -118,8 +118,16 @@ function Index() {
         </div>
 
         {country && (
-          <div ref={cardRef} key={rolling ? tick : "final"} className="bg-hero p-4 md:p-6 rounded-3xl">
+          <div key={rolling ? tick : "final"} className="bg-hero p-4 md:p-6 rounded-3xl">
             <CountryCard country={country} />
+          </div>
+        )}
+
+        {exportCountry && (
+          <div aria-hidden className="fixed left-0 top-0 pointer-events-none opacity-0 -z-10" style={{ width: 1000 }}>
+            <div ref={exportRef} className="bg-hero p-6 rounded-3xl" style={{ width: 1000 }}>
+              <CountryCard country={exportCountry} forExport />
+            </div>
           </div>
         )}
 
