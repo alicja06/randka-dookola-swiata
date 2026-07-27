@@ -8,7 +8,6 @@ export type Country = {
   desserts: string[];
   movies: string[];
   music: string[];
-  dateIdea: string;
 };
 
 export const countries: Country[] = [
@@ -19,8 +18,7 @@ export const countries: Country[] = [
     food: ["Domowa carbonara (bez śmietany!)", "Bruschetta z pomidorami i bazylią", "Risotto alla milanese z szafranem", "Ossobuco alla milanese"],
     desserts: ["Tiramisu", "Panna cotta z owocami leśnymi", "Cannoli z ricottą", "Gelato al pistacchio"],
     movies: ["La Dolce Vita", "Cinema Paradiso", "Życie jest piękne"],
-    music: ["Lucio Battisti", "Måneskin", "Andrea Bocelli – Con te partirò"],
-    dateIdea: "Ugotujcie razem makaron od zera, zapalcie świece i pijcie Chianti przy włoskich klasykach."
+    music: ["Lucio Battisti", "Måneskin", "Andrea Bocelli – Con te partirò"]
   },
   {
     name: "Francja", flag: "🇫🇷", region: "Europa Zachodnia",
@@ -29,8 +27,7 @@ export const countries: Country[] = [
     food: ["Croissanty z masłem", "Quiche Lorraine", "Boeuf bourguignon", "Soupe à l'oignon gratinée"],
     desserts: ["Crème brûlée", "Tarte Tatin z jabłkami", "Macarons paryskie", "Profiteroles z czekoladą"],
     movies: ["Amélie", "Niedotykalni", "Pachnidło"],
-    music: ["Édith Piaf – La Vie en Rose", "Stromae", "Daft Punk"],
-    dateIdea: "Piknik z bagietką, serami i winem. W tle Piaf, na deser crème brûlée przy świetle świec."
+    music: ["Édith Piaf – La Vie en Rose", "Stromae", "Daft Punk"]
   },
   {
     name: "Japonia", flag: "🇯🇵", region: "Azja Wschodnia",
@@ -39,8 +36,7 @@ export const countries: Country[] = [
     food: ["Sushi i sashimi", "Ramen", "Tempura warzywna", "Yakitori z grilla"],
     desserts: ["Mochi z nadzieniem anko", "Dorayaki z pastą azuki", "Wagashi sezonowe", "Matcha cheesecake"],
     movies: ["Spirited Away", "Twoje imię", "Siedmiu samurajów"],
-    music: ["Joe Hisaishi", "Babymetal", "Ryuichi Sakamoto"],
-    dateIdea: "Wieczór sushi własnej roboty, sake i seans Studia Ghibli pod kocem."
+    music: ["Joe Hisaishi", "Babymetal", "Ryuichi Sakamoto"]
   },
   {
     name: "Hiszpania", flag: "🇪🇸", region: "Europa Południowa",
@@ -49,8 +45,7 @@ export const countries: Country[] = [
     food: ["Paella Valenciana", "Tapas z szynką i serem", "Tortilla española", "Gazpacho andaluzyjskie"],
     desserts: ["Churros z czekoladą", "Crema catalana", "Tarta de Santiago z migdałami", "Polvorones"],
     movies: ["Volver", "Labirynt fauna", "Mów do niej"],
-    music: ["Rosalía", "Manu Chao", "Paco de Lucía"],
-    dateIdea: "Wieczór tapas: kilka małych dań, sangria i nauka podstaw flamenco w salonie."
+    music: ["Rosalía", "Manu Chao", "Paco de Lucía"]
   },
   {
     name: "Meksyk", flag: "🇲🇽", region: "Ameryka Północna",
@@ -59,8 +54,7 @@ export const countries: Country[] = [
     food: ["Tacos al pastor", "Guacamole z tortillą", "Mole poblano", "Enchiladas verdes"],
     desserts: ["Churros z cynamonem i cukrem", "Tres leches cake", "Arroz con leche", "Flan de cajeta"],
     movies: ["Roma", "Coco", "Labirynt fauna"],
-    music: ["Café Tacvba", "Selena", "Natalia Lafourcade"],
-    dateIdea: "Taco night z domowym guacamole, margarity i seans 'Coco' z chusteczkami w pogotowiu."
+    music: ["Café Tacvba", "Selena", "Natalia Lafourcade"]
   },
   {
     name: "Indie", flag: "🇮🇳", region: "Azja Południowa",
@@ -69,8 +63,7 @@ export const countries: Country[] = [
     food: ["Butter chicken", "Biryani", "Samosy z chutneyem", "Palak paneer z ryżem basmati"],
     desserts: ["Gulab jamun z syropem różanym", "Kheer – pudding ryżowy z kardamonem", "Jalebi", "Kulfi z pistacjami"],
     movies: ["3 Idiots", "Lagaan", "Dilwale Dulhania Le Jayenge"],
-    music: ["A.R. Rahman", "Arijit Singh", "Ravi Shankar"],
-    dateIdea: "Curry z naanem, chai masala i taneczna scena z Bollywood – spróbujcie powtórzyć choreografię."
+    music: ["A.R. Rahman", "Arijit Singh", "Ravi Shankar"]
   },
   {
     name: "Brazylia", flag: "🇧🇷", region: "Ameryka Południowa",
@@ -79,8 +72,7 @@ export const countries: Country[] = [
     food: ["Feijoada z farofa i pomarańczą", "Pão de queijo", "Moqueca – gulasz rybny z mlekiem kokosowym", "Coxinha z kurczakiem"],
     desserts: ["Brigadeiro", "Bolo de rolo z guavą", "Pudim de leite – flan brazylijski", "Açaí z granolą"],
     movies: ["Miasto Boga", "Central do Brasil", "Tropa de Elite"],
-    music: ["Tom Jobim – Garota de Ipanema", "Anitta", "Gilberto Gil"],
-    dateIdea: "Caipirinhy, grill na balkonie i lekcja samby na YouTube – śmiechu gwarantowanego."
+    music: ["Tom Jobim – Garota de Ipanema", "Anitta", "Gilberto Gil"]
   },
   {
     name: "Korea Południowa", flag: "🇰🇷", region: "Azja Wschodnia",
@@ -89,8 +81,7 @@ export const countries: Country[] = [
     food: ["Korean BBQ", "Bibimbap", "Tteokbokki", "Kimchi jjigae"],
     desserts: ["Bingsu z truskawkami i mlekiem skondensowanym", "Hotteok – słodkie naleśniki z cynamonem", "Dalgona candy", "Yakgwa – miodowe ciasteczka"],
     movies: ["Parasite", "Old Boy", "Train to Busan"],
-    music: ["BTS", "BLACKPINK", "IU"],
-    dateIdea: "Domowe Korean BBQ, soju i maraton K-dramy lub seans 'Parasite'."
+    music: ["BTS", "BLACKPINK", "IU"]
   },
   {
     name: "Tajlandia", flag: "🇹🇭", region: "Azja Południowo-Wschodnia",
@@ -99,8 +90,7 @@ export const countries: Country[] = [
     food: ["Pad Thai z krewetkami", "Tom yum goong", "Zielone curry z kurczakiem", "Som tum – sałatka z zielonej papai"],
     desserts: ["Mango sticky rice", "Khanom krok – kokosowe babeczki", "Tub tim krob – kasztany wodne w mleku kokosowym", "Roti z bananem i mlekiem skondensowanym"],
     movies: ["Plemię", "Ong-Bak", "Bad Genius"],
-    music: ["Bird Thongchai", "Phum Viphurit", "Tilly Birds"],
-    dateIdea: "Domowy pad thai, zimne piwo Singha i wzajemny masaż z olejkiem kokosowym."
+    music: ["Bird Thongchai", "Phum Viphurit", "Tilly Birds"]
   },
   {
     name: "Grecja", flag: "🇬🇷", region: "Europa Południowa",
@@ -109,8 +99,7 @@ export const countries: Country[] = [
     food: ["Moussaka", "Gyros z tzatziki", "Sałatka grecka z fetą", "Spanakopita – szpinakowa pita"],
     desserts: ["Baklava z miodem i orzechami", "Loukoumades – smażone pączuszki z miodem", "Galaktoboureko – kremowe ciasto", "Rizogalo – pudding ryżowy"],
     movies: ["Grek Zorba", "Moje wielkie greckie wesele", "Niebieska sukienka"],
-    music: ["Mikis Theodorakis", "Nana Mouskouri", "Despina Vandi"],
-    dateIdea: "Mezze, retsina i sirtaki w salonie – z obowiązkowym 'Opa!' na koniec."
+    music: ["Mikis Theodorakis", "Nana Mouskouri", "Despina Vandi"]
   },
   {
     name: "Wielka Brytania", flag: "🇬🇧", region: "Europa Zachodnia",
@@ -119,8 +108,7 @@ export const countries: Country[] = [
     food: ["Fish and chips z octem", "Sunday roast z Yorkshire pudding", "Shepherd's pie", "Beans on toast"],
     desserts: ["Sticky toffee pudding", "Eton mess z truskawkami", "Victoria sponge cake", "Scones z clotted cream i dżemem"],
     movies: ["Notting Hill", "Trainspotting", "Cztery wesela i pogrzeb"],
-    music: ["The Beatles", "Adele", "Arctic Monkeys"],
-    dateIdea: "Fish and chips, ciemne piwo i seans brytyjskiej komedii romantycznej z herbatą na deser."
+    music: ["The Beatles", "Adele", "Arctic Monkeys"]
   },
   {
     name: "Niemcy", flag: "🇩🇪", region: "Europa Środkowa",
@@ -129,8 +117,7 @@ export const countries: Country[] = [
     food: ["Currywurst", "Sznycel wiedeński", "Bretzle z masłem", "Sauerbraten z czerwoną kapustą"],
     desserts: ["Schwarzwälder Kirschtorte", "Apfelstrudel z lodami waniliowymi", "Lebkuchen – pierniczki", "Rote Grütze z bitą śmietaną"],
     movies: ["Życie na podsłuchu", "Good Bye, Lenin!", "Biegnij Lola, biegnij"],
-    music: ["Rammstein", "Kraftwerk", "Nena – 99 Luftballons"],
-    dateIdea: "Kiełbaski, precle i ciemne piwo. W tle Kraftwerk, później intensywne kino niemieckie."
+    music: ["Rammstein", "Kraftwerk", "Nena – 99 Luftballons"]
   },
   {
     name: "Polska", flag: "🇵🇱", region: "Europa Środkowa",
@@ -139,8 +126,7 @@ export const countries: Country[] = [
     food: ["Pierogi ruskie z okraszą", "Żurek w chlebie", "Bigos staropolski", "Kotlet schabowy z ziemniakami"],
     desserts: ["Sernik babci na kruchym spodzie", "Szarlotka z cynamonem", "Makowiec na Boże Narodzenie", "Faworki – chrust z cukrem pudrem"],
     movies: ["Dekalog", "Cold War", "Bogowie"],
-    music: ["Czesław Niemen", "Dawid Podsiadło", "Chopin – Nokturny"],
-    dateIdea: "Lepcie pierogi razem od zera, wódka na lód i seans 'Cold War' albo 'Dekalog'."
+    music: ["Czesław Niemen", "Dawid Podsiadło", "Chopin – Nokturny"]
   },
   {
     name: "Chiny", flag: "🇨🇳", region: "Azja Wschodnia",
@@ -149,8 +135,7 @@ export const countries: Country[] = [
     food: ["Dim sum", "Kaczka po pekińsku", "Mapo tofu", "Wołowina po syczuańsku"],
     desserts: ["Tanghulu – kandyzowane owoce na patyku", "Nian gao – lepki placek ryżowy", "Egg tart – kremowe babeczki", "Mooncake z pastą z lotosu"],
     movies: ["Przyczajony tygrys, ukryty smok", "In the Mood for Love", "Bohater"],
-    music: ["Faye Wong", "Jay Chou", "Lang Lang"],
-    dateIdea: "Domowe dim sum, zielona herbata i klimatyczny seans 'In the Mood for Love'."
+    music: ["Faye Wong", "Jay Chou", "Lang Lang"]
   },
   {
     name: "Argentyna", flag: "🇦🇷", region: "Ameryka Południowa",
@@ -159,8 +144,7 @@ export const countries: Country[] = [
     food: ["Asado – grill mistrzowski", "Empanadas z mięsem i jajkiem", "Provoleta – grillowany ser", "Locro – gęsta zupa andyjska"],
     desserts: ["Dulce de leche na wszystkim", "Alfajores z kajmakiem", "Facturas – słodkie bułki z piekarni", "Medialunas z masłem"],
     movies: ["Tajemnica jej oczu", "Dziewięć królowych", "Wild Tales"],
-    music: ["Carlos Gardel", "Gustavo Cerati", "Mercedes Sosa"],
-    dateIdea: "Stek na patelni, malbec i lekcja tanga – nawet jeden krok robi różnicę."
+    music: ["Carlos Gardel", "Gustavo Cerati", "Mercedes Sosa"]
   },
   {
     name: "Maroko", flag: "🇲🇦", region: "Afryka Północna",
@@ -169,8 +153,7 @@ export const countries: Country[] = [
     food: ["Tajine z jagnięciną i suszonymi śliwkami", "Kuskus piątkowy", "Pastilla z gołębiem", "Harira – pikantna zupa"],
     desserts: ["Chebakia – miodowe ciasteczka sezamowe", "M'hanncha – migdałowy wąż", "Sfenj – pączki marokańskie", "Briouats z migdałami i miodem"],
     movies: ["Casablanca", "Babel", "Karmazynowe niebo"],
-    music: ["Nass El Ghiwane", "Hindi Zahra", "Saad Lamjarred"],
-    dateIdea: "Tajine pod kocem, mocna mięta z herbatą i seans 'Casablanki'. Bonus: masaż olejkiem arganowym."
+    music: ["Nass El Ghiwane", "Hindi Zahra", "Saad Lamjarred"]
   },
   {
     name: "Egipt", flag: "🇪🇬", region: "Afryka Północna",
@@ -179,8 +162,7 @@ export const countries: Country[] = [
     food: ["Koshari z makaronem i soczewicą", "Ful medames z oliwą i cytryną", "Mahshi – nadziewane warzywa", "Kofta na grillu"],
     desserts: ["Baklava z pistacjami", "Umm Ali – egipski pudding chlebowy", "Konafa z serem i syropem", "Basbousa – ciasto z semoliny"],
     movies: ["Dworzec centralny", "Yacoubian Building", "Mumia"],
-    music: ["Umm Kulthum", "Amr Diab", "Mohamed Mounir"],
-    dateIdea: "Koshari, mocna kawa po arabsku i dokument o piramidach – później wspólna nauka tańca brzucha."
+    music: ["Umm Kulthum", "Amr Diab", "Mohamed Mounir"]
   },
   {
     name: "RPA", flag: "🇿🇦", region: "Afryka",
@@ -189,8 +171,7 @@ export const countries: Country[] = [
     food: ["Braai z boerewors i stekiem", "Bobotie z chutney", "Biltong – suszone mięso", "Samp and beans"],
     desserts: ["Malva pudding z kremowym sosem", "Koeksisters – skręcone słodkie pączki", "Melktert – tarta mleczna z cynamonem", "Peppermint crisp tart"],
     movies: ["Invictus", "Tsotsi", "Dystrykt 9"],
-    music: ["Miriam Makeba", "Ladysmith Black Mambazo", "Die Antwoord"],
-    dateIdea: "Grill na balkonie, południowoafrykańskie wino Pinotage i seans 'Invictusa' z Mandelą w tle."
+    music: ["Miriam Makeba", "Ladysmith Black Mambazo", "Die Antwoord"]
   },
   {
     name: "Australia", flag: "🇦🇺", region: "Oceania",
@@ -199,8 +180,7 @@ export const countries: Country[] = [
     food: ["Meat pie z sosem", "Vegemite na toście z masłem", "Barbecue z kiełbaskami", "Chiko roll"],
     desserts: ["Lamington – biszkopt w czekoladzie i kokosie", "Pavlova z owocami tropikalnymi", "Tim Tam slam z gorącą herbatą", "Golden Gaytime lody"],
     movies: ["Mad Max", "Crocodile Dundee", "Australia"],
-    music: ["AC/DC", "Tame Impala", "INXS"],
-    dateIdea: "Grill z dużą ilością mięsa, zimne piwo i maraton 'Mad Maxa'. G'day mate!"
+    music: ["AC/DC", "Tame Impala", "INXS"]
   },
   {
     name: "Rosja", flag: "🇷🇺", region: "Europa Wschodnia",
@@ -209,8 +189,7 @@ export const countries: Country[] = [
     food: ["Pielmieni", "Borszcz ze śmietaną", "Bliny z kawiorem", "Sałatka Olivier"],
     desserts: ["Medovik – tort miodowy warstwowy", "Ptichye moloko – czekoladki z ptasim mleczkiem", "Zefir – rosyjskie pianki", "Pirozhki z dżemem"],
     movies: ["Stalker", "Lewiatan", "Ironia losu"],
-    music: ["Czajkowski", "Wiktor Coj – Kino", "Pussy Riot"],
-    dateIdea: "Pielmieni, lodowata wódka i mroczne kino Tarkowskiego pod ciężkim kocem."
+    music: ["Czajkowski", "Wiktor Coj – Kino", "Pussy Riot"]
   },
   {
     name: "Turcja", flag: "🇹🇷", region: "Eurazja",
@@ -219,8 +198,7 @@ export const countries: Country[] = [
     food: ["Kebab adana", "Menemen – jajecznica po turecku", "Lahmacun – turecka pizza", "Manti – tureckie pierożki z jogurtem"],
     desserts: ["Baklava z pistacjami", "Künefe – ser z syropem", "Sütlaç – pudding ryżowy", "Lokum – tureckie delicje"],
     movies: ["Zimowy sen", "Trzy małpy", "Once Upon a Time in Anatolia"],
-    music: ["Tarkan", "Sezen Aksu", "Barış Manço"],
-    dateIdea: "Mezze, raki z lodem i wieczorne wróżenie sobie z fusów kawy. Romantyczne i tajemnicze."
+    music: ["Tarkan", "Sezen Aksu", "Barış Manço"]
   },
   {
     name: "Wietnam", flag: "🇻🇳", region: "Azja Południowo-Wschodnia",
@@ -229,8 +207,7 @@ export const countries: Country[] = [
     food: ["Pho bo", "Bánh mì", "Sajgonki świeże", "Bun cha – grillowana wieprzowina z makaronem"],
     desserts: ["Chè – słodka zupa z fasoli lub owoców", "Bánh flan – wietnamski flan", "Che chuoi – banan w mleku kokosowym", "Banh cam – smażone kulki sezamowe"],
     movies: ["Zapach zielonej papai", "Cyklo", "Czas apokalipsy"],
-    music: ["Trinh Cong Son", "Sơn Tùng M-TP", "Hoang Thuy Linh"],
-    dateIdea: "Domowe pho, świeże sajgonki i kawa wietnamska z mlekiem skondensowanym na deser."
+    music: ["Trinh Cong Son", "Sơn Tùng M-TP", "Hoang Thuy Linh"]
   },
   {
     name: "Indonezja", flag: "🇮🇩", region: "Azja Południowo-Wschodnia",
@@ -239,8 +216,7 @@ export const countries: Country[] = [
     food: ["Nasi goreng", "Satay z sosem orzechowym", "Rendang", "Gado-gado z sosem orzechowym"],
     desserts: ["Es campur – mieszane lody z owocami", "Klepon – kulki ryżowe z palmowym cukrem", "Pisang goreng – smażony banan", "Dadar gulung – naleśniki z kokosem"],
     movies: ["The Raid", "Marlina – morderczyni w czterech aktach", "Eat Pray Love"],
-    music: ["Anggun", "Rich Brian", "Tulus"],
-    dateIdea: "Nasi goreng z jajkiem sadzonym, świeczki kokosowe i seans 'Eat Pray Love'."
+    music: ["Anggun", "Rich Brian", "Tulus"]
   },
   {
     name: "Kuba", flag: "🇨🇺", region: "Karaiby",
@@ -249,8 +225,7 @@ export const countries: Country[] = [
     food: ["Ropa vieja", "Moros y cristianos", "Tostones", "Lechón asado – pieczona wieprzowina"],
     desserts: ["Arroz con leche z cynamonem", "Natilla – kubański budyń", "Tres leches kubańskie", "Buñuelos kubańskie z anyżem"],
     movies: ["Truskawki i czekolada", "Buena Vista Social Club", "Powrót do Itaki"],
-    music: ["Buena Vista Social Club", "Celia Cruz", "Compay Segundo"],
-    dateIdea: "Mojito, czarne fasole z ryżem i lekcja salsy z Buena Vista Social Club w tle."
+    music: ["Buena Vista Social Club", "Celia Cruz", "Compay Segundo"]
   },
   {
     name: "Holandia", flag: "🇳🇱", region: "Europa Zachodnia",
@@ -259,8 +234,7 @@ export const countries: Country[] = [
     food: ["Bitterballen z musztardą", "Haring – śledź na surowo z cebulką", "Erwtensoep – gęsta zupa grochowa", "Stamppot z kiełbasą"],
     desserts: ["Stroopwafel na gorącej kawie", "Poffertjes – małe naleśniczki", "Oliebollen – pączki noworoczne", "Appeltaart z bitą śmietaną"],
     movies: ["Wskaż mi drogę do domu", "Czarna księga", "Antonia"],
-    music: ["Tiësto", "Anouk", "Caro Emerald"],
-    dateIdea: "Sery holenderskie, gouda i edam, do tego ciemne piwo i seans 'Czarnej księgi'."
+    music: ["Tiësto", "Anouk", "Caro Emerald"]
   },
   {
     name: "Szwecja", flag: "🇸🇪", region: "Skandynawia",
@@ -269,8 +243,7 @@ export const countries: Country[] = [
     food: ["Köttbullar z żurawiną i puree", "Gravlax z musztardą i koperkiem", "Toast Skagen z krewetkami", "Smörgåsbord z różnymi śledziami"],
     desserts: ["Kanelbullar – cynamonowe bułeczki", "Kladdkaka – lepkie czekoladowe brownie", "Prinsesstårta – tort księżniczki", "Semla z bitą śmietaną i marcepanem"],
     movies: ["Pozwól mi wejść", "Fanny i Aleksander", "Sami swoi"],
-    music: ["ABBA", "Avicii", "First Aid Kit"],
-    dateIdea: "Klopsiki z brusznicami, świece (hygge w szwedzkim wydaniu) i seans Bergmana albo… ABBA disco."
+    music: ["ABBA", "Avicii", "First Aid Kit"]
   },
   {
     name: "Norwegia", flag: "🇳🇴", region: "Skandynawia",
@@ -279,8 +252,7 @@ export const countries: Country[] = [
     food: ["Łosoś wędzony", "Brunost – brązowy ser", "Fårikål", "Kjøttkaker – norweskie kotleciki"],
     desserts: ["Skillingsbolle – cynamonowe bułki", "Multekrem – moroszka z bitą śmietaną", "Krumkake – wafelki z kremem", "Lefse z cukrem i masłem"],
     movies: ["Bestia", "Łowca trolli", "Najgorszy człowiek na świecie"],
-    music: ["A-ha – Take On Me", "Aurora", "Sigrid"],
-    dateIdea: "Wieczór z łososiem, świecami i seansem 'Najgorszego człowieka na świecie'. Hyggelig!"
+    music: ["A-ha – Take On Me", "Aurora", "Sigrid"]
   },
   {
     name: "Irlandia", flag: "🇮🇪", region: "Europa Zachodnia",
@@ -289,8 +261,7 @@ export const countries: Country[] = [
     food: ["Irish stew", "Soda bread", "Shepherd's pie", "Boxty – ziemniaczane placki"],
     desserts: ["Irish cream cheesecake", "Barmbrack – chleb z rodzynkami", "Porter cake z Guinnessem", "Apple crumble z custard"],
     movies: ["The Banshees of Inisherin", "Dublińczycy", "Once"],
-    music: ["U2", "Sinéad O'Connor", "The Cranberries"],
-    dateIdea: "Irish stew, Guinness i seans 'The Banshees of Inisherin' z melancholijną irlandzką folkiem w tle."
+    music: ["U2", "Sinéad O'Connor", "The Cranberries"]
   },
   {
     name: "Portugalia", flag: "🇵🇹", region: "Europa Południowa",
@@ -299,8 +270,7 @@ export const countries: Country[] = [
     food: ["Bacalhau à Brás z jajkami i ziemniakami", "Caldo verde z chouriço", "Francesinha – kanapka po porto", "Sardinhas assadas – pieczone sardynki"],
     desserts: ["Pastéis de nata z cynamonem", "Arroz doce – pudding ryżowy", "Pudim flan – kremowy budyń", "Travesseiro z migdałami"],
     movies: ["Lisbon Story", "Tabu", "Letters from Fontainhas"],
-    music: ["Amália Rodrigues", "Madredeus", "Mariza"],
-    dateIdea: "Pastéis de nata, kieliszek porto i fado w tle – melancholia w najlepszym wydaniu."
+    music: ["Amália Rodrigues", "Madredeus", "Mariza"]
   },
   {
     name: "Szwajcaria", flag: "🇨🇭", region: "Europa Środkowa",
@@ -309,8 +279,7 @@ export const countries: Country[] = [
     food: ["Fondue serowe z bagietką", "Raclette z ziemniakami i ogórkami", "Rösti z jajkiem sadzonym", "Zürcher Geschnetzeltes z pieczarkami"],
     desserts: ["Czekolada Lindt i Toblerone", "Meringues z podwójną śmietaną", "Rüblitorte – marchewkowy tort", "Tirggel – miodowe ciasteczka"],
     movies: ["Heidi", "Dark Eye", "Sister"],
-    music: ["DJ Bobo", "Stephan Eicher", "Sophie Hunger"],
-    dateIdea: "Fondue serowe, białe wino i seans w klimatach alpejskich. Czekolada na deser obowiązkowa."
+    music: ["DJ Bobo", "Stephan Eicher", "Sophie Hunger"]
   },
   {
     name: "Austria", flag: "🇦🇹", region: "Europa Środkowa",
@@ -319,8 +288,7 @@ export const countries: Country[] = [
     food: ["Wiener Schnitzel z cytryną i sałatką", "Tafelspitz – gotowana wołowina z chrzanem", "Gulasch wiedeński", "Käsespätzle – serowe kluski"],
     desserts: ["Sachertorte z konfiturą morelową", "Apfelstrudel z lodami waniliowymi", "Kaiserschmarrn z powidłami śliwkowymi", "Linzer Torte z dżemem malinowym"],
     movies: ["Dziewczyna z perłą", "Amour", "Trzeci człowiek"],
-    music: ["Mozart", "Falco – Rock Me Amadeus", "Conchita Wurst"],
-    dateIdea: "Sznycel, kawa po wiedeńsku z bitą śmietaną i lekcja walca w salonie."
+    music: ["Mozart", "Falco – Rock Me Amadeus", "Conchita Wurst"]
   },
   {
     name: "Belgia", flag: "🇧🇪", region: "Europa Zachodnia",
@@ -329,8 +297,7 @@ export const countries: Country[] = [
     food: ["Moules-frites z białym winem", "Carbonnade flamande – wołowina w piwie", "Stoofvlees – flamandzki gulasz", "Américain préparé – tatar po belgijsku"],
     desserts: ["Gofry brukselskie z cukrem pudrem", "Czekoladki Godiva i Neuhaus", "Speculoos – korzenne ciasteczka", "Dame blanche – lody z gorącą czekoladą"],
     movies: ["Brugia, fuck you", "Dziecko", "Toto bohater"],
-    music: ["Jacques Brel", "Stromae", "Angèle"],
-    dateIdea: "Frytki z różnymi sosami, mocne belgijskie piwo i seans 'Brugia, fuck you' z Colinem Farrellem."
+    music: ["Jacques Brel", "Stromae", "Angèle"]
   },
   {
     name: "Czechy", flag: "🇨🇿", region: "Europa Środkowa",
@@ -339,8 +306,7 @@ export const countries: Country[] = [
     food: ["Svíčková z knedlikami i brusinkami", "Guláš z knedlikami", "Vepřo-knedlo-zelo – wieprzowina z kapustą", "Bramboráky – placki ziemniaczane"],
     desserts: ["Trdelník z cynamonem", "Koláče z nadzieniem owocowym", "Medovník – tort miodowy", "Buchty z twarogiem"],
     movies: ["Pociągi pod specjalnym nadzorem", "Lekcje Faraona", "Kolja"],
-    music: ["Karel Gott", "Dvořák", "Iva Bittová"],
-    dateIdea: "Knedliki ze svíčkową, ciemne piwo Kozel i seans 'Lekcji Faraona' albo czeskiej Nowej Fali."
+    music: ["Karel Gott", "Dvořák", "Iva Bittová"]
   },
   {
     name: "Węgry", flag: "🇭🇺", region: "Europa Środkowa",
@@ -349,8 +315,7 @@ export const countries: Country[] = [
     food: ["Gulyás z papryką i ziemniakami", "Lángos z czosnkiem i serem", "Halászlé – pikantna zupa rybna", "Töltött káposzta – gołąbki węgierskie"],
     desserts: ["Kürtőskalács – kominiarski kołacz", "Somlói galuska – biszkoptowy deser", "Dobos torta – tort czekoladowo-karmelowy", "Rétes – węgierski strudel z makiem"],
     movies: ["Syn Szawła", "O ciele i duszy", "Mefisto"],
-    music: ["Liszt", "Omega", "Bea Palya"],
-    dateIdea: "Pikantny gulasz, wino Tokaj i seans intensywnego węgierskiego kina."
+    music: ["Liszt", "Omega", "Bea Palya"]
   },
   {
     name: "Izrael", flag: "🇮🇱", region: "Bliski Wschód",
@@ -359,8 +324,7 @@ export const countries: Country[] = [
     food: ["Hummus z falafelem", "Szakszuka", "Sabich", "Falafel z amba i tahiną"],
     desserts: ["Rugelach z czekoladą", "Sfenj – pączki chanukowe", "Malabi – pudding różany", "Halwa z sezamu z czekoladą"],
     movies: ["Walc z Baszirem", "Footnote", "Synonimy"],
-    music: ["Idan Raichel", "Asaf Avidan", "Ofra Haza"],
-    dateIdea: "Szakszuka na śniadanio-kolację, dobry hummus z pitą i seans 'Walca z Baszirem'."
+    music: ["Idan Raichel", "Asaf Avidan", "Ofra Haza"]
   },
   {
     name: "Iran", flag: "🇮🇷", region: "Bliski Wschód",
@@ -369,8 +333,7 @@ export const countries: Country[] = [
     food: ["Chelo kabab", "Ghormeh sabzi", "Fesenjan – kurczak w sosie z orzechów i granatu", "Tahdig – chrupiący ryż ze złotą skórką"],
     desserts: ["Baklava perska z różą i kardamonem", "Faloodeh – sorbet z wermiszelem różanym", "Sholeh zard – pudding szafranowy", "Zulbia – chrupiące słodycze z syropem"],
     movies: ["Rozstanie", "Smak czereśni", "Klient"],
-    music: ["Googoosh", "Mohsen Namjoo", "Hossein Alizadeh"],
-    dateIdea: "Aromatyczny chelo kabab z szafranem, granat na deser i seans 'Rozstania' Asghara Farhadiego."
+    music: ["Googoosh", "Mohsen Namjoo", "Hossein Alizadeh"]
   },
   {
     name: "Kanada", flag: "🇨🇦", region: "Ameryka Północna",
@@ -379,8 +342,7 @@ export const countries: Country[] = [
     food: ["Poutine z sosem i serem cheddar", "Tourtière – mięsna pita", "Lobster roll z Atlantyku", "Bannock – chleb rdzennych ludów"],
     desserts: ["Naleśniki z syropem klonowym", "Butter tarts z kajmakiem", "Nanaimo bars", "BeaverTails – smażone ciasto z cynamonem"],
     movies: ["Incendies", "Sami swoi", "Krwawiące serce"],
-    music: ["Leonard Cohen", "Joni Mitchell", "Drake"],
-    dateIdea: "Poutine z domowymi frytkami, naleśniki z syropem klonowym i Leonard Cohen w tle."
+    music: ["Leonard Cohen", "Joni Mitchell", "Drake"]
   },
   {
     name: "Nowa Zelandia", flag: "🇳🇿", region: "Oceania",
@@ -389,8 +351,7 @@ export const countries: Country[] = [
     food: ["Hāngī – jedzenie pieczone w ziemi", "Whitebait fritters – placuszki z rybkami", "Lamb rack z sosem miętowym", "Hangi pork z kumara"],
     desserts: ["Pavlova z bitą śmietaną i kiwi", "Hokey pokey ice cream", "Anzac biscuits z płatkami owsianymi", "Afghans – czekoladowe ciasteczka z cornflakes"],
     movies: ["Władca Pierścieni", "Fortepian", "Polowanie na dzikie pieprze"],
-    music: ["Lorde", "Crowded House", "Kimbra"],
-    dateIdea: "Maraton 'Władcy Pierścieni' (wersja rozszerzona!), pieczeń jagnięca i Pinot Noir z Marlborough."
+    music: ["Lorde", "Crowded House", "Kimbra"]
   },
   {
     name: "Etiopia", flag: "🇪🇹", region: "Afryka Wschodnia",
@@ -399,8 +360,7 @@ export const countries: Country[] = [
     food: ["Injera z wat", "Doro wat – kurczak po etiopsku", "Kitfo", "Shiro – purée z ciecierzycy"],
     desserts: ["Fetira – słodkie naleśniki z miodem", "Himbasha – urodzinowe ciasto z kardamonem", "Baklava etiopska z miodem", "Genfo na słodko z masłem i miodem"],
     movies: ["Difret", "Lamb", "Adwa"],
-    music: ["Mulatu Astatke", "Aster Aweke", "Mahmoud Ahmed"],
-    dateIdea: "Etiopska kawa parzona ceremonialnie, injera z curry i jazz Mulatu Astatke w tle."
+    music: ["Mulatu Astatke", "Aster Aweke", "Mahmoud Ahmed"]
   },
   {
     name: "Nigeria", flag: "🇳🇬", region: "Afryka Zachodnia",
@@ -409,8 +369,7 @@ export const countries: Country[] = [
     food: ["Jollof rice z grillowanym kurczakiem", "Suya – pikantne szaszłyki wołowe", "Egusi soup z fufu", "Pepper soup z kozim mięsem"],
     desserts: ["Puff puff – słodkie kulki", "Chin chin – chrupiące przekąski", "Nigerian buns z bananem", "Coconut candy – kokosowe cukierki"],
     movies: ["Lionheart", "King of Boys", "The Wedding Party"],
-    music: ["Burna Boy", "Fela Kuti", "Wizkid"],
-    dateIdea: "Pikantny jollof rice, suya na grillu i afrobeats playlist do tańca w salonie."
+    music: ["Burna Boy", "Fela Kuti", "Wizkid"]
   },
   {
     name: "Kenia", flag: "🇰🇪", region: "Afryka Wschodnia",
@@ -419,8 +378,7 @@ export const countries: Country[] = [
     food: ["Ugali z sukuma wiki", "Nyama choma – grillowane mięso", "Pilau z aromatycznymi przyprawami", "Githeri – fasola z kukurydzą"],
     desserts: ["Mandazi – smażone pączki", "Mahamri – słodkie bułeczki z kardamonem", "Kaimati – słodkie kulki z syropem", "Halwa kenijska z różą"],
     movies: ["Pożegnanie z Afryką", "Nairobi Half Life", "Rafiki"],
-    music: ["Sauti Sol", "Eric Wainaina", "Suzanna Owiyo"],
-    dateIdea: "Grillowane mięso (nyama choma), zimne piwo Tusker i dokument o Serengeti."
+    music: ["Sauti Sol", "Eric Wainaina", "Suzanna Owiyo"]
   },
   {
     name: "Peru", flag: "🇵🇪", region: "Ameryka Południowa",
@@ -429,8 +387,7 @@ export const countries: Country[] = [
     food: ["Ceviche", "Lomo saltado", "Aji de gallina", "Causa rellena"],
     desserts: ["Picarones – pączki z dyni z syropem", "Alfajores z manjar blanco", "Mazamorra morada – fioletowy budyń", "Arroz con leche z cynamonem"],
     movies: ["Mleko smutku", "Mżawka", "Madeinusa"],
-    music: ["Susana Baca", "Eva Ayllón", "Gian Marco"],
-    dateIdea: "Ceviche z limonką i kolendrą, pisco sour i dokument o Machu Picchu."
+    music: ["Susana Baca", "Eva Ayllón", "Gian Marco"]
   },
   {
     name: "Kolumbia", flag: "🇨🇴", region: "Ameryka Południowa",
@@ -439,8 +396,7 @@ export const countries: Country[] = [
     food: ["Bandeja paisa", "Arepy", "Ajiaco", "Sancocho – sycąca zupa"],
     desserts: ["Obleas z arequipe", "Bocadillo z guawy z serem", "Natilla – kolumbijski budyń", "Buñuelos kolumbijskie na Boże Narodzenie"],
     movies: ["Embrace of the Serpent", "Maria, pełna łaski", "Monos"],
-    music: ["Shakira", "Juanes", "Carlos Vives"],
-    dateIdea: "Arepy z różnym nadzieniem, kolumbijska kawa i playlist Shakiry – tańce gwarantowane."
+    music: ["Shakira", "Juanes", "Carlos Vives"]
   },
   {
     name: "Chile", flag: "🇨🇱", region: "Ameryka Południowa",
@@ -449,8 +405,7 @@ export const countries: Country[] = [
     food: ["Empanadas de pino", "Pastel de choclo", "Completo – hot dog po chilijsku", "Pebre – chilijska salsa do chleba"],
     desserts: ["Leche asada – pieczony flan", "Alfajores chilijskie z dulce de leche", "Kuchen z jagodami", "Mote con huesillos – brzoskwiniowy deserowy napój"],
     movies: ["No", "Klub", "Una mujer fantástica"],
-    music: ["Violeta Parra", "Inti-Illimani", "Mon Laferte"],
-    dateIdea: "Empanadas z piekarnika, chilijskie Carménère i muzyka Violety Parra przy świecach."
+    music: ["Violeta Parra", "Inti-Illimani", "Mon Laferte"]
   },
   {
     name: "Filipiny", flag: "🇵🇭", region: "Azja Południowo-Wschodnia",
@@ -459,8 +414,7 @@ export const countries: Country[] = [
     food: ["Adobo z kurczaka lub wieprzowiny", "Sinigang z tamaryndowcem", "Lechon kawali – chrupiąca wieprzowina", "Kare-kare – gulasz w sosie orzechowym"],
     desserts: ["Halo-halo z ube i leche flan", "Bibingka – ryżowe ciasto na bananowym liściu", "Turon – smażona bananowa sajgonka z brązowym cukrem", "Leche flan – kremowy budyń"],
     movies: ["Norte – the End of History", "Heneral Luna", "On the Job"],
-    music: ["Lea Salonga", "IV of Spades", "Ben&Ben"],
-    dateIdea: "Domowe adobo z ryżem, deser z ube na słodko i wieczór karaoke w salonie. Bez wymówek."
+    music: ["Lea Salonga", "IV of Spades", "Ben&Ben"]
   },
   {
     name: "Pakistan", flag: "🇵🇰", region: "Azja Południowa",
@@ -469,8 +423,7 @@ export const countries: Country[] = [
     food: ["Biryani", "Nihari", "Chicken karahi", "Haleem – gęsta potrawka mięsna"],
     desserts: ["Gulab jamun z syropem różanym", "Kheer – budyń ryżowy z kardamonem", "Jalebi z rabri", "Barfi z pistacjami"],
     movies: ["Khuda Kay Liye", "Bol", "Joyland"],
-    music: ["Nusrat Fateh Ali Khan", "Atif Aslam", "Coke Studio Pakistan"],
-    dateIdea: "Aromatyczne biryani, mocna herbata chai i seans Coke Studio – qawwali porywa serca."
+    music: ["Nusrat Fateh Ali Khan", "Atif Aslam", "Coke Studio Pakistan"]
   },
   {
     name: "Ukraina", flag: "🇺🇦", region: "Europa Wschodnia",
@@ -479,8 +432,7 @@ export const countries: Country[] = [
     food: ["Barszcz ukraiński", "Wareniki", "Sało z czarnym chlebem", "Holubci – gołąbki"],
     desserts: ["Medivnyk – ukraiński tort miodowy", "Makivnyk – makowiec", "Pampushky z dżemem", "Syrnyky – twarogowe placuszki z kwaśną śmietaną"],
     movies: ["Plemię", "Donbas", "Atlantida"],
-    music: ["Okean Elzy", "Jamala", "DakhaBrakha"],
-    dateIdea: "Wareniki lepione razem od zera, czerwony barszcz na obiad i koncerty DakhaBrakha na YouTube."
+    music: ["Okean Elzy", "Jamala", "DakhaBrakha"]
   },
   {
     name: "Islandia", flag: "🇮🇸", region: "Europa Północna",
@@ -489,8 +441,7 @@ export const countries: Country[] = [
     food: ["Pylsur – hot dog z wszystkimi sosami", "Plokkfiskur – ryba z ziemniakami", "Kjötsúpa – islandzka zupa jagnięca", "Hákarl – fermentowany rekin (dla odważnych)"],
     desserts: ["Skyr z borówkami i miodem", "Kleinur – islandzkie pączki", "Pönnukökur – islandzkie naleśniki z dżemem", "Hjónabandssæla – płatki owsiane z rabarbarem"],
     movies: ["101 Reykjavik", "Rams", "Woman at War"],
-    music: ["Björk", "Sigur Rós", "Of Monsters and Men"],
-    dateIdea: "Świeża ryba, gorąca kąpiel ze świecami (imitacja blue lagoon) i Sigur Rós w tle. Czysta magia."
+    music: ["Björk", "Sigur Rós", "Of Monsters and Men"]
   },
   {
     name: "Jamajka", flag: "🇯🇲", region: "Karaiby",
@@ -499,8 +450,7 @@ export const countries: Country[] = [
     food: ["Jerk chicken z grilla", "Ackee and saltfish", "Rice and peas", "Jamaican patty z wołowiną"],
     desserts: ["Rum cake z bakaliami", "Gizzada – kokosowe tartletki", "Totoes – kokosowe ciasteczka", "Banana fritters z cynamonem"],
     movies: ["Cool Runnings", "The Harder They Come", "Marley (dokument)"],
-    music: ["Bob Marley", "Sean Paul", "Reggae i dancehall klasyki"],
-    dateIdea: "Jerk chicken z grilla, rum z colą i sorrel drink, a w tle Bob Marley i sesja dancehallu w salonie."
+    music: ["Bob Marley", "Sean Paul", "Reggae i dancehall klasyki"]
   },
   {
     name: "Malezja", flag: "🇲🇾", region: "Azja Południowo-Wschodnia",
@@ -509,8 +459,7 @@ export const countries: Country[] = [
     food: ["Nasi lemak z sambalem", "Laksa", "Roti canai z dhal", "Char kway teow"],
     desserts: ["Cendol z palmowym cukrem", "Kuih lapis – tęczowe ciasto ryżowe", "Ondeh-ondeh z palmowym cukrem", "Apam balik – naleśnik z orzeszkami ziemnymi"],
     movies: ["Sepet", "The Journey", "Bunohan"],
-    music: ["Yuna", "Siti Nurhaliza", "Search"],
-    dateIdea: "Nasi lemak z sambalem, mrożona teh tarik i seans 'Sepet' z malezyjskim klimatem mamak."
+    music: ["Yuna", "Siti Nurhaliza", "Search"]
   },
   {
     name: "Singapur", flag: "🇸🇬", region: "Azja Południowo-Wschodnia",
@@ -519,8 +468,7 @@ export const countries: Country[] = [
     food: ["Chili crab z bułeczkami", "Hainanese chicken rice", "Laksa singapurska", "Char kway teow z krewetkami"],
     desserts: ["Kaya toast z masłem i jajkiem", "Ice kachang – lody z syropem", "Ondeh-ondeh z palmowym cukrem", "Chendol z mleczkiem kokosowym"],
     movies: ["Ilo Ilo", "Crazy Rich Asians", "Apprentice"],
-    music: ["Stefanie Sun", "JJ Lin", "The Sam Willows"],
-    dateIdea: "Wieczór w stylu hawker center: kilka małych dań, chili crab i Singapore Sling przy świetle latarni."
+    music: ["Stefanie Sun", "JJ Lin", "The Sam Willows"]
   },
   {
     name: "Nepal", flag: "🇳🇵", region: "Azja Południowa",
@@ -529,8 +477,7 @@ export const countries: Country[] = [
     food: ["Dal bhat z curry", "Momo ze sosem achar", "Thukpa – himalajska zupa z makaronem", "Gundruk – fermentowane liście warzyw"],
     desserts: ["Sel roti – ryżowy pierścień z cukrem", "Yomari – ryżowe pierożki z sezamem i palmowym cukrem", "Kheer – nepalna ryżowa zupa mleczna", "Sikarni – jogurt z owocami i orzechami"],
     movies: ["Kabaddi", "Highway", "White Sun"],
-    music: ["1974 AD", "Bartika Eam Rai", "Sajjan Raj Vaidya"],
-    dateIdea: "Lepcie momo razem od zera, do tego masala chai i dokument o Himalajach na koniec."
+    music: ["1974 AD", "Bartika Eam Rai", "Sajjan Raj Vaidya"]
   },
   {
     name: "Mongolia", flag: "🇲🇳", region: "Azja Środkowa",
@@ -539,8 +486,7 @@ export const countries: Country[] = [
     food: ["Buuz – mongolskie pierożki na parze", "Khorkhog – mięso pieczone na rozgrzanych kamieniach", "Tsuivan – smażony makaron z baraniną", "Tsoivan – duszone mięso z warzywami"],
     desserts: ["Aaruul – suszony twaróg na słodko", "Boortsog – smażone ciasteczka", "Ul boov – mongolskie ciasto warstwowe", "Chak-chak z miodem"],
     movies: ["Opowieść o płaczącym wielbłądzie", "Mongol", "The Eagle Huntress"],
-    music: ["The Hu", "Khusugtun", "Tradycyjny śpiew gardłowy khoomei"],
-    dateIdea: "Buuz na parze, mocna czarna herbata z mlekiem i seans 'The Eagle Huntress' z The Hu w tle."
+    music: ["The Hu", "Khusugtun", "Tradycyjny śpiew gardłowy khoomei"]
   },
   {
     name: "Sri Lanka", flag: "🇱🇰", region: "Azja Południowa",
@@ -549,8 +495,7 @@ export const countries: Country[] = [
     food: ["Rice and curry z sambolem", "Hoppers (appa)", "Kottu roti", "Lamprais"],
     desserts: ["Watalappan – pudding z mleczka kokosowego", "Kavum – ryżowy olej cake", "Kokis – chrupiące ciastka", "Aluwa – słodycze z ryżowej mąki"],
     movies: ["The Forsaken Land", "Funny Boy", "With You, Without You"],
-    music: ["Bathiya and Santhush", "Yohani – Manike Mage Hithe", "Iraj"],
-    dateIdea: "Pikantne rice and curry, mrożona herbata cejlońska z imbirem i dokument o pociągu przez plantacje."
+    music: ["Bathiya and Santhush", "Yohani – Manike Mage Hithe", "Iraj"]
   },
   {
     name: "Kazachstan", flag: "🇰🇿", region: "Azja Środkowa",
@@ -559,8 +504,7 @@ export const countries: Country[] = [
     food: ["Beshbarmak – gotowane mięso z makaronem", "Kazy – suszona kiełbasa z koniny", "Plov z baraniną i marchewką", "Shashlik z jagnięciny"],
     desserts: ["Baursaki – smażone pączki z miodem", "Chak-chak – chrupiące ciasteczka z miodem", "Kurt – kulki z twarogu", "Samsa słodka z orzechami"],
     movies: ["Tulpan", "Mongol", "Kelin"],
-    music: ["Dimash Kudaibergen", "Ninety One", "Tradycyjna dombra"],
-    dateIdea: "Beshbarmak na dużym talerzu, czarna herbata z mlekiem i koncert Dimasha na YouTube."
+    music: ["Dimash Kudaibergen", "Ninety One", "Tradycyjna dombra"]
   },
   {
     name: "Uzbekistan", flag: "🇺🇿", region: "Azja Środkowa",
@@ -569,8 +513,7 @@ export const countries: Country[] = [
     food: ["Plov uzbecki", "Manty – duże pierogi z baraniną", "Shashlik", "Samsa z piekarnika tandoor"],
     desserts: ["Halva uzbecka z sezamem", "Nishalda – deserek z pianek", "Navat – cukierki z cukru winogronowego", "Chak-chak z miodem"],
     movies: ["Tashkent – City of Bread", "The Sun Also Rises Over Tashkent", "Parizod"],
-    music: ["Yulduz Usmonova", "Sevara Nazarkhan", "Tradycyjna muzyka shashmaqam"],
-    dateIdea: "Plov z baraniną i marchewką w jednym kazanie, zielona herbata i wieczór z opowieściami z Jedwabnego Szlaku."
+    music: ["Yulduz Usmonova", "Sevara Nazarkhan", "Tradycyjna muzyka shashmaqam"]
   },
   {
     name: "Tanzania", flag: "🇹🇿", region: "Afryka Wschodnia",
@@ -579,8 +522,7 @@ export const countries: Country[] = [
     food: ["Ugali z nyama choma", "Pilau zanzibarskie z przyprawami", "Mishkaki – szaszłyki wołowe", "Mchuzi wa samaki – ryba w sosie kokosowym"],
     desserts: ["Mandazi – smażone bułeczki z kardamonem", "Halwa zanzibarskie", "Vitumbua – ryżowe pączki", "Kaimati – słodkie kulki z syropem"],
     movies: ["Maangamizi", "T-Junction", "Bongoland"],
-    music: ["Diamond Platnumz", "Ali Kiba", "Bongo Flava"],
-    dateIdea: "Pilau z aromatycznymi przyprawami zanzibarskimi, świeży sok z marakui i dokument o Serengeti."
+    music: ["Diamond Platnumz", "Ali Kiba", "Bongo Flava"]
   },
   {
     name: "Ghana", flag: "🇬🇭", region: "Afryka Zachodnia",
@@ -589,8 +531,7 @@ export const countries: Country[] = [
     food: ["Jollof rice po ghańsku z grillowanym kurczakiem", "Fufu z zupą egusi", "Banku z tilapią", "Waakye – ryż z fasolą"],
     desserts: ["Kelewele – smażona słodka plantain z imbirem", "Bofrot – smażone pączki", "Tatale – placki z dojrzałej plantain", "Coconut biscuits – kokosowe ciasteczka"],
     movies: ["The Burial of Kojo", "Children of the Mountain", "Azali"],
-    music: ["Sarkodie", "Stonebwoy", "Daddy Lumba"],
-    dateIdea: "Jollof rice po ghańsku z grillowanym kurczakiem i lekcja azonto z YouTube."
+    music: ["Sarkodie", "Stonebwoy", "Daddy Lumba"]
   },
   {
     name: "Senegal", flag: "🇸🇳", region: "Afryka Zachodnia",
@@ -599,8 +540,7 @@ export const countries: Country[] = [
     food: ["Thieboudienne – ryż z rybą", "Yassa poulet", "Mafé – gulasz z masłem orzechowym", "Pastels – smażone pierożki"],
     desserts: ["Thiakry – kuskus z jogurtem i mlekiem skondensowanym", "Ngalakh – kuskus z pastą orzechową", "Sombi – ryżowy pudding kokosowy", "Bissap – galaretka z hibiskusa"],
     movies: ["Atlantique", "Touki Bouki", "La Noire de…"],
-    music: ["Youssou N'Dour", "Baaba Maal", "Ismael Lô"],
-    dateIdea: "Thieboudienne z jednej miski, mocna mięta z herbatą ataya i koncerty Youssou N'Doura w tle."
+    music: ["Youssou N'Dour", "Baaba Maal", "Ismael Lô"]
   },
   {
     name: "Algieria", flag: "🇩🇿", region: "Afryka Północna",
@@ -609,8 +549,7 @@ export const countries: Country[] = [
     food: ["Couscous z baraniną i siedmioma warzywami", "Chorba frik – zupa z baraniną", "Mechoui – pieczona jagnięcina", "Chakhchoukha – kruche ciasto z gulaszem"],
     desserts: ["Makroud – ciastka z daktylami i miodem", "Baklava algierska z orzechami", "Zlabia – chrupiące słodycze z syropem", "Qalb el louz – ciasto z semoliną i migdałami"],
     movies: ["Bitwa o Algier", "Hors la loi", "Papicha"],
-    music: ["Cheb Khaled", "Rachid Taha", "Souad Massi"],
-    dateIdea: "Pachnący kuskus z baraniną, mięta z herbatą i koncerty Cheba Khaleda – obowiązkowa 'Aïcha'."
+    music: ["Cheb Khaled", "Rachid Taha", "Souad Massi"]
   },
   {
     name: "Tunezja", flag: "🇹🇳", region: "Afryka Północna",
@@ -619,8 +558,7 @@ export const countries: Country[] = [
     food: ["Brik z jajkiem i tuńczykiem", "Couscous tuniski z harissą i warzywami", "Lablabi – zupa z ciecierzycy", "Ojja – jajecznica z harissą i merguez"],
     desserts: ["Makroudh – ciasteczka z daktylami", "Baklava tunisienne", "Assida – pudding z semoliną", "Bambalouni – tunezyjskie pączki"],
     movies: ["The Man Who Sold His Skin", "Beauty and the Dogs", "A Son"],
-    music: ["Emel Mathlouthi", "Latifa Arfaoui", "Saber Rebaï"],
-    dateIdea: "Pikantne brik z jajkiem, mięta z herbatą z orzeszkami pinii i spacer po Sidi Bou Said na zdjęciach."
+    music: ["Emel Mathlouthi", "Latifa Arfaoui", "Saber Rebaï"]
   },
   {
     name: "Boliwia", flag: "🇧🇴", region: "Ameryka Południowa",
@@ -629,8 +567,7 @@ export const countries: Country[] = [
     food: ["Salteñas", "Pique macho", "Silpancho", "Anticuchos – szaszłyki z serca wołowego"],
     desserts: ["Buñuelos z syropem z trzciny", "Humintas – słodkie tamale", "Tawa tawa – smażone ciasto andyjskie", "Api morado – fioletowy napój z kukurydzy na słodko"],
     movies: ["Zama", "También la lluvia", "La nación clandestina"],
-    music: ["Los Kjarkas", "Bonny Lovy", "Tradycyjna muzyka andyjska na zampoñas"],
-    dateIdea: "Salteñas na rozgrzewkę, gorąca czekolada po andyjsku i dokument o Salar de Uyuni."
+    music: ["Los Kjarkas", "Bonny Lovy", "Tradycyjna muzyka andyjska na zampoñas"]
   },
   {
     name: "Urugwaj", flag: "🇺🇾", region: "Ameryka Południowa",
@@ -639,8 +576,7 @@ export const countries: Country[] = [
     food: ["Chivito – kanapka z wołowiną i jajkiem", "Asado uruguayo z różnymi mięsami", "Milanesa napolitana z sosem pomidorowym", "Torta frita – smażone placki"],
     desserts: ["Dulce de leche w każdej formie", "Chajá – biszkoptowy tort z kremem", "Alfajores urugwajskie", "Pasta frola z marmoladą pigwową"],
     movies: ["Whisky", "El baño del Papa", "Una noche sin luna"],
-    music: ["Jorge Drexler", "Rubén Rada", "No Te Va Gustar"],
-    dateIdea: "Chivito z dużą ilością frytek, butelka Tannat i mate na deser pod gwiazdami."
+    music: ["Jorge Drexler", "Rubén Rada", "No Te Va Gustar"]
   },
   {
     name: "Ekwador", flag: "🇪🇨", region: "Ameryka Południowa",
@@ -649,8 +585,7 @@ export const countries: Country[] = [
     food: ["Ceviche ekwadorskie z kukurydzą", "Llapingachos – placki ziemniaczane", "Encebollado – zupa rybna", "Locro de papa"],
     desserts: ["Pristiños z melasą", "Colada morada – gęsty fioletowy napój owocowy", "Higos con queso – figi z serem", "Rosero – owocowy napój deserowy"],
     movies: ["Ratas, Ratones, Rateros", "Pescador", "A tus espaldas"],
-    music: ["Juan Fernando Velasco", "Nicola Cruz", "Pasillo ecuatoriano"],
-    dateIdea: "Ceviche z popcornem (po ekwadorsku!), świeży sok z naranjilla i dokument o Galapagos."
+    music: ["Juan Fernando Velasco", "Nicola Cruz", "Pasillo ecuatoriano"]
   },
   {
     name: "Jordania", flag: "🇯🇴", region: "Bliski Wschód",
@@ -659,8 +594,7 @@ export const countries: Country[] = [
     food: ["Mansaf – baranina z jameedem i ryżem", "Maqluba – odwrócony garnek z mięsem i warzywami", "Falafel z hummusem i pitą", "Musakhan – kurczak z sumakową cebulą"],
     desserts: ["Knafeh z serem i syropem różanym", "Basbousa z orzechami", "Halawet el-jibn – rolki serowe z syropem", "Maamoul – kruche ciasteczka z daktylami"],
     movies: ["Theeb", "Captain Abu Raed", "When Monaliza Smiled"],
-    music: ["Macadi Nahhas", "Omar Al-Abdallat", "Tradycyjna muzyka beduińska"],
-    dateIdea: "Mansaf z jameedem na dużym talerzu, mocna mięta z herbatą i seans 'Theeb' z pustynnym klimatem."
+    music: ["Macadi Nahhas", "Omar Al-Abdallat", "Tradycyjna muzyka beduińska"]
   },
   {
     name: "Liban", flag: "🇱🇧", region: "Bliski Wschód",
@@ -669,8 +603,7 @@ export const countries: Country[] = [
     food: ["Tabbouleh", "Hummus z mięsem mielonym", "Manakish z za'atarem", "Kibbeh – kotleciki z burgulu"],
     desserts: ["Maamoul z różaną wodą", "Znoud el sit – smażone rurki z kremem", "Baklawa libańska z wodą różaną", "Muhallabia – mleczny pudding z pistacjami"],
     movies: ["Kafarnaum", "Caramel", "Insyallah a Boy"],
-    music: ["Fairuz", "Mashrou' Leila", "Marcel Khalife"],
-    dateIdea: "Mezze z dziesięcioma talerzykami, arak z lodem i Fairuz w poranne nuty – jak prawdziwi Bejruci."
+    music: ["Fairuz", "Mashrou' Leila", "Marcel Khalife"]
   },
   {
     name: "Fidżi", flag: "🇫🇯", region: "Oceania",
@@ -679,8 +612,7 @@ export const countries: Country[] = [
     food: ["Kokoda – fidżijskie ceviche w mleku kokosowym", "Lovo – jedzenie pieczone w ziemi", "Rourou – liście taro z mlekiem kokosowym", "Palusami z mięsem i mlekiem kokosowym"],
     desserts: ["Vakalolo – deserek z manioku i kokosa", "Coconut candy – kokosowe cukierki", "Banana cake z mlekiem kokosowym", "Duruka pudding – słodkie ciasto z trzciną cukrową"],
     movies: ["The Land Has Eyes", "Vai", "Cast Away (kręcony tutaj)"],
-    music: ["Black Rose", "Laisa Vulakoro", "Tradycyjne pieśni meke"],
-    dateIdea: "Kokoda w mleku kokosowym, świeży sok z marakui i wieczór z muzyką wyspiarską przy świecach."
+    music: ["Black Rose", "Laisa Vulakoro", "Tradycyjne pieśni meke"]
   },
   {
     name: "Samoa", flag: "🇼🇸", region: "Oceania",
@@ -689,8 +621,7 @@ export const countries: Country[] = [
     food: ["Palusami – liście taro z mlekiem kokosowym", "Oka – samoańskie ceviche z limonką", "Sapasui – samoański chow mein z wołowiną", "Faalifu fa'i – gotowany banan z mlekiem kokosowym"],
     desserts: ["Panipopo – bułeczki w sosie kokosowym", "Koko alaisa – czekoladowy pudding ryżowy", "Fa'apapa – twarde kokosowe ciasteczko", "Poi – pudding z taro z cukrem"],
     movies: ["The Orator (O Le Tulafale)", "Three Wise Cousins", "Moana (inspirowana Polinezją)"],
-    music: ["Jerome Grey", "Tenelle", "Tradycyjne pieśni siva"],
-    dateIdea: "Palusami z mlekiem kokosowym, świeży ananas i wieczór z polinezyjskimi pieśniami przy świecach."
+    music: ["Jerome Grey", "Tenelle", "Tradycyjne pieśni siva"]
   },
   {
     name: "Kostaryka", flag: "🇨🇷", region: "Ameryka Środkowa",
@@ -699,8 +630,7 @@ export const countries: Country[] = [
     food: ["Gallo pinto (ryż z czarną fasolą) na śniadanie", "Casado – obiadowy talerz z ryżem, fasolą i bananem", "Ceviche z ryby i limonki", "Chifrijo – fasola, ryż i skwarki"],
     desserts: ["Tres leches kostarykański", "Arroz con leche z cynamonem", "Cajeta – mleczny karmel", "Tamales słodkie z cukrem i rodzynkami"],
     movies: ["Agua fría de mar", "Princesas Rojas", "After Words (kręcony w Kostaryce)"],
-    music: ["Editus", "Debi Nova", "Tradycyjne calypso z Limón"],
-    dateIdea: "Gallo pinto na kolację, świeży sok z marakui i wieczór z dźwiękami dżungli oraz playlistą calypso."
+    music: ["Editus", "Debi Nova", "Tradycyjne calypso z Limón"]
   },
   {
     name: "Watykan", flag: "🇻🇦", region: "Europa Południowa",
@@ -709,8 +639,7 @@ export const countries: Country[] = [
     food: ["Pasta cacio e pepe z Rzymu", "Saltimbocca alla romana", "Carciofi alla giudia – karczoch po żydowsku", "Supplì – ryżowe kotleciki z mozzarellą"],
     desserts: ["Kremówka papieska (ulubiona Jana Pawła II)", "Maritozzi z bitą śmietaną", "Torta della nonna z kremem custard", "Ricciarelli – migdałowe ciasteczka ze Sieny"],
     movies: ["Habemus Papam", "Dwóch papieży", "Anioły i demony"],
-    music: ["Chór Kaplicy Sykstyńskiej", "Gregoriańskie chorały", "Allegri – Miserere"],
-    dateIdea: "Kremówki à la Wadowice, włoska kawa i wieczór z gregoriańskimi chorałami oraz albumem o Kaplicy Sykstyńskiej."
+    music: ["Chór Kaplicy Sykstyńskiej", "Gregoriańskie chorały", "Allegri – Miserere"]
   },
   {
     name: "USA – Nowy Jork", flag: "🗽", region: "Ameryka Północna",
@@ -719,8 +648,7 @@ export const countries: Country[] = [
     food: ["New York pizza slice na stojąco", "Bagel z cream cheese i łososiem", "Pastrami on rye u Katz's Deli", "Hot dog z Coney Island z musztardą"],
     desserts: ["New York cheesecake z Junior's", "Black and white cookie", "Egg cream – czekoladowy napój mleczny", "Cannoli z Little Italy"],
     movies: ["Annie Hall", "Manhattan", "Taksówkarz"],
-    music: ["Jay-Z – Empire State of Mind", "Frank Sinatra – New York, New York", "The Strokes"],
-    dateIdea: "Pizza slice na stojąco, spacer po Brooklyn Bridge i jazz w małym klubie w Greenwich Village."
+    music: ["Jay-Z – Empire State of Mind", "Frank Sinatra – New York, New York", "The Strokes"]
   },
   {
     name: "USA – Luizjana", flag: "🤠", region: "Ameryka Północna",
@@ -729,8 +657,7 @@ export const countries: Country[] = [
     food: ["Smażony kurczak z biscuits i gravy", "Gumbo z krewetkowym roux", "Shrimp and grits", "Jambalaya z kiełbasą andouille"],
     desserts: ["Pecan pie z waniliowymi lodami", "Beignets z cukrem pudrem z Café Du Monde", "Bread pudding z whiskey sauce", "Pralines – kremowe cukierki z pekanami"],
     movies: ["Przeminęło z wiatrem", "Forrest Gump", "Służące"],
-    music: ["Elvis Presley", "Johnny Cash", "Louis Armstrong i jazz z Nowego Orleanu"],
-    dateIdea: "Smażony kurczak, słodka herbata na ganku i wieczór z bluesem oraz Elvisem w tle."
+    music: ["Elvis Presley", "Johnny Cash", "Louis Armstrong i jazz z Nowego Orleanu"]
   },
   {
     name: "USA – Teksas", flag: "🤠", region: "Ameryka Północna",
@@ -739,8 +666,7 @@ export const countries: Country[] = [
     food: ["Brisket z dymem hickory z Cole slaw", "Tex-Mex fajitas z guacamole", "Chili con carne (bez fasoli!)", "Chicken fried steak z białym gravy"],
     desserts: ["Kolache z owocowym nadzieniem", "Pecan pie po teksasku", "Blue Bell ice cream – wanilia z Teksasu", "Sopapillas z miodem"],
     movies: ["Olbrzym", "No Country for Old Men", "Dallas Buyers Club"],
-    music: ["Willie Nelson", "George Strait", "ZZ Top"],
-    dateIdea: "Brisket prosto z wędzarni, zimne piwo Lone Star i wieczór z country line dance w salonie."
+    music: ["Willie Nelson", "George Strait", "ZZ Top"]
   },
   {
     name: "USA – Kalifornia", flag: "🏄", region: "Ameryka Północna",
@@ -749,8 +675,7 @@ export const countries: Country[] = [
     food: ["California burrito (z frytkami w środku)", "Avocado toast", "Fish tacos z Baja", "In-N-Out Double-Double"],
     desserts: ["Ghirardelli czekoladowe brownie z San Francisco", "Fortune cookie z Chinatown", "Sourdough French toast z syropem klonowym", "Açaí bowl z granolą i owocami"],
     movies: ["La La Land", "Pulp Fiction", "The Big Lebowski"],
-    music: ["The Beach Boys", "Dr. Dre", "Red Hot Chili Peppers"],
-    dateIdea: "Fish tacos na plaży, sok ze świeżych warzyw i zachód słońca nad oceanem z indie playlistą."
+    music: ["The Beach Boys", "Dr. Dre", "Red Hot Chili Peppers"]
   },
   {
     name: "USA – Floryda", flag: "🌴", region: "Ameryka Północna",
@@ -759,8 +684,7 @@ export const countries: Country[] = [
     food: ["Cuban sandwich z Tampa", "Stone crab claws z musztardowym sosem", "Ceviche w stylu Miami", "Grouper sandwich z plaży"],
     desserts: ["Key lime pie z bitą śmietaną", "Coconut flan po kubańsku", "Churros z czekoladą w stylu Miami", "Orange creamsicle – lody pomarańczowe"],
     movies: ["Miami Vice", "Moonlight", "Florida Project"],
-    music: ["Pitbull", "Gloria Estefan", "Tom Petty"],
-    dateIdea: "Cuban sandwich w Little Havana, mojito na dachu w South Beach i taniec do salsy nad oceanem."
+    music: ["Pitbull", "Gloria Estefan", "Tom Petty"]
   },
   {
     name: "USA – Hawaje", flag: "🌺", region: "Oceania",
@@ -769,8 +693,7 @@ export const countries: Country[] = [
     food: ["Poke bowl z tuńczykiem", "Kalua pork z imu", "Loco moco", "Spam musubi"],
     desserts: ["Haupia – kokosowe galaretki", "Malasadas – hawajskie pączki z Leonarda's", "Shave ice z syropami", "Mochi ice cream"],
     movies: ["50 pierwszych randek", "Spadkobiercy", "Lilo i Stitch"],
-    music: ["Israel Kamakawiwoʻole – Somewhere Over the Rainbow", "Ukulele covers", "Hawaiian slack-key guitar"],
-    dateIdea: "Poke bowl na plaży Waikiki, ukulele w tle i zachód słońca z koktajlem mai tai."
+    music: ["Israel Kamakawiwoʻole – Somewhere Over the Rainbow", "Ukulele covers", "Hawaiian slack-key guitar"]
   },
   {
     name: "USA – Tennessee", flag: "🎸", region: "Ameryka Północna",
@@ -779,8 +702,7 @@ export const countries: Country[] = [
     food: ["Nashville hot chicken z kiszonymi ogórkami", "Memphis BBQ ribs z suchą marynatą", "Biscuits and gravy na śniadanie", "Country ham z czerwonym sosem"],
     desserts: ["Banana pudding z wafelkami Nilla", "Stack cake – jabłkowy tort warstwowy", "Moon Pie z marshmallow i czekoladą", "Peach cobbler z lodami waniliowymi"],
     movies: ["Walk the Line", "Coal Miner's Daughter", "Hustle & Flow"],
-    music: ["Dolly Parton", "Johnny Cash", "Elvis Presley"],
-    dateIdea: "Hot chicken w Nashville, szklaneczka Jack Daniel's i wieczór z koncertem country na żywo."
+    music: ["Dolly Parton", "Johnny Cash", "Elvis Presley"]
   },
   {
     name: "USA – Nevada", flag: "🎰", region: "Ameryka Północna",
@@ -789,8 +711,7 @@ export const countries: Country[] = [
     food: ["Bufet w kasynie – wszystkiego po trochu", "Shrimp cocktail za grosze w Downtown", "Prime rib steak na grubo", "In-N-Out burger o 3 w nocy"],
     desserts: ["Późnonocne diner pancakes z syropem", "Crème brûlée w kasynie", "Vegas wedding cake – biały tort waniliowy", "Churros z nutellą na Strip"],
     movies: ["Hangover", "Casino", "Ocean's Eleven"],
-    music: ["Frank Sinatra w Sands", "The Killers", "Elvis w Vegas"],
-    dateIdea: "Steak i czerwone wino, partia blackjacka i spacer po neonowym Strip do białego rana."
+    music: ["Frank Sinatra w Sands", "The Killers", "Elvis w Vegas"]
   },
   {
     name: "USA – Arizona", flag: "🌵", region: "Ameryka Północna",
@@ -799,8 +720,7 @@ export const countries: Country[] = [
     food: ["Sonoran hot dog z fasolą i jalapeño", "Chimichanga z kurczakiem (wynaleziona w Tucson)", "Tamales z mięsem w liściu kukurydzy", "Carne asada fries"],
     desserts: ["Navajo frybread z miodem i cukrem pudrem", "Sopaipillas z syropem z opuncji", "Prickly pear sorbet – lody z opuncji", "Churros z czekoladą"],
     movies: ["Raising Arizona", "Psychoza", "Thelma i Louise"],
-    music: ["Stevie Nicks", "Linkin Park (Chester Bennington z Phoenix)", "Alice Cooper"],
-    dateIdea: "Chimichanga i margarita z opuncji, jeep przez pustynię i zachód słońca nad czerwonymi skałami Sedony."
+    music: ["Stevie Nicks", "Linkin Park (Chester Bennington z Phoenix)", "Alice Cooper"]
   },
   {
     name: "USA – Alaska", flag: "🐻", region: "Ameryka Północna",
@@ -809,8 +729,7 @@ export const countries: Country[] = [
     food: ["Świeży łosoś z grilla z ziołami", "King crab legs z masłem cytrynowym", "Reindeer sausage z musztardą", "Halibut fish and chips po alasku"],
     desserts: ["Akutaq – eskimoskie lody z jagodami i tłuszczem", "Wild berry pie z borówkami", "Birch syrup pancakes", "Sourdough doughnuts po alaskijsku"],
     movies: ["Into the Wild", "Biały Kieł", "Grizzly Man"],
-    music: ["Jewel", "Portugal. The Man", "Hobo Jim"],
-    dateIdea: "Pieczony łosoś, gorąca herbata w termosie i wieczór pod kocem z patrzeniem w zorzę polarną."
+    music: ["Jewel", "Portugal. The Man", "Hobo Jim"]
   },
   {
     name: "Portoryko", flag: "🇵🇷", region: "Ameryka Północna",
@@ -819,8 +738,7 @@ export const countries: Country[] = [
     food: ["Mofongo z czosnkiem i chicharrónem", "Lechón asado – pieczony prosiak", "Arroz con gandules z pigeon peas", "Alcapurrias – smażone paszteciki z bananów"],
     desserts: ["Tembleque – kokosowy budyń z cynamonem", "Flan de queso", "Piña colada cake", "Besitos de coco – kokosowe całuski"],
     movies: ["West Side Story", "El Cantante", "Fast & Furious 5 (kręcony w San Juan)"],
-    music: ["Bad Bunny", "Daddy Yankee", "Marc Anthony"],
-    dateIdea: "Mofongo z krewetkami, piña colada w Old San Juan i taniec salsy pod palmami przy dźwiękach reggaetonu."
+    music: ["Bad Bunny", "Daddy Yankee", "Marc Anthony"]
   },
   {
     name: "Dania", flag: "🇩🇰", region: "Europa Północna",
@@ -829,8 +747,7 @@ export const countries: Country[] = [
     food: ["Smørrebrød – kanapki na razowym chlebie", "Frikadeller – kotleciki wieprzowe", "Stegt flæsk – smażony boczek z ziemniakami", "Śledź marynowany na wiele sposobów"],
     desserts: ["Wienerbrød – duński pączek", "Rødgrød med fløde – kisiel z owoców z kremem", "Æbleskiver – kuliste pączki jabłkowe", "Kanelsnegle – ślimaki cynamonowe"],
     movies: ["Uczta Babette", "Polowanie", "Druk"],
-    music: ["Lukas Graham", "MØ", "Aqua – Barbie Girl"],
-    dateIdea: "Wieczór hygge: świece, gruby koc, smørrebrød i skandynawski kryminał w tle."
+    music: ["Lukas Graham", "MØ", "Aqua – Barbie Girl"]
   },
   {
     name: "Finlandia", flag: "🇫🇮", region: "Europa Północna",
@@ -839,8 +756,7 @@ export const countries: Country[] = [
     food: ["Karjalanpiirakka – karelskie pierożki z ryżem", "Lohikeitto – kremowa zupa z łososia", "Poronkäristys – duszony renifer", "Ruisleipä – ciemny chleb żytni"],
     desserts: ["Korvapuusti – bułeczki cynamonowe", "Runebergintorttu – babeczki migdałowe", "Mustikkapiirakka – tarta z jagodami", "Salmiakki – słona lukrecja"],
     movies: ["Człowiek bez przeszłości", "Chłopiec i pelikan", "Nietypowa opowieść wigilijna"],
-    music: ["Nightwish", "HIM", "Sanni"],
-    dateIdea: "Domowa sauna (lub gorący prysznic), zupa z łososia, jagodowa tarta i wieczór w ciszy patrząc w świece."
+    music: ["Nightwish", "HIM", "Sanni"]
   },
   {
     name: "Chorwacja", flag: "🇭🇷", region: "Europa Południowa",
@@ -849,8 +765,7 @@ export const countries: Country[] = [
     food: ["Peka – mięso i warzywa duszone pod żeliwnym kloszem", "Črni rižot – czarne risotto z kalmarem", "Ćevapi z ajvarem i cebulą", "Pašticada – wołowina duszona w winie"],
     desserts: ["Rožata – dubrownicki krem karmelowy", "Fritule – małe pączki z rumem", "Kremšnita ze Samoboru", "Paprenjaci – ciasteczka z pieprzem i miodem"],
     movies: ["Kto tam śpiewa?", "Ničiji sin", "Gra o tron (kręcona w Dubrowniku)"],
-    music: ["Oliver Dragojević", "2CELLOS", "Severina"],
-    dateIdea: "Owoce morza z grilla, chłodne Pošip, świece i wieczorne zdjęcia Dubrownika na projektorze."
+    music: ["Oliver Dragojević", "2CELLOS", "Severina"]
   },
   {
     name: "Rumunia", flag: "🇷🇴", region: "Europa Wschodnia",
@@ -859,8 +774,7 @@ export const countries: Country[] = [
     food: ["Sarmale – gołąbki w liściach kapusty kiszonej", "Mămăligă z brânzą i śmietaną", "Mici – grillowane paluszki mięsne", "Ciorbă de burtă – zupa flaczkowa"],
     desserts: ["Papanași – smażone twarożniki z konfiturą", "Cozonac – strucla z orzechami", "Salam de biscuiți – 'salami' z ciastek", "Amandine – czekoladowe ciastka z rumem"],
     movies: ["4 miesiące, 3 tygodnie i 2 dni", "Śmierć pana Lazarescu", "Aferim!"],
-    music: ["Inna", "Alexandra Stan", "Maria Tănase"],
-    dateIdea: "Gołąbki z mămăligą, kieliszek țuiki i seans o Draculi z zamkiem Bran w tle na projektorze."
+    music: ["Inna", "Alexandra Stan", "Maria Tănase"]
   },
   {
     name: "Serbia", flag: "🇷🇸", region: "Europa Południowa",
@@ -869,8 +783,7 @@ export const countries: Country[] = [
     food: ["Ćevapi z lepinją i kajmakiem", "Pljeskavica – wielki kotlet z grilla", "Karađorđeva šnicla nadziewana kajmakiem", "Sarma – gołąbki w kapuście kiszonej"],
     desserts: ["Vasina torta – orzechowo-czekoladowa", "Krempita – ciasto z kremem waniliowym", "Tulumbe w syropie", "Palačinke z Eurokremem"],
     movies: ["Underground", "Rany", "Czarny kot, biały kot"],
-    music: ["Ceca", "Bajaga i Instruktori", "Riblja Čorba"],
-    dateIdea: "Ćevapi z kajmakiem, kieliszek rakii i wieczór turbo-folk karaoke z Ceca w domowej kafanie."
+    music: ["Ceca", "Bajaga i Instruktori", "Riblja Čorba"]
   },
   {
     name: "Tajwan", flag: "🇹🇼", region: "Azja Wschodnia",
@@ -879,8 +792,7 @@ export const countries: Country[] = [
     food: ["Beef noodle soup – narodowa zupa", "Xiaolongbao z Din Tai Fung", "Lu rou fan – ryż z duszoną wieprzowiną", "Oyster omelet z nocnego targu"],
     desserts: ["Bubble tea z tapioką", "Pineapple cake – tajwańska ikona", "Mango shaved ice", "Douhua – jedwabisty tofu z syropem"],
     movies: ["Miłosny nastrój (Wong Kar-wai)", "Yi Yi", "Przyczajony tygrys, ukryty smok"],
-    music: ["Jay Chou", "Jolin Tsai", "Mayday"],
-    dateIdea: "Domowe bao, domowe bubble tea z tapioką i seans Wong Kar-waia przy neonowej lampce."
+    music: ["Jay Chou", "Jolin Tsai", "Mayday"]
   },
   {
     name: "Kambodża", flag: "🇰🇭", region: "Azja Południowo-Wschodnia",
@@ -889,8 +801,7 @@ export const countries: Country[] = [
     food: ["Fish amok – ryba w curry kokosowym w liściu bananowca", "Lok lak – wołowina z pieprzem Kampot", "Nom banh chok – zielony makaron ryżowy", "Bai sach chrouk – grillowana wieprzowina z ryżem"],
     desserts: ["Num ansom chek – bananowe placki ryżowe w liściach", "Sangkhya lapov – dyniowa panna cotta", "Cha houy teuk – galaretka z syropem palmowym", "Lód z pastą fasolową"],
     movies: ["Pola śmierci", "Pierwsi zabili mojego ojca", "Zaginiony obraz"],
-    music: ["Sinn Sisamouth", "Ros Serey Sothea", "VannDa"],
-    dateIdea: "Fish amok w liściu bananowca, świece, projektor z filmem o Angkor Wat i cicha muzyka khmerska w tle."
+    music: ["Sinn Sisamouth", "Ros Serey Sothea", "VannDa"]
   },
   {
     name: "Bangladesz", flag: "🇧🇩", region: "Azja Południowa",
@@ -899,8 +810,7 @@ export const countries: Country[] = [
     food: ["Kacchi biryani – jagnięcina z ryżem basmati", "Ilish maach bhaja – smażona ryba hilsa", "Panta bhat – ryż moczony na noc z chilli", "Bhuna khichuri z jagnięciną na deszczowe wieczory"],
     desserts: ["Roshogolla – kulki z twarogu w syropie", "Mishti doi – karmelowy jogurt z gliny", "Chomchom z Tangail", "Pitha – ryżowe placuszki z jaggery"],
     movies: ["Matir Moina", "Aynabaji", "Pole owadów"],
-    music: ["Runa Laila", "James (Nagar Baul)", "Coke Studio Bangla"],
-    dateIdea: "Biryani z jagnięciną, mishti doi na deser i wieczór z Coke Studio Bangla oraz henną na dłoniach."
+    music: ["Runa Laila", "James (Nagar Baul)", "Coke Studio Bangla"]
   },
   {
     name: "ZEA (Dubaj)", flag: "🇦🇪", region: "Bliski Wschód",
@@ -909,8 +819,7 @@ export const countries: Country[] = [
     food: ["Machboos – ryż z jagnięciną i przyprawami", "Shawarma z kurczaka z toum", "Hummus z ciepłą pitą", "Mixed grill z jagnięciny i kurczaka"],
     desserts: ["Luqaimat – smażone kulki z syropem daktylowym", "Umm Ali – arabska wersja pudding chleba", "Knafeh z serem i pistacjami", "Świeże daktyle Medjool z kawą"],
     movies: ["Mission: Impossible – Ghost Protocol", "Star Trek Beyond", "Diuna (kręcona na pustyni Abu Zabi)"],
-    music: ["Hussain Al Jassmi", "Balqees", "Amr Diab"],
-    dateIdea: "Domowy majlis: dywan, poduszki, arabska kawa z kardamonem, daktyle, hummus i widok na Burdż Chalifa z YouTube 4K."
+    music: ["Hussain Al Jassmi", "Balqees", "Amr Diab"]
   },
   {
     name: "Gruzja", flag: "🇬🇪", region: "Kaukaz",
@@ -919,8 +828,7 @@ export const countries: Country[] = [
     food: ["Chaczapuri adżarskie z jajkiem i masłem", "Chinkali – soczyste pierogi z wołowiną", "Mtsvadi – szaszłyk z jagnięciny", "Lobio – fasola w glinianym garnku"],
     desserts: ["Czurczchela – orzechy w soku winogronowym", "Pelamushi – kisiel z moszczu winnego", "Nazuki – słodki chleb z rodzynkami", "Gozinaki – orzechy w miodzie na Nowy Rok"],
     movies: ["Podróż w Gruzję", "Mandaryny", "Tańczyliśmy"],
-    music: ["Katie Melua", "Nino Katamadze", "Chór Rustavi"],
-    dateIdea: "Domowa supra: chaczapuri adżarskie, chinkali, karafka gruzińskiego Saperavi i wznoszenie toastów przez cały wieczór."
+    music: ["Katie Melua", "Nino Katamadze", "Chór Rustavi"]
   },
   {
     name: "Zimbabwe", flag: "🇿🇼", region: "Afryka",
@@ -929,8 +837,7 @@ export const countries: Country[] = [
     food: ["Sadza – kukurydziana papka do wszystkiego", "Nyama choma – grillowane mięso", "Muriwo unedovi – gulasz z liści z orzeszkami", "Kapenta – małe smażone rybki"],
     desserts: ["Chimodho – słodki chleb kukurydziany", "Mapopo candy – karmelki z papai", "Maputi – prażona kukurydza na słodko", "Owoce baobabu z jogurtem"],
     movies: ["Neria", "Yellow Card", "Cry the Beloved Country"],
-    music: ["Oliver Mtukudzi", "Thomas Mapfumo", "Winky D"],
-    dateIdea: "Grillowane mięso, sadza, wieczór afrykańskich rytmów mbira i dokument o Wodospadach Wiktorii na projektorze."
+    music: ["Oliver Mtukudzi", "Thomas Mapfumo", "Winky D"]
   },
   {
     name: "Madagaskar", flag: "🇲🇬", region: "Afryka",
@@ -939,8 +846,7 @@ export const countries: Country[] = [
     food: ["Romazava – narodowy gulasz mięsno-warzywny", "Ravitoto – tłuczone liście manioku z wieprzowiną", "Ryż z każdym posiłkiem (trzy razy dziennie)", "Akoho sy voanio – kurczak w mleku kokosowym"],
     desserts: ["Mofo gasy – ryżowe pączki na śniadanie", "Koba – banano-orzechowa rolada w liściu", "Lody waniliowe z prawdziwej wanilii Bourbon", "Bonbon coco – karmelki kokosowe"],
     movies: ["Madagaskar (Dreamworks)", "L'Île rouge", "Ady Gasy"],
-    music: ["Jaojoby", "Salala", "Rajery"],
-    dateIdea: "Kurczak w mleku kokosowym z ryżem, lody waniliowe, świece i dokument o lemurach BBC na projektorze."
+    music: ["Jaojoby", "Salala", "Rajery"]
   },
   {
     name: "Dominikana", flag: "🇩🇴", region: "Ameryka Północna",
@@ -949,8 +855,7 @@ export const countries: Country[] = [
     food: ["La bandera – ryż, fasola, mięso i platan", "Mangú – purée z platana z cebulą", "Sancocho – gęsty gulasz z siedmiu mięs", "Pescado con coco z Samany"],
     desserts: ["Habichuelas con dulce – słodka fasola z mlekiem", "Dulce de leche cortada", "Majarete – kremowy pudding kukurydziany", "Tres leches dominicano"],
     movies: ["Sanky Panky", "Perico Ripiao", "Nueba Yol"],
-    music: ["Juan Luis Guerra", "Romeo Santos", "Aventura"],
-    dateIdea: "Lekcja bachaty w salonie, mangú z jajkiem, mojito z rumem Brugal i seans teledysków Romeo Santosa."
+    music: ["Juan Luis Guerra", "Romeo Santos", "Aventura"]
   },
   {
     name: "Gwatemala", flag: "🇬🇹", region: "Ameryka Północna",
@@ -959,8 +864,7 @@ export const countries: Country[] = [
     food: ["Pepián – gęsty gulasz z pieczonymi przyprawami", "Kak'ik – indycza zupa Majów Q'eqchi'", "Chiles rellenos w cieście jajecznym", "Tamales colorados w liściu bananowca"],
     desserts: ["Rellenitos de plátano z fasolą i czekoladą", "Buñuelos z syropem cynamonowym", "Mole de plátano z sezamem", "Canillitas de leche – karmelki z mleka"],
     movies: ["Ixcanul", "La Llorona", "Nasze matki"],
-    music: ["Ricardo Arjona", "Gaby Moreno", "Marimba Chapinlandia"],
-    dateIdea: "Pepián z ryżem, świeżo parzona kawa z Antigui, świece i wieczór z Gaby Moreno w tle."
+    music: ["Ricardo Arjona", "Gaby Moreno", "Marimba Chapinlandia"]
   },
   {
     name: "Papua-Nowa Gwinea", flag: "🇵🇬", region: "Oceania",
@@ -969,8 +873,7 @@ export const countries: Country[] = [
     food: ["Mumu – wieprzowina z bataty pieczone w ziemi", "Kokoda – surowa ryba w mleku kokosowym z limonką", "Sago z bananem", "Kaukau (słodki ziemniak) na wiele sposobów"],
     desserts: ["Dia – pieczony banan w mleku kokosowym", "Pawpaw (papaja) ze świeżą limonką", "Sago pudding z syropem palmowym", "Świeży ananas prosto z krzaka"],
     movies: ["Mr. Pip", "First Contact", "Walking Under Water"],
-    music: ["George Telek", "O-Shen", "Sanguma"],
-    dateIdea: "Kokoda z surowej ryby w mleku kokosowym, świeży ananas, świece i dokument BBC o rajskich ptakach na projektorze."
+    music: ["George Telek", "O-Shen", "Sanguma"]
   },
   {
     name: "Bułgaria", flag: "🇧🇬", region: "Europa Południowa",
@@ -979,8 +882,7 @@ export const countries: Country[] = [
     food: ["Shopska salata z bryndzą", "Banica z ciasta filo i sera", "Kavarma – duszone mięso z warzywami", "Tarator – zimna zupa ogórkowa z jogurtem"],
     desserts: ["Baklava po bułgarsku", "Garash – tort orzechowo-czekoladowy", "Tikvenik – strudel z dyni", "Lokum różane"],
     movies: ["Świat jest wielki i zbawienie czai się za rogiem", "Zift", "Glory"],
-    music: ["Le Mystère des Voix Bulgares", "Azis", "Lili Ivanova"],
-    dateIdea: "Shopska salata, kieliszek rakiji, playlista chóru bułgarskich głosów i wieczór z Zift na ekranie."
+    music: ["Le Mystère des Voix Bulgares", "Azis", "Lili Ivanova"]
   },
   {
     name: "Słowenia", flag: "🇸🇮", region: "Europa Środkowa",
@@ -989,8 +891,7 @@ export const countries: Country[] = [
     food: ["Kranjska klobasa (kiełbasa z Krainy)", "Jota – zupa z kiszonej kapusty i fasoli", "Štruklji z twarogiem", "Idrijski žlikrofi – pierożki ze Słowenii"],
     desserts: ["Kremna rezina z Bledu – kremówka", "Prekmurska gibanica – warstwowe ciasto", "Potica orzechowa", "Miód z lipy słoweńskiej z pieczywem"],
     movies: ["Kruh in mleko", "Slovenka", "Kajmak in marmelada"],
-    music: ["Laibach", "Perpetuum Jazzile", "Siddharta"],
-    dateIdea: "Kremówka z Bledu, herbata z lipowym miodem i wieczór z industrialnym Laibach w tle."
+    music: ["Laibach", "Perpetuum Jazzile", "Siddharta"]
   },
   {
     name: "Słowacja", flag: "🇸🇰", region: "Europa Środkowa",
@@ -999,8 +900,7 @@ export const countries: Country[] = [
     food: ["Bryndzové halušky ze skwarkami", "Kapustnica – kiszona kapusta z kiełbasą", "Segedínsky guláš", "Pirohy z bryndzą"],
     desserts: ["Šúľance z makiem", "Trdelník z cukrem i orzechami", "Medovník – miodownik", "Parené buchty z powidłami"],
     movies: ["Obchod na korze", "Slnko v sieti", "Ja, Olga Hepnarová"],
-    music: ["Elán", "Richard Müller", "IMT Smile"],
-    dateIdea: "Halušky z bryndzą, kieliszek slivovicy, kominek i Elán w tle."
+    music: ["Elán", "Richard Müller", "IMT Smile"]
   },
   {
     name: "Litwa", flag: "🇱🇹", region: "Europa Północna",
@@ -1009,8 +909,7 @@ export const countries: Country[] = [
     food: ["Cepelinai – kartoflane 'zeppeliny' z mięsem", "Šaltibarščiai – zimny różowy barszcz", "Kugelis – zapiekanka ziemniaczana", "Kibinai – pierogi karaimskie"],
     desserts: ["Šakotis – ciasto 'drzewo'", "Spurgos – litewskie pączki", "Tinginys – 'leniwe' ciastko z herbatnikami", "Miód z lipowego lasu na chlebie żytnim"],
     movies: ["Nikt nie chciał umierać", "Sangailė", "Nova Lituania"],
-    music: ["Marijonas Mikutavičius", "The Roop", "Alina Orlova"],
-    dateIdea: "Šaltibarščiai z jajkiem, cepelinai, mecz Žalgirisa na ekranie i szakotis do kawy."
+    music: ["Marijonas Mikutavičius", "The Roop", "Alina Orlova"]
   },
   {
     name: "Łotwa", flag: "🇱🇻", region: "Europa Północna",
@@ -1019,8 +918,7 @@ export const countries: Country[] = [
     food: ["Pelēkie zirņi ar speķi – szare groszki ze słoniną", "Sklandrausis – tarta z marchwi i ziemniaka", "Wędzona bałtycka ryba", "Skābu kāpostu zupa"],
     desserts: ["Rupjmaizes kārtojums – deser z ciemnego chleba i śmietany", "Piparkūkas – piernikowe ciasteczka", "Alexander torte z malinami", "Sklandrausis na słodko"],
     movies: ["Melānijas hronika", "Bille", "Homo Novus"],
-    music: ["Prāta Vētra (Brainstorm)", "Instrumenti", "Carnival Youth"],
-    dateIdea: "Ciemny chleb ze śledziem, kieliszek Riga Black Balsam z porzeczkowym sokiem i Brainstorm w słuchawkach."
+    music: ["Prāta Vētra (Brainstorm)", "Instrumenti", "Carnival Youth"]
   },
   {
     name: "Estonia", flag: "🇪🇪", region: "Europa Północna",
@@ -1029,8 +927,7 @@ export const countries: Country[] = [
     food: ["Mulgipuder – puree ziemniaczano-kaszane z boczkiem", "Verivorst – kaszanka z brusznicami", "Śledź w śmietanie z ziemniakami w mundurkach", "Rosolje – sałatka z buraków i śledzia"],
     desserts: ["Kama – deser z prażonej mąki z jogurtem i jagodami", "Kringel – słodka pleciona bułka", "Marcepany z Tallinna", "Sernik z ricottą i borówkami"],
     movies: ["Mandariinid (Mandarynki)", "Sügisball", "Vehkleja (Szermierz)"],
-    music: ["Arvo Pärt", "Kerli", "Tommy Cash"],
-    dateIdea: "Kama z jogurtem i leśnymi jagodami, świece, medytacyjny Arvo Pärt i Mandarynki na ekranie."
+    music: ["Arvo Pärt", "Kerli", "Tommy Cash"]
   },
   {
     name: "Albania", flag: "🇦🇱", region: "Europa Południowa",
@@ -1039,8 +936,7 @@ export const countries: Country[] = [
     food: ["Tavë kosi – jagnięcina zapiekana z jogurtem", "Byrek z serem lub szpinakiem", "Fërgesë – papryka z serem i pomidorami", "Qofte të fërguara – smażone kotleciki"],
     desserts: ["Trilece – biszkopt w trzech mlekach", "Bakllava po albańsku", "Revani – ciasto z syropem", "Sheqerpare z syropem cytrynowym"],
     movies: ["Slogans", "Bota", "Sworn Virgin"],
-    music: ["Inva Mula", "Elvana Gjata", "Dua Lipa (korzenie albańskie)"],
-    dateIdea: "Byrek z serem, kieliszek rakii z winogron, xhiro po mieszkaniu i Dua Lipa na głośniku."
+    music: ["Inva Mula", "Elvana Gjata", "Dua Lipa (korzenie albańskie)"]
   },
   {
     name: "Bośnia i Hercegowina", flag: "🇧🇦", region: "Europa Południowa",
@@ -1049,8 +945,7 @@ export const countries: Country[] = [
     food: ["Ćevapi z lepinją i cebulą", "Burek z mięsem w spirali", "Begova čorba – zupa z kurczaka i bamii", "Sarma z kiszonej kapusty"],
     desserts: ["Tufahije – jabłko nadziewane orzechami", "Hurmašice w syropie", "Baklava sarajewska", "Kadaif z orzechami"],
     movies: ["Ničija zemlja (Ziemia niczyja)", "Grbavica", "Quo Vadis, Aida?"],
-    music: ["Dino Merlin", "Goran Bregović", "Amira Medunjanin"],
-    dateIdea: "Ćevapi z lepinją, mała filiżanka kawy z dżezvą i wieczór sevdah z Amirą Medunjanin."
+    music: ["Dino Merlin", "Goran Bregović", "Amira Medunjanin"]
   },
   {
     name: "Malta", flag: "🇲🇹", region: "Europa Południowa",
@@ -1059,8 +954,7 @@ export const countries: Country[] = [
     food: ["Pastizzi z ricottą lub groszkiem", "Fenkata – królik duszony w winie", "Aljotta – zupa rybna z czosnkiem", "Bragioli – zawijaski wołowe"],
     desserts: ["Kannoli tal-irkotta", "Imqaret – daktylowe pierożki", "Helwa tat-Tork – chałwa maltańska", "Figolla wielkanocna z marcepanem"],
     movies: ["Simshar", "Luzzu", "Ir-Raġel tal-Ġebel"],
-    music: ["Ira Losco", "Destiny", "Ludwig Galea"],
-    dateIdea: "Pastizzi z ricottą, kieliszek Marsovin, spacer po Vallettcie w Google Street View i Ira Losco w tle."
+    music: ["Ira Losco", "Destiny", "Ludwig Galea"]
   },
   {
     name: "Cypr", flag: "🇨🇾", region: "Europa Południowa",
@@ -1069,8 +963,7 @@ export const countries: Country[] = [
     food: ["Souvlaki z pity z tzatziki", "Grillowane halloumi z arbuzem", "Kleftiko – jagnięcina pieczona w glinie", "Stifado – gulasz z cebulką"],
     desserts: ["Loukoumades w syropie miodowym", "Baklava cypryjska", "Mahalepi z wodą różaną", "Glyko tou koutaliou (owoce w syropie)"],
     movies: ["The Story of the Green Line", "Kalabush", "Committee"],
-    music: ["Anna Vissi", "Michalis Hatzigiannis", "Eleni Foureira"],
-    dateIdea: "Grillowane halloumi z arbuzem, kieliszek Commandarii i Eleni Foureira 'Fuego' na powtórce."
+    music: ["Anna Vissi", "Michalis Hatzigiannis", "Eleni Foureira"]
   },
   {
     name: "Luksemburg", flag: "🇱🇺", region: "Europa Zachodnia",
@@ -1079,8 +972,7 @@ export const countries: Country[] = [
     food: ["Judd mat Gaardebounen – wędzona karkówka z bobem", "Bouneschlupp – zupa z zielonej fasolki", "Gromperekichelcher – placki ziemniaczane", "Kachkéis – topiony ser na chlebie"],
     desserts: ["Quetschentaart – tarta ze śliwkami", "Bamkuch – ciasto 'drzewo' po luksembursku", "Verwuerelter – kręcone pączki cukrowe", "Éimaischen – ceramiczne ptaszki z piernika"],
     movies: ["Superjhemp Retörns", "Mumu", "Little Secret"],
-    music: ["Serge Tonnar", "Edsun", "Claudine Muno"],
-    dateIdea: "Judd mat Gaardebounen, kieliszek Rieslinga z Mozeli i wieczór z Sergem Tonnarem przy świecach."
+    music: ["Serge Tonnar", "Edsun", "Claudine Muno"]
   },
   {
     name: "Hongkong", flag: "🇭🇰", region: "Azja Wschodnia",
@@ -1089,8 +981,7 @@ export const countries: Country[] = [
     food: ["Dim sum – har gow, siu mai, char siu bao", "Wonton mein – zupa z pierożkami krewetkowymi", "Char siu z ryżem", "Clay pot rice z kiełbasą"],
     desserts: ["Egg tart (dan tat) z ciasta francuskiego", "Mango pomelo sago", "Pineapple bun (bo lo bao)", "Tong sui – słodka zupa z sezamem"],
     movies: ["Spragnieni miłości (In the Mood for Love)", "Infernal Affairs", "Chungking Express"],
-    music: ["Faye Wong", "Leslie Cheung", "Beyond"],
-    dateIdea: "Dim sum na parę, milk tea po hongkońsku i 'Spragnieni miłości' Wong Kar-waia na ekranie."
+    music: ["Faye Wong", "Leslie Cheung", "Beyond"]
   },
   {
     name: "Laos", flag: "🇱🇦", region: "Azja Południowo-Wschodnia",
@@ -1099,8 +990,7 @@ export const countries: Country[] = [
     food: ["Laap – siekana sałatka mięsna z ziołami", "Kleisty ryż w bambusowym koszyku", "Or lam – gulasz z Luang Prabang", "Tam mak hoong – papaya salad po laotańsku"],
     desserts: ["Nam van – kokosowy deser z tapioką", "Khao niaow ma muang – kleisty ryż z mango", "Sangkhaya – kokosowy krem w dyni", "Khao lam – ryż z kokosem pieczony w bambusie"],
     movies: ["The Rocket", "Chanthaly", "Dearest Sister"],
-    music: ["Alexandra Bounxouei", "Cells", "L.O.G."],
-    dateIdea: "Kleisty ryż z mango, laap z ziołami, Beerlao na lodzie i 'The Rocket' na ekranie."
+    music: ["Alexandra Bounxouei", "Cells", "L.O.G."]
   },
   {
     name: "Arabia Saudyjska", flag: "🇸🇦", region: "Bliski Wschód",
@@ -1109,8 +999,7 @@ export const countries: Country[] = [
     food: ["Kabsa – ryż z jagnięciną i przyprawami", "Mandi – mięso pieczone w ziemi z ryżem", "Mutabbaq – nadziewany naleśnik", "Jareesh – pszenica z jogurtem"],
     desserts: ["Daktyle Ajwa z Medyny", "Kunafa z serem i syropem", "Ma'amoul z daktylami", "Luqaimat – smażone kulki w syropie daktylowym"],
     movies: ["Wadjda", "Barakah Meets Barakah", "The Perfect Candidate"],
-    music: ["Mohammed Abdu", "Talal Maddah", "Rotana"],
-    dateIdea: "Kabsa z jagnięciną, daktyle Ajwa, gahwa z kardamonem w małych filiżankach i 'Wadjda' na ekranie."
+    music: ["Mohammed Abdu", "Talal Maddah", "Rotana"]
   },
   {
     name: "Wenezuela", flag: "🇻🇪", region: "Ameryka Południowa",
@@ -1119,8 +1008,7 @@ export const countries: Country[] = [
     food: ["Arepas z reina pepiada (kurczak z awokado)", "Pabellón criollo – ryż, fasola, mięso i banany", "Cachapa – naleśnik z kukurydzy z serem", "Empanadas smażone z serem lub mięsem"],
     desserts: ["Quesillo – wenezuelski flan", "Bienmesabe – ciasto kokosowe", "Dulce de leche z serem białym", "Golfeados – bułeczki z panelą i serem"],
     movies: ["Secuestro Express", "Pelo malo", "Desde allá"],
-    music: ["Simón Díaz", "Franco de Vita", "Oscarcito"],
-    dateIdea: "Arepas z reina pepiada, sok papelón con limón i wieczór joropo z Simónem Díazem."
+    music: ["Simón Díaz", "Franco de Vita", "Oscarcito"]
   },
   {
     name: "Haiti", flag: "🇭🇹", region: "Karaiby",
@@ -1129,8 +1017,7 @@ export const countries: Country[] = [
     food: ["Griot – smażona wieprzowina z pikliz", "Riz ak pwa – ryż z czarną fasolą", "Poul nan sòs – kurczak w kreolskim sosie", "Lambi – konch w sosie kreolskim"],
     desserts: ["Pain patate – ciasto z batatów", "Douces makos – karmelowe warstwy", "Blan manje z mlekiem kokosowym", "Kremas – kokosowo-rumowa 'kremówka do picia'"],
     movies: ["Moloch Tropical", "Ayiti Mon Amour", "I Am Not Your Negro"],
-    music: ["Wyclef Jean", "Boukman Eksperyans", "Emeline Michel"],
-    dateIdea: "Griot z pikliz, kieliszek Barbancourt z lodem i wieczór z kompa Emeline Michel."
+    music: ["Wyclef Jean", "Boukman Eksperyans", "Emeline Michel"]
   },
   {
     name: "Barbados", flag: "🇧🇧", region: "Karaiby",
@@ -1139,8 +1026,7 @@ export const countries: Country[] = [
     food: ["Cou-cou z latającą rybą (danie narodowe)", "Macaroni pie", "Pudding and souse – wieprzowina z ziemniakiem", "Fish cakes z sosem pepper"],
     desserts: ["Coconut turnovers", "Sweet bread z kokosem i wiśniami", "Great cake – rumowy tort świąteczny", "Cassava pone"],
     movies: ["A Hand Full of Dirt", "Chrissy", "Payday"],
-    music: ["Rihanna", "The Mighty Gabby", "Rupee"],
-    dateIdea: "Cou-cou z latającą rybą, rum punch Mount Gay i playlista Rihanny od 'Pon de Replay' do 'Lift Me Up'."
+    music: ["Rihanna", "The Mighty Gabby", "Rupee"]
   }
 ];
 

@@ -11,13 +11,13 @@ const sections = [
   { key: "music" as const, label: "Muzyka", icon: Music },
 ];
 
-export function CountryCard({ country }: { country: Country }) {
+export function CountryCard({ country, forExport = false }: { country: Country; forExport?: boolean }) {
   const outfit = outfits[country.name];
   const countryDrinks = drinks[country.name];
   const countryEntertainment = entertainment[country.name];
 
   return (
-    <div className="animate-in fade-in slide-in-from-bottom-8 duration-700">
+    <div className={`${forExport ? "" : "animate-in fade-in slide-in-from-bottom-8 duration-700"}`}>
       <div className="text-center mb-10">
         <h2 className="text-5xl md:text-7xl font-display font-bold text-gold mb-5 leading-tight pb-1">{country.name}</h2>
         <p className="text-muted-foreground italic">{country.region}</p>
@@ -30,7 +30,7 @@ export function CountryCard({ country }: { country: Country }) {
             <h4 className="font-display text-xl uppercase tracking-wider">Ubiór na wieczór</h4>
           </div>
           <p className="text-xs text-muted-foreground mb-4 italic">Wybierz opcję, do której masz ubrania w szafie.</p>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className={`grid ${forExport ? "grid-cols-2" : "md:grid-cols-2"} gap-6`}>
             <div>
               <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Ona</p>
               <ul className="space-y-2">
@@ -57,7 +57,7 @@ export function CountryCard({ country }: { country: Country }) {
         </div>
       )}
 
-      <div className="grid md:grid-cols-3 gap-4 mb-4">
+      <div className={`grid ${forExport ? "grid-cols-3" : "md:grid-cols-3"} gap-4 mb-4`}>
         <div className="bg-card-gradient border border-border rounded-2xl p-6 hover:border-primary/40 transition-colors">
           <div className="flex items-center gap-2 mb-4">
             <Utensils className="w-4 h-4 text-primary" />
@@ -123,7 +123,7 @@ export function CountryCard({ country }: { country: Country }) {
         </div>
       )}
 
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className={`grid ${forExport ? "grid-cols-2" : "md:grid-cols-2"} gap-4`}>
         {sections.map(({ key, label, icon: Icon }) => (
           <div key={key} className="bg-card-gradient border border-border rounded-2xl p-6 hover:border-primary/40 transition-colors">
             <div className="flex items-center gap-2 mb-4">

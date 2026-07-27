@@ -4,12 +4,36 @@ import { countries, type Country } from "@/data/countries";
 import { CountryCard } from "@/components/CountryCard";
 import { Dices, RotateCw, Download } from "lucide-react";
 
+const SITE_URL = "https://randka-dookola-swiata.lovable.app";
+const TITLE = "Randka dookoła świata – wylosuj kraj na wieczór";
+const DESCRIPTION =
+  "Wylosuj kraj i zaplanuj randkę inspirowaną jego kulturą: tradycje, jedzenie, desery, napoje, rozrywka, filmy i muzyka.";
+
 export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Randka dookoła świata – wylosuj kraj" },
-      { name: "description", content: "Wylosuj jeden z 50 krajów i odkryj pomysł na randkę: tradycje, jedzenie, filmy i muzykę." },
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: SITE_URL },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: SITE_URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Randka Dookoła Świata",
+          url: SITE_URL,
+          description: DESCRIPTION,
+          inLanguage: "pl-PL",
+        }),
+      },
     ],
   }),
 });
@@ -19,7 +43,8 @@ function Index() {
   const [rolling, setRolling] = useState(false);
   const [tick, setTick] = useState(0);
   const [saving, setSaving] = useState(false);
-  const cardRef = useRef<HTMLDivElement>(null);
+  const [exportCountry, setExportCountry] = useState<Country | null>(null);
+  const exportRef = useRef<HTMLDivElement>(null);
 
   const draw = () => {
     setRolling(true);
@@ -38,14 +63,20 @@ function Index() {
   };
 
   const saveAsJpg = async () => {
-    if (!cardRef.current || !country) return;
+    if (!country) return;
     setSaving(true);
+    setExportCountry(country);
     try {
+      await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => r(null))));
+      const node = exportRef.current;
+      if (!node) return;
       const { toJpeg } = await import("html-to-image");
       const bg = getComputedStyle(document.body).backgroundColor || "#1a0f0a";
-      const dataUrl = await toJpeg(cardRef.current, {
+      const dataUrl = await toJpeg(node, {
         quality: 0.95,
         pixelRatio: 2,
+        width: 1000,
+        height: node.scrollHeight,
         backgroundColor: bg,
         cacheBust: true,
       });
@@ -56,6 +87,7 @@ function Index() {
     } catch (e) {
       console.error("Nie udało się zapisać obrazu", e);
     } finally {
+      setExportCountry(null);
       setSaving(false);
     }
   };
@@ -86,8 +118,16 @@ function Index() {
         </div>
 
         {country && (
-          <div ref={cardRef} key={rolling ? tick : "final"} className="bg-hero p-4 md:p-6 rounded-3xl">
+          <div key={rolling ? tick : "final"} className="bg-hero p-4 md:p-6 rounded-3xl">
             <CountryCard country={country} />
+          </div>
+        )}
+
+        {exportCountry && (
+          <div aria-hidden className="fixed left-0 top-0 pointer-events-none opacity-0 -z-10" style={{ width: 1000 }}>
+            <div ref={exportRef} className="bg-hero p-6 rounded-3xl" style={{ width: 1000 }}>
+              <CountryCard country={exportCountry} forExport />
+            </div>
           </div>
         )}
 
