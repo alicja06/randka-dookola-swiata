@@ -8,7 +8,6 @@ export type Country = {
   desserts: string[];
   movies: string[];
   music: string[];
-  dateIdea: string;
 };
 
 export const countries: Country[] = [
