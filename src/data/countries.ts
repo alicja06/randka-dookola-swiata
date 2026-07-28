@@ -1026,7 +1026,7 @@ export const countries: Country[] = [
     desserts: ["Coconut turnovers", "Sweet bread z kokosem i wiśniami", "Great cake – rumowy tort świąteczny", "Cassava pone"],
     movies: ["A Hand Full of Dirt", "Chrissy", "Payday"],
     music: ["Rihanna", "The Mighty Gabby", "Rupee"]
-  }
+  },
   {
     name: "Malediwy", region: "Azja Południowa",
     traditions: ["Bodu beru – bębny i taniec na plaży o zmroku", "Rybackie śniadanie mas huni z roshi", "Wieczorne picie herbaty w hedhikaa – lokalnych herbaciarniach"],
