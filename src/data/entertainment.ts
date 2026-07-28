@@ -114,5 +114,12 @@ export const entertainment: Record<string, string[]> = {
   "Wenezuela": ["Lekcja joropo z YouTube", "Robienie arep od zera na patelni", "Quiz: Miss Universe – rozpoznaj rocznik"],
   "Haiti": ["Lekcja kompa w salonie", "Robienie pikliz (marynowanej kapusty na ostro)", "Wieczór z filmami dokumentalnymi o vodou"],
   "Barbados": ["Playlista Rihanny chronologicznie od debiutu", "Rum tasting: różne roczniki Mount Gay w małych kieliszkach", "Quiz: bajański slang – co znaczy 'wuh gine on?'"],
+  "Malediwy": ["Wieczór z rytmem bodu beru – bębnijcie w cokolwiek pod ręką", "Quiz: rozpoznaj rybę i rafę koralową ze zdjęć", "Wspólna 'wyspiarska' playlista i masaż z olejkiem kokosowym"],
+  "Paragwaj": ["Termos tereré do dzielenia – kto pierwszy się podda goryczy", "Nauka kilku zwrotów w guaraní", "Turniej w karty Truco"],
+  "Panama": ["Dokument o budowie Kanału Panamskiego", "Lekcja tamborito lub salsy z YouTube", "Konkurs na najlepsze ceviche"],
+  "Armenia": ["Konkurs na najlepszy toast – jak prawdziwa tamada", "Nardy (tryktrak) na dwa zwycięstwa", "Wspólne zawijanie dolmy w liście winogron"],
+  "Białoruś": ["Plecenie wianka lub słomianej ozdoby", "Wspólne smażenie draników – kto starte szybciej", "Maraton zdjęć brutalistycznej architektury i quiz 'gdzie to jest?'"],
+  "Czarnogóra": ["Backgammon przy rakii", "Quiz: rozpoznaj bałkański kraj po fladze i potrawie", "Playlista bałkańskich hitów i taniec oro w salonie"],
+  "Macedonia Północna": ["Nauka tańca oro z YouTube", "Domowe robienie ajvaru z pieczonych papryk", "Karaoke z Toše Proeskim"],
 };
 

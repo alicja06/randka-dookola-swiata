@@ -1,20 +1,23 @@
-## Co poprawiamy
+## Co zrobię
 
-### 1. Treść i SEO
-- Opis strony (meta description) wciąż mówi „jeden z 50 krajów”, a w bazie jest ich **113**. Zmiana na opis bez zmyślonej liczby, np. „Wylosuj kraj i zaplanuj randkę inspirowaną jego kulturą: tradycje, jedzenie, desery, napoje, filmy i muzyka”.
-- Dodanie brakujących znaczników podglądu linku: `og:title`, `og:description`, `og:type`, `twitter:card`, `og:url` + `canonical` na stronie głównej — dziś po wysłaniu linku np. na Messengerze podgląd jest ubogi.
-- Dodanie JSON-LD (WebSite) w warstwie głównej — pomaga wyszukiwarkom rozpoznać stronę.
-- Porządki w danych: pole „pomysł na randkę” (`dateIdea`) zostało w każdym z 113 krajów, ale nie jest już nigdzie pokazywane (zastąpiła je Rozrywka). Usuwam je z typu i z danych, żeby plik był czystszy i nie mylił przy kolejnych edycjach.
+### 1. Nowe kraje (7)
+Malediwy, Paragwaj, Panama, Armenia, Białoruś, Czarnogóra, Macedonia Północna — każdy z pełnym kompletem danych we wszystkich czterech plikach: tradycje, stereotypy, 4 dania, 4 desery, filmy, muzyka, 4 napoje, 3 propozycje rozrywki oraz po 4 propozycje stroju dla kobiety i mężczyzny.
 
-### 2. Zapis JPG na telefonie
-Obecnie na telefonie karta układa się w jedną kolumnę, więc plik wychodzi bardzo długi i wąski. Poprawka: eksport zawsze w układzie „desktopowym”.
-- Karta dostanie tryb eksportu: sekcje Jedzenie/Desery/Napoje w 3 kolumnach, Ubiór oraz Tradycje/Stereotypy/Filmy/Muzyka w 2 kolumnach — niezależnie od szerokości ekranu.
-- Podczas zapisu karta jest renderowana poza ekranem na stałej szerokości ok. 1000 px, zapisywana, a potem usuwana — użytkownik nic nie widzi poza napisem „Zapisywanie...”.
-- Efekt: na telefonie i na desktopie plik JPG wygląda identycznie — czytelny, proporcjonalny obrazek zamiast długiego paska.
+### 2. Ujednolicenie regionów
+Obecnie nazwy podregionów są niespójne (np. „Skandynawia” obok „Europa Północna”, samo „Afryka” obok „Afryka Wschodnia”, „Eurazja” dla Turcji, „Kaukaz” dla Gruzji). Ujednolicę do spójnego zestawu:
 
-### Szczegóły techniczne
-- `src/routes/index.tsx`: rozszerzone `head()` (meta + links + JSON-LD), eksport przez ukryty kontener o `width: 1000px` przekazany do `toJpeg` z `width/height` i `pixelRatio: 2`.
-- `src/components/CountryCard.tsx`: opcjonalny prop `forExport?: boolean` przełączający `md:grid-cols-*` na stałe `grid-cols-*`; brak zmian w danych i logice losowania.
-- `src/data/countries.ts`: usunięcie pola `dateIdea` z typu `Country` i ze wszystkich wpisów (skryptem, bez ruszania pozostałych treści), potem sprawdzenie typów.
+```text
+Europa Zachodnia / Północna / Środkowa / Wschodnia / Południowa
+Azja Wschodnia / Południowo-Wschodnia / Południowa / Środkowa / Zachodnia (Bliski Wschód)
+Afryka Północna / Zachodnia / Wschodnia / Południowa
+Ameryka Północna / Środkowa / Południowa, Karaiby, Oceania
+```
+Konkretnie: Skandynawia → Europa Północna; Turcja (Eurazja) i Gruzja, Armenia (Kaukaz) → Bliski Wschód / Azja Zachodnia; RPA, Zimbabwe i inne z ogólnego „Afryka” → właściwy podregion; Kostaryka, Gwatemala, Panama → Ameryka Środkowa.
 
-Losowanie, lista krajów i wygląd strony pozostają bez zmian.
+### 3. Porządki
+Usunę nieużywane pole `flag` z typu i wszystkich wpisów w `src/data/countries.ts` (nigdzie nie jest renderowane).
+
+## Szczegóły techniczne
+- Pliki: `src/data/countries.ts`, `drinks.ts`, `entertainment.ts`, `outfits.ts`; typ `Country` traci pole `flag`.
+- Po zmianach: sprawdzenie typów oraz skrypt walidacyjny potwierdzający, że każdy kraj ma wpis w drinks/entertainment/outfits i zgodną liczbę pozycji.
+- Bez zmian w wyglądzie karty poza nagłówkiem regionu.
