@@ -1027,5 +1027,68 @@ export const countries: Country[] = [
     movies: ["A Hand Full of Dirt", "Chrissy", "Payday"],
     music: ["Rihanna", "The Mighty Gabby", "Rupee"]
   }
+  {
+    name: "Malediwy", region: "Azja Południowa",
+    traditions: ["Bodu beru – bębny i taniec na plaży o zmroku", "Rybackie śniadanie mas huni z roshi", "Wieczorne picie herbaty w hedhikaa – lokalnych herbaciarniach"],
+    stereotypes: ["Same luksusowe bungalowy nad wodą", "Wszyscy żyją z turystyki i nurkowania", "Wieczne wakacje i błękitna woda"],
+    food: ["Mas huni – tuńczyk z kokosem i cebulą", "Garudhiya – klarowna zupa rybna z ryżem", "Rihaakuru z ryżem i limonką", "Kulhi boakibaa – pikantne ciasto rybne"],
+    desserts: ["Bondi – biały kokosowy batonik", "Boakibaa kokosowy", "Foni boakibaa z ryżu i mleka kokosowego", "Świeże mango z limonką i chili"],
+    movies: ["The Island President", "Blue Planet II (odcinki o rafach)", "Chasing Coral"],
+    music: ["Bodu beru – tradycyjne bębny", "Mohamed Abdul Ghanee", "Harubee"]
+  },
+  {
+    name: "Paragwaj", region: "Ameryka Południowa",
+    traditions: ["Tereré – zimne mate pite w kręgu znajomych", "Ñandutí – koronki przypominające pajęczą sieć", "Dwujęzyczność: hiszpański i guaraní w jednym zdaniu"],
+    stereotypes: ["Wszyscy chodzą z termosem tereré", "Najspokojniejszy kraj Ameryki Południowej", "Mięso i ser w każdym daniu"],
+    food: ["Sopa paraguaya – zapiekanka kukurydziana z serem", "Chipa – bułeczki z mąki maniokowej i sera", "Bori bori – rosół z kluskami kukurydzianymi", "Asado paraguayo z mandioką"],
+    desserts: ["Mbeju dulce", "Kosereva – konfitura z gorzkiej pomarańczy", "Dulce de mamón (papaja w syropie)", "Arroz con leche z cynamonem"],
+    movies: ["7 cajas", "Hamaca paraguaya", "Los buscadores"],
+    music: ["Arpa paraguaya – harfa ludowa", "Luis Alberto del Paraná", "Berta Rojas"]
+  },
+  {
+    name: "Panama", region: "Ameryka Środkowa",
+    traditions: ["Taniec tamborito przy bębnach", "Molas – kolorowe tkaniny ludu Guna", "Karnawał z wodnymi culecos na ulicach"],
+    stereotypes: ["Kraj to tylko Kanał Panamski", "Kapelusze panama (choć są z Ekwadoru)", "Wieżowce Panama City obok dżungli"],
+    food: ["Sancocho – rosół z kurczaka z kolendrą i ñame", "Ropa vieja z ryżem", "Carimañolas z mięsem", "Ceviche z corvina w kubeczku"],
+    desserts: ["Tres leches", "Hojaldre z cukrem pudrem", "Raspado – kruszony lód z syropem i mlekiem skondensowanym", "Cocada kokosowa"],
+    movies: ["Panama Canal Stories", "Bajo el mismo sol", "Diablo Rojo"],
+    music: ["Rubén Blades", "Los Rabanes", "Erika Ender"]
+  },
+  {
+    name: "Armenia", region: "Bliski Wschód",
+    traditions: ["Pieczenie lawaszu w tonirze – wpisane na listę UNESCO", "Toasty wznoszone przez tamadę przy długim stole", "Vardavar – oblewanie się wodą latem"],
+    stereotypes: ["Wszyscy są spokrewnieni z Kardashiankami", "Koniak lepszy niż francuski", "Nie wypuszczą gościa bez trzeciej dokładki"],
+    food: ["Chorowac – szaszłyk z grilla", "Dolma w liściach winogron", "Chasz – zupa na wołowych nóżkach", "Ghapama – dynia nadziewana ryżem i bakaliami"],
+    desserts: ["Gata – słodka drożdżówka z chalwową nadzieniem", "Sudżuk orzechowy w soku winogronowym", "Pachlawa ormiańska", "Suszone morele nadziewane orzechami"],
+    movies: ["Kolor granatu", "Ararat", "Gniazdo skowronka"],
+    music: ["Duduk – Dżiwan Gasparjan", "Komitas", "System of a Down"]
+  },
+  {
+    name: "Białoruś", region: "Europa Wschodnia",
+    traditions: ["Kupalle – wianki puszczane na wodę w noc świętojańską", "Chleb i sól na powitanie gości", "Rękodzieło ze słomy i lniane wzory"],
+    stereotypes: ["Ziemniaki w każdej postaci – bulba", "Bardzo czyste i uporządkowane ulice", "Cicha, powściągliwa gościnność"],
+    food: ["Draniki ze śmietaną", "Maczanka z blinami", "Kołduny z mięsem", "Babka ziemniaczana z boczkiem"],
+    desserts: ["Wierhunie – chrust", "Sernik na kruchym spodzie", "Piernik z miodem gryczanym", "Kisiel żurawinowy"],
+    movies: ["Idź i patrz", "Chrzest ogniem", "Powiew wolności"],
+    music: ["Pesniary", "Lyapis Trubetskoy", "Molchat Doma"]
+  },
+  {
+    name: "Czarnogóra", region: "Europa Południowa",
+    traditions: ["Kawa pita godzinami na placu – bez pośpiechu", "Slava – rodzinne święto patrona", "Wieczorny korzo, czyli spacer główną ulicą"],
+    stereotypes: ["Najbardziej wyluzowany naród Bałkanów", "Wszyscy są wysocy", "Morze, góry i rakija na wszystko"],
+    food: ["Njeguški pršut z serem", "Kačamak z kajmakiem", "Ćevapi z lepinją", "Świeża riba na grillu z blitvą"],
+    desserts: ["Priganice z miodem i serem", "Tulumbe w syropie", "Krofne z dżemem", "Baklava czarnogórska"],
+    movies: ["A ja gdje sam?", "Wybuch", "Sedem i pol"],
+    music: ["Rambo Amadeus", "Sergej Ćetković", "Who See"]
+  },
+  {
+    name: "Macedonia Północna", region: "Europa Południowa",
+    traditions: ["Taniec oro w kole na weselach", "Vevčani – karnawał z maskami", "Tawerny z żywą muzyką starogradską do późna"],
+    stereotypes: ["Ajvar robiony hurtowo we wrześniu", "Wszędzie posągi w Skopje", "Kawa trwa minimum dwie godziny"],
+    food: ["Tavče gravče – fasola zapiekana w glinianym naczyniu", "Ajvar z domową lepinją", "Selsko meso z serem", "Pastrmajlija – placek z mięsem"],
+    desserts: ["Tulumba w syropie", "Ravanija z semoliny", "Baklava macedońska", "Sutlijaš – ryż na mleku z cynamonem"],
+    movies: ["Przed deszczem", "Honeyland", "Do widzenia jak umrę"],
+    music: ["Toše Proeski", "Kaliopi", "Tavče Gravče (bałkański brass)"]
+  },
 ];
 

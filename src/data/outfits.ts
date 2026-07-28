@@ -1583,6 +1583,104 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Biały T-shirt, jeansy, sneakersy, panama",
     ],
   },
+  "Malediwy": {
+    woman: [
+      "Zwiewna sukienka maxi w kwiaty, sandały, kwiat we włosach",
+      "Lniana koszula narzucona na top, spodnie palazzo",
+      "Kolorowa spódnica sarong, prosty biały top",
+      "Turkusowa sukienka midi, złote bransoletki, klapki",
+    ],
+    man: [
+      "Biała lniana koszula, jasne szorty, klapki",
+      "Kolorowa koszula w liście, chinosy, espadryle",
+      "Prosty T-shirt, lniane spodnie, boso w domu",
+      "Koszula z krótkim rękawem, słomkowy kapelusz, sandały",
+    ],
+  },
+  "Paragwaj": {
+    woman: [
+      "Biała haftowana bluzka (ñandutí), lniana spódnica",
+      "Zwiewna sukienka w naturalnym kolorze, skórzane sandały",
+      "Koronkowy top, jeansy, wiklinowa torebka",
+      "Sukienka midi z falbaną, kolczyki z drewna",
+    ],
+    man: [
+      "Lniana koszula, jasne spodnie, skórzane sandały",
+      "Biała koszula z podwiniętymi rękawami, chinosy",
+      "Polo, jeansy, kapelusz z szerokim rondem",
+      "T-shirt, spodnie cargo, mokasyny",
+    ],
+  },
+  "Panama": {
+    woman: [
+      "Kolorowa sukienka z falbaną w stylu pollera",
+      "Biały top, kwiecista spódnica midi, kwiat we włosach",
+      "Lniany komplet w pastelu, sandały",
+      "Sukienka koszulowa, wiklinowa torebka, klapki",
+    ],
+    man: [
+      "Biała koszula guayabera, jasne spodnie, kapelusz panama",
+      "Lniana koszula w paski, chinosy, mokasyny",
+      "Polo, szorty, espadryle",
+      "Biały T-shirt, lniana marynarka, jeansy",
+    ],
+  },
+  "Armenia": {
+    woman: [
+      "Bordowa sukienka z długim rękawem, złota biżuteria",
+      "Czarna spódnica midi, haftowana bluzka",
+      "Granatowa sukienka kopertowa, szpilki",
+      "Sweter w kolorze wina, spodnie z kantem, chusta",
+    ],
+    man: [
+      "Ciemna koszula, czarne spodnie, skórzane buty",
+      "Sweter z golfem, marynarka, jeansy",
+      "Biała koszula, kamizelka, spodnie garniturowe",
+      "Granatowy sweter, chinosy, brązowe buty",
+    ],
+  },
+  "Białoruś": {
+    woman: [
+      "Biała bluzka z czerwonym haftem, spódnica midi",
+      "Lniana sukienka w naturalnym kolorze, wianek",
+      "Ciepły sweter, wełniana spódnica, kozaki",
+      "Biała sukienka z czerwonym paskiem, warkocz",
+    ],
+    man: [
+      "Biała lniana koszula z haftowanym kołnierzem, ciemne spodnie",
+      "Sweter w warkocze, jeansy, skórzane buty",
+      "Kraciasta koszula, spodnie sztruksowe",
+      "Prosty biały T-shirt, kamizelka, chinosy",
+    ],
+  },
+  "Czarnogóra": {
+    woman: [
+      "Czarna sukienka midi, złote kolczyki koła",
+      "Biała lniana koszula, spodnie palazzo, sandały",
+      "Sukienka w morskie paski, espadryle",
+      "Czerwony top, dżinsowa spódnica, okulary przeciwsłoneczne",
+    ],
+    man: [
+      "Czarna koszula, jasne spodnie, mokasyny",
+      "Biały T-shirt, lniana marynarka, jeansy",
+      "Polo w paski, szorty, sneakersy",
+      "Granatowa koszula z podwiniętymi rękawami, chinosy",
+    ],
+  },
+  "Macedonia Północna": {
+    woman: [
+      "Haftowana bluzka w czerwone wzory, czarna spódnica",
+      "Zwiewna sukienka midi, skórzany pasek, sandały",
+      "Bordowy sweter, jeansy, kolczyki z monetami",
+      "Biała sukienka z haftem, plecione sandały",
+    ],
+    man: [
+      "Biała koszula, ciemna kamizelka, spodnie proste",
+      "Czarny sweter, jeansy, skórzane buty",
+      "Koszula w kratę, chinosy, mokasyny",
+      "Prosty T-shirt, marynarka, ciemne spodnie",
+    ],
+  },
 };
 
 

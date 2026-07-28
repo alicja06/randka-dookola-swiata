@@ -115,5 +115,12 @@ export const drinks: Record<string, string[]> = {
   "Wenezuela": ["Ron Santa Teresa 1796", "Papelón con limón – trzcina z limonką", "Chicha andina", "Polar beer"],
   "Haiti": ["Barbancourt Rum 5 gwiazdek", "Kremas – kokosowo-rumowa kremówka", "Prestige beer", "Sok z sur sopu (guanabana)"],
   "Barbados": ["Mount Gay Rum – najstarszy rum świata", "Rum punch z gałką muszkatołową", "Banks beer", "Falernum – syrop z limonki i imbiru"],
+  "Malediwy": ["Raa – palmowy nektar", "Sai – mocna słodka herbata", "Mleko kokosowe prosto z orzecha", "Bezalkoholowy mojito z limonką i miętą"],
+  "Paragwaj": ["Tereré – zimne mate z ziołami", "Mosto – sok z trzciny cukrowej", "Caña paraguaya", "Piwo Pilsen"],
+  "Panama": ["Seco Herrerano z mlekiem", "Chicheme – kukurydziany napój z cynamonem", "Piwo Balboa", "Sok z marakui"],
+  "Armenia": ["Koniak Ararat", "Wino z Areni", "Tan – słony napój jogurtowy", "Ormiańska kawa po wschodniemu"],
+  "Białoruś": ["Krambambula – miodowa nalewka z przyprawami", "Kwas chlebowy", "Zubrówka", "Kompot z suszonych owoców"],
+  "Czarnogóra": ["Rakija loza", "Wino Vranac", "Nikšićko pivo", "Kawa po turecku z lokum"],
+  "Macedonia Północna": ["Rakija z winogron", "Wino Tikveš Vranec", "Boza – słodki napój zbożowy", "Skopsko pivo"],
 };
 
