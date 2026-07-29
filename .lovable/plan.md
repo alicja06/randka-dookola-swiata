@@ -11,12 +11,11 @@ Jak to działa w praktyce:
 - Tryb prywatny/incognito lub wyczyszczenie danych przeglądarki resetuje worek.
 - Wspólna, współdzielona pula dla wszystkich użytkowników wymagałaby konta i bazy danych — nie robimy tego tutaj.
 
-Dodam też mały licznik "Wylosowano X ze 120" oraz przycisk resetu worka.
-
 ## Zakres zmian
 
 ### 1. Losowanie bez powtórek
-Tasowany worek krajów zapisywany w przeglądarce, licznik postępu i możliwość resetu.
+Tasowany worek krajów zapisywany w przeglądarce; po wyczerpaniu listy tasuje się automatycznie od nowa.
+
 
 Pliki: `src/routes/index.tsx`, nowy hook w `src/hooks/`
 
@@ -24,7 +23,7 @@ Pliki: `src/routes/index.tsx`, nowy hook w `src/hooks/`
 - `aria-label` na przycisku losowania i przycisku zapisu JPG.
 - Ikony dekoracyjne oznaczone `aria-hidden`, teksty stanu czytelne dla czytników ekranu.
 - Region `aria-live` ogłaszający wylosowany kraj oraz stan zapisu.
-- Wyraźny opis stanu `disabled` (np. "Trwa losowanie", "Trwa zapisywanie").
+
 - Widoczny focus na przyciskach i sprawdzenie kontrastu (złoto na ciemnym tle, teksty pomocnicze) — poprawa tokenów, jeśli któryś nie spełnia WCAG AA.
 
 Pliki: `src/routes/index.tsx`, `src/components/CountryCard.tsx`
