@@ -23,7 +23,7 @@ Pliki: `src/routes/index.tsx`, nowy hook w `src/hooks/`
 - `aria-label` na przycisku losowania i przycisku zapisu JPG.
 - Ikony dekoracyjne oznaczone `aria-hidden`, teksty stanu czytelne dla czytników ekranu.
 - Region `aria-live` ogłaszający wylosowany kraj oraz stan zapisu.
-- Wyraźny opis stanu `disabled` (np. "Trwa losowanie", "Trwa zapisywanie").
+
 - Widoczny focus na przyciskach i sprawdzenie kontrastu (złoto na ciemnym tle, teksty pomocnicze) — poprawa tokenów, jeśli któryś nie spełnia WCAG AA.
 
 Pliki: `src/routes/index.tsx`, `src/components/CountryCard.tsx`
