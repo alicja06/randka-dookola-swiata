@@ -1,23 +1,57 @@
-## Co zrobię
+# Plan usprawnień aplikacji "Randka Dookoła Świata"
 
-### 1. Nowe kraje (7)
-Malediwy, Paragwaj, Panama, Armenia, Białoruś, Czarnogóra, Macedonia Północna — każdy z pełnym kompletem danych we wszystkich czterech plikach: tradycje, stereotypy, 4 dania, 4 desery, filmy, muzyka, 4 napoje, 3 propozycje rozrywki oraz po 4 propozycje stroju dla kobiety i mężczyzny.
+## Cel
+Poprawić jakość danych, dostępność i wykończenie aplikacji bez wprowadzania nowych funkcji losowania, filtrowania czy zapisywania historii.
 
-### 2. Ujednolicenie regionów
-Obecnie nazwy podregionów są niespójne (np. „Skandynawia” obok „Europa Północna”, samo „Afryka” obok „Afryka Wschodnia”, „Eurazja” dla Turcji, „Kaukaz” dla Gruzji). Ujednolicę do spójnego zestawu:
+## Zakres zmian
 
-```text
-Europa Zachodnia / Północna / Środkowa / Wschodnia / Południowa
-Azja Wschodnia / Południowo-Wschodnia / Południowa / Środkowa / Zachodnia (Bliski Wschód)
-Afryka Północna / Zachodnia / Wschodnia / Południowa
-Ameryka Północna / Środkowa / Południowa, Karaiby, Oceania
-```
-Konkretnie: Skandynawia → Europa Północna; Turcja (Eurazja) i Gruzja, Armenia (Kaukaz) → Bliski Wschód / Azja Zachodnia; RPA, Zimbabwe i inne z ogólnego „Afryka” → właściwy podregion; Kostaryka, Gwatemala, Panama → Ameryka Środkowa.
+### 1. Wyrównanie danych do 4 pozycji na sekcję
+Obecnie jedzenie, desery i napoje mają po 4 pozycje, natomiast tradycje, stereotypy, filmy, muzyka i rozrywka mają po 3. Planuje się uzupełnienie brakujących pozycji we wszystkich krajach, aby każda sekcja zawierała dokładnie 4 propozycje.
 
-### 3. Porządki
-Usunę nieużywane pole `flag` z typu i wszystkich wpisów w `src/data/countries.ts` (nigdzie nie jest renderowane).
+Pliki: `src/data/countries.ts`, `src/data/entertainment.ts`
 
-## Szczegóły techniczne
-- Pliki: `src/data/countries.ts`, `drinks.ts`, `entertainment.ts`, `outfits.ts`; typ `Country` traci pole `flag`.
-- Po zmianach: sprawdzenie typów oraz skrypt walidacyjny potwierdzający, że każdy kraj ma wpis w drinks/entertainment/outfits i zgodną liczbę pozycji.
-- Bez zmian w wyglądzie karty poza nagłówkiem regionu.
+### 2. Poprawa dostępności (a11y)
+- Dodanie atrybutów `aria-label` do przycisków losowania i zapisu.
+- Zastąpienie samych ikon tekstowymi etykietami lub opisami dla czytników ekranu.
+- Upewnienie się, że przyciski w stanie `disabled` mają wyraźny opis stanu.
+- Sprawdzenie kontrastów kolorów (złoto na ciemnym tle, tekst pomocniczy).
+
+Plik: `src/routes/index.tsx`, `src/components/CountryCard.tsx`
+
+### 3. Lepszy feedback przy losowaniu i zapisie
+- Dodanie wizualnego wskaźnika postępu podczas animacji losowania (np. pasek lub licznik klatek).
+- Wyświetlenie czytelnego komunikatu, gdy zapis JPG się nie powiedzie (obecnie błąd trafia tylko do konsoli).
+- Dodanie stanu sukcesu po zapisaniu obrazka.
+
+Plik: `src/routes/index.tsx`
+
+### 4. Obraz podglądowy dla mediów społecznościowych (OG image)
+Wygenerowanie dedykowanego obrazka Open Graph (1200x630) z nazwą aplikacji i tagline, a następnie dodanie tagów `og:image` i `twitter:image` w metadanych strony. Poprawi to wygląd linku przy udostepnianiu.
+
+Plik: `src/routes/index.tsx`, nowy plik w `public/og-image.jpg`
+
+### 5. Porządki w kodzie
+- Usunięcie nieużywanych importów i pustych linii.
+- Wydzielenie stałych (tytuł, opis, URL) do osobnego pliku konfiguracyjnego lub uporządkowanie ich na górze komponentu.
+- Ujednolicenie powtarzających się fragmentów list w `CountryCard.tsx` (opcjonalnie drobny komponent pomocniczy).
+
+Pliki: `src/routes/index.tsx`, `src/components/CountryCard.tsx`
+
+### 6. Mikrointerakcje i wykończenie
+- Delikatne pulsowanie przycisku losowania przed pierwszym użyciem.
+- Płynne pojawianie się przycisku "Zapisz jako JPG" po zakończeniu losowania.
+- Upewnienie się, że karta kraju nie skacze podczas animacji losowania.
+
+Plik: `src/routes/index.tsx`
+
+## Co pozostaje bez zmian
+- Mechanizm losowania pozostaje czysto losowy (bez historii i bez blokady powtórek).
+- Nie dodaje się filtrowania po regionie.
+- Nie dodaje się listy ulubionych ani historii losowań.
+- Nie tworzy się osobnych podstron dla krajów.
+
+## Jak zweryfikujemy efekt
+- Ręczne przewinięcie kilku losowych krajów i sprawdzenie, czy wszystkie sekcje mają po 4 pozycje.
+- Test zapisu JPG z wyłączonymi uprawnieniami do pobierania (oczekiwany komunikat błędu).
+- Podgląd źródła strony pod kątem meta tagów OG oraz `og:image`.
+- Sprawdzenie typów i builda (`bunx tsgo --noEmit` oraz build Vite).
