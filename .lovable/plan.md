@@ -11,12 +11,11 @@ Jak to działa w praktyce:
 - Tryb prywatny/incognito lub wyczyszczenie danych przeglądarki resetuje worek.
 - Wspólna, współdzielona pula dla wszystkich użytkowników wymagałaby konta i bazy danych — nie robimy tego tutaj.
 
-Dodam też mały licznik "Wylosowano X ze 120" oraz przycisk resetu worka.
-
 ## Zakres zmian
 
 ### 1. Losowanie bez powtórek
-Tasowany worek krajów zapisywany w przeglądarce, licznik postępu i możliwość resetu.
+Tasowany worek krajów zapisywany w przeglądarce; po wyczerpaniu listy tasuje się automatycznie od nowa.
+
 
 Pliki: `src/routes/index.tsx`, nowy hook w `src/hooks/`
 
