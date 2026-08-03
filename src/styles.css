@@ -69,3 +69,20 @@
   .text-gold { background: var(--gradient-gold); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .shadow-glow { box-shadow: var(--shadow-glow); }
 }
+
+@keyframes pulse-soft {
+  0%, 100% { box-shadow: var(--shadow-glow); }
+  50% { box-shadow: 0 26px 74px -14px oklch(0.65 0.22 15 / 0.75); }
+}
+
+@layer utilities {
+  .animate-pulse-soft { animation: pulse-soft 2.4s ease-in-out infinite; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
