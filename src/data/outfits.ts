@@ -897,20 +897,6 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Polo, jeansy, sneakersy",
     ],
   },
-  "Jordania": {
-    woman: [
-      "Długa abaya w eleganckim kolorze, hidżab dopasowany",
-      "Lekka maxi sukienka z długim rękawem, sandały",
-      "Lniana tunika, szerokie spodnie, mokasyny",
-      "Kaftan z haftami, baleriny",
-    ],
-    man: [
-      "Thobe (długa biała szata), keffiyeh czerwono-białe",
-      "Lniana koszula, beżowe spodnie, mokasyny",
-      "Polo, chinosy, sandały skórzane",
-      "Biała koszula, ciemne spodnie, brogsy",
-    ],
-  },
   "Liban": {
     woman: [
       "Elegancka mini sukienka, szpilki, biżuteria złota (Bejrut chic)",

@@ -64,7 +64,6 @@ export const entertainment: Record<string, string[]> = {
   "Boliwia": ["Cacho (gra w kości po boliwijsku)", "Dokument o Salar de Uyuni i lustrzanym jeziorze", "Lekcja prostych kroków diabolady"],
   "Urugwaj": ["Truco urugwajskie (różniące się od argentyńskiego!)", "Sesja candombe (bębny na garnkach)", "Maraton meczów mundialu 1950"],
   "Ekwador": ["40 (popularna gra karciana)", "Dokument o Galapagos i Darwinie", "Lekcja pasillo – melancholijnego tańca"],
-  "Jordania": ["Mancala arabska", "Maraton 'Theeb' z pustynnym klimatem", "Quiz o Petrze i Nabatejczykach"],
   "Liban": ["Tawla (libańska wersja backgammona)", "Maraton 'Kafarnaum' Nadine Labaki", "Sesja Fairuz z porannym kawałkiem"],
   "Fidżi": ["Ceremonia kava w kółku z klaśnięciami", "Lekcja tańca meke", "Quiz: rozpoznaj wyspę z 333 fidżyjskich"],
   "Samoa": ["Lape – samoańska gra w kamyki", "Lekcja siva (tradycyjny taniec)", "Quiz: prawdziwe tradycyjne tatau czy nowoczesny tatuaż?"],

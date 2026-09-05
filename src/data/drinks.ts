@@ -64,7 +64,6 @@ export const drinks: Record<string, string[]> = {
   "Boliwia": ["Singani (boliwijska brandy z winogron)", "Api – ciepły napój z fioletowej kukurydzy", "Mate de coca", "Paceña beer"],
   "Urugwaj": ["Mate z termosa pod pachą", "Medio y medio (musujące wino)", "Grappamiel", "Tannat z Carmelo"],
   "Ekwador": ["Canelazo – gorący napój z cynamonem i aguardiente", "Świeży sok z naranjilla", "Pilsener ekwadorska", "Colada morada"],
-  "Jordania": ["Mocna kawa po arabsku z kardamonem", "Mięta z herbatą z szałwią", "Sahlab", "Limonada z miętą"],
   "Liban": ["Arak z wodą i lodem", "Almaza beer", "Jallab (z daktyli i melasy)", "Wino z doliny Bekaa"],
   "Fidżi": ["Kava – uspokajający napój z korzenia", "Fiji Bitter beer", "Świeży sok z marakui", "Mleko kokosowe prosto z orzecha"],
   "Samoa": ["'Ava (samoańska kava)", "Vailima beer", "Koko Samoa (gorąca czekolada z kakao)", "Mleko kokosowe z młodego orzecha"],
