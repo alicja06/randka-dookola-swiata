@@ -587,15 +587,6 @@ export const countries: Country[] = [
     music: ["Juan Fernando Velasco", "Nicola Cruz", "Pasillo ecuatoriano"]
   },
   {
-    name: "Jordania", region: "Bliski Wschód",
-    traditions: ["Gościnność beduińska z herbatą", "Mansaf – narodowe danie podawane na specjalnych okazjach", "Hospitalité w namiotach Wadi Rum"],
-    stereotypes: ["Petra na każdym zdjęciu", "Wszyscy są krewnymi króla", "Hummus lepszy niż w Izraelu (i odwrotnie)"],
-    food: ["Mansaf – baranina z jameedem i ryżem", "Maqluba – odwrócony garnek z mięsem i warzywami", "Falafel z hummusem i pitą", "Musakhan – kurczak z sumakową cebulą"],
-    desserts: ["Knafeh z serem i syropem różanym", "Basbousa z orzechami", "Halawet el-jibn – rolki serowe z syropem", "Maamoul – kruche ciasteczka z daktylami"],
-    movies: ["Theeb", "Captain Abu Raed", "When Monaliza Smiled"],
-    music: ["Macadi Nahhas", "Omar Al-Abdallat", "Tradycyjna muzyka beduińska"]
-  },
-  {
     name: "Liban", region: "Bliski Wschód",
     traditions: ["Mezze – dziesiątki małych dań na środku stołu", "Życie nocne Bejrutu jak nigdzie", "Zaproszenia na kawę co pięć minut"],
     stereotypes: ["Wszyscy mają trzy paszporty", "Najlepszy hummus i tabbouleh (sorry reszto Bliskiego Wschodu)", "Cedr na fladze i wszędzie"],
