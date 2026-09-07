@@ -97,9 +97,6 @@ function Index() {
       link.download = `randka-${country.name.replace(/\s+/g, "-").toLowerCase()}.jpg`;
       link.href = dataUrl;
       link.click();
-      toast.success("Zapisano obrazek JPG", {
-        description: `Karta „${country.name}” trafiła do pobranych plików.`,
-      });
     } catch (e) {
       console.error("Nie udało się zapisać obrazu", e);
       toast.error("Nie udało się zapisać obrazka", {
