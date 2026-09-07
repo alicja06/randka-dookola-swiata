@@ -164,15 +164,6 @@ export const countries: Country[] = [
     music: ["Umm Kulthum", "Amr Diab", "Mohamed Mounir"]
   },
   {
-    name: "RPA", region: "Afryka Południowa",
-    traditions: ["Braai – grill jako narodowy rytuał", "Ubuntu – 'jestem, bo my jesteśmy'", "11 oficjalnych języków"],
-    stereotypes: ["Safari na każdym kroku", "Wszyscy umieją grillować", "Wuwuzela jako narodowy instrument"],
-    food: ["Braai z boerewors i stekiem", "Bobotie z chutney", "Biltong – suszone mięso", "Samp and beans"],
-    desserts: ["Malva pudding z kremowym sosem", "Koeksisters – skręcone słodkie pączki", "Melktert – tarta mleczna z cynamonem", "Peppermint crisp tart"],
-    movies: ["Invictus", "Tsotsi", "Dystrykt 9"],
-    music: ["Miriam Makeba", "Ladysmith Black Mambazo", "Die Antwoord"]
-  },
-  {
     name: "Australia", region: "Oceania",
     traditions: ["Australia Day z BBQ", "Surfing o świcie", "Vegemite na śniadanie"],
     stereotypes: ["Wszystko chce ich zabić", "Kangury skaczą po ulicach", "Mate to każdy"],
@@ -452,15 +443,6 @@ export const countries: Country[] = [
     music: ["Bob Marley", "Sean Paul", "Reggae i dancehall klasyki"]
   },
   {
-    name: "Malezja", region: "Azja Południowo-Wschodnia",
-    traditions: ["Hari Raya po Ramadanie", "Mamak – nocne knajpki otwarte do rana", "Mieszanka kultur malajskiej, chińskiej i indyjskiej"],
-    stereotypes: ["Wszyscy kochają durian", "Trzy języki w jednym zdaniu", "Petronas Towers na każdym zdjęciu"],
-    food: ["Nasi lemak z sambalem", "Laksa", "Roti canai z dhal", "Char kway teow"],
-    desserts: ["Cendol z palmowym cukrem", "Kuih lapis – tęczowe ciasto ryżowe", "Ondeh-ondeh z palmowym cukrem", "Apam balik – naleśnik z orzeszkami ziemnymi"],
-    movies: ["Sepet", "The Journey", "Bunohan"],
-    music: ["Yuna", "Siti Nurhaliza", "Search"]
-  },
-  {
     name: "Singapur", region: "Azja Południowo-Wschodnia",
     traditions: ["Hawker centres – kulinarne dziedzictwo UNESCO", "Chingay Parade", "Wieloetniczność jako fundament państwa"],
     stereotypes: ["Wszędzie czysto i zakazów bez liku", "Kara za gumę do żucia", "Najdroższe miasto świata"],
@@ -497,15 +479,6 @@ export const countries: Country[] = [
     music: ["Bathiya and Santhush", "Yohani – Manike Mage Hithe", "Iraj"]
   },
   {
-    name: "Kazachstan", region: "Azja Środkowa",
-    traditions: ["Nauryz – wiosenny Nowy Rok", "Kokpar – jeździecki sport z kozłem", "Eagle hunting – polowanie z orłem"],
-    stereotypes: ["Wszyscy myślą o Boracie", "Step i konie po horyzont", "Wódka i konina do każdej okazji"],
-    food: ["Beshbarmak – gotowane mięso z makaronem", "Kazy – suszona kiełbasa z koniny", "Plov z baraniną i marchewką", "Shashlik z jagnięciny"],
-    desserts: ["Baursaki – smażone pączki z miodem", "Chak-chak – chrupiące ciasteczka z miodem", "Kurt – kulki z twarogu", "Samsa słodka z orzechami"],
-    movies: ["Tulpan", "Mongol", "Kelin"],
-    music: ["Dimash Kudaibergen", "Ninety One", "Tradycyjna dombra"]
-  },
-  {
     name: "Uzbekistan", region: "Azja Środkowa",
     traditions: ["Czajchana – herbaciarnia jako centrum życia", "Wesela z setkami gości", "Jedwabny Szlak i bazary w Samarkandzie"],
     stereotypes: ["Plov na każdą okazję", "Niebieskie kopuły wszędzie", "Targowanie się to sztuka"],
@@ -524,15 +497,6 @@ export const countries: Country[] = [
     music: ["Diamond Platnumz", "Ali Kiba", "Bongo Flava"]
   },
   {
-    name: "Ghana", region: "Afryka Zachodnia",
-    traditions: ["Tkactwo Kente – kolorowe wzory ze znaczeniem", "Festiwal Homowo", "Spór z Nigerią o najlepszy jollof"],
-    stereotypes: ["Najlepszy jollof na świecie (sorry Nigeria)", "Wszyscy tańczą azonto", "Kakao i złoto w każdej kopalni"],
-    food: ["Jollof rice po ghańsku z grillowanym kurczakiem", "Fufu z zupą egusi", "Banku z tilapią", "Waakye – ryż z fasolą"],
-    desserts: ["Kelewele – smażona słodka plantain z imbirem", "Bofrot – smażone pączki", "Tatale – placki z dojrzałej plantain", "Coconut biscuits – kokosowe ciasteczka"],
-    movies: ["The Burial of Kojo", "Children of the Mountain", "Azali"],
-    music: ["Sarkodie", "Stonebwoy", "Daddy Lumba"]
-  },
-  {
     name: "Senegal", region: "Afryka Zachodnia",
     traditions: ["Teranga – senegalska gościnność", "Sabar – bębny i taniec", "Wspólne jedzenie z jednej miski"],
     stereotypes: ["Wszyscy są wysocy i eleganccy", "Zapaśnicy laamb to bohaterowie", "Boubou w każdym kolorze"],
@@ -540,15 +504,6 @@ export const countries: Country[] = [
     desserts: ["Thiakry – kuskus z jogurtem i mlekiem skondensowanym", "Ngalakh – kuskus z pastą orzechową", "Sombi – ryżowy pudding kokosowy", "Bissap – galaretka z hibiskusa"],
     movies: ["Atlantique", "Touki Bouki", "La Noire de…"],
     music: ["Youssou N'Dour", "Baaba Maal", "Ismael Lô"]
-  },
-  {
-    name: "Algieria", region: "Afryka Północna",
-    traditions: ["Raï – muzyka i bunt", "Kuskus piątkowy z rodziną", "Mocna kawa po algiersku"],
-    stereotypes: ["Wszędzie Sahara", "Piłka nożna to religia", "Pustynia i kasba w jednym"],
-    food: ["Couscous z baraniną i siedmioma warzywami", "Chorba frik – zupa z baraniną", "Mechoui – pieczona jagnięcina", "Chakhchoukha – kruche ciasto z gulaszem"],
-    desserts: ["Makroud – ciastka z daktylami i miodem", "Baklava algierska z orzechami", "Zlabia – chrupiące słodycze z syropem", "Qalb el louz – ciasto z semoliną i migdałami"],
-    movies: ["Bitwa o Algier", "Hors la loi", "Papicha"],
-    music: ["Cheb Khaled", "Rachid Taha", "Souad Massi"]
   },
   {
     name: "Tunezja", region: "Afryka Północna",
@@ -819,15 +774,6 @@ export const countries: Country[] = [
     desserts: ["Czurczchela – orzechy w soku winogronowym", "Pelamushi – kisiel z moszczu winnego", "Nazuki – słodki chleb z rodzynkami", "Gozinaki – orzechy w miodzie na Nowy Rok"],
     movies: ["Podróż w Gruzję", "Mandaryny", "Tańczyliśmy"],
     music: ["Katie Melua", "Nino Katamadze", "Chór Rustavi"]
-  },
-  {
-    name: "Zimbabwe", region: "Afryka Południowa",
-    traditions: ["Muzyka mbira na ceremoniach duchowych", "Rzeźbienie w kamieniu shona", "Opowieści przy ognisku pod gwiazdami"],
-    stereotypes: ["Wodospady Wiktorii i safari na każdym kroku", "Wszyscy są mistrzami krykieta", "Kraj słoni i baobabów"],
-    food: ["Sadza – kukurydziana papka do wszystkiego", "Nyama choma – grillowane mięso", "Muriwo unedovi – gulasz z liści z orzeszkami", "Kapenta – małe smażone rybki"],
-    desserts: ["Chimodho – słodki chleb kukurydziany", "Mapopo candy – karmelki z papai", "Maputi – prażona kukurydza na słodko", "Owoce baobabu z jogurtem"],
-    movies: ["Neria", "Yellow Card", "Cry the Beloved Country"],
-    music: ["Oliver Mtukudzi", "Thomas Mapfumo", "Winky D"]
   },
   {
     name: "Madagaskar", region: "Afryka Wschodnia",
