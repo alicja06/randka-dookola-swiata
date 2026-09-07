@@ -239,20 +239,6 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Lniana koszula z krótkim rękawem, szorty, sandały",
     ],
   },
-  "RPA": {
-    woman: [
-      "Sukienka z motywem afrykańskim, kolorowe korale",
-      "Kolorowa tunika, jeansy, sandały, etniczna biżuteria",
-      "Biała sukienka, kolorowy szal, sandały",
-      "Spódnica maxi w printy, top, sandały",
-    ],
-    man: [
-      "Lniana koszula, chinosy, mokasyny",
-      "Kolorowa koszula w printy, jeansy, sandały",
-      "Biały T-shirt, beżowe szorty, sneakersy",
-      "Granatowa koszula, jeansy, brogsy",
-    ],
-  },
   "Australia": {
     woman: [
       "Sundress, klapki, naturalny makijaż",
@@ -687,20 +673,6 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Czapka beanie w kolorach rasta, luźny T-shirt, joggery, sneakersy",
     ],
   },
-  "Malezja": {
-    woman: [
-      "Baju kurung w kwiatowe wzory, hidżab w pasującym kolorze",
-      "Lekka sukienka maxi w batikowe wzory, sandały",
-      "Lniana tunika, szerokie spodnie, sandały",
-      "Jedwabna bluzka, plisowana spódnica midi, baleriny",
-    ],
-    man: [
-      "Batikowa koszula z krótkim rękawem, ciemne spodnie",
-      "Lniana koszula, beżowe chinosy, mokasyny",
-      "Biały T-shirt, lekkie spodnie cargo, sneakersy",
-      "Polo, jeansy, sandały skórzane",
-    ],
-  },
   "Singapur": {
     woman: [
       "Elegancka koszulowa sukienka, sandały na obcasie",
@@ -757,20 +729,6 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Polo, chinosy, mokasyny",
     ],
   },
-  "Kazachstan": {
-    woman: [
-      "Sukienka z elementami tradycyjnych wzorów, kozaki",
-      "Wełniany sweter, dżinsy, kozaki",
-      "Długa spódnica, golf, kozaki za kolano",
-      "Puchowa kurtka, ciepłe legginsy, futrzana czapka",
-    ],
-    man: [
-      "Chapan (tradycyjny płaszcz) na specjalne okazje",
-      "Wełniany sweter, dżinsy, trapery",
-      "Skórzana kurtka, jeansy, kozaki",
-      "Puchowa kurtka, ciepłe spodnie, futrzana czapka uszanka",
-    ],
-  },
   "Uzbekistan": {
     woman: [
       "Khan-atlas (jedwabna sukienka w pasiaste tęczowe wzory)",
@@ -799,20 +757,6 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Polo, chinosy, mokasyny",
     ],
   },
-  "Ghana": {
-    woman: [
-      "Sukienka z kente w żółto-czarno-zielone wzory",
-      "Kolorowa tunika, szerokie spodnie, sandały",
-      "Bluzka w afrykańskie nadruki, ołówkowa spódnica, szpilki",
-      "Długa sukienka z elementami Adinkra, klapki",
-    ],
-    man: [
-      "Koszula w kente lub Adinkra, ciemne spodnie",
-      "Biała lniana koszula, beżowe spodnie, mokasyny",
-      "Polo, chinosy, sandały skórzane",
-      "T-shirt z motywem Ghany, jeansy, sneakersy",
-    ],
-  },
   "Senegal": {
     woman: [
       "Boubou w jaskrawych kolorach, turban dopasowany kolorem",
@@ -825,20 +769,6 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Lniana koszula, beżowe spodnie, mokasyny",
       "Polo w afrykańskich kolorach, chinosy, sneakersy",
       "T-shirt, lekkie spodnie cargo, sandały",
-    ],
-  },
-  "Algieria": {
-    woman: [
-      "Kaftan algierski z haftami, baleriny",
-      "Lekka tunika, szerokie spodnie, sandały",
-      "Długa sukienka maxi w przygaszonych kolorach, hidżab opcjonalnie",
-      "Bluzka z haftem, dżinsy, mokasyny",
-    ],
-    man: [
-      "Gandura (tradycyjna szata), sandały",
-      "Lniana koszula, beżowe spodnie, mokasyny",
-      "Polo, jeansy, sneakersy",
-      "Marynarka, biała koszula, chinosy, brogsy",
     ],
   },
   "Tunezja": {
@@ -1259,20 +1189,6 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Wełniany sweter, jeansy, botki",
       "Ciemna koszula, marynarka, spodnie proste, mokasyny",
       "Golf, marynarka tweedowa, chinosy, brogsy",
-    ],
-  },
-  "Zimbabwe": {
-    woman: [
-      "Sukienka z tkaniny kitenge w żywych wzorach, sandały płaskie",
-      "Biała bluzka, długa spódnica w afrykański print, korale",
-      "Kombinezon w geometryczne wzory, płaskie sandały, chusta na głowie",
-      "Kwiecista sukienka maxi, espadryle, drewniane bransoletki",
-    ],
-    man: [
-      "Koszula dashiki, spodnie lniane, sandały",
-      "Biały T-shirt, spodnie khaki safari, buty trekkingowe",
-      "Koszula w afrykański wzór, jeansy, mokasyny",
-      "Polo, szorty cargo, sneakersy, kapelusz safari",
     ],
   },
   "Madagaskar": {
