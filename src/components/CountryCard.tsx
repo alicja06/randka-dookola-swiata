@@ -2,7 +2,8 @@ import { Country } from "@/data/countries";
 import { outfits } from "@/data/outfits";
 import { drinks } from "@/data/drinks";
 import { entertainment } from "@/data/entertainment";
-import { Utensils, Film, Music, Sparkles, Theater, Shirt, Wine, Gamepad2, IceCream } from "lucide-react";
+import { figures } from "@/data/figures";
+import { Utensils, Film, Music, Sparkles, Theater, Shirt, Wine, Gamepad2, IceCream, Users } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 const sections = [
@@ -54,6 +55,7 @@ export function CountryCard({ country, forExport = false }: { country: Country; 
   const outfit = outfits[country.name];
   const countryDrinks = drinks[country.name];
   const countryEntertainment = entertainment[country.name];
+  const countryFigures = figures[country.name];
 
   return (
     <article className={`${forExport ? "" : "animate-in fade-in slide-in-from-bottom-8 duration-700"}`}>
@@ -97,6 +99,12 @@ export function CountryCard({ country, forExport = false }: { country: Country; 
       {countryEntertainment && (
         <Panel label="Rozrywka" icon={Gamepad2} className="mb-4">
           <ItemList items={countryEntertainment} />
+        </Panel>
+      )}
+
+      {countryFigures && (
+        <Panel label="Znane postacie" icon={Users} className="mb-4">
+          <ItemList items={countryFigures} />
         </Panel>
       )}
 
