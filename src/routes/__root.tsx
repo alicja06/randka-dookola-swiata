@@ -78,7 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#1a0f0a" },
       { name: "mobile-web-app-capable", content: "yes" },
-      { name: "apple-mobile-web-app-title", content: "Randka" },
+      { name: "apple-mobile-web-app-title", content: "Randka dookoła świata" },
       { title: "Randka dookoła świata" },
       { name: "description", content: "Wylosuj kraj i zaplanujcie wieczorną randkę inspirowaną jego kulturą." },
       { property: "og:type", content: "website" },
