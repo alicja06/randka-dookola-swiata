@@ -4,10 +4,14 @@ import { toast } from "sonner";
 import { countries, type Country } from "@/data/countries";
 import { CountryCard } from "@/components/CountryCard";
 import { useCountryBag } from "@/hooks/useCountryBag";
-import { Dices, RotateCw, Download } from "lucide-react";
+import { Dices, RotateCw, Download, Share2 } from "lucide-react";
+import { Capacitor } from "@capacitor/core";
+import { Directory, Filesystem } from "@capacitor/filesystem";
+import { Share } from "@capacitor/share";
+import { FileSharer } from "@capgo/capacitor-file-sharer";
 
 const SITE_URL = "https://randka-dookola-swiata.lovable.app";
-const TITLE = "Randka dookoła świata – wylosuj kraj na wieczór";
+const TITLE = "Randka dookoła świata";
 const DESCRIPTION =
   "Wylosuj kraj i zaplanuj randkę inspirowaną jego kulturą: tradycje, jedzenie, desery, napoje, rozrywka, filmy i muzyka.";
 const OG_IMAGE =
@@ -49,6 +53,7 @@ function Index() {
   const [rolling, setRolling] = useState(false);
   const [tick, setTick] = useState(0);
   const [saving, setSaving] = useState(false);
+  const [sharing, setSharing] = useState(false);
   const [exportCountry, setExportCountry] = useState<Country | null>(null);
   const exportRef = useRef<HTMLDivElement>(null);
 
@@ -75,38 +80,152 @@ function Index() {
     }, 70);
   };
 
-  const saveAsJpg = async () => {
-    if (!country) return;
-    setSaving(true);
-    setExportCountry(country);
-    try {
-      await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => r(null))));
-      const node = exportRef.current;
-      if (!node) throw new Error("Brak podglądu do zapisu");
-      const { toJpeg } = await import("html-to-image");
-      const bg = getComputedStyle(document.body).backgroundColor || "#1a0f0a";
-      const dataUrl = await toJpeg(node, {
-        quality: 0.95,
-        pixelRatio: 2,
-        width: 1000,
-        height: node.scrollHeight,
-        backgroundColor: bg,
-        cacheBust: true,
+  
+const generateJpg = async () => {
+  if (!country) throw new Error("Nie wybrano kraju");
+
+  setExportCountry(country);
+
+  await new Promise((r) =>
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => r(null)),
+    ),
+  );
+
+  const node = exportRef.current;
+  if (!node) throw new Error("Brak podglądu do zapisu");
+
+  const { toJpeg } = await import("html-to-image");
+
+  const bg =
+    getComputedStyle(document.body).backgroundColor || "#1a0f0a";
+
+  const dataUrl = await toJpeg(node, {
+    quality: 0.95,
+    pixelRatio: 2,
+    width: 1000,
+    height: node.scrollHeight,
+    backgroundColor: bg,
+    cacheBust: true,
+  });
+
+  const fileName = `randka-${country.name
+    .replace(/\s+/g, "-")
+    .toLowerCase()}.jpg`;
+
+  return { dataUrl, fileName };
+};
+
+const saveAsJpg = async () => {
+  if (!country || saving) return;
+
+  setSaving(true);
+
+  try {
+    const { dataUrl, fileName } = await generateJpg();
+
+    if (Capacitor.getPlatform() === "android") {
+      await FileSharer.save({
+        filename: fileName,
+        contentType: "image/jpeg",
+        base64Data: dataUrl,
+        android: {
+          saveDirectory: "downloads",
+        },
       });
+
+      toast.success("Zapisano zdjęcie");
+    } else {
       const link = document.createElement("a");
-      link.download = `randka-${country.name.replace(/\s+/g, "-").toLowerCase()}.jpg`;
+      link.download = fileName;
       link.href = dataUrl;
       link.click();
-    } catch (e) {
-      console.error("Nie udało się zapisać obrazu", e);
-      toast.error("Nie udało się zapisać obrazka", {
-        description: "Spróbuj ponownie lub zrób to na innej przeglądarce.",
-      });
-    } finally {
-      setExportCountry(null);
-      setSaving(false);
+
+      toast.success("Zapisano zdjęcie");
     }
-  };
+  } catch (e) {
+    console.error("Nie udało się zapisać obrazu", e);
+    toast.error("Nie udało się zapisać zdjęcia");
+  } finally {
+    setExportCountry(null);
+    setSaving(false);
+  }
+};
+
+
+const shareAsJpg = async () => {
+  if (!country || sharing || saving) return;
+
+  setSharing(true);
+
+  try {
+    const { dataUrl, fileName } = await generateJpg();
+
+    if (Capacitor.getPlatform() === "android") {
+      const base64Data = dataUrl.split(",")[1];
+
+      const file = await Filesystem.writeFile({
+        path: fileName,
+        data: base64Data,
+        directory: Directory.Cache,
+      });
+
+      await Share.share({
+        title: "Randka dookoła świata",
+        text: `Pomysł na randkę: ${country.name}`,
+        files: [file.uri],
+        dialogTitle: "Udostępnij zdjęcie",
+      });
+    } else {
+      const response = await fetch(dataUrl);
+      const blob = await response.blob();
+
+      const imageFile = new File([blob], fileName, {
+        type: "image/jpeg",
+      });
+
+      if (
+        navigator.share &&
+        navigator.canShare?.({ files: [imageFile] })
+      ) {
+        await navigator.share({
+          title: "Randka dookoła świata",
+          text: `Pomysł na randkę: ${country.name}`,
+          files: [imageFile],
+        });
+      } else {
+        const link = document.createElement("a");
+        link.download = fileName;
+        link.href = dataUrl;
+        link.click();
+
+        const subject = encodeURIComponent(
+          `Pomysł na randkę: ${country.name}`,
+        );
+
+        const body = encodeURIComponent(
+          "Przesyłam pomysł na randkę inspirowaną kulturą tego kraju. Zdjęcie znajduje się w pobranych plikach.",
+        );
+
+        window.location.href = `mailto:?subject=${subject}&body=${body}`;
+
+        toast.success("Pobrano zdjęcie. Dołącz je do wiadomości e-mail.");
+      }
+    }
+  } catch (e) {
+    if (e instanceof Error && e.name === "AbortError") {
+      return;
+    }
+
+    console.error("Nie udało się udostępnić zdjęcia", e);
+    toast.error("Nie udało się udostępnić zdjęcia");
+  } finally {
+    setExportCountry(null);
+    setSharing(false);
+  }
+};
+
+
 
   return (
     <main className="min-h-screen bg-hero">
@@ -161,20 +280,31 @@ function Index() {
           </div>
         )}
 
-        {country && !rolling && (
-          <div className="flex justify-center mt-8 animate-in fade-in duration-500">
-            <button
-              onClick={saveAsJpg}
-              disabled={saving}
-              aria-label="Zapisz kartę kraju jako plik JPG"
-              aria-busy={saving}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-colors font-display text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-60"
-            >
-              <Download aria-hidden className={`w-4 h-4 ${saving ? "animate-pulse" : ""}`} />
-              {saving ? "Zapisywanie..." : "Zapisz jako JPG"}
-            </button>
-          </div>
-        )}
+{country && !rolling && (
+  <div className="flex flex-wrap justify-center gap-3 mt-8 animate-in fade-in duration-500">
+    <button
+      onClick={saveAsJpg}
+      disabled={saving || sharing}
+      aria-label="Zapisz kartę kraju jako plik JPG"
+      className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-colors font-display text-base disabled:opacity-60"
+    >
+      <Download aria-hidden className="w-4 h-4" />
+      {saving ? "Przetwarzanie..." : "Zapisz jako JPG"}
+    </button>
+
+    {Capacitor.getPlatform() === "android" && (
+  <button
+    onClick={shareAsJpg}
+    disabled={saving || sharing}
+    aria-label="Udostępnij kartę kraju"
+    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-colors font-display text-base disabled:opacity-60"
+  >
+    <Share2 aria-hidden className="w-4 h-4" />
+    {sharing ? "Przygotowywanie..." : "Udostępnij JPG"}
+  </button>
+)}
+  </div>
+)}
 
         <footer className="text-center mt-20 text-xs text-muted-foreground uppercase tracking-widest">
           Nieskończona liczba wieczorów
