@@ -11,7 +11,6 @@ export const figures: Record<string, string[]> = {
   "Grecja": ["Sokrates – filozof", "Maria Callas – śpiewaczka operowa", "Nikos Kazantzakis – pisarz"],
   "Anglia": ["William Shakespeare – dramaturg", "Jane Austen – pisarka", "David Beckham – piłkarz"],
   "Szkocja": ["Robert Burns – poeta", "Sean Connery – aktor", "Andy Murray – tenisista"],
-  "Irlandia Północna": ["C.S. Lewis – autor Opowieści z Narnii", "Liam Neeson – aktor", "George Best – piłkarz"],
   "Niemcy": ["Johann Sebastian Bach – kompozytor", "Albert Einstein – fizyk", "Angela Merkel – kanclerz"],
   "Polska": ["Mikołaj Kopernik – astronom", "Maria Skłodowska-Curie – noblistka", "Fryderyk Chopin – kompozytor"],
   "Chiny": ["Konfucjusz – filozof", "Bruce Lee – aktor i mistrz kung-fu", "Ai Weiwei – artysta"],

@@ -169,20 +169,6 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Gładki T-shirt, jeansy, kraciasta koszula jako narzutka",
     ],
   },
-  "Irlandia Północna": {
-    woman: [
-      "Dzianinowy sweter, jeansy, botki",
-      "Lniana bluzka, proste spodnie, mokasyny",
-      "Sukienka w kwiaty, kardigan, płaskie buty",
-      "T-shirt, jeansowa kurtka, ciemne spodnie, sneakersy",
-    ],
-    man: [
-      "Sweter z warkoczowym splotem, jeansy, trzewiki",
-      "Lniana koszula, chinosy, mokasyny",
-      "Koszula w kratę, ciemne spodnie, sneakersy",
-      "Gładki T-shirt, kardigan, jeansy, wygodne buty",
-    ],
-  },
   "Niemcy": {
     woman: [
       "Sukienka dirndl lub minimalistyczny look w czerni",

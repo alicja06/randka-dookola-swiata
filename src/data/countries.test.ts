@@ -7,7 +7,7 @@ import { figures } from "./figures";
 import { outfits } from "./outfits";
 
 describe("Podział Wielkiej Brytanii bez Walii", () => {
-  for (const name of ["Anglia", "Szkocja", "Irlandia Północna"]) {
+  for (const name of ["Anglia", "Szkocja"]) {
     test(`${name} ma osobny, kompletny wpis`, () => {
       const entries = countries.filter((country) => country.name === name);
       assert.equal(entries.length, 1);
