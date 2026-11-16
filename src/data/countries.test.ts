@@ -1,4 +1,5 @@
-import { describe, expect, test } from "bun:test";
+import { describe, test } from "node:test";
+import assert from "node:assert/strict";
 import { countries } from "./countries";
 import { drinks } from "./drinks";
 import { entertainment } from "./entertainment";
@@ -9,33 +10,33 @@ describe("Podział Wielkiej Brytanii bez Walii", () => {
   for (const name of ["Anglia", "Szkocja", "Irlandia Północna"]) {
     test(`${name} ma osobny, kompletny wpis`, () => {
       const entries = countries.filter((country) => country.name === name);
-      expect(entries).toHaveLength(1);
+      assert.equal(entries.length, 1);
       const country = entries[0];
       if (!country) throw new Error(`Brak kraju: ${name}`);
-      expect(country.region).toBe("Europa Zachodnia");
-      expect(country.food).toHaveLength(4);
-      expect(country.desserts).toHaveLength(4);
-      expect(drinks[name]).toHaveLength(4);
-      expect(outfits[name]?.woman).toHaveLength(4);
-      expect(outfits[name]?.man).toHaveLength(4);
-      expect(figures[name]).toHaveLength(3);
+      assert.equal(country.region, "Europa Zachodnia");
+      assert.equal(country.food.length, 4);
+      assert.equal(country.desserts.length, 4);
+      assert.equal(drinks[name]?.length, 4);
+      assert.equal(outfits[name]?.woman.length, 4);
+      assert.equal(outfits[name]?.man.length, 4);
+      assert.equal(figures[name]?.length, 3);
       for (const items of [country.traditions, country.stereotypes, country.movies, country.music, entertainment[name]]) {
-        expect(items).toHaveLength(3);
-        expect(items.every((item) => item.trim().length > 0)).toBe(true);
+        assert.equal(items.length, 3);
+        assert.ok(items.every((item) => item.trim().length > 0));
       }
     });
   }
 
   for (const name of ["Wielka Brytania", "Walia"]) {
     test(`${name} nie występuje w losowaniu ani danych dodatkowych`, () => {
-      expect(countries.some((country) => country.name === name)).toBe(false);
+      assert.equal(countries.some((country) => country.name === name), false);
       for (const data of [drinks, entertainment, figures, outfits]) {
-        expect(Object.hasOwn(data, name)).toBe(false);
+        assert.equal(Object.hasOwn(data, name), false);
       }
     });
   }
 
   test("Irlandia pozostaje oddzielnym krajem", () => {
-    expect(countries.filter((country) => country.name === "Irlandia")).toHaveLength(1);
+    assert.equal(countries.filter((country) => country.name === "Irlandia").length, 1);
   });
 });
