@@ -27,7 +27,7 @@ describe("Podział Wielkiej Brytanii bez Walii", () => {
     });
   }
 
-  for (const name of ["Wielka Brytania", "Walia"]) {
+  for (const name of ["Wielka Brytania", "Walia", "Irlandia Północna"]) {
     test(`${name} nie występuje w losowaniu ani danych dodatkowych`, () => {
       assert.equal(countries.some((country) => country.name === name), false);
       for (const data of [drinks, entertainment, figures, outfits]) {
