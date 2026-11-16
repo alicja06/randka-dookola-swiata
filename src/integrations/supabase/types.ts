@@ -14,13 +14,141 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      couple_members: {
+        Row: {
+          couple_id: string
+          joined_at: string
+          user_id: string
+        }
+        Insert: {
+          couple_id: string
+          joined_at?: string
+          user_id: string
+        }
+        Update: {
+          couple_id?: string
+          joined_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "couple_members_couple_id_fkey"
+            columns: ["couple_id"]
+            isOneToOne: false
+            referencedRelation: "couples"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      couples: {
+        Row: {
+          created_at: string
+          created_by: string
+          id: string
+          invite_code: string
+        }
+        Insert: {
+          created_at?: string
+          created_by: string
+          id?: string
+          invite_code?: string
+        }
+        Update: {
+          created_at?: string
+          created_by?: string
+          id?: string
+          invite_code?: string
+        }
+        Relationships: []
+      }
+      memories: {
+        Row: {
+          country: string
+          couple_id: string
+          created_at: string
+          created_by: string
+          date_on: string
+          id: string
+          note: string | null
+          rating: number | null
+        }
+        Insert: {
+          country: string
+          couple_id: string
+          created_at?: string
+          created_by?: string
+          date_on?: string
+          id?: string
+          note?: string | null
+          rating?: number | null
+        }
+        Update: {
+          country?: string
+          couple_id?: string
+          created_at?: string
+          created_by?: string
+          date_on?: string
+          id?: string
+          note?: string | null
+          rating?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "memories_couple_id_fkey"
+            columns: ["couple_id"]
+            isOneToOne: false
+            referencedRelation: "couples"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      memory_photos: {
+        Row: {
+          couple_id: string
+          created_at: string
+          id: string
+          memory_id: string
+          path: string
+        }
+        Insert: {
+          couple_id: string
+          created_at?: string
+          id?: string
+          memory_id: string
+          path: string
+        }
+        Update: {
+          couple_id?: string
+          created_at?: string
+          id?: string
+          memory_id?: string
+          path?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "memory_photos_couple_id_fkey"
+            columns: ["couple_id"]
+            isOneToOne: false
+            referencedRelation: "couples"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "memory_photos_memory_id_fkey"
+            columns: ["memory_id"]
+            isOneToOne: false
+            referencedRelation: "memories"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      create_couple: { Args: never; Returns: string }
+      join_couple: { Args: { _code: string }; Returns: string }
+      my_couple_id: { Args: never; Returns: string }
     }
     Enums: {
       [_ in never]: never
