@@ -119,15 +119,6 @@ export const countries: Country[] = [
     music: ["The Proclaimers – I'm Gonna Be (500 Miles)", "Annie Lennox", "Paolo Nutini"]
   },
   {
-    name: "Irlandia Północna", region: "Europa Zachodnia",
-    traditions: ["Wieczory z muzyką na żywo w pubach", "Ulster fleadh – festiwal tradycyjnej muzyki", "Targi Ould Lammas Fair w Ballycastle"],
-    stereotypes: ["Deszcz jest stałym towarzyszem", "Każdy ma opowieść do opowiedzenia w pubie", "Wszyscy znają miejsca kręcenia Gry o tron"],
-    food: ["Ulster fry – śniadanie z jajkami, bekonem i pieczywem", "Champ – ziemniaki ze szczypiorem i masłem", "Soda farls – chleb sodowy z patelni", "Potato bread – ziemniaczane placki chlebowe"],
-    desserts: ["Fifteens – deser z herbatników, pianek, wiśni i kokosu", "Yellowman – chrupiący karmel z Ballycastle", "Armagh apple tart – tarta z lokalnymi jabłkami", "Barmbrack – słodki chleb z rodzynkami"],
-    movies: ["Belfast", "Good Vibrations", "Mickybo and Me"],
-    music: ["Van Morrison – Brown Eyed Girl", "Snow Patrol – Chasing Cars", "The Undertones – Teenage Kicks"]
-  },
-  {
     name: "Niemcy", region: "Europa Środkowa",
     traditions: ["Oktoberfest", "Jarmarki bożonarodzeniowe", "Niedziela to dzień ciszy"],
     stereotypes: ["Punktualność to świętość", "Porządek musi być", "Piwo i kiełbasa"],
