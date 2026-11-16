@@ -10,7 +10,9 @@ export const entertainment: Record<string, string[]> = {
   "Tajlandia": ["Wzajemny masaż stóp z olejkiem", "Składanie origami z liści bananowca", "Muay Thai stretching razem"],
   "Grecja": ["Talerze z papieru do rozbicia z okrzykiem 'Opa!'", "Sirtaki w salonie", "Quiz z mitologii greckiej"],
   
-  "Wielka Brytania": ["Cluedo lub Monopoly", "Pub quiz dla dwojga", "Maraton Mr. Bean lub Monty Python"],
+  "Anglia": ["Cluedo lub Monopoly", "Pub quiz dla dwojga", "Maraton Mr. Bean lub Monty Python"],
+  "Szkocja": ["Nauka tańca ceilidh z nagraniem", "Czytanie poezji Roberta Burnsa przy świecach", "Quiz o szkockich zamkach i legendzie Loch Ness"],
+  "Irlandia Północna": ["Maraton Derry Girls", "Wirtualny spacer po Grobli Olbrzyma i quiz o jej legendzie", "Karaoke do Snow Patrol i Van Morrisona"],
   "Niemcy": ["Settlers of Catan", "Quiz: piwo z którego landu?", "Maraton 'Dark' na Netflix"],
   "Polska": ["Gra w tysiąca lub makao", "Kalambury z polskimi przysłowiami", "Karaoke z Maryli Rodowicz i Dawida Podsiadło"],
   "Chiny": ["Mahjong online lub fizyczny", "Kaligrafia chińska na papierze ryżowym", "Lekcja podstawowych znaków Hanzi"],

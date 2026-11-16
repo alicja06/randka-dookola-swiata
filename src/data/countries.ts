@@ -101,13 +101,31 @@ export const countries: Country[] = [
     music: ["Mikis Theodorakis", "Nana Mouskouri", "Despina Vandi"]
   },
   {
-    name: "Wielka Brytania", region: "Europa Zachodnia",
-    traditions: ["Herbata o 17:00", "Sunday roast z rodziną", "Kolejka jako sport narodowy"],
+    name: "Anglia", region: "Europa Zachodnia",
+    traditions: ["Afternoon tea z herbatą i przekąskami", "Sunday roast z rodziną", "Bonfire Night – ogniska i fajerwerki 5 listopada"],
     stereotypes: ["Zawsze rozmawiają o pogodzie", "Suchy humor i sarkazm", "Pub to drugi dom"],
     food: ["Fish and chips z octem", "Sunday roast z Yorkshire pudding", "Shepherd's pie", "Beans on toast"],
     desserts: ["Sticky toffee pudding", "Eton mess z truskawkami", "Victoria sponge cake", "Scones z clotted cream i dżemem"],
-    movies: ["Notting Hill", "Trainspotting", "Cztery wesela i pogrzeb"],
+    movies: ["Notting Hill", "Duma i uprzedzenie", "Cztery wesela i pogrzeb"],
     music: ["The Beatles", "Adele", "Arctic Monkeys"]
+  },
+  {
+    name: "Szkocja", region: "Europa Zachodnia",
+    traditions: ["Burns Night – wieczór poezji Roberta Burnsa i haggisu", "Hogmanay – szkockie obchody Nowego Roku", "Ceilidh – spotkania z muzyką i tańcami"],
+    stereotypes: ["Każdy nosi kilt w kratę", "Dudy słychać na każdym kroku", "Potwór z Loch Ness czeka na turystów"],
+    food: ["Haggis z rzepą i ziemniakami (także w wersji wegetariańskiej)", "Cullen skink – zupa z wędzonego łupacza", "Scotch broth – zupa z kaszą jęczmienną", "Stovies – ziemniaki duszone z cebulą i mięsem"],
+    desserts: ["Cranachan – deser z malinami, śmietaną i płatkami owsianymi", "Shortbread – maślane kruche ciasteczka", "Tablet – szkockie cukierki z cukru, masła i mleka", "Dundee cake – ciasto z bakaliami i migdałami"],
+    movies: ["Trainspotting", "Local Hero", "Sunshine on Leith"],
+    music: ["The Proclaimers – I'm Gonna Be (500 Miles)", "Annie Lennox", "Paolo Nutini"]
+  },
+  {
+    name: "Irlandia Północna", region: "Europa Zachodnia",
+    traditions: ["Wieczory z muzyką na żywo w pubach", "Ulster fleadh – festiwal tradycyjnej muzyki", "Targi Ould Lammas Fair w Ballycastle"],
+    stereotypes: ["Deszcz jest stałym towarzyszem", "Każdy ma opowieść do opowiedzenia w pubie", "Wszyscy znają miejsca kręcenia Gry o tron"],
+    food: ["Ulster fry – śniadanie z jajkami, bekonem i pieczywem", "Champ – ziemniaki ze szczypiorem i masłem", "Soda farls – chleb sodowy z patelni", "Potato bread – ziemniaczane placki chlebowe"],
+    desserts: ["Fifteens – deser z herbatników, pianek, wiśni i kokosu", "Yellowman – chrupiący karmel z Ballycastle", "Armagh apple tart – tarta z lokalnymi jabłkami", "Barmbrack – słodki chleb z rodzynkami"],
+    movies: ["Belfast", "Good Vibrations", "Mickybo and Me"],
+    music: ["Van Morrison – Brown Eyed Girl", "Snow Patrol – Chasing Cars", "The Undertones – Teenage Kicks"]
   },
   {
     name: "Niemcy", region: "Europa Środkowa",

@@ -10,7 +10,9 @@ export const drinks: Record<string, string[]> = {
   "Tajlandia": ["Piwo Singha lub Chang", "Thai iced tea", "Mai tai", "Sangsom z colą"],
   "Grecja": ["Ouzo z lodem", "Retsina", "Mythos", "Metaxa"],
   
-  "Wielka Brytania": ["Gin & tonic", "Ciemne ale", "Pimm's Cup", "Earl Grey z mlekiem"],
+  "Anglia": ["Gin & tonic", "Ciemne ale", "Pimm's Cup", "Earl Grey z mlekiem"],
+  "Szkocja": ["Szkocka whisky single malt", "Irn-Bru – szkocki napój gazowany", "Scottish ale", "Czarna herbata Scottish Breakfast"],
+  "Irlandia Północna": ["Bushmills – whiskey z hrabstwa Antrim", "Hilden ale – piwo z Lisburn", "Cydr z jabłek z Armagh", "Punjana – herbata z Belfastu"],
   "Niemcy": ["Pszeniczne Weizen", "Riesling", "Jägermeister z lodu", "Apfelschorle"],
   "Polska": ["Zimna wódka czysta", "Nalewka wiśniowa", "Grzaniec na czerwonym winie", "Piwo z sokiem malinowym"],
   "Chiny": ["Baijiu", "Tsingtao", "Zielona herbata jaśminowa", "Sliwkowe wino"],
