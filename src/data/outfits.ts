@@ -141,7 +141,7 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Polo w bieli, beżowe chinosy, sandały",
     ],
   },
-  "Wielka Brytania": {
+  "Anglia": {
     woman: [
       "Trencz, kraciasta spódnica, kozaki",
       "Tweedowa marynarka, jeansy, kalosze Hunter",
@@ -153,6 +153,34 @@ export const outfits: Record<string, { woman: string[]; man: string[] }> = {
       "Tweedowa marynarka, koszula, chinosy, brogsy",
       "Sweter z dekoltem V, koszula, jeansy, sneakersy",
       "Granatowy garnitur, biała koszula, krawat",
+    ],
+  },
+  "Szkocja": {
+    woman: [
+      "Kraciasta spódnica, gładki golf, botki",
+      "Sweter, jeansy, szalik w szkocką kratę",
+      "Tweedowa marynarka, proste spodnie, mokasyny",
+      "Gładka sukienka, kraciasta chusta, kozaki",
+    ],
+    man: [
+      "Koszula w kratę, ciemne jeansy, trzewiki",
+      "Wełniany sweter, chinosy, szalik w tartan",
+      "Tweedowa marynarka, koszula, ciemne spodnie",
+      "Gładki T-shirt, jeansy, kraciasta koszula jako narzutka",
+    ],
+  },
+  "Irlandia Północna": {
+    woman: [
+      "Dzianinowy sweter, jeansy, botki",
+      "Lniana bluzka, proste spodnie, mokasyny",
+      "Sukienka w kwiaty, kardigan, płaskie buty",
+      "T-shirt, jeansowa kurtka, ciemne spodnie, sneakersy",
+    ],
+    man: [
+      "Sweter z warkoczowym splotem, jeansy, trzewiki",
+      "Lniana koszula, chinosy, mokasyny",
+      "Koszula w kratę, ciemne spodnie, sneakersy",
+      "Gładki T-shirt, kardigan, jeansy, wygodne buty",
     ],
   },
   "Niemcy": {
