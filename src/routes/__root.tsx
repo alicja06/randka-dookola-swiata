@@ -10,6 +10,7 @@ import {
 } from "@tanstack/react-router";
 
 import { Toaster } from "@/components/ui/sonner";
+import { AlbumSession } from "@/components/AlbumSession";
 
 import appCss from "../styles.css?url";
 
@@ -86,8 +87,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "Randka dookoła świata" },
       { property: "og:description", content: "Wylosuj kraj i zaplanujcie wieczorną randkę inspirowaną jego kulturą." },
       { name: "twitter:description", content: "Wylosuj kraj i zaplanujcie wieczorną randkę inspirowaną jego kulturą." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/af1ea1c8-146a-45f4-bf8b-9bd7968f6dab" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/af1ea1c8-146a-45f4-bf8b-9bd7968f6dab" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -125,7 +124,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <AlbumSession><Outlet /></AlbumSession>
       <Toaster position="bottom-center" />
     </QueryClientProvider>
   );

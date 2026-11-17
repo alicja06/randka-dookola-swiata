@@ -1,10 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Button } from "@/components/ui/button";
 import { useMemo, useRef, useState } from "react";
 import { toast } from "sonner";
 import { countries, type Country } from "@/data/countries";
 import { CountryCard } from "@/components/CountryCard";
 import { useCountryBag } from "@/hooks/useCountryBag";
-import { Dices, RotateCw, Download, Share2 } from "lucide-react";
+import { Dices, RotateCw, Download, Share2, Images, Heart } from "lucide-react";
 import { Capacitor } from "@capacitor/core";
 import { Directory, Filesystem } from "@capacitor/filesystem";
 import { Share } from "@capacitor/share";
@@ -230,6 +231,7 @@ const shareAsJpg = async () => {
   return (
     <main className="min-h-screen bg-hero">
       <div className="max-w-4xl mx-auto px-5 py-12 md:py-20">
+        <nav className="flex justify-end mb-5"><Button asChild variant="ghost"><Link to="/album" search={{country:undefined}}><Images />Wasz album</Link></Button></nav>
         <header className="text-center mb-12">
           <p className="text-xs md:text-sm uppercase tracking-[0.4em] text-primary/80 mb-4">Randka Dookoła Świata</p>
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight tracking-normal overflow-visible mb-5 pb-1">
@@ -282,6 +284,7 @@ const shareAsJpg = async () => {
 
 {country && !rolling && (
   <div className="flex flex-wrap justify-center gap-3 mt-8 animate-in fade-in duration-500">
+    <Button asChild variant="outline" className="rounded-full h-auto px-6 py-3"><Link to="/album" search={{country:country.name}}><Heart />Dodaj wspomnienie</Link></Button>
     <button
       onClick={saveAsJpg}
       disabled={saving || sharing}
