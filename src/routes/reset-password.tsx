@@ -1,0 +1,9 @@
+import {createFileRoute,Link} from '@tanstack/react-router';
+import {useEffect,useState} from 'react';
+import {supabase} from '@/integrations/supabase/client';
+import {Button} from '@/components/ui/button';
+import {Input} from '@/components/ui/input';
+export const Route=createFileRoute('/reset-password')({head:()=>({meta:[{title:'Nowe hasło | Randka dookoła świata'},{name:'description',content:'Ustaw nowe hasło do prywatnego albumu randek.'},{property:'og:title',content:'Nowe hasło | Randka dookoła świata'},{property:'og:description',content:'Odzyskaj dostęp do swoich wspomnień.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary'}]}),component:ResetPassword});
+function ResetPassword(){const [valid,setValid]=useState(false);const [password,setPassword]=useState('');const [busy,setBusy]=useState(false);const [message,setMessage]=useState('');useEffect(()=>{setValid(new URLSearchParams(window.location.hash.slice(1)).get('type')==='recovery');},[]);
+return <main className="min-h-screen bg-hero px-5 py-16"><section className="max-w-sm mx-auto space-y-6"><h1 className="text-3xl">Nowe hasło</h1>{valid?<form className="space-y-4" onSubmit={async e=>{e.preventDefault();setBusy(true);const {error}=await supabase.auth.updateUser({password});setMessage(error?'Nie udało się zmienić hasła. Poproś o nowy link.':'Hasło zostało zmienione.');setBusy(false);}}><label className="block space-y-2"><span>Nowe hasło</span><Input type="password" autoComplete="new-password" minLength={8} required value={password} onChange={e=>setPassword(e.target.value)}/></label><Button disabled={busy}>Zapisz hasło</Button></form>:<p>Otwórz link do zmiany hasła z wiadomości e-mail.</p>}{message&&<p role="status">{message}</p>}<Button asChild variant="link"><Link to="/album" search={{country:undefined}}>Wróć do albumu</Link></Button></section></main>;
+}

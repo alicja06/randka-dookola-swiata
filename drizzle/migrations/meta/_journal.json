@@ -8,6 +8,13 @@
       "when": 1794816015772,
       "tag": "0000_couple_album",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794911101721,
+      "tag": "0001_album_access_integrity",
+      "breakpoints": true
     }
   ]
 }

@@ -50,6 +50,16 @@
   --gradient-card: linear-gradient(135deg, oklch(0.24 0.06 30) 0%, oklch(0.19 0.04 20) 100%);
   --gradient-gold: linear-gradient(135deg, oklch(0.85 0.18 70) 0%, oklch(0.7 0.2 40) 100%);
   --shadow-glow: 0 20px 60px -20px oklch(0.65 0.22 15 / 0.5);
+  --google-background: #131314;
+  --google-border: #8e918f;
+  --google-foreground: #e3e3e3;
+}
+
+.google-auth, .google-auth:hover {
+  background: var(--google-background);
+  border: 1px solid var(--google-border);
+  color: var(--google-foreground);
+  font-weight: 500;
 }
 
 @layer base {
