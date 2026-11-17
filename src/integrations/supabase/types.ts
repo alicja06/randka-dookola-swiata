@@ -139,6 +139,13 @@ export type Database = {
             referencedRelation: "memories"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "photo_memory_same_couple"
+            columns: ["memory_id", "couple_id"]
+            isOneToOne: false
+            referencedRelation: "memories"
+            referencedColumns: ["id", "couple_id"]
+          },
         ]
       }
     }
