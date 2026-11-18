@@ -15,6 +15,20 @@
       "when": 1794911101721,
       "tag": "0001_album_access_integrity",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1795001777884,
+      "tag": "0002_photo_position",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1795001786572,
+      "tag": "0003_photo_position_update",
+      "breakpoints": true
     }
   ]
 }

@@ -1,0 +1,2 @@
+ALTER TABLE public.memory_photos ADD COLUMN IF NOT EXISTS position integer NOT NULL DEFAULT 0;
+CREATE INDEX IF NOT EXISTS memory_photos_memory_position_idx ON public.memory_photos(memory_id, position);

@@ -1,0 +1,1 @@
+GRANT UPDATE (position) ON public.memory_photos TO authenticated;
