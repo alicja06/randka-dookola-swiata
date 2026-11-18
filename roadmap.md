@@ -4,4 +4,5 @@
 - [x] Add memories with multiple photos, date, note and rating; editing and deletion.
 - [x] Link album from country drawing without altering existing features.
 - [x] Verify public album views, mobile layout, country transfer and rating regression tests.
-- [ ] Verify photo saving, partner access and isolation end-to-end: blocked until a first confirmed app account exists.
+- [ ] Verify photo saving, partner access and isolation end-to-end: blocked until a first confirmed app account exists.- [x] Usunąć przycisk logowania przez Lovable
+- [ ] Logowanie w zainstalowanej aplikacji: wymaga publikacji
