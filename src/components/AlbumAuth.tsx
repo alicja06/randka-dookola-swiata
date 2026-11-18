@@ -4,6 +4,7 @@ import { lovable } from '@/lib/lovableAuth';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Capacitor } from '@capacitor/core';
+import { Browser } from '@capacitor/browser';
 
 export function AlbumAuth() {
   const [mode, setMode] = useState<'login'|'signup'|'forgot'>('login');
@@ -34,11 +35,23 @@ export function AlbumAuth() {
           ? 'pl.randkadookolaswiata.app://auth/callback'
           : 'http://127.0.0.1:8080/album';
 
-      const result = await lovable.auth.signInWithOAuth(provider, {
-        redirect_uri: redirectUri,
-      });
+if (Capacitor.getPlatform() === 'android') {
+  const oauthUrl = new URL(
+    'https://randka-dookola-swiata.lovable.app/~oauth/initiate'
+  );
 
-      if (result.error) throw result.error;
+  oauthUrl.searchParams.set('provider', provider);
+  oauthUrl.searchParams.set('redirect_uri', redirectUri);
+
+  await Browser.open({ url: oauthUrl.toString() });
+  return;
+}
+
+const result = await lovable.auth.signInWithOAuth(provider, {
+  redirect_uri: redirectUri,
+});
+
+if (result.error) throw result.error;
     } catch (error) {
       console.error('Social login failed:', error);
       setMessage('Nie udało się zalogować. Spróbuj ponownie.');
