@@ -66,11 +66,12 @@ function createSupabaseClient() {
     global: {
       fetch: createSupabaseFetch(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY),
     },
-    auth: {
-      storage: brokeredPreviewStorage(),
-      persistSession: true,
-      autoRefreshToken: true,
-    },
+auth: {
+  flowType: 'pkce',
+  storage: brokeredPreviewStorage(),
+  persistSession: true,
+  autoRefreshToken: true,
+},
   });
 }
 

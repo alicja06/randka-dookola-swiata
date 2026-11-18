@@ -1,9 +1,11 @@
 import { useState, type FormEvent } from 'react';
 import { supabase } from '@/integrations/supabase/client';
-import { lovable } from '@/integrations/lovable';
+import { lovable } from '@/lib/lovableAuth';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import '@lovable.dev/cloud-auth-js/styles.css';
+import { Capacitor } from '@capacitor/core';
+import { Browser } from '@capacitor/browser';
 
 export function AlbumAuth() {
   const [mode, setMode] = useState<'login'|'signup'|'forgot'>('login');
@@ -24,14 +26,30 @@ export function AlbumAuth() {
     } catch {setMessage('Nie udało się kontynuować. Sprawdź dane lub spróbuj ponownie.');}
     finally {setBusy(false);}
   }
-  async function social(provider: 'google'|'lovable') {
-    setBusy(true); setMessage('');
-    try {
-      const result = await lovable.auth.signInWithOAuth(provider,{redirect_uri:`${window.location.origin}/album`});
-      if (result.error) throw result.error;
-    } catch {setMessage('Nie udało się zalogować. Spróbuj ponownie.');}
-    finally {setBusy(false);}
+
+async function social(provider: 'google' | 'lovable') {
+  setBusy(true);
+  setMessage('');
+
+  try {
+    const redirectUri =
+      Capacitor.getPlatform() === 'android'
+        ? 'pl.randkadookolaswiata.app://auth/callback'
+        : 'http://127.0.0.1:8080/album';
+
+    const result = await lovable.auth.signInWithOAuth(provider, {
+      redirect_uri: redirectUri,
+    });
+
+    if (result.error) throw result.error;
+  } catch (error) {
+    console.error('Social login failed:', error);
+    setMessage('Nie udało się zalogować. Spróbuj ponownie.');
+  } finally {
+    setBusy(false);
   }
+}
+
   return <section className="max-w-sm mx-auto py-10 space-y-5">
     <h2 className="text-2xl text-center">{mode === 'signup' ? 'Załóż konto' : mode === 'forgot' ? 'Odzyskaj hasło' : 'Zaloguj się do albumu'}</h2>
     {mode !== 'forgot' && <div className="space-y-3">
