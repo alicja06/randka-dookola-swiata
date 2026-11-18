@@ -6,9 +6,18 @@ import {Star,X,ImagePlus} from 'lucide-react';
 import {countries} from '@/data/countries';
 import {saveMemory,type Memory} from '@/lib/album';
 
+function getLocalDateInputValue() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+
+  return `${year}-${month}-${day}`;
+}
+
 export function MemoryEditor({coupleId,country,memory,onDone,onCancel}:{coupleId:string;country?:string;memory?:Memory;onDone:()=>void;onCancel:()=>void}) {
   const [place,setPlace]=useState(memory?.country ?? country ?? countries[0]?.name ?? '');
-  const [date,setDate]=useState(memory?.date_on ?? new Date().toLocaleDateString('en-CA'));
+  const [date,setDate]=useState(memory?.date_on ?? getLocalDateInputValue());
   const [note,setNote]=useState(memory?.note ?? '');
   const [rating,setRating]=useState<number|null>(memory?.rating ?? null);
   const [files,setFiles]=useState<File[]>([]);
