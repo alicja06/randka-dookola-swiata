@@ -7,7 +7,7 @@ export async function loadAlbum() {
   if(error) throw error;
   if(!couple) return {couple:null,memories:[] as Memory[],members:0};
   const [{data,error:memError},{count,error:memberError}] = await Promise.all([
-    supabase.from('memories').select('*, memory_photos(*)').eq('couple_id',couple.id).order('date_on',{ascending:false}),
+    supabase.from('memories').select('*, memory_photos!memory_photos_memory_id_fkey(*)').eq('couple_id',couple.id).order('date_on',{ascending:false}),
     supabase.from('couple_members').select('*',{count:'exact',head:true}).eq('couple_id',couple.id),
   ]);
   if(memError || memberError) throw memError || memberError;
