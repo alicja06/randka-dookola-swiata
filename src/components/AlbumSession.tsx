@@ -81,11 +81,19 @@ export function AlbumSession({children}: {children: ReactNode}) {
 
         if (error) throw error;
 
-        window.history.replaceState(
-          window.history.state,
-          '',
-          callbackUrl.pathname + callbackUrl.search,
-        );
+if (isNativeCallback) {
+  await router.navigate({
+    to: '/album',
+    search: { country: undefined },
+    replace: true,
+  });
+} else {
+  window.history.replaceState(
+    window.history.state,
+    '',
+    callbackUrl.pathname + callbackUrl.search,
+  );
+}
       } catch (error) {
         console.error('OAuth session setup failed:', error);
         handledResponse = null;
