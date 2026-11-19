@@ -1,44 +1,63 @@
-import {useEffect,useState,type FormEvent} from 'react';
+import {useEffect,useRef,useState,type FormEvent} from 'react';
 import {Button} from '@/components/ui/button';
 import {Input} from '@/components/ui/input';
 import {Textarea} from '@/components/ui/textarea';
-import {Star,X,ImagePlus} from 'lucide-react';
-import {countries} from '@/data/countries';
-import {saveMemory,type Memory} from '@/lib/album';
+import {Star,X,ImagePlus,Loader2} from 'lucide-react';
+import {saveMemory,type Memory,type PhotoItem} from '@/lib/album';
+import {CountryPicker} from './CountryPicker';
+import {PhotoSorter} from './PhotoSorter';
 
-function getLocalDateInputValue() {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, '0');
-  const day = String(now.getDate()).padStart(2, '0');
-
-  return `${year}-${month}-${day}`;
+function today() {
+  const n=new Date();
+  return `${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,'0')}-${String(n.getDate()).padStart(2,'0')}`;
 }
 
 export function MemoryEditor({coupleId,country,memory,onDone,onCancel}:{coupleId:string;country?:string;memory?:Memory;onDone:()=>void;onCancel:()=>void}) {
-  const [place,setPlace]=useState(memory?.country ?? country ?? countries[0]?.name ?? '');
-  const [date,setDate]=useState(memory?.date_on ?? getLocalDateInputValue());
+  const [place,setPlace]=useState(memory?.country ?? country ?? '');
+  const [date,setDate]=useState(memory?.date_on ?? today());
   const [note,setNote]=useState(memory?.note ?? '');
   const [rating,setRating]=useState<number|null>(memory?.rating ?? null);
-  const [files,setFiles]=useState<File[]>([]);
-  const [previews,setPreviews]=useState<string[]>([]);
+  const [items,setItems]=useState<PhotoItem[]>(()=>memory?.photos.map(p=>({key:p.id,kind:'existing' as const,photo:p})) ?? []);
   const [busy,setBusy]=useState(false);
   const [error,setError]=useState('');
-  useEffect(()=>{const urls=files.map(f=>URL.createObjectURL(f));setPreviews(urls);return ()=>urls.forEach(URL.revokeObjectURL);},[files]);
-  async function submit(e:FormEvent) {e.preventDefault();setBusy(true);setError('');try {await saveMemory(coupleId,{country:place,date_on:date,note,rating},files,memory);onDone();}catch(e){setError(e instanceof Error ? e.message:'Nie udało się zapisać wspomnienia.');}finally{setBusy(false);}}
-  return <section className="border-y py-8 my-6">
+  const inputRef=useRef<HTMLInputElement>(null);
+  const itemsRef=useRef(items);itemsRef.current=items;
+  useEffect(()=>()=>itemsRef.current.forEach(i=>{if(i.kind==='new') URL.revokeObjectURL(i.url);}),[]);
+  function addFiles(list:FileList|null) {
+    const files=Array.from(list ?? []).filter(f=>f.type.startsWith('image/'));
+    setItems(prev=>[...prev,...files.map(file=>({key:crypto.randomUUID(),kind:'new' as const,file,url:URL.createObjectURL(file)}))]);
+    setError('');
+  }
+  async function submit(e:FormEvent) {
+    e.preventDefault();
+    if(!place){setError('Wybierz kraj.');return;}
+    setBusy(true);setError('');
+    try {await saveMemory(coupleId,{country:place,date_on:date,note,rating},items,memory);onDone();}
+    catch(e){setError(e instanceof Error ? e.message:'Nie udało się zapisać wspomnienia.');}
+    finally{setBusy(false);}
+  }
+  return <section className="py-8 mt-6 border-t">
     <div className="flex items-center justify-between mb-6"><h2 className="text-2xl">{memory?'Edytuj wspomnienie':'Nowe wspomnienie'}</h2><Button size="icon" variant="ghost" aria-label="Zamknij formularz" onClick={onCancel} disabled={busy}><X/></Button></div>
-    <form onSubmit={submit} className="space-y-5">
+    <form onSubmit={submit} className="space-y-6">
       <div className="grid sm:grid-cols-2 gap-4">
-        <label className="space-y-2"><span>Kraj</span><select aria-label="Kraj" className="w-full h-10 rounded-md border bg-background px-3 text-foreground" value={place} onChange={e=>setPlace(e.target.value)}>{countries.map(c=><option key={c.name}>{c.name}</option>)}</select></label>
-        <label className="space-y-2"><span>Data randki</span><Input type="date" value={date} onChange={e=>setDate(e.target.value)} required/></label>
+        <div className="space-y-2"><span className="block">Kraj</span><CountryPicker value={place} onChange={setPlace}/></div>
+        <label className="space-y-2 block"><span className="block">Data randki</span><Input type="date" value={date} onChange={e=>setDate(e.target.value)} required/></label>
       </div>
       <label className="block space-y-2"><span>Wasze wspomnienia</span><Textarea value={note} onChange={e=>setNote(e.target.value)} rows={4} maxLength={10000}/></label>
       <fieldset><legend className="mb-2">Ocena wieczoru</legend><div className="flex gap-1">{[1,2,3,4,5].map(n=><Button key={n} type="button" size="icon" variant="ghost" aria-label={`Ocena ${n} z 5`} aria-pressed={rating===n} onClick={()=>setRating(rating===n?null:n)}><Star className={rating!==null && n<=rating?'fill-primary text-primary':'text-muted-foreground'}/></Button>)}</div></fieldset>
-      <label className="block space-y-2"><span className="flex gap-2 items-center"><ImagePlus className="size-4"/>Zdjęcia</span><Input type="file" accept="image/jpeg,image/png,image/webp" multiple onChange={e=>{setFiles(Array.from(e.target.files ?? []));setError('');}}/><span className="text-xs text-muted-foreground">JPG, PNG lub WebP · do 10 MB na zdjęcie</span></label>
-      {previews.length>0 && <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">{previews.map((url,i)=><img key={url} src={url} alt={`Wybrane zdjęcie ${i+1}`} className="aspect-square w-full object-cover rounded-md"/>)}</div>}
+      <div className="space-y-3">
+        <span className="block">Zdjęcia</span>
+        <input ref={inputRef} type="file" accept="image/jpeg,image/png,image/webp" multiple className="sr-only" tabIndex={-1} aria-hidden onChange={e=>{addFiles(e.target.files);e.target.value='';}}/>
+        <button type="button" onClick={()=>inputRef.current?.click()} onDragOver={e=>e.preventDefault()} onDrop={e=>{e.preventDefault();addFiles(e.dataTransfer.files);}}
+          className="w-full rounded-lg border-2 border-dashed border-border hover:border-primary hover:bg-primary/5 transition-colors py-8 flex flex-col items-center gap-2 text-muted-foreground">
+          <ImagePlus className="size-8 text-primary"/>
+          <span className="text-foreground">{items.length?'Dodaj kolejne zdjęcia':'Dodaj zdjęcia z randki'}</span>
+          <span className="text-xs">Kliknij lub upuść tutaj · JPG, PNG, WebP</span>
+        </button>
+        {items.length>0 && <><PhotoSorter items={items} onChange={setItems}/><p className="text-xs text-muted-foreground">Przeciągnij, aby zmienić kolejność. Pierwsze zdjęcie to okładka.</p></>}
+      </div>
       {error && <p role="alert" className="text-sm text-primary">{error}</p>}
-      <Button disabled={busy} aria-busy={busy} type="submit">Zapisz wspomnienie</Button>
+      <div className="flex gap-3"><Button disabled={busy} aria-busy={busy} type="submit">{busy && <Loader2 className="animate-spin"/>}Zapisz wspomnienie</Button><Button type="button" variant="ghost" onClick={onCancel} disabled={busy}>Anuluj</Button></div>
     </form>
   </section>;
 }
