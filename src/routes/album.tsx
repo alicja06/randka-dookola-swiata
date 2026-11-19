@@ -39,19 +39,150 @@ function Album() {
       <h2 className="text-2xl">Wasze wspomnienia, razem</h2><Button className="w-full" disabled={busy} onClick={()=>pairing(false)}><Heart/>Utwórz wspólny album</Button>
       <form className="space-y-3 border-t pt-6" onSubmit={e=>{e.preventDefault();void pairing(true);}}><label className="block space-y-2"><span>Kod od partnera lub partnerki</span><Input required value={code} onChange={e=>setCode(e.target.value)} autoComplete="off"/></label><Button variant="outline" disabled={busy} className="w-full">Dołącz do albumu</Button></form>
     </section> : <>
-      <div className="flex flex-wrap items-center justify-between gap-3 border-y py-4 mt-8 text-sm text-muted-foreground"><span>Prywatny album · {album.data?.members===2?'Jesteście we dwoje':'Czeka na drugą osobę'}</span><div className="flex gap-2"><Button variant="outline" onClick={async()=>{try{await navigator.clipboard.writeText(couple.invite_code);toast('Kod zaproszenia skopiowany. Przekaż go tylko partnerowi lub partnerce.');}catch{window.prompt('Kod zaproszenia',couple.invite_code);}}}><Copy/>Kod zaproszenia</Button><Button variant="ghost" size="icon" title="Odśwież album" aria-label="Odśwież album" onClick={()=>album.refetch()}><RefreshCw/></Button></div></div>
-      {editing ? <MemoryEditor key={editing===true?'new':editing.id} coupleId={couple.id} country={country} memory={editing===true?undefined:editing} onCancel={()=>setEditing(null)} onDone={()=>{setEditing(null);void album.refetch();}}/> : <>
-      {!!album.data?.memories.length && <section className="mt-8 rounded-lg border bg-card p-4"><h2 className="text-xl mb-1">Wasza mapa</h2><p className="text-xs text-muted-foreground mb-3">Kliknij zaznaczony kraj, aby otworzyć album.</p><WorldMap visited={new Set(album.data.memories.map(m=>geoNames[m.country]).filter(Boolean))} onSelect={geo=>{const list=album.data!.memories.filter(m=>geoNames[m.country]===geo);if(list.length) setGallery(list);}}/></section>}
-      {!album.data?.memories.length && <div className="text-center py-20"><Heart aria-hidden className="size-10 text-primary mx-auto mb-5"/><h2 className="text-2xl">Pierwsza randka do zapamiętania</h2><Button variant="link" onClick={()=>setEditing(true)}>Dodaj pierwsze wspomnienie</Button></div>}
-      <div className="grid sm:grid-cols-2 gap-6 mt-8">{album.data?.memories.map(m=><article key={m.id} className="bg-card border rounded-lg overflow-hidden">
-        <button type="button" className="relative block w-full text-left" aria-label={`Otwórz album — ${m.country}`} onClick={()=>setGallery([m])}>
-          {m.photos[0] ? <img src={m.photos[0].url} alt={`${m.country} — okładka`} className="aspect-[4/3] w-full object-cover"/> : <div className="aspect-[4/3] w-full bg-muted flex items-center justify-center"><Images className="size-10 text-muted-foreground"/></div>}
-          {m.photos.length>1 && <span className="absolute bottom-3 right-3 rounded-full bg-background/85 px-3 py-1 text-xs flex items-center gap-1"><Images className="size-3.5"/>{m.photos.length}</span>}
-        </button>
-        <div className="p-5"><div className="flex justify-between gap-3"><h2 className="text-2xl tracking-normal">{m.country}</h2><div className="flex"><Button variant="ghost" size="icon" aria-label={`Edytuj wspomnienie — ${m.country}`} onClick={()=>{setEditing(m);window.scrollTo({top:0});}}><Pencil/></Button><Button variant="ghost" size="icon" aria-label={`Usuń wspomnienie — ${m.country}`} onClick={async()=>{if(!window.confirm('Usunąć wspomnienie i wszystkie jego zdjęcia z wspólnego albumu?'))return;try{await removeMemory(m);await album.refetch();}catch{toast.error('Nie udało się usunąć wspomnienia.');}}}><Trash2/></Button></div></div>
-        <p className="text-sm text-muted-foreground mt-2">{new Date(`${m.date_on}T12:00:00`).toLocaleDateString('pl-PL')}{m.rating!==null && <span className="text-primary ml-3" aria-label={`Ocena ${m.rating} z 5`}>{'★'.repeat(m.rating)}{'☆'.repeat(5-m.rating)}</span>}</p>{m.note && <p className="mt-4 whitespace-pre-wrap break-words text-sm leading-relaxed line-clamp-4">{m.note}</p>}</div>
-      </article>)}</div>
-      </>}
+      {editing ? (
+        <MemoryEditor
+          key={editing === true ? 'new' : editing.id}
+          coupleId={couple.id}
+          country={country}
+          memory={editing === true ? undefined : editing}
+          onCancel={() => setEditing(null)}
+          onDone={() => {
+            setEditing(null);
+            void album.refetch();
+          }}
+        />
+      ) : (
+        <>
+          <div className="flex flex-wrap items-center justify-between gap-3 border-y py-4 mt-8 text-sm text-muted-foreground">
+            <span>
+              Prywatny album · {album.data?.members === 2 ? 'Jesteście we dwoje' : 'Czeka na drugą osobę'}
+            </span>
+            <div className="flex gap-2">
+              <Button
+                variant="outline"
+                onClick={async () => {
+                  try {
+                    await navigator.clipboard.writeText(couple.invite_code);
+                    toast('Kod zaproszenia skopiowany. Przekaż go tylko partnerowi lub partnerce.');
+                  } catch {
+                    window.prompt('Kod zaproszenia', couple.invite_code);
+                  }
+                }}
+              >
+                <Copy />Kod zaproszenia
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                title="Odśwież album"
+                aria-label="Odśwież album"
+                onClick={() => album.refetch()}
+              >
+                <RefreshCw />
+              </Button>
+            </div>
+          </div>
+
+          {!!album.data?.memories.length && (
+            <section className="mt-8 rounded-lg border bg-card p-4">
+              <h2 className="text-xl mb-1">Wasza mapa</h2>
+              <p className="text-xs text-muted-foreground mb-3">
+                Kliknij zaznaczony kraj, aby otworzyć album.
+              </p>
+              <WorldMap
+                visited={new Set(album.data.memories.map(m => geoNames[m.country]).filter(Boolean))}
+                onSelect={geo => {
+                  const list = album.data!.memories.filter(m => geoNames[m.country] === geo);
+                  if (list.length) setGallery(list);
+                }}
+              />
+            </section>
+          )}
+
+          {!album.data?.memories.length && (
+            <div className="text-center py-20">
+              <Heart aria-hidden className="size-10 text-primary mx-auto mb-5" />
+              <h2 className="text-2xl">Pierwsza randka do zapamiętania</h2>
+              <Button variant="link" onClick={() => setEditing(true)}>
+                Dodaj pierwsze wspomnienie
+              </Button>
+            </div>
+          )}
+
+          <div className="grid sm:grid-cols-2 gap-6 mt-8">
+            {album.data?.memories.map(m => (
+              <article key={m.id} className="bg-card border rounded-lg overflow-hidden">
+                <button
+                  type="button"
+                  className="relative block w-full text-left"
+                  aria-label={`Otwórz album — ${m.country}`}
+                  onClick={() => setGallery([m])}
+                >
+                  {m.photos[0] ? (
+                    <img src={m.photos[0].url} alt={`${m.country} — okładka`} className="aspect-[4/3] w-full object-cover" />
+                  ) : (
+                    <div className="aspect-[4/3] w-full bg-muted flex items-center justify-center">
+                      <Images className="size-10 text-muted-foreground" />
+                    </div>
+                  )}
+                  {m.photos.length > 1 && (
+                    <span className="absolute bottom-3 right-3 rounded-full bg-background/85 px-3 py-1 text-xs flex items-center gap-1">
+                      <Images className="size-3.5" />{m.photos.length}
+                    </span>
+                  )}
+                </button>
+                <div className="p-5">
+                  <div className="flex justify-between gap-3">
+                    <h2 className="text-2xl tracking-normal">{m.country}</h2>
+                    <div className="flex">
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        aria-label={`Edytuj wspomnienie — ${m.country}`}
+                        onClick={() => {
+                          setEditing(m);
+                          window.scrollTo({ top: 0 });
+                        }}
+                      >
+                        <Pencil />
+                      </Button>
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        aria-label={`Usuń wspomnienie — ${m.country}`}
+                        onClick={async () => {
+                          if (!window.confirm('Usunąć wspomnienie i wszystkie jego zdjęcia z wspólnego albumu?')) return;
+                          try {
+                            await removeMemory(m);
+                            await album.refetch();
+                          } catch {
+                            toast.error('Nie udało się usunąć wspomnienia.');
+                          }
+                        }}
+                      >
+                        <Trash2 />
+                      </Button>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    {new Date(`${m.date_on}T12:00:00`).toLocaleDateString('pl-PL')}
+                    {m.rating !== null && (
+                      <span className="text-primary ml-3" aria-label={`Ocena ${m.rating} z 5`}>
+                        {'★'.repeat(m.rating)}{'☆'.repeat(5 - m.rating)}
+                      </span>
+                    )}
+                  </p>
+                  {m.note && (
+                    <p className="mt-4 whitespace-pre-wrap break-words text-sm leading-relaxed line-clamp-4">
+                      {m.note}
+                    </p>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        </>
+      )}
     </>}
     <Dialog open={!!gallery} onOpenChange={o=>{if(!o){setGallery(null);setFullPhoto(null);}}}><DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">{gallery && fullPhoto ? <div className="space-y-3"><Button variant="ghost" onClick={()=>setFullPhoto(null)}><ArrowLeft/>Wróć do albumu</Button><img src={fullPhoto} alt="Zdjęcie z randki" className="max-h-[75vh] w-full object-contain"/></div> : gallery && <><DialogHeader><DialogTitle className="text-2xl">{gallery[0].country}</DialogTitle></DialogHeader>
       {gallery.map(m=><div key={m.id} className="space-y-3"><p className="text-sm text-muted-foreground">{new Date(`${m.date_on}T12:00:00`).toLocaleDateString('pl-PL')}{m.rating!==null && <span className="text-primary ml-3">{'★'.repeat(m.rating)}{'☆'.repeat(5-m.rating)}</span>}</p>{m.note && <p className="whitespace-pre-wrap text-sm">{m.note}</p>}
