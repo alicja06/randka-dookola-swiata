@@ -57,6 +57,9 @@
   --google-background: #131314;
   --google-border: #8e918f;
   --google-foreground: #e3e3e3;
+  --map-ocean: oklch(0.26 0.04 220);
+  --map-land: oklch(0.58 0.04 150);
+  --map-border: oklch(0.2 0.03 220);
 }
 
 .google-auth, .google-auth:hover {
@@ -79,6 +82,11 @@
 
 @layer utilities {
   .bg-hero { background: var(--gradient-hero); }
+  .album-map { background: var(--map-ocean); }
+  .map-land { fill: var(--map-land); stroke: var(--map-border); }
+  .map-visited { fill: var(--primary); stroke: var(--map-border); }
+  .country-picker-surface { background-color: var(--popover); opacity: 1; }
+  .album-globe canvas { display: block; width: 100%; height: 100%; }
   .bg-card-gradient { background: var(--gradient-card); }
   .text-gold { background: var(--gradient-gold); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .shadow-glow { box-shadow: var(--shadow-glow); }

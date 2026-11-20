@@ -39,6 +39,7 @@ function Album() {
       <h2 className="text-2xl">Wasze wspomnienia, razem</h2><Button className="w-full" disabled={busy} onClick={()=>pairing(false)}><Heart/>Utwórz wspólny album</Button>
       <form className="space-y-3 border-t pt-6" onSubmit={e=>{e.preventDefault();void pairing(true);}}><label className="block space-y-2"><span>Kod od partnera lub partnerki</span><Input required value={code} onChange={e=>setCode(e.target.value)} autoComplete="off"/></label><Button variant="outline" disabled={busy} className="w-full">Dołącz do albumu</Button></form>
     </section> : <>
+
       {editing ? (
         <MemoryEditor
           key={editing === true ? 'new' : editing.id}
@@ -84,15 +85,16 @@ function Album() {
           </div>
 
           {!!album.data?.memories.length && (
-            <section className="mt-8 rounded-lg border bg-card p-4">
-              <h2 className="text-xl mb-1">Wasza mapa</h2>
-              <p className="text-xs text-muted-foreground mb-3">
-                Kliknij zaznaczony kraj, aby otworzyć album.
-              </p>
+            <section className="mt-8 border-b pb-6">
               <WorldMap
-                visited={new Set(album.data.memories.map(m => geoNames[m.country]).filter(Boolean))}
+                destinations={Object.entries(
+                  album.data.memories.reduce<Record<string, number>>((counts, memory) => {
+                    counts[memory.country] = (counts[memory.country] ?? 0) + 1;
+                    return counts;
+                  }, {})
+                ).map(([country, count]) => ({ country, count }))}
                 onSelect={geo => {
-                  const list = album.data!.memories.filter(m => geoNames[m.country] === geo);
+                  const list = album.data?.memories.filter(m => geoNames[m.country] === geo) ?? [];
                   if (list.length) setGallery(list);
                 }}
               />
