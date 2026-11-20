@@ -6,3 +6,8 @@
 - [x] Verify public album views, mobile layout, country transfer and rating regression tests.
 - [ ] Verify photo saving, partner access and isolation end-to-end: blocked until a first confirmed app account exists.- [x] Usunąć przycisk logowania przez Lovable
 - [ ] Logowanie w zainstalowanej aplikacji: wymaga publikacji
+
+# Globe and fullscreen map
+- [x] Replace album map preview with a rotatable globe.
+- [x] Add fullscreen map, touch zoom, country selection and gallery access.
+- [x] Fix country dropdown opacity and verify desktop/mobile album flow on the requesting user's account.
