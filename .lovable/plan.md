@@ -1,14 +1,21 @@
-# Naprawa logowania w zainstalowanej aplikacji
+# Szybsze ładowanie albumu na telefonie
 
-## Najbardziej prawdopodobna przyczyna
-Zainstalowana aplikacja na telefonie otwiera opublikowaną wersję strony. Album i logowanie zostały dodane po ostatniej publikacji, więc w aplikacji na telefonie ich jeszcze nie ma albo działają w starej wersji. Kod logowania sam w sobie wygląda poprawnie (adres powrotu budowany jest z bieżącej strony).
+## Co spowalnia
+- Okładki i miniatury w galerii to pełne zdjęcia (do 1920 px, kilkaset KB każde) — telefon pobiera je w całości, nawet gdy wyświetla mały kafelek.
+- Przy każdym wejściu do albumu linki do zdjęć są generowane od nowa, więc telefon nie może skorzystać z zapamiętanych zdjęć i pobiera je ponownie.
+- Linki są tworzone od razu dla wszystkich zdjęć, choć na liście widać tylko okładki.
 
-## Kroki
-1. Opublikować aktualną wersję aplikacji.
-2. Sprawdzić na opublikowanym adresie logowanie e-mailem i przez Google (w przeglądarce telefonu i w zainstalowanej aplikacji).
-3. Jeśli logowanie przez Google nadal wraca do przeglądarki zamiast do aplikacji: ustawić powrót po logowaniu na stronę główną aplikacji i po zalogowaniu automatycznie przenosić do albumu.
-4. Po publikacji usunąć ikonę z telefonu i zainstalować aplikację ponownie, jeśli nadal widać starą wersję.
+## Co zrobię
+1. **Miniatury przy zapisie** — oprócz zdjęcia (1920 px) zapisuję małą wersję (~480 px, ok. 30–50 KB). Lista i galeria pokazują miniatury, pełne zdjęcie ładuje się dopiero po kliknięciu.
+2. **Zapamiętywanie zdjęć** — linki ważne dłużej i przechowywane na urządzeniu, żeby ponowne wejście korzystało z już pobranych zdjęć.
+3. **Najpierw okładki** — przy otwarciu albumu pobierane są tylko okładki; reszta zdjęć dopiero po otwarciu danego wspomnienia. Okładki niżej na stronie ładują się w trakcie przewijania.
+4. **Płynny wygląd** — podczas ładowania widać delikatne tło w miejscu zdjęcia zamiast pustego miejsca.
+5. **Istniejące zdjęcia** — dla już dodanych zdjęć miniatura zostanie utworzona automatycznie przy pierwszym wyświetleniu albumu (jednorazowo).
 
 ## Szczegóły techniczne
-- Weryfikacja: ustawienia adresów logowania (Site URL / Redirect URLs) dla opublikowanej domeny.
-- Ewentualna zmiana: `redirect_uri` w `AlbumAuth.tsx` na `window.location.origin`, zapamiętanie celu `/album` w sessionStorage.
+- Migracja: kolumna `thumb_path text` w `memory_photos` (+ GRANT UPDATE).
+- `compress()` z parametrem rozmiaru; upload pliku `…_thumb.jpg` (480 px, JPEG 0.75) równolegle.
+- `loadAlbum()` podpisuje tylko `thumb_path` okładek; pełne URL-e i miniatury galerii na żądanie (`createSignedUrls` przy otwarciu dialogu).
+- Cache podpisanych URL-i w `sessionStorage`/pamięci z TTL (signed URL 24h), dzięki czemu URL jest stabilny i przeglądarka używa HTTP cache.
+- `<img loading="lazy" decoding="async">`, skeleton `bg-muted`, `removePhoto`/`removeMemory` usuwają też miniatury.
+- Backfill: brak `thumb_path` → klient pobiera oryginał, generuje miniaturę, uploaduje i zapisuje ścieżkę.
