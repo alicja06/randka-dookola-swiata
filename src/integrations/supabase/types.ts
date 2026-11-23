@@ -110,6 +110,7 @@ export type Database = {
           memory_id: string
           path: string
           position: number
+          thumb_path: string | null
         }
         Insert: {
           couple_id: string
@@ -118,6 +119,7 @@ export type Database = {
           memory_id: string
           path: string
           position?: number
+          thumb_path?: string | null
         }
         Update: {
           couple_id?: string
@@ -126,6 +128,7 @@ export type Database = {
           memory_id?: string
           path?: string
           position?: number
+          thumb_path?: string | null
         }
         Relationships: [
           {
