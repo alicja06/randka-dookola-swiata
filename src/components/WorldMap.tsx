@@ -75,11 +75,6 @@ function FlatMap({features, visited, selected, onSelect}: {features: CountryFeat
                 role={active ? 'button' : undefined} tabIndex={active ? 0 : undefined} aria-label={active ? `Wybierz kraj: ${label}` : undefined}
                 onClick={active ? () => onSelect(name) : undefined} onKeyDown={active ? event => {if (event.key === 'Enter' || event.key === ' ') {event.preventDefault(); onSelect(name);}} : undefined}><title>{label || name}</title></path>;
             })}
-            {features.filter(country => visited.has(country.properties.name) && path.area(country) < 40).map(country => {
-              const [x, y] = path.centroid(country);
-              if (!Number.isFinite(x) || !Number.isFinite(y)) return null;
-              return <circle key={country.properties.name} cx={x} cy={y} r={3} className="map-visited cursor-pointer" strokeWidth={1} vectorEffect="non-scaling-stroke" onClick={() => onSelect(country.properties.name)}/>;
-            })}
           </svg>
         </TransformComponent>
         <div className="absolute right-4 bottom-4 flex flex-col gap-2">
